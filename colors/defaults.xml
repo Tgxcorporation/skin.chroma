@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<colors>
+    <color name="DisabledColor">60ffffff</color>
+    <color name="NoFocusedColor">90ffffff</color>
+    <color name="FocusedColor">ffffffff</color>
+    <color name="WarningColor">FFfe3737</color>
+    <color name="ShadowColor">FF000000</color>
+    <!-- GREEN -->
+    <color name="MainColor_green">ffb1f435</color>
+    <color name="AlternateColor_green">ffffffff</color>
+    <color name="SelectedColor_green">ffffffff</color>
+    <color name="DisabledColor_green">50b1f435</color>
+    <color name="MidColor_green">a0b1f435</color>
+    <color name="LowColor_green">60b1f435</color>
+    <color name="DialogColordiffuseColor_green">30b1f435</color>
+    <color name="ColordiffuseColor_green">ffb1f435</color>
+    <!-- BLACK -->
+    <color name="MainColor_black">FFc6c6c6</color>
+    <color name="AlternateColor_black">a0c6c6c6</color>
+    <color name="SelectedColor_black">ffffffff</color>
+    <color name="DisabledColor_black">30c6c6c6</color>
+    <color name="MidColor_black">60c6c6c6</color>
+    <color name="LowColor_black">60b1f435</color>
+    <color name="DialogColordiffuseColor_black">30b1f435</color>
+    <color name="ColordiffuseColor_black">ffb1f435</color>
+    <!-- ADDON COMPATIBILITY -->
+    <color name="white">FF707070</color>
+    <color name="grey">FF707070</color>
+    <color name="black">FF000000</color>
+    <color name="blue">FF707070</color>
+    <color name="red">FF707070</color>
+    <color name="green">FF707070</color>
+    <color name="orange">FF707070</color>
+    <color name="grey2">FF707070</color>
+    <color name="grey3">FF707070</color>
+</colors>

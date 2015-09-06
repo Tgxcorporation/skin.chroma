@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+    <include name="Condition_green">
+        <visible>Skin.hasSetting(Theme.Color.green)|[!Skin.hasSetting(Theme.Color.Black)+!Skin.hasSetting(Theme.Color.green)]</visible>
+    </include>
+    <include name="Condition_black">
+        <visible>Skin.hasSetting(Theme.Color.Black)</visible>
+    </include>
+    <!-- STARS EXTENDEDINFO-->
+    <include name="Star_green_ExtendedInfo">
+        <texture fallback="green/badges/rating0.png">$INFO[Container(500).ListItem.StarRating,green/badges/]</texture>
+    </include>
+    <include name="Star_black_ExtendedInfo">
+        <texture fallback="black/badges/rating0.png">$INFO[Container(500).ListItem.StarRating,black/badges/]</texture>
+    </include>
+    <include name="Stars_ExtendedInfo">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">Star_black_ExtendedInfo</include>
+        <include>Star_green_ExtendedInfo</include>
+        <height>37</height>
+        <width>185</width>
+        <aspectratio align="left">keep</aspectratio>
+    </include>
+    <!-- EpisodeThumb -->
+    <include name="EpisodeThumb_green">
+        <texture background="true" fallback="green/defaultIconBig.png">$VAR[Thumbs]</texture>
+    </include>
+    <include name="EpisodeThumb_black">
+        <texture background="true" fallback="black/defaultIconBig.png">$VAR[Thumbs]</texture>
+    </include>
+    <include name="EpisodeThumb">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">EpisodeThumb_black</include>
+        <include>EpisodeThumb_green</include>
+        <aspectratio scalediffuse="false">keep</aspectratio>
+    </include>
+    <!-- SquareThumb -->
+    <include name="SquareThumb_green">
+        <texture background="true" fallback="green/defaultIconBig.png">$VAR[Thumbs]</texture>
+    </include>
+    <include name="SquareThumb_black">
+        <texture background="true" fallback="black/defaultIconBig.png">$VAR[Thumbs]</texture>
+    </include>
+    <include name="SquareThumb">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">SquareThumb_black</include>
+        <include>SquareThumb_green</include>
+        <aspectratio scalediffuse="false">keep</aspectratio>
+    </include>
+    <!-- PosterThumb -->
+    <include name="PosterThumb_green">
+        <texture background="true" fallback="green/defaultIconBig.png">$VAR[Thumbs]</texture>
+    </include>
+    <include name="PosterThumb_black">
+        <texture background="true" fallback="black/defaultIconBig.png">$VAR[Thumbs]</texture>
+    </include>
+    <include name="PosterThumb">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">PosterThumb_black</include>
+        <include>PosterThumb_green</include>
+        <aspectratio scalediffuse="false">keep</aspectratio>
+    </include>
+    <!-- THUMB BORDER -->
+    <include name="ThumbBorderShadow_green">
+        <bordertexture border="35">green/common/JewelCase2.png</bordertexture>
+    </include>
+    <include name="ThumbBorderShadow_black">
+        <bordertexture border="35">black/common/JewelCase2.png</bordertexture>
+    </include>
+    <include name="ThumbBorder">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">ThumbBorderShadow_black</include>
+        <include>ThumbBorderShadow_green</include>
+        <bordersize>35</bordersize>
+    </include>
+    <!-- SELECTED IMAGE BORDER -->
+    <include name="ThumbBorderOverlay_green">
+        <bordertexture border="35">green/common/JewelCaseOverlay.png</bordertexture>
+    </include>
+    <include name="ThumbBorderOverlay_black">
+        <bordertexture border="35">black/common/JewelCaseOverlay.png</bordertexture>
+    </include>
+    <include name="ThumbBorderOverlay">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">ThumbBorderOverlay_black</include>
+        <include>ThumbBorderOverlay_green</include>
+        <bordersize>35</bordersize>
+    </include>
+    <!-- BUTTON -->
+    <include name="TextureFocus_green">
+        <texturefocus border="1">green/list/bg_facade_focus.png</texturefocus>
+    </include>
+    <include name="TextureFocus_black">
+        <texturefocus border="1">black/list/bg_facade_focus.png</texturefocus>
+    </include>
+    <include name="TextureFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">TextureFocus_black</include>
+        <include>TextureFocus_green</include>
+    </include>
+    <!-- ALT BUTTON -->
+    <include name="AltTextureFocus_green">
+        <alttexturefocus border="1">green/list/bg_facade_focus.png</alttexturefocus>
+    </include>
+    <include name="AltTextureFocus_black">
+        <alttexturefocus border="1">black/list/bg_facade_focus.png</alttexturefocus>
+    </include>
+    <include name="AltTextureFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">AltTextureFocus_black</include>
+        <include>AltTextureFocus_green</include>
+    </include>
+    <!-- MORE BUTTON FOCUS -->
+    <include name="MoreTextureFocus_green">
+        <texturefocus border="1">green/buttons/More_Focus.png</texturefocus>
+    </include>
+    <include name="MoreTextureFocus_black">
+        <texturefocus border="1">black/buttons/More_Focus.png</texturefocus>
+    </include>
+    <include name="MoreTextureFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">MoreTextureFocus_black</include>
+        <include>MoreTextureFocus_green</include>
+    </include>
+    <!-- MORE BUTTON NO FOCUS -->
+    <include name="MoreTextureNoFocus_green">
+        <texturenofocus border="1">green/buttons/More_NoFocus.png</texturenofocus>
+    </include>
+    <include name="MoreTextureNoFocus_black">
+        <texturenofocus border="1">black/buttons/More_NoFocus.png</texturenofocus>
+    </include>
+    <include name="MoreTextureNoFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">MoreTextureNoFocus_black</include>
+        <include>MoreTextureNoFocus_green</include>
+    </include>
+    <!-- DIALOG CLOSE BUTTON FOCUS -->
+    <include name="DialogCloseTextureFocus_green">
+        <texturefocus border="1">green/topbar/topbar_exit_focus.png</texturefocus>
+    </include>
+    <include name="DialogCloseTextureFocus_black">
+        <texturefocus border="1">black/topbar/topbar_exit_focus.png</texturefocus>
+    </include>
+    <include name="DialogCloseTextureFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">DialogCloseTextureFocus_black</include>
+        <include>DialogCloseTextureFocus_green</include>
+    </include>
+    <!-- DIALOG CLOSE BUTTON NO FOCUS -->
+    <include name="DialogCloseTextureNoFocus_green">
+        <texturenofocus border="1">green/topbar/topbar_exit_nofocus.png</texturenofocus>
+    </include>
+    <include name="DialogCloseTextureNoFocus_black">
+        <texturenofocus border="1">black/topbar/topbar_exit_nofocus.png</texturenofocus>
+    </include>
+    <include name="DialogCloseTextureNoFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">DialogCloseTextureNoFocus_black</include>
+        <include>DialogCloseTextureNoFocus_green</include>
+    </include>
+    <!-- RADIO ON FOCUS -->
+    <include name="TextureRadioOnFocus_green">
+        <textureradioonfocus border="1">green/buttons/RadioOnFO.png</textureradioonfocus>
+    </include>
+    <include name="TextureRadioOnFocus_black">
+        <textureradioonfocus border="1">black/buttons/RadioOnFO.png</textureradioonfocus>
+    </include>
+    <include name="TextureRadioOnFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">TextureRadioOnFocus_black</include>
+        <include>TextureRadioOnFocus_green</include>
+    </include>
+    <!-- RADIO OFF FOCUS -->
+    <include name="TextureRadioOffFocus_green">
+        <textureradioofffocus border="1">green/buttons/RadioOffFO.png</textureradioofffocus>
+    </include>
+    <include name="TextureRadioOffFocus_black">
+        <textureradioofffocus border="1">black/buttons/RadioOffFO.png</textureradioofffocus>
+    </include>
+    <include name="TextureRadioOffFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">TextureRadioOffFocus_black</include>
+        <include>TextureRadioOffFocus_green</include>
+    </include>
+    <!-- RADIO ON NO FOCUS -->
+    <include name="TextureRadioOnNoFocus_green">
+        <textureradioonnofocus border="1">green/buttons/RadioOnNF.png</textureradioonnofocus>
+    </include>
+    <include name="TextureRadioOnNoFocus_black">
+        <textureradioonnofocus border="1">black/buttons/RadioOnNF.png</textureradioonnofocus>
+    </include>
+    <include name="TextureRadioOnNoFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">TextureRadioOnNoFocus_black</include>
+        <include>TextureRadioOnNoFocus_green</include>
+    </include>
+    <!-- RADIO OFF NO FOCUS -->
+    <include name="TextureRadioOffNoFocus_green">
+        <textureradiooffnofocus border="1">green/buttons/RadioOffNF.png</textureradiooffnofocus>
+    </include>
+    <include name="TextureRadioOffNoFocus_black">
+        <textureradiooffnofocus border="1">black/buttons/RadioOffNF.png</textureradiooffnofocus>
+    </include>
+    <include name="TextureRadioOffNoFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">TextureRadioOffNoFocus_black</include>
+        <include>TextureRadioOffNoFocus_green</include>
+    </include>
+    <!-- SPIN UP FOCUS -->
+    <include name="TextureUpFocus_green">
+        <textureupfocus border="1">green/buttons/SpinUpFO.png</textureupfocus>
+    </include>
+    <include name="TextureUpFocus_black">
+        <textureupfocus border="1">black/buttons/SpinUpFO.png</textureupfocus>
+    </include>
+    <include name="TextureUpFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">TextureUpFocus_black</include>
+        <include>TextureUpFocus_green</include>
+    </include>
+    <!-- SPIN UP NO FOCUS -->
+    <include name="TextureUpNoFocus_green">
+        <textureup border="1">green/buttons/SpinUpNF.png</textureup>
+    </include>
+    <include name="TextureUpNoFocus_black">
+        <textureup border="1">black/buttons/SpinUpNF.png</textureup>
+    </include>
+    <include name="TextureUpNoFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">TextureUpNoFocus_black</include>
+        <include>TextureUpNoFocus_green</include>
+    </include>
+    <!-- SPIN DOWN FOCUS -->
+    <include name="TextureDownFocus_green">
+        <texturedownfocus border="1">green/buttons/SpinDownFO.png</texturedownfocus>
+    </include>
+    <include name="TextureDownFocus_black">
+        <texturedownfocus border="1">black/buttons/SpinDownFO.png</texturedownfocus>
+    </include>
+    <include name="TextureDownFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">TextureDownFocus_black</include>
+        <include>TextureDownFocus_green</include>
+    </include>
+    <!-- SPIN DOWN NO FOCUS -->
+    <include name="TextureDownNoFocus_green">
+        <texturedown border="1">green/buttons/SpinDownNF.png</texturedown>
+    </include>
+    <include name="TextureDownNoFocus_black">
+        <texturedown border="1">black/buttons/SpinDownNF.png</texturedown>
+    </include>
+    <include name="TextureDownNoFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">TextureDownNoFocus_black</include>
+        <include>TextureDownNoFocus_green</include>
+    </include>
+    <!-- SCROLLBAR VERTICAL BAR FOCUS -->
+    <include name="VerticalTextureSliderBarFocus_green">
+        <texturesliderbarfocus border="10">green/buttons/Scrollbar_Vertical_Focus.png</texturesliderbarfocus>
+    </include>
+    <include name="VerticalTextureSliderBarFocus_black">
+        <texturesliderbarfocus border="10">black/buttons/Scrollbar_Vertical_Focus.png</texturesliderbarfocus>
+    </include>
+    <include name="VerticalTextureSliderBarFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">VerticalTextureSliderBarFocus_black</include>
+        <include>VerticalTextureSliderBarFocus_green</include>
+    </include>
+    <!-- SCROLLBAR VERTICAL BAR NO FOCUS -->
+    <include name="VerticalTextureSliderBarNoFocus_green">
+        <texturesliderbar border="10">green/buttons/Scrollbar_Vertical_NoFocus.png</texturesliderbar>
+    </include>
+    <include name="VerticalTextureSliderBarNoFocus_black">
+        <texturesliderbar border="10">black/buttons/Scrollbar_Vertical_NoFocus.png</texturesliderbar>
+    </include>
+    <include name="VerticalTextureSliderBarNoFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">VerticalTextureSliderBarNoFocus_black</include>
+        <include>VerticalTextureSliderBarNoFocus_green</include>
+    </include>
+    <!-- SCROLLBAR HORIZONTAL BAR FOCUS -->
+    <include name="HorizontalTextureSliderBarFocus_green">
+        <texturesliderbarfocus border="10">green/buttons/Scrollbar_Horizontal_Focus.png</texturesliderbarfocus>
+    </include>
+    <include name="HorizontalTextureSliderBarFocus_black">
+        <texturesliderbarfocus border="10">black/buttons/Scrollbar_Horizontal_Focus.png</texturesliderbarfocus>
+    </include>
+    <include name="HorizontalTextureSliderBarFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">HorizontalTextureSliderBarFocus_black</include>
+        <include>HorizontalTextureSliderBarFocus_green</include>
+    </include>
+    <!-- SCROLLBAR HORIZONTAL BAR NO FOCUS -->
+    <include name="HorizontalTextureSliderBarNoFocus_green">
+        <texturesliderbar border="10">green/buttons/Scrollbar_Horizontal_NoFocus.png</texturesliderbar>
+    </include>
+    <include name="HorizontalTextureSliderBarNoFocus_black">
+        <texturesliderbar border="10">black/buttons/Scrollbar_Horizontal_NoFocus.png</texturesliderbar>
+    </include>
+    <include name="HorizontalTextureSliderBarNoFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">HorizontalTextureSliderBarNoFocus_black</include>
+        <include>HorizontalTextureSliderBarNoFocus_green</include>
+    </include>
+    <!-- SLIDER BAR -->
+    <include name="TextureSliderBar_green">
+        <texturesliderbar border="14">green/buttons/SliderBG.png</texturesliderbar>
+    </include>
+    <include name="TextureSliderBar_black">
+        <texturesliderbar border="14">black/buttons/SliderBG.png</texturesliderbar>
+    </include>
+    <include name="TextureSliderBar">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">TextureSliderBar_black</include>
+        <include>TextureSliderBar_green</include>
+    </include>
+    <!-- SLIDER NIB NO FOCUS -->
+    <include name="TextureSliderNibNoFocus_green">
+        <textureslidernib>green/buttons/SliderNibNF.png</textureslidernib>
+    </include>
+    <include name="TextureSliderNibNoFocus_black">
+        <textureslidernib>black/buttons/SliderNibNF.png</textureslidernib>
+    </include>
+    <include name="TextureSliderNibNoFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">TextureSliderNibNoFocus_black</include>
+        <include>TextureSliderNibNoFocus_green</include>
+    </include>
+    <!-- SLIDER NIB FOCUS -->
+    <include name="TextureSliderNibFocus_green">
+        <textureslidernibfocus>green/buttons/SliderNibFO.png</textureslidernibfocus>
+    </include>
+    <include name="TextureSliderNibFocus_black">
+        <textureslidernibfocus>black/buttons/SliderNibFO.png</textureslidernibfocus>
+    </include>
+    <include name="TextureSliderNibFocus">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">TextureSliderNibFocus_black</include>
+        <include>TextureSliderNibFocus_green</include>
+    </include>
+    <!-- EPG MARKER -->
+    <include name="ProgressTexture_green">
+        <progresstexture border="1,1,1,1">green/OSD/osd_progress_chaching.png</progresstexture>
+    </include>
+    <include name="ProgressTexture_black">
+        <progresstexture border="0,95,20,20">black/common/EPGMarker.png</progresstexture>
+    </include>
+    <include name="ProgressTexture">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">ProgressTexture_black</include>
+        <include>ProgressTexture_green</include>
+    </include>
+    <!-- PROGRESS MID -->
+    <include name="MidTexture_green">
+        <midtexture border="$PARAM[border]">green/$PARAM[gfx]</midtexture>
+    </include>
+    <include name="MidTexture_black">
+        <midtexture border="$PARAM[border]">black/$PARAM[gfx]</midtexture>
+    </include>
+    <include name="MidTexture">
+        <include condition="Skin.HasSetting(Theme.Color.Black)" name="MidTexture_black">
+            <param name="gfx" value="$PARAM[gfx]"/>
+            <param name="border" value="$PARAM[border]"/>
+        </include>
+        <include name="MidTexture_green">
+            <param name="gfx" value="$PARAM[gfx]"/>
+            <param name="border" value="$PARAM[border]"/>
+        </include>
+    </include>
+    <!-- DIALOG COLORDIFFUSE -->
+    <include name="DialogColordiffuse_green">
+        <colordiffuse>DialogColordiffuseColor_green</colordiffuse>
+    </include>
+    <include name="DialogColordiffuse_black">
+        <colordiffuse>DialogColordiffuseColor_black</colordiffuse>
+    </include>
+    <include name="DialogColordiffuse">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">DialogColordiffuse_black</include>
+        <include>DialogColordiffuse_green</include>
+    </include>
+    <!-- COLOR COLORDIFFUSE -->
+    <include name="Colordiffuse_green">
+        <colordiffuse>ColordiffuseColor_green</colordiffuse>
+    </include>
+    <include name="Colordiffuse_black">
+        <colordiffuse>ColordiffuseColor_black</colordiffuse>
+    </include>
+    <include name="Colordiffuse">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">Colordiffuse_black</include>
+        <include>Colordiffuse_green</include>
+    </include>
+    <!-- ************* -->
+    <!-- COLORS -->
+    <!-- ************* -->
+    <!-- MAINCOLOR -->
+    <include name="TextColor_MainColor_green">
+        <textcolor>MainColor_green</textcolor>
+    </include>
+    <include name="TextColor_MainColor_black">
+        <textcolor>MainColor_black</textcolor>
+    </include>
+    <include name="TextColor_MainColor">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">TextColor_MainColor_black</include>
+        <include>TextColor_MainColor_green</include>
+    </include>
+    <include name="FocusedColor_MainColor_green">
+        <focusedcolor>MainColor_green</focusedcolor>
+    </include>
+    <include name="FocusedColor_MainColor_black">
+        <focusedcolor>MainColor_black</focusedcolor>
+    </include>
+    <include name="FocusedColor_MainColor">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">FocusedColor_MainColor_black</include>
+        <include>FocusedColor_MainColor_green</include>
+    </include>
+    <include name="SelectedColor_MainColor_green">
+        <selectedcolor>SelectedColor_green</selectedcolor>
+    </include>
+    <include name="SelectedColor_MainColor_black">
+        <selectedcolor>SelectedColor_black</selectedcolor>
+    </include>
+    <include name="SelectedColor_MainColor">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">SelectedColor_MainColor_black</include>
+        <include>SelectedColor_MainColor_green</include>
+    </include>
+    <include name="TitleColor_MainColor_green">
+        <titlecolor>AlternateColor_green</titlecolor>
+    </include>
+    <include name="TitleColor_MainColor_black">
+        <titlecolor>AlternateColor_black</titlecolor>
+    </include>
+    <include name="TitleColor_MainColor">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">TitleColor_MainColor_black</include>
+        <include>TitleColor_MainColor_green</include>
+    </include>
+    <!-- ALTERNATECOLOR -->
+    <include name="TextColor_AlternateColor_green">
+        <textcolor>AlternateColor_green</textcolor>
+    </include>
+    <include name="TextColor_AlternateColor_black">
+        <textcolor>AlternateColor_black</textcolor>
+    </include>
+    <include name="TextColor_AlternateColor">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">TextColor_AlternateColor_black</include>
+        <include>TextColor_AlternateColor_green</include>
+    </include>
+    <include name="HeadLineColor_AlternateColor_green">
+        <headlinecolor>MainColor_green</headlinecolor>
+    </include>
+    <include name="HeadLineColor_AlternateColor_black">
+        <headlinecolor>MainColor_black</headlinecolor>
+    </include>
+    <include name="HeadLineColor_AlternateColor">
+         <include condition="Skin.HasSetting(Theme.Color.Black)">HeadLineColor_AlternateColor_black</include>
+        <include>HeadLineColor_AlternateColor_green</include>
+    </include>
+    <!-- MIDCOLOR -->
+    <include name="TextColor_MidColor_green">
+        <textcolor>MidColor_green</textcolor>
+    </include>
+    <include name="TextColor_MidColor_black">
+        <textcolor>MidColor_black</textcolor>
+    </include>
+    <include name="TextColor_MidColor">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">TextColor_MidColor_black</include>
+        <include>TextColor_MidColor_green</include>
+    </include>
+    <!-- LOWCOLOR -->
+    <include name="TextColor_LowColor_green">
+        <textcolor>LowColor_green</textcolor>
+    </include>
+    <include name="TextColor_LowColor_black">
+        <textcolor>LowColor_black</textcolor>
+    </include>
+    <include name="TextColor_LowColor">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">TextColor_LowColor_black</include>
+        <include>TextColor_LowColor_green</include>
+    </include>
+    <!-- SELECTEDCOLOR -->
+    <include name="SelectedColor_SelectedColor_green">
+        <selectedcolor>SelectedColor_green</selectedcolor>
+    </include>
+    <include name="SelectedColor_SelectedColor_black">
+        <selectedcolor>SelectedColor_black</selectedcolor>
+    </include>
+    <include name="SelectedColor_SelectedColor">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">SelectedColor_SelectedColor_black</include>
+        <include>SelectedColor_SelectedColor_green</include>
+    </include>
+    <!-- ALTSELECTEDCOLOR -->
+    <include name="AltSelectedColor_SelectedColor_green">
+        <altselectedcolor>SelectedColor_green</altselectedcolor>
+    </include>
+    <include name="AltSelectedColor_SelectedColor_black">
+        <altselectedcolor>SelectedColor_black</altselectedcolor>
+    </include>
+    <include name="AltSelectedColor_SelectedColor">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">AltSelectedColor_SelectedColor_black</include>
+        <include>AltSelectedColor_SelectedColor_green</include>
+    </include>
+    <!-- DISABLEDCOLOR -->
+    <include name="DisabledColor_DisabledColor_green">
+        <disabledcolor>DisabledColor_green</disabledcolor>
+    </include>
+    <include name="DisabledColor_DisabledColor_black">
+        <disabledcolor>DisabledColor_black</disabledcolor>
+    </include>
+    <include name="DisabledColor_DisabledColor">
+        <include condition="Skin.HasSetting(Theme.Color.Black)">DisabledColor_DisabledColor_black</include>
+        <include>DisabledColor_DisabledColor_green</include>
+    </include>
+</includes>
