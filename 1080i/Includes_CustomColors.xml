@@ -316,7 +316,7 @@
         <progresstexture border="1,1,1,1">green/OSD/osd_progress_chaching.png</progresstexture>
     </include>
     <include name="ProgressTexture_black">
-        <progresstexture border="0,95,20,20">black/common/EPGMarker.png</progresstexture>
+        <progresstexture border="0,95,20,20">black/OSD/osd_progress_chaching.png</progresstexture>
     </include>
     <include name="ProgressTexture">
         <include condition="Skin.HasSetting(Theme.Color.Black)">ProgressTexture_black</include>
