@@ -223,7 +223,7 @@
                             <param name="y" value="0"/>
                             <param name="width" value="860"/>
                             <param name="height" value="800"/>
-                            <param name="onfocus" value="-"/>
+                            <param name="onfocus" value="noop"/>
                         </include>
                         <control type="panel" id="49">
                             <height>300</height>
@@ -474,7 +474,7 @@
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>
                         <param name="height" value="800"/>
-                        <param name="onfocus" value="-"/>
+                        <param name="onfocus" value="noop"/>
                     </include>
                     <control type="panel" id="50">
                         <posx>0</posx>
@@ -664,7 +664,7 @@
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>
                         <param name="height" value="800"/>
-                        <param name="onfocus" value="-"/>
+                        <param name="onfocus" value="noop"/>
                     </include>
                     <control type="panel" id="5041">
                         <posx>0</posx>
@@ -811,7 +811,7 @@
                 <!--<param name="y" value="0"/>-->
                 <!--<param name="width" value="860"/>-->
                 <!--<param name="height" value="800"/>-->
-                <!--<param name="onfocus" value="-"/>-->
+                <!--<param name="onfocus" value="noop"/>-->
                 <!--</include>-->
                 <!--<control type="panel" id="5051">-->
                 <!--<posx>0</posx>-->
@@ -927,7 +927,7 @@
                 <!--<param name="y" value="0"/>-->
                 <!--<param name="width" value="860"/>-->
                 <!--<param name="height" value="800"/>-->
-                <!--<param name="onfocus" value="-"/>-->
+                <!--<param name="onfocus" value="noop"/>-->
                 <!--</include>-->
                 <!--<control type="panel" id="5061">-->
                 <!--<posx>0</posx>-->
@@ -1043,7 +1043,7 @@
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>
                         <param name="height" value="800"/>
-                        <param name="onfocus" value="-"/>
+                        <param name="onfocus" value="noop"/>
                     </include>
                     <control type="panel" id="5071">
                         <posx>0</posx>
@@ -1160,7 +1160,7 @@
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>
                         <param name="height" value="800"/>
-                        <param name="onfocus" value="-"/>
+                        <param name="onfocus" value="noop"/>
                     </include>
                     <control type="panel" id="5081">
                         <posx>0</posx>
@@ -1257,7 +1257,7 @@
                         <!--<param name="y" value="0"/>-->
                         <!--<param name="width" value="860"/>-->
                         <!--<param name="height" value="800"/>-->
-                        <!--<param name="onfocus" value="-"/>-->
+                        <!--<param name="onfocus" value="noop"/>-->
                     <!--</include>-->
                     <!--<control type="panel" id="5091">-->
                         <!--<posx>0</posx>-->

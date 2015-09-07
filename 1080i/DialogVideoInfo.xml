@@ -50,26 +50,6 @@
                         <include>DialogMenuButton</include>
                         <onright>9009</onright>
                     </control>
-                    <control type="togglebutton" id="9013">
-                        <visible>!IsEmpty(ListItem.Plot)</visible>
-                        <description>Plot</description>
-                        <include>DialogMenuButton</include>
-                        <label>$LOCALIZE[207]</label>
-                        <onclick>Control.SetFocus(6060)</onclick>
-                        <onright>Control.SetFocus(6060)</onright>
-                    </control>
-                    <control type="togglebutton" id="9012">
-                        <visible>IntegerGreaterThan(Container(50).NumItems,0)</visible>
-                        <description>Actors</description>
-                        <include>DialogMenuButton</include>
-                        <label>$LOCALIZE[344]</label>
-                        <onright>50</onright>
-                    </control>
-                    <control type="label" id="7895">
-                        <height>200</height>
-                        <width>480</width>
-                        <label>-</label>
-                    </control>
                     <control type="togglebutton" id="8">
                         <description>play</description>
                         <include>DialogMenuButton</include>
@@ -95,6 +75,27 @@
                         <label>$LOCALIZE[20410]</label>
                         <onright>9009</onright>
                     </control>
+                    <control type="togglebutton" id="9013">
+                        <visible>!IsEmpty(ListItem.Plot)</visible>
+                        <description>Plot</description>
+                        <include>DialogMenuButton</include>
+                        <label>$LOCALIZE[207]</label>
+                        <onclick>Control.SetFocus(6060)</onclick>
+                        <onright>Control.SetFocus(6060)</onright>
+                    </control>
+                    <control type="togglebutton" id="9012">
+                        <visible>IntegerGreaterThan(Container(50).NumItems,0)</visible>
+                        <description>Actors</description>
+                        <include>DialogMenuButton</include>
+                        <label>$LOCALIZE[344]</label>
+                        <onright>50</onright>
+                    </control>
+                    <control type="label" id="7895">
+                        <height>200</height>
+                        <width>480</width>
+                        <label>-</label>
+                    </control>
+
                     <control type="togglebutton" id="9010">
                         <visible>System.HasAddon(script.extendedinfo)</visible>
                         <visible>Container.Content(movies)|Container.Content(tvshows)|[Container.Content(episodes)+Skin.HasSetting(plexbmc)+!SubString(ListItem.Title,Season,Left)+IsEmpty(ListItem.VideoCodec)]</visible>
@@ -186,7 +187,7 @@
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>
                         <param name="height" value="800"/>
-                        <param name="onfocus" value="-"/>
+                        <param name="onfocus" value="noop"/>
                     </include>
                     <control type="panel" id="9009">
                         <visible>![container.content(tvshows) | container.content(episodes) | SubString(Container.FolderPath,videodb://musicvideos,left)]</visible>
@@ -906,7 +907,7 @@
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>
                         <param name="height" value="800"/>
-                        <param name="onfocus" value="-"/>
+                        <param name="onfocus" value="noop"/>
                     </include>
                     <control type="textbox">
                         <posx>TextMargin</posx>
@@ -996,7 +997,7 @@
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>
                         <param name="height" value="800"/>
-                        <param name="onfocus" value="-"/>
+                        <param name="onfocus" value="noop"/>
                     </include>
                     <!-- ACTOR LIST -->
                     <control type="list" id="50">

@@ -12,47 +12,55 @@
         <include>Fanart_Art</include>
         <include>Player_Show</include>
         <include>OverlayFull</include>
+        <include>FooterInfo_ExtendedInfo</include>
         <control type="group">
-            <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="660,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">conditional</animation>
             <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="-2200,0" condition="Control.HasFocus(505050)">conditional</animation>
+            <include>NowPlayingSlideEffect</include>
             <include>OpenClose</include>
-            <include>Icon_Fade</include>
-
-            <control type="group">
-                <!-- CLEAR ART / LOGO -->
-                <control type="image">
-                    <posx>645r</posx>
-                    <posy>34</posy>
-                    <width>300</width>
-                    <height>149</height>
-                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                    <include>PulseClearArt</include>
-                    <texture background="true">$VAR[DefaultClearArt]</texture>
-                </control>
-                <control type="image">
-                    <posx>645r</posx>
-                    <posy>34</posy>
-                    <width>300</width>
-                    <height>149</height>
-                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                    <include>PulseClearLogo</include>
-                    <texture background="true">$VAR[DefaultClearLogo]</texture>
-                </control>
-            </control>
+            <include name="ClearArtLogo">
+                <param name="x" value="430r"/>
+                <param name="y" value="180"/>
+                <param name="width" value="380"/>
+                <param name="height" value="150"/>
+                <param name="visible" value="!Player.HasMedia"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="bottom"/>
+            </include>
             <control type="group">
                 <control type="image">
                     <posx>0</posx>
-                    <posy>142</posy>
+                    <posy>280</posy>
                     <width>1920</width>
-                    <height>892</height>
-                    <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
+                    <height>800</height>
+                    <texture border="51">common/background_strip_horizontal.png</texture>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>330</posy>
+                    <width>50</width>
+                    <height>700</height>
+                    <texture border="1">common/background_strip_horizontal_left.png</texture>
+                </control>
+                <control type="image">
+                    <posx>1440</posx>
+                    <posy>330</posy>
+                    <width>480</width>
+                    <height>700</height>
+                    <texture border="1">common/background_strip_horizontal_right.png</texture>
+                </control>
+                <control type="image">
+                    <posx>960</posx>
+                    <posy>330</posy>
+                    <width>480</width>
+                    <height>700</height>
+                    <texture border="1">common/background_strip_horizontal_right.png</texture>
                 </control>
                 <control type="list" id="500">
                     <viewtype label="31091">List</viewtype>
-                    <posx>0</posx>
-                    <posy>183</posy>
-                    <width>1920</width>
-                    <height>810</height>
+                    <posx>TextMargin</posx>
+                    <posy>380</posy>
+                    <width>910</width>
+                    <height>600</height>
                     <pagecontrol>60</pagecontrol>
                     <onleft>9000</onleft>
                     <onright>60</onright>
@@ -75,38 +83,103 @@
                 </control>
             </control>
             <control type="scrollbar" id="60">
-                <posx>1886</posx>
-                <posy>183</posy>
-                <height>810</height>
+                <posx>910</posx>
+                <posy>380</posy>
+                <height>600</height>
                 <include>VerticalScroller</include>
                 <onleft>500</onleft>
                 <onright>505050</onright>
             </control>
+            <control type="group">
+                <control type="group">
+                    <posx>1010</posx>
+                    <posy>380</posy>
+                    <control type="group">
+                        <visible>!IsEmpty(Container(500).ListItem.RatingAndVotes)</visible>
+                        <include>Icon_Fade</include>
+                        <include name="Stars">
+                            <param name="x" value="-3"/>
+                            <param name="y" value="3"/>
+                            <param name="color" value="main"/>
+                        </include>
+                        <control type="label">
+                            <posx>TextMargin</posx>
+                            <posy>0</posy>
+                            <width>360</width>
+                            <height>50</height>
+                            <font>InfoRatingFont</font>
+                            <include>TextColor_MainColor</include>
+                            <scroll>false</scroll>
+                            <label fallback="0.0">$INFO[Container(500).ListItem.RatingAndVotes]</label>
+                        </control>
+                    </control>
+                    <control type="label">
+                        <posx>0</posx>
+                        <posy>65</posy>
+                        <width>380</width>
+                        <height>50</height>
+                        <font>InfoDetailsFont</font>
+                        <include>TextColor_AlternateColor</include>
+                        <scroll>false</scroll>
+                        <label>$VAR[DetailsRow2]</label>
+                    </control>
+                    <control type="label">
+                        <posx>0</posx>
+                        <posy>130</posy>
+                        <width>380</width>
+                        <height>50</height>
+                        <font>InfoDetailsFont</font>
+                        <include>TextColor_MainColor</include>
+                        <scroll>false</scroll>
+                        <label>$VAR[DetailsRow3]</label>
+                    </control>
+                    <control type="textbox">
+                        <posx>0</posx>
+                        <posy>210</posy>
+                        <width>380</width>
+                        <height>380</height>
+                        <font>InfoPlotFont</font>
+                        <include>TextColor_AlternateColor</include>
+                        <label>$VAR[Plots]</label>
+                        <include>myautoscroll</include>
+                    </control>
+                </control>
+                <control type="group">
+                    <posx>1490</posx>
+                    <posy>380</posy>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>380</width>
+                        <height>570</height>
+                        <aspectratio aligny="top">scale</aspectratio>
+                        <texture background="true">$VAR[Thumbs]</texture>
+                    </control>
+                  </control>
+            </control>
         </control>
         <control type="label">
-            <include>OpenClose</include>
             <include>WindowTitle</include>
             <label>Extended Info</label>
         </control>
         <control type="label">
-            <include>OpenClose</include>
             <include>WindowTitleSub</include>
             <label>$INFO[Window.Property(Filter_Label),, - ]$INFO[Window.Property(TotalItems),, $LOCALIZE[31025]]$INFO[Window.Property(CurrentPage),  -  ]$INFO[Window.Property(TotalPages),/]</label>
         </control>
-        <include>FooterInfo_ExtendedInfo</include>
+        <include>Header_Logo</include>
         <include>Time</include>
+        <include>NowPlaying</include>
+        <include>TopBar</include>
         <!-- SIDE MENU -->
         <control type="group">
             <visible>!Skin.HasSetting(EnableKioskMode)</visible>
+            <visible>!Window.IsVisible(script-ExtendedInfo Script-T9Search.xml)</visible>
             <include>LeftMenu</include>
-
             <include>Icon_Fade</include>
             <control type="group">
-                <visible>!Window.IsVisible(script-ExtendedInfo Script-T9Search.xml)</visible>
-                <include>VisibleFadeEffect</include>
                 <control type="grouplist" id="9000">
                     <include>LeftMenuButtonGroup</include>
-                    <onright>500</onright>
+                    <onleft>500</onleft>
                     <ondown>9000</ondown>
                     <onback>500</onback>
                     <control type="label" id="7965">

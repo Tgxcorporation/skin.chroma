@@ -831,6 +831,7 @@
             <posy>1130</posy>
             <height>700</height>
             <include>VerticalScroller</include>
+            <onright condition="Window.IsActive(script-ExtendedInfo Script-VideoList.xml)">500</onright>
             <onright>50</onright>
             <onleft condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</onleft>
             <onleft condition="Window.IsActive(DialogContentSettings.xml)">4</onleft>

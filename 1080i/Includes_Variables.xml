@@ -62,6 +62,7 @@
         <!--<value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!SubString(ListItem.Icon,Default,Left)">$VAR[Theme.Color]/common/TransparentDot.png</value>-->
         <value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+IsEmpty(ListItem.Icon)">$VAR[Theme.Color]/defaultChannelTvBig.png</value>
         <value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+!IsEmpty(ListItem.Icon)">common/TransparentDot.png</value>
+        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Icon]</value>
         <value condition="StringCompare(ListItem.Icon,)+!IsEmpty(Window.Property(IsRadio))">$VAR[Theme.Color]/defaultRadioBig.png</value>
         <value condition="StringCompare(ListItem.Icon,)+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]">$VAR[Theme.Color]/defaultChannelTvBig_Wide.png</value>
         <!--NORMAL-->
@@ -178,7 +179,7 @@
         <value condition="[Window.IsActive(MyPVRChannels.xml)] + ListItem.HasEpg">$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]</value>
         <value condition="![Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)] + VideoPlayer.IsFullscreen + ![VideoPlayer.Content(LiveTV)+!VideoPlayer.HasEpg]">$INFO[VideoPlayer.Year,,     ]$INFO[VideoPlayer.Duration,, $LOCALIZE[31297]     ]</value>
         <value condition="Window.IsActive(MusicVisualisation.xml)">$INFO[MusicPlayer.TimeSpeed,, / ]$INFO[MusicPlayer.Duration]</value>
-        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[ListItem.Year]</value>
+        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Year]</value>
         <value condition="Window.IsActive(MyPVRTimers.xml)">$INFO[ListItem.Date]</value>
         <value condition="Window.IsActive(MyPVRSearch.xml)">$INFO[ListItem.Date]</value>
         <value condition="Window.IsActive(MyPVRRecordings.xml)">$INFO[ListItem.Date]</value>
@@ -208,7 +209,7 @@
         <value condition="Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.Genre]</value>
         <value condition="Window.IsActive(MusicVisualisation.xml) + !Skin.HasSetting(plexbmc)">$INFO[MusicPlayer.PlaylistPosition,, / ]$INFO[MusicPlayer.PlaylistLength]</value>
         <value condition="![Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)] + VideoPlayer.IsFullscreen">$INFO[VideoPlayer.Genre]</value>
-        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[ListItem.Genre]</value>
+        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Genre]</value>
         <value condition="Window.IsActive(MyPVRTimers.xml)">$INFO[ListItem.Comment]</value>
         <value condition="Window.IsActive(MyPVRRecordings.xml)">$INFO[ListItem.Duration]</value>
         <value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Mood)]</value>
@@ -256,7 +257,7 @@
         <value condition="!IsEmpty(ListItem.Label2)">$INFO[ListItem.Label2]</value>
     </variable>
     <variable name="Fanart_Details">
-        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Year]</value>
+        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Genre]</value>
         <value condition="Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.Title]$INFO[ListItem.StartTime,       , - ]$INFO[ListItem.EndTime]</value>
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Size]$INFO[ListItem.Date,       ]</value>
         <value condition="Container.content(Albums)">$INFO[ListItem.Artist]$INFO[ListItem.Year,       ]</value>
@@ -273,6 +274,7 @@
         <value>$LOCALIZE[416]</value>
     </variable>
     <variable name="Plots">
+        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Plot]</value>
         <value condition="Container.content(addons) + !IsEmpty(ListItem.Property(Addon.Description))">$INFO[ListItem.Property(Addon.Description)]</value>
         <value condition="SubString(ListItem.Path,videodb://movies/sets/)">$LOCALIZE[20457]</value>
         <value condition="Container.Content(Seasons) + !IsEmpty(ListItem.Plot) + !IsEmpty(ListItem.Title)">$INFO[ListItem.Plot]</value>
