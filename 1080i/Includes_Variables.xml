@@ -24,7 +24,7 @@
         <value>$INFO[ListItem.Icon]</value>
     </variable>
     <variable name="BannerText">
-        <value condition="IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Label]</value>
+        <value condition="!Skin.HasSetting(plexbmc)+IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Label]</value>
         <value condition="Skin.HasSetting(plexbmc)+Container.Content(episodes)+IsEmpty(ListItem.Property(banner))">$INFO[ListItem.Label]</value>
         <value condition="Container.Content(episodes)+IsEmpty(ListItem.Art(tvshow.banner))">$INFO[ListItem.Label]</value>
         <value condition="Skin.HasSetting(plexbmc)+[Container.Content(TVShows)|Container.Content(seasons)]+IsEmpty(ListItem.Property(banner))">$INFO[ListItem.Label]</value>
@@ -60,8 +60,8 @@
         <value condition="StringCompare(ListItem.thumb,special://home/addons/plugin.video.plexbmc/resources/thumb.png)">$VAR[Theme.Color]/defaultAudioBig.png</value>
         <!--<value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!SubString(ListItem.Icon,Default,Left)+[control.isvisible(58)|control.isvisible(53)]">$INFO[ListItem.Icon]</value>-->
         <!--<value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!SubString(ListItem.Icon,Default,Left)">$VAR[Theme.Color]/common/TransparentDot.png</value>-->
-        <value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+IsEmpty(ListItem.Icon)">$VAR[Theme.Color]/defaultChannelTvBig.png</value>
-        <value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+!IsEmpty(ListItem.Icon)">common/TransparentDot.png</value>
+        <!--<value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+IsEmpty(ListItem.Icon)">$VAR[Theme.Color]/defaultChannelTvBig.png</value>-->
+        <!--<value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+!IsEmpty(ListItem.Icon)">common/TransparentDot.png</value>-->
         <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Icon]</value>
         <value condition="StringCompare(ListItem.Icon,)+!IsEmpty(Window.Property(IsRadio))">$VAR[Theme.Color]/defaultRadioBig.png</value>
         <value condition="StringCompare(ListItem.Icon,)+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]">$VAR[Theme.Color]/defaultChannelTvBig_Wide.png</value>
