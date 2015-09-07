@@ -88,7 +88,7 @@
                 <aligny>top</aligny>
                 <font>InfoTitleFont</font>
                 <include>TextColor_MainColor</include>
-                <scroll>false</scroll>
+                <scroll>true</scroll>
                 <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="image">

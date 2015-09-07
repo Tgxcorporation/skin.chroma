@@ -45,6 +45,7 @@
                     <align>center</align>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
+                    <scroll>true</scroll>
                 </control>
                 <!-- SIDE MENU -->
                 <control type="group">

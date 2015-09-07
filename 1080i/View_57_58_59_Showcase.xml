@@ -20,7 +20,7 @@
             <font>InfoTitleFont</font>
             <align>center</align>
             <include>TextColor_AlternateColor</include>
-            <scroll>false</scroll>
+            <scroll>true</scroll>
             <label>$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.Label]</label>
         </control>
         <control type="group" id="45741">
@@ -168,7 +168,7 @@
                             <font>InfoTitleFont</font>
                             <align>center</align>
                             <include>TextColor_AlternateColor</include>
-                            <scroll>false</scroll>
+                            <scroll>true</scroll>
                             <label>$INFO[Container(500).ListItem.Label]</label>
                         </control>
                         <control type="group" id="45741">
@@ -900,7 +900,7 @@
                     <aligny>top</aligny>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
-                    <scroll>false</scroll>
+                    <scroll>true</scroll>
                     <label>$INFO[Container(57).ListItem.Label]</label>
                 </control>
                 <control type="image">

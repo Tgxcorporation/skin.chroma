@@ -151,6 +151,7 @@
                     <height>50</height>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
+                    <scroll>true</scroll>
                     <label>$INFO[VideoPlayer.ChannelGroup]</label>
                 </control>
                 <control type="label">
@@ -372,6 +373,7 @@
                     <height>50</height>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
+                    <scroll>true</scroll>
                     <label>$INFO[Container(11).ListItem.ChannelNumberLabel,, - ]$INFO[VideoPlayer.ChannelName]$INFO[Container(11).ListItem.StartDate, - ]</label>
                 </control>
                 <control type="label">

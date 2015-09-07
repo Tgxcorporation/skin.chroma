@@ -79,6 +79,7 @@
                     <height>50</height>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
+                    <scroll>true</scroll>
                     <label>$LOCALIZE[298]</label>
                 </control>
                 <control type="label">

@@ -65,6 +65,7 @@
                     <height>50</height>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
+                    <scroll>true</scroll>
                     <label>-</label>
                 </control>
                 <control type="grouplist" id="5">

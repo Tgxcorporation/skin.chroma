@@ -176,6 +176,7 @@
                     <height>50</height>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
+                    <scroll>true</scroll>
                     <label>$INFO[ListItem.Album]</label>
                 </control>
                 <control type="label">
@@ -186,6 +187,7 @@
                     <height>50</height>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
+                    <scroll>true</scroll>
                     <label>$INFO[ListItem.Artist]</label>
                 </control>
                 <!--BIOGRAPHY REVIEW-->

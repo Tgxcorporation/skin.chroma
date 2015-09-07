@@ -47,6 +47,7 @@
                         <width>860</width>
                         <height>50</height>
                         <font>InfoTitleFont</font>
+                        <scroll>true</scroll>
                         <include>TextColor_MainColor</include>
                     </control>
                     <control type="label" id="12">
@@ -135,6 +136,7 @@
                     <width>860</width>
                     <height>50</height>
                     <font>InfoTitleFont</font>
+                    <scroll>true</scroll>
                     <include>TextColor_MainColor</include>
                 </control>
                 <control type="label" id="13">

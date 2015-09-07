@@ -100,6 +100,7 @@
                     <height>50</height>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
+                    <scroll>true</scroll>
                     <label>$INFO[Player.Filename]</label>
                 </control>
                 <control type="label" id="130">

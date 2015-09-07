@@ -80,6 +80,7 @@
                     <height>50</height>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
+                    <scroll>true</scroll>
                     <label>$INFO[ListItem.Title]</label>
                 </control>
                 <control type="label">

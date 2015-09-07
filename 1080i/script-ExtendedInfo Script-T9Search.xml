@@ -25,6 +25,7 @@
                 <width>600</width>
                 <font>InfoTitleFont</font>
                 <include>TextColor_MainColor</include>
+                <scroll>true</scroll>
                 <label>$LOCALIZE[16017]</label>
             </control>
             <control type="image">

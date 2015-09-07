@@ -27,6 +27,7 @@
                 <height>50</height>
                 <font>InfoTitleFont</font>
                 <include>TextColor_MainColor</include>
+                <scroll>true</scroll>
                 <label>$LOCALIZE[20043]</label>
             </control>
             <control type="grouplist" id="5">

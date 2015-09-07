@@ -88,6 +88,7 @@
                     <height>50</height>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
+                    <scroll>true</scroll>
                 </control>
                 <control type="label" id="3">
                     <posx>TextMargin</posx>

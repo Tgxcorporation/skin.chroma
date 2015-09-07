@@ -238,6 +238,7 @@
                     <height>50</height>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
+                    <scroll>true</scroll>
                     <label>$INFO[Window.Property(movie.Title)]</label>
                 </control>
                 <!--DEFAULT DATA-->

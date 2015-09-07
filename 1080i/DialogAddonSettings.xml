@@ -81,6 +81,7 @@
                     <width>1240</width>
                     <height>50</height>
                     <font>InfoTitleFont</font>
+                    <scroll>true</scroll>
                     <include>TextColor_MainColor</include>
                 </control>
                 <control type="grouplist" id="2">

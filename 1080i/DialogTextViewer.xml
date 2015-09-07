@@ -26,6 +26,7 @@
                 <width>1400</width>
                 <height>50</height>
                 <font>InfoTitleFont</font>
+                <scroll>true</scroll>
                 <include>TextColor_MainColor</include>
             </control>
             <control type="textbox" id="5">

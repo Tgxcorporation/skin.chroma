@@ -26,6 +26,7 @@
                 <height>50</height>
                 <font>InfoTitleFont</font>
                 <include>TextColor_MainColor</include>
+                <scroll>true</scroll>
                 <label>$INFO[Control.GetLabel(1),,   ]$INFO[System.Progressbar,,%]</label>
             </control>
             <control type="textbox" id="9">

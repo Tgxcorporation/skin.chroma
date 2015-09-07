@@ -27,6 +27,7 @@
                 <font>InfoTitleFont</font>
                 <include>TextColor_MainColor</include>
                 <label>-</label>
+                <scroll>true</scroll>
             </control>
             <control type="label">
                 <posx>260</posx>

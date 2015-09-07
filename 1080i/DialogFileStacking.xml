@@ -29,6 +29,7 @@
                     <height>50</height>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
+                    <scroll>true</scroll>
                     <info>ListItem.Label</info>
                 </control>
                 <control type="list" id="450">

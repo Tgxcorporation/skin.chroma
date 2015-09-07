@@ -34,6 +34,7 @@
                     <align>center</align>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
+                    <scroll>true</scroll>
                     <label>$LOCALIZE[1033]</label>
                 </control>
                 <control type="label" id="12">
@@ -53,6 +54,7 @@
                     <align>center</align>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
+                    <scroll>true</scroll>
                     <label>$LOCALIZE[559]</label>
                 </control>
                 <control type="label" id="101">

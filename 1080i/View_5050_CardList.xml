@@ -67,7 +67,7 @@
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
                         <include>TextColor_MainColor</include>
-                        <scroll>false</scroll>
+                        <scroll>true</scroll>
                         <label>$VAR[DetailsTitle]</label>
                     </control>
                     <control type="group">
@@ -320,7 +320,7 @@
                         <aligny>top</aligny>
                         <font>InfoTitleFont</font>
                         <include>TextColor_MainColor</include>
-                        <scroll>false</scroll>
+                        <scroll>true</scroll>
                         <label>$VAR[DetailsTitle]</label>
                     </control>
                     <control type="group">

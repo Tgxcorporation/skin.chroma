@@ -30,6 +30,7 @@
                     <height>50</height>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
+                    <scroll>true</scroll>
                     <label>$ADDON[pvr.dvblink 32014]</label>
                 </control>
                 <control type="label">
@@ -40,6 +41,7 @@
                     <height>50</height>
                     <font>InfoTitleFont</font>
                     <include>TextColor_MainColor</include>
+                    <scroll>true</scroll>
                     <label>$ADDON[pvr.wmc 30120]</label>
                 </control>
                 <control type="label" id="20">
