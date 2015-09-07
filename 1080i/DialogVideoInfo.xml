@@ -95,7 +95,6 @@
                         <width>480</width>
                         <label>-</label>
                     </control>
-
                     <control type="togglebutton" id="9010">
                         <visible>System.HasAddon(script.extendedinfo)</visible>
                         <visible>Container.Content(movies)|Container.Content(tvshows)|[Container.Content(episodes)+Skin.HasSetting(plexbmc)+!SubString(ListItem.Title,Season,Left)+IsEmpty(ListItem.VideoCodec)]</visible>

@@ -15,7 +15,7 @@
             </control>
             <include name="WindowClosingButton">
                 <param name="id" value="90010"/>
-                <param name="x" value="1602"/>
+                <param name="x" value="1610"/>
                 <param name="y" value="140"/>
                 <param name="onleft" value="6060"/>
             </include>
@@ -128,7 +128,6 @@
                         <height>100</height>
                         <itemgap>0</itemgap>
                         <aligny>bottom</aligny>
-                        <align>center</align>
                         <orientation>vertical</orientation>
                         <onup>23</onup>
                         <control type="button" id="1">
