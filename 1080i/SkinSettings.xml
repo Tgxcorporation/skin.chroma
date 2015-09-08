@@ -987,7 +987,7 @@
                             <height>50</height>
                             <align>left</align>
                             <haspath>yes</haspath>
-                            <font>OSDFont</font>
+                            <font>InfoDetailsFont</font>
                             <include>TextColor_MainColor</include>
                             <label fallback="571">$VAR[SkinSettings.RandomBackground.Label]</label>
                         </control>

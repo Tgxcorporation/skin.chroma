@@ -428,7 +428,7 @@ msgid "Ubuntu (Medium)"
 msgstr ""
 
 msgctxt "#31392"
-msgid "Asap (Fixed Width)"
+msgid "Ubuntu (Light)"
 msgstr ""
 
 msgctxt "#31393"

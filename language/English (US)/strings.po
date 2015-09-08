@@ -401,8 +401,8 @@ msgid "Ubuntu (Medium)"
 msgstr "Ubuntu (Medium)"
 
 msgctxt "#31392"
-msgid "Asap (Fixed Width)"
-msgstr "Asap (Fixed Width)"
+msgid "Ubuntu (Light)"
+msgstr "Ubuntu (Light)"
 
 msgctxt "#31393"
 msgid "DejaVuSans (Regular)"

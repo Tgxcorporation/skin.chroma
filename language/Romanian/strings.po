@@ -212,10 +212,6 @@ msgctxt "#31391"
 msgid "Ubuntu (Medium)"
 msgstr "Ubuntu (mediu)"
 
-msgctxt "#31392"
-msgid "Asap (Fixed Width)"
-msgstr "Asap (lățime fixă)"
-
 msgctxt "#31395"
 msgid "Arial (Regular)"
 msgstr "Arial (normal)"
