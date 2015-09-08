@@ -321,7 +321,6 @@
             <align>right</align>
             <aligny>top</aligny>
             <font>WindowTitleFont</font>
-            <shadowcolor>ShadowColor</shadowcolor>
             <include>TextColor_MainColor</include>
             <label>$INFO[System.Time]</label>
         </control>
@@ -333,7 +332,6 @@
             <align>right</align>
             <aligny>top</aligny>
             <font>WindowTitleSubFont</font>
-            <shadowcolor>a0000000</shadowcolor>
             <include>TextColor_MidColor</include>
             <label>$INFO[System.Date]</label>
         </control>
@@ -769,7 +767,6 @@
         <width>1200</width>
         <aligny>top</aligny>
         <font>WindowTitleFont</font>
-        <shadowcolor>ShadowColor</shadowcolor>
         <include>TextColor_MainColor</include>
     </include>
     <include name="WindowTitleSub">
@@ -779,7 +776,6 @@
         <width>1200</width>
         <aligny>top</aligny>
         <font>WindowTitleSubFont</font>
-        <shadowcolor>a0000000</shadowcolor>
         <include>TextColor_MidColor</include>
     </include>
     <include name="LeftMenu">
@@ -831,6 +827,8 @@
             <posy>1130</posy>
             <height>700</height>
             <include>VerticalScroller</include>
+            <onright condition="Window.IsActive(MyWeather.xml)+!Skin.String(WeatherType,Map)">50</onright>
+            <onright condition="Window.IsActive(MyWeather.xml)+Skin.String(WeatherType,Map)">155</onright>
             <onright condition="Window.IsActive(script-ExtendedInfo Script-VideoList.xml)">500</onright>
             <onright>50</onright>
             <onleft condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</onleft>
@@ -871,8 +869,8 @@
         <width>700</width>
         <font>LeftMenuButtonFont</font>
         <align>left</align>
-        <radioposx>650</radioposx>
-        <textwidth>600</textwidth>
+        <radioposx>610</radioposx>
+        <textwidth>560</textwidth>
         <textoffsetx>TextMargin</textoffsetx>
         <textcolor>NoFocusedColor</textcolor>
         <include>TextureFocus</include>

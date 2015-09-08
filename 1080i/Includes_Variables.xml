@@ -256,7 +256,12 @@
         <value condition="[Container.Content(Seasons) | Container.Content(TVShows)]">$INFO[ListItem.Year,,     ]</value>
         <value condition="!IsEmpty(ListItem.Label2)">$INFO[ListItem.Label2]</value>
     </variable>
+    <variable name="Fanart_Title">
+        <value condition="Window.IsVisible(MyWeather.xml)">$INFO[Container(50).ListItem.Label]</value>
+        <value>$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.Label]</value>
+    </variable>
     <variable name="Fanart_Details">
+        <value condition="Window.IsVisible(MyWeather.xml)">$INFO[Container(50).ListItem.Property(Property3)]</value>
         <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Genre]</value>
         <value condition="Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.Title]$INFO[ListItem.StartTime,       , - ]$INFO[ListItem.EndTime]</value>
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Size]$INFO[ListItem.Date,       ]</value>
@@ -291,10 +296,10 @@
         <value condition="!IsEmpty(Skin.String(weatherArtPath))">$INFO[Skin.String(weatherArtPath)]</value>
         <value>special://skin/backgrounds/weather/</value>
     </variable>
-    <!--<variable name="WeatherIconPath">-->
-        <!--<value condition="!IsEmpty(Skin.String(weatherIconPath))">$INFO[Skin.String(weatherIconPath)]</value>-->
-        <!--<value>weather/</value>-->
-    <!--</variable>-->
+    <variable name="WeatherIconPath">
+        <value condition="!IsEmpty(Skin.String(weatherIconPath))">$INFO[Skin.String(weatherIconPath)]</value>
+        <value>weather/</value>
+    </variable>
     <variable name="Default.Art">
         <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
         <!--<value>special://skin/backgrounds/default/default.jpg</value>-->
