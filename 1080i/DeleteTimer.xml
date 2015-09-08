@@ -55,7 +55,7 @@
                 <include condition="System.HasAddon(pvr.dvblink)">DeleteTimer_dvblink</include>
                 <include condition="System.HasAddon(pvr.wmc)">DeleteTimer_wmc</include>
                 <control type="grouplist" id="9001">
-                    <posx>TextMargin</posx>
+                    <posx>0</posx>
                     <posy>250</posy>
                     <width>900</width>
                     <height>100</height>
@@ -68,13 +68,11 @@
                     <onleft>9001</onleft>
                     <onright>9001</onright>
                     <control type="button" id="1">
-                        <include>ButtonFocusAnimation</include>
                         <label>$LOCALIZE[186]</label>
                         <width>900</width>
                         <include>LeftMenuButton</include>
                     </control>
                     <control type="button" id="2">
-                        <include>ButtonFocusAnimation</include>
                         <label>$LOCALIZE[222]</label>
                         <width>900</width>
                         <include>LeftMenuButton</include>

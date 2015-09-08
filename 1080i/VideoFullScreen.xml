@@ -19,36 +19,36 @@
                 </control>
                 <control type="label" id="10">
                     <posx>TextMargin</posx>
-                    <posy>80</posy>
+                    <posy>70</posy>
                     <width>1820</width>
                     <height>100</height>
                     <align>left</align>
                     <aligny>top</aligny>
-                    <font>InfoPlotFont</font>
+                    <font>SmallButtonFont</font>
                     <label>-</label>
                     <include>TextColor_MainColor</include>
                     <wrapmultiline>true</wrapmultiline>
                 </control>
                 <control type="label" id="11">
                     <posx>TextMargin</posx>
-                    <posy>170</posy>
+                    <posy>160</posy>
                     <width>1820</width>
                     <height>100</height>
                     <align>left</align>
                     <aligny>top</aligny>
-                    <font>InfoPlotFont</font>
+                    <font>SmallButtonFont</font>
                     <label>-</label>
                     <include>TextColor_AlternateColor</include>
                     <wrapmultiline>true</wrapmultiline>
                 </control>
                 <control type="label" id="12">
                     <posx>TextMargin</posx>
-                    <posy>260</posy>
+                    <posy>250</posy>
                     <width>1820</width>
                     <height>100</height>
                     <align>left</align>
                     <aligny>top</aligny>
-                    <font>InfoPlotFont</font>
+                    <font>SmallButtonFont</font>
                     <label>-</label>
                     <include>TextColor_MainColor</include>
                     <wrapmultiline>true</wrapmultiline>
@@ -73,7 +73,7 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <include>TextColor_MainColor</include>
-                    <font>InfoPlotFont</font>
+                    <font>SmallButtonFont</font>
                 </control>
                 <control type="label">
                     <posx>TextMargin</posx>
@@ -84,7 +84,7 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <include>TextColor_AlternateColor</include>
-                    <font>InfoPlotFont</font>
+                    <font>SmallButtonFont</font>
                 </control>
                 <control type="label">
                     <posx>TextMargin</posx>
@@ -95,7 +95,7 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <include>TextColor_MainColor</include>
-                    <font>InfoPlotFont</font>
+                    <font>SmallButtonFont</font>
                 </control>
                 <control type="label">
                     <posx>TextMargin</posx>
@@ -106,7 +106,7 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <include>TextColor_AlternateColor</include>
-                    <font>InfoPlotFont</font>
+                    <font>SmallButtonFont</font>
                 </control>
                 <control type="label">
                     <posx>TextMargin</posx>
@@ -117,7 +117,7 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <include>TextColor_MainColor</include>
-                    <font>InfoPlotFont</font>
+                    <font>SmallButtonFont</font>
                 </control>
                 <control type="label">
                     <posx>TextMarginR</posx>
@@ -128,7 +128,7 @@
                     <align>right</align>
                     <aligny>center</aligny>
                     <include>TextColor_MainColor</include>
-                    <font>InfoPlotFont</font>
+                    <font>SmallButtonFont</font>
                 </control>
                 <control type="label">
                     <posx>TextMargin</posx>
@@ -139,7 +139,7 @@
                     <align>left</align>
                     <aligny>center</aligny>
                     <include>TextColor_AlternateColor</include>
-                    <font>InfoPlotFont</font>
+                    <font>SmallButtonFont</font>
                 </control>
                 <control type="label">
                     <posx>TextMarginR</posx>
@@ -150,7 +150,7 @@
                     <align>right</align>
                     <aligny>center</aligny>
                     <include>TextColor_AlternateColor</include>
-                    <font>InfoPlotFont</font>
+                    <font>SmallButtonFont</font>
                 </control>
             </control>
         </control>

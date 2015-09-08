@@ -161,7 +161,7 @@
                 </control>
                 <control type="scrollbar" id="61">
                     <posx>1660</posx>
-                    <posy>380</posy>
+                    <posy>340</posy>
                     <height>600</height>
                     <include>VerticalScroller</include>
                     <onleft>3</onleft>
