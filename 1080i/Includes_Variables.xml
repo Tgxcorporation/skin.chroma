@@ -487,9 +487,10 @@
         <value condition="Window.IsActive(MyMusicSongs.xml)">$INFO[ListItem.Path]cdart.png</value>
     </variable>
     <variable name="Theme.Color">
-        <value condition="skin.hassetting(Theme.Color.Auto)+System.Time(8:00,20:00)">green</value>
-        <value condition="skin.hassetting(Theme.Color.Auto)+!System.Time(8:00,20:00)">black</value>
-        <value condition="skin.hassetting(Theme.Color.Black)">black</value>
+        <value condition="skin.hassetting(Theme.Color.amber)">amber</value>
+        <value condition="skin.hassetting(Theme.Color.fuchsia)">fuchsia</value>
+        <value condition="skin.hassetting(Theme.Color.indigo)">indigo</value>
+        <value condition="skin.hassetting(Theme.Color.titanium)">titanium</value>
         <value condition="skin.hassetting(Theme.Color.green)">green</value>
         <value>green</value>
     </variable>

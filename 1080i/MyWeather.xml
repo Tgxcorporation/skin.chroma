@@ -384,7 +384,6 @@
                         <height>237</height>
                         <aspectratio>keep</aspectratio>
                         <texture>$INFO[Container(155).ListItem.Property(Legend)]</texture>
-                        <include>ThumbBorder</include>
                     </control>
                     <control type="scrollbar" id="60">
                         <posx>0</posx>
