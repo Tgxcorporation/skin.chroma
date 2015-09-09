@@ -415,10 +415,114 @@
                         <param name="visibilityLabelRight" value="false"/>
                         <param name="animationDown" value="false"/>
                     </include>
-                    
-                    
-                    
-                    <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)">Plexbmc_Shelf</include>
+
+
+                    <!-- -->
+                    <!--PLEX-->
+                    <!-- -->
+
+                    <!--PICTURES-->
+                    <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" name="Widget">
+                        <param name="gfxType" value="Square"/>
+                        <param name="content" value="PlexRecentPhotoContent"/>
+                        <param name="id" value="900"/>
+                        <param name="visibility" value="!IsEmpty(Window.Property(Plexbmc.LatestPhoto.1.Path))+StringCompare(Container(300).ListItem.Property(type),photo)"/>
+                        <param name="labelTitle" value="$INFO[Container(900).ListItem.Label]"/>
+                        <param name="labelLeft" value=""/>
+                        <param name="labelCenter" value=""/>
+                        <param name="labelRight" value=""/>
+                        <param name="visibilityLabelRight" value="false"/>
+                        <param name="animationDown" value="true"/>
+                    </include>
+                    <!--QUEUE-->
+                    <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" name="Widget">
+                        <param name="gfxType" value="Square"/>
+                        <param name="content" value="PlexQueueContent"/>
+                        <param name="id" value="901"/>
+                        <param name="visibility" value="!IsEmpty(Window.Property(Plexbmc.Queue.1.Path))+StringCompare(Container(300).ListItem.Label,$LOCALIZE[31010])"/>
+                        <param name="labelTitle" value="$INFO[Container(901).ListItem.Label]"/>
+                        <param name="labelLeft" value=""/>
+                        <param name="labelCenter" value=""/>
+                        <param name="labelRight" value=""/>
+                        <param name="visibilityLabelRight" value="false"/>
+                        <param name="animationDown" value="true"/>
+                    </include>
+                    <!--MOVIES-->
+                    <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" name="Widget">
+                        <param name="gfxType" value="Poster"/>
+                        <param name="content" value="PlexRecentMovieContent"/>
+                        <param name="id" value="311"/>
+                        <param name="visibility" value="!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))+StringCompare(Container(300).ListItem.Property(type),movie)"/>
+                        <param name="labelTitle" value="$INFO[Container(311).ListItem.Label]"/>
+                        <param name="labelLeft" value="$INFO[Container(311).ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
+                        <param name="labelCenter" value="$INFO[Container(311).ListItem.Property(Year)]$INFO[Container(311).ListItem.Property(Mpaa),       ]$INFO[Container(311).ListItem.Property(Genre),       ]"/>
+                        <param name="labelRight" value="$INFO[Container(311).ListItem.Property(Rating)]"/>
+                        <param name="visibilityLabelRight" value="true"/>
+                        <param name="animationDown" value="false"/>
+                    </include>
+                    <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" name="Widget">
+                        <param name="gfxType" value="Poster"/>
+                        <param name="content" value="PlexOnDeckMovieContent"/>
+                        <param name="id" value="312"/>
+                        <param name="visibility" value="!IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.1.Path))+StringCompare(Container(300).ListItem.Property(type),movie)"/>
+                        <param name="labelTitle" value="$INFO[Container(312).ListItem.Label]"/>
+                        <param name="labelLeft" value="$INFO[Container(312).ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
+                        <param name="labelCenter" value="$INFO[Container(312).ListItem.Property(Year)]$INFO[Container(312).ListItem.Property(Mpaa),       ]$INFO[Container(312).ListItem.Property(Genre),       ]"/>
+                        <param name="labelRight" value="$INFO[Container(312).ListItem.Property(Rating)]"/>
+                        <param name="visibilityLabelRight" value="true"/>
+                        <param name="animationDown" value="false"/>
+                    </include>
+                    <!--ALBUMS-->
+                    <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" name="Widget">
+                        <param name="gfxType" value="Square"/>
+                        <param name="content" value="PlexRecentAlbumContent"/>
+                        <param name="id" value="511"/>
+                        <param name="visibility" value="!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.1.Title))+StringCompare(Container(300).ListItem.Property(type),artist)"/>
+                        <param name="labelTitle" value="$INFO[Container(511).ListItem.Label]"/>
+                        <param name="labelLeft" value=""/>
+                        <param name="labelCenter" value="$INFO[Container(511).ListItem.Label2]"/>
+                        <param name="labelRight" value=""/>
+                        <param name="visibilityLabelRight" value="false"/>
+                        <param name="animationDown" value="false"/>
+                    </include>
+                    <!--CHANNELS-->
+                    <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" name="Widget">
+                        <param name="gfxType" value="Square"/>
+                        <param name="content" value="PlexRecentChannelContent"/>
+                        <param name="id" value="212"/>
+                        <param name="visibility" value="!IsEmpty(Window.Property(Plexbmc.LatestChannel.1.Path))+Container(300).HasFocus(50)"/>
+                        <param name="labelTitle" value="$INFO[Container(212).ListItem.Label]"/>
+                        <param name="labelLeft" value=""/>
+                        <param name="labelCenter" value=""/>
+                        <param name="labelRight" value=""/>
+                        <param name="visibilityLabelRight" value="false"/>
+                        <param name="animationDown" value="true"/>
+                    </include>
+                    <!--EPISODES-->
+                    <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" name="Widget">
+                        <param name="gfxType" value="Poster"/>
+                        <param name="content" value="PlexRecentEpisodeContent"/>
+                        <param name="id" value="411"/>
+                        <param name="visibility" value="!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))+StringCompare(Container(300).ListItem.Property(type),show)"/>
+                        <param name="labelTitle" value="$INFO[Container(411).ListItem.Property(TVshowTitle)]"/>
+                        <param name="labelLeft" value=""/>
+                        <param name="labelCenter" value="$INFO[Container(411).ListItem.Property(SeasonEpisode),,       ]$INFO[Container(411).ListItem.Label]"/>
+                        <param name="labelRight" value=""/>
+                        <param name="visibilityLabelRight" value="false"/>
+                        <param name="animationDown" value="false"/>
+                    </include>
+                    <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" name="Widget">
+                        <param name="gfxType" value="Poster"/>
+                        <param name="content" value="PlexOnDeckEpisodeContent"/>
+                        <param name="id" value="412"/>
+                        <param name="visibility" value="!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.1.Path))+StringCompare(Container(300).ListItem.Property(type),show)"/>
+                        <param name="labelTitle" value="$INFO[Container(412).ListItem.Property(TVshowTitle)]"/>
+                        <param name="labelLeft" value=""/>
+                        <param name="labelCenter" value="$INFO[Container(412).ListItem.Property(SeasonEpisode),,       ]$INFO[Container(412).ListItem.Label]"/>
+                        <param name="labelRight" value=""/>
+                        <param name="visibilityLabelRight" value="false"/>
+                        <param name="animationDown" value="false"/>
+                    </include>
                 </control>
                 <control type="group">
                     <include>OpenClose</include>
