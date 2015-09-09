@@ -6,8 +6,14 @@
     <include name="Condition_amber">
         <visible>Skin.hasSetting(Theme.Color.amber)</visible>
     </include>
+    <include name="Condition_fuchsia">
+        <visible>Skin.hasSetting(Theme.Color.fuchsia)</visible>
+    </include>
     <include name="Condition_indigo">
         <visible>Skin.hasSetting(Theme.Color.indigo)</visible>
+    </include>
+    <include name="Condition_titanium">
+        <visible>Skin.hasSetting(Theme.Color.titanium)</visible>
     </include>
     <!-- BUTTON -->
     <include name="TextureFocus_green">
