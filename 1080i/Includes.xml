@@ -263,7 +263,16 @@
                 <param name="Color" value="green"/>
             </include>
             <include name="TopBarList">
+                <param name="Color" value="amber"/>
+            </include>
+            <include name="TopBarList">
+                <param name="Color" value="fuchsia"/>
+            </include>
+            <include name="TopBarList">
                 <param name="Color" value="indigo"/>
+            </include>
+            <include name="TopBarList">
+                <param name="Color" value="titanium"/>
             </include>
             <control type="button" id="8997">
                 <description>Fake button for mouse control</description>
