@@ -396,7 +396,6 @@
                     </control>
                 </control>
             </control>
-
         </control>
         <control type="label">
             <include>WindowTitle</include>

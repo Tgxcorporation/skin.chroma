@@ -32,7 +32,16 @@
                 <param name="Color" value="green"/>
             </include>
             <include name="TopBarVideoOSDList">
-                <param name="Color" value="black"/>
+                <param name="Color" value="amber"/>
+            </include>
+            <include name="TopBarVideoOSDList">
+                <param name="Color" value="fuchsia"/>
+            </include>
+            <include name="TopBarVideoOSDList">
+                <param name="Color" value="indigo"/>
+            </include>
+            <include name="TopBarVideoOSDList">
+                <param name="Color" value="titanium"/>
             </include>
         </control>
     </controls>

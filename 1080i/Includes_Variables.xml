@@ -132,8 +132,8 @@
         <value condition="Window.IsActive(MyPVRGuide.xml)+control.isvisible(13)">$INFO[ListItem.StartTime,, - ]$INFO[ListItem.Label]</value>
         <value condition="Window.IsActive(MyPVRGuide.xml)+control.isvisible(12)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
         <value condition="Window.IsActive(MyPVRGuide.xml)+control.isvisible(11)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
-        <value condition="[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRRecordings.xml)]+!IsEmpty(ListItem.Title)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.Label]</value>
-        <value condition="[Window.IsActive(DialogPVRGuideOSD.xml)]+!IsEmpty(ListItem.Title)">$INFO[ListItem.StartTime,, - ]$INFO[ListItem.Label]</value>
+        <value condition="[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRRecordings.xml)]">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.Label]</value>
+        <value condition="[Window.IsActive(DialogPVRGuideOSD.xml)]">$INFO[ListItem.StartTime,, - ]$INFO[ListItem.Label]</value>
         <value condition="!IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
         <value>$LOCALIZE[416]</value>
     </variable>
@@ -141,8 +141,8 @@
         <value condition="Window.IsActive(MyPVRGuide.xml)+control.isvisible(13)">$INFO[ListItem.StartTime,, - ]$INFO[ListItem.Label]</value>
         <value condition="Window.IsActive(MyPVRGuide.xml)+control.isvisible(12)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
         <value condition="Window.IsActive(MyPVRGuide.xml)+control.isvisible(11)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
-        <value condition="[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRRecordings.xml)]+!IsEmpty(ListItem.Title)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.Label]</value>
-        <value condition="[Window.IsActive(DialogPVRGuideOSD.xml)]+!IsEmpty(ListItem.Title)">$INFO[ListItem.StartTime,, - ]$INFO[ListItem.Label]</value>
+        <value condition="[Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRRecordings.xml)]">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.Label]</value>
+        <value condition="[Window.IsActive(DialogPVRGuideOSD.xml)]">$INFO[ListItem.StartTime,, - ]$INFO[ListItem.Label]</value>
         <value condition="!IsEmpty(ListItem.Label)">$INFO[ListItem.Label]</value>
         <value>$LOCALIZE[416]</value>
     </variable>

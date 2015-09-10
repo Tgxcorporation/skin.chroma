@@ -26,15 +26,6 @@
                     </focusedlayout>
                 </control>
             </control>
-            <control type="scrollbar" id="60">
-                <posx>0</posx>
-                <posy>891</posy>
-                <width>1910</width>
-                <include>HorizontalScroller</include>
-                <onup>54</onup>
-                <onright>noop</onright>
-                <ondown>9000</ondown>
-            </control>
             <control type="button">
                 <posx>1720</posx>
                 <posy>836</posy>
@@ -54,6 +45,15 @@
                 <texturenofocus>-</texturenofocus>
                 <onclick>Control.Move(54,-1)</onclick>
                 <onfocus>Control.Move(54,-1)</onfocus>
+            </control>
+            <control type="scrollbar" id="60">
+                <posx>0</posx>
+                <posy>891</posy>
+                <width>1910</width>
+                <include>HorizontalScroller</include>
+                <onup>54</onup>
+                <onright>noop</onright>
+                <ondown>9000</ondown>
             </control>
         </control>
     </include>

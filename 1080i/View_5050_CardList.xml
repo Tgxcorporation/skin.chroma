@@ -540,15 +540,6 @@
                     <include>CardList_Layout</include>
                 </control>
             </control>
-            <control type="scrollbar" id="60">
-                <posx>0</posx>
-                <posy>330</posy>
-                <width>1910</width>
-                <include>HorizontalScroller</include>
-                <onup>505050</onup>
-                <onright>noop</onright>
-                <ondown>5050</ondown>
-            </control>
             <control type="button">
                 <posx>1720</posx>
                 <posy>380</posy>
@@ -568,6 +559,15 @@
                 <texturenofocus>-</texturenofocus>
                 <onclick>Control.Move(5050,-1)</onclick>
                 <!--<onfocus>Control.Move(5050,-1)</onfocus>-->
+            </control>
+            <control type="scrollbar" id="60">
+                <posx>0</posx>
+                <posy>330</posy>
+                <width>1910</width>
+                <include>HorizontalScroller</include>
+                <onup>505050</onup>
+                <onright>noop</onright>
+                <ondown>5050</ondown>
             </control>
         </control>
     </include>

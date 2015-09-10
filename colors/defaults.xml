@@ -9,27 +9,24 @@
     <color name="MainColor_green">ffb1f435</color>
     <color name="AlternateColor_green">ffffffff</color>
     <color name="SelectedColor_green">ffffffff</color>
-    <color name="DisabledColor_green">50b1f435</color>
-    <color name="MidColor_green">a0b1f435</color>
-    <color name="LowColor_green">60b1f435</color>
+    <color name="DisabledColor_green">60b1f435</color>
+    <color name="MidColor_green">ccb1f435</color>
     <color name="DialogColordiffuseColor_green">30b1f435</color>
     <color name="ColordiffuseColor_green">ffb1f435</color>
     <!-- AMBER -->
     <color name="MainColor_amber">FFf9a53b</color>
     <color name="AlternateColor_amber">ffffffff</color>
     <color name="SelectedColor_amber">ffffffff</color>
-    <color name="DisabledColor_amber">50f9a53b</color>
-    <color name="MidColor_amber">a0f9a53b</color>
-    <color name="LowColor_amber">60f9a53b</color>
+    <color name="DisabledColor_amber">60f9a53b</color>
+    <color name="MidColor_amber">ccf9a53b</color>
     <color name="DialogColordiffuseColor_amber">30f9a53b</color>
     <color name="ColordiffuseColor_amber">fff9a53b</color>
     <!-- INDIGO -->
     <color name="MainColor_indigo">FF35b7f4</color>
     <color name="AlternateColor_indigo">ffffffff</color>
     <color name="SelectedColor_indigo">ffffffff</color>
-    <color name="DisabledColor_indigo">5035b7f4</color>
-    <color name="MidColor_indigo">a035b7f4</color>
-    <color name="LowColor_indigo">6035b7f4</color>
+    <color name="DisabledColor_indigo">6035b7f4</color>
+    <color name="MidColor_indigo">cc35b7f4</color>
     <color name="DialogColordiffuseColor_indigo">3035b7f4</color>
     <color name="ColordiffuseColor_indigo">ff35b7f4</color>
     <!-- ADDON COMPATIBILITY -->

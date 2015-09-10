@@ -384,14 +384,6 @@
                     </control>
                 </focusedlayout>
             </control>
-            <control type="scrollbar" id="609">
-                <posx>0</posx>
-                <posy>891</posy>
-                <width>1920</width>
-                <include>HorizontalScroller</include>
-                <onup>59</onup>
-                <ondown>9000</ondown>
-            </control>
             <control type="button">
                 <posx>0</posx>
                 <posy>300</posy>
@@ -409,6 +401,14 @@
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
                 <onclick>Control.Move(59,1)</onclick>
+            </control>
+            <control type="scrollbar" id="609">
+                <posx>0</posx>
+                <posy>891</posy>
+                <width>1920</width>
+                <include>HorizontalScroller</include>
+                <onup>59</onup>
+                <ondown>9000</ondown>
             </control>
         </control>
         <control type="group">
@@ -519,14 +519,6 @@
                     </control>
                 </focusedlayout>
             </control>
-            <control type="scrollbar" id="608">
-                <posx>0</posx>
-                <posy>891</posy>
-                <width>1920</width>
-                <include>HorizontalScroller</include>
-                <onup>58</onup>
-                <ondown>9000</ondown>
-            </control>
             <control type="button">
                 <posx>0</posx>
                 <posy>280</posy>
@@ -544,6 +536,14 @@
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
                 <onclick>Control.Move(58,1)</onclick>
+            </control>
+            <control type="scrollbar" id="608">
+                <posx>0</posx>
+                <posy>891</posy>
+                <width>1920</width>
+                <include>HorizontalScroller</include>
+                <onup>58</onup>
+                <ondown>9000</ondown>
             </control>
         </control>
         <control type="group">
@@ -628,6 +628,15 @@
                     </control>
                 </focusedlayout>
             </control>
+            <control type="button">
+                <posx>710r</posx>
+                <posy>560</posy>
+                <width>710</width>
+                <height>520</height>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <onclick>Control.Move(57,1)</onclick>
+            </control>
             <control type="scrollbar" id="607">
                 <posx>0</posx>
                 <posy>891</posy>
@@ -644,15 +653,6 @@
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
                 <onclick>Control.Move(57,-1)</onclick>
-            </control>
-            <control type="button">
-                <posx>710r</posx>
-                <posy>560</posy>
-                <width>710</width>
-                <height>520</height>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
-                <onclick>Control.Move(57,1)</onclick>
             </control>
         </control>
     </include>
@@ -756,14 +756,6 @@
                     </control>
                 </focusedlayout>
             </control>
-            <control type="scrollbar" id="608">
-                <posx>0</posx>
-                <posy>798</posy>
-                <width>1920</width>
-                <include>HorizontalScroller</include>
-                <onup>58</onup>
-                <ondown>9000</ondown>
-            </control>
             <control type="button">
                 <posx>0</posx>
                 <posy>280</posy>
@@ -781,6 +773,14 @@
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
                 <onclick>Control.Move(58,1)</onclick>
+            </control>
+            <control type="scrollbar" id="608">
+                <posx>0</posx>
+                <posy>798</posy>
+                <width>1920</width>
+                <include>HorizontalScroller</include>
+                <onup>58</onup>
+                <ondown>9000</ondown>
             </control>
         </control>
     </include>

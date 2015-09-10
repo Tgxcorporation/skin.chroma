@@ -1,56 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
-
-    <include name="Poster_Header">
-        <posx>515</posx>
-        <align>left</align>
-        <posy>340</posy>
-        <height>45</height>
-        <width>1920</width>
-        <include>TextColor_AlternateColor</include>
-        <font>FacadeListSubFont</font>
-    </include>
-    <include name="Square_Header">
-        <posx>515</posx>
-        <align>left</align>
-        <posy>360</posy>
-        <height>45</height>
-        <width>1920</width>
-        <include>TextColor_AlternateColor</include>
-        <font>FacadeListSubFont</font>
-    </include>
-    <include name="Horizontal_Shelf_Poster_Commons">
-        <posx>0</posx>
-        <posy>148</posy>
-        <width>1920</width>
-        <height>723</height>
-        <onup>300</onup>
-        <onback>300</onback>
-        <focusposition>0</focusposition>
-        <movement>0</movement>
-    </include>
-    <include name="Horizontal_Shelf_Square_Commons">
-        <posx>0</posx>
-        <posy>140</posy>
-        <width>1920</width>
-        <height>723</height>
-        <onup>300</onup>
-        <onback>300</onback>
-        <focusposition>0</focusposition>
-        <movement>0</movement>
-    </include>
-    <include name="Horizontal_Label_Poster_Commons">
-        <posx>600</posx>
-        <posy>220</posy>
-        <width>1200</width>
-        <align>left</align>
-    </include>
-    <include name="Horizontal_Label_Square_Commons">
-        <posx>600</posx>
-        <posy>220</posy>
-        <width>1200</width>
-        <align>left</align>
-    </include>
     <include name="Horizontal_HomeSubMenu">
         <control type="group" id="9006">
             <control type="fixedlist" id="9001">

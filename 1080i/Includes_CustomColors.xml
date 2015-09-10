@@ -503,21 +503,6 @@
         <include condition="Skin.HasSetting(Theme.Color.indigo)">TextColor_MidColor_indigo</include>
         <include>TextColor_MidColor_green</include>
     </include>
-    <!-- LOWCOLOR -->
-    <include name="TextColor_LowColor_green">
-        <textcolor>LowColor_green</textcolor>
-    </include>
-    <include name="TextColor_LowColor_amber">
-        <textcolor>LowColor_amber</textcolor>
-    </include>
-    <include name="TextColor_LowColor_indigo">
-        <textcolor>LowColor_indigo</textcolor>
-    </include>
-    <include name="TextColor_LowColor">
-        <include condition="Skin.HasSetting(Theme.Color.amber)">TextColor_LowColor_amber</include>
-        <include condition="Skin.HasSetting(Theme.Color.indigo)">TextColor_LowColor_indigo</include>
-        <include>TextColor_LowColor_green</include>
-    </include>
     <!-- SELECTEDCOLOR -->
     <include name="SelectedColor_SelectedColor_green">
         <selectedcolor>SelectedColor_green</selectedcolor>
