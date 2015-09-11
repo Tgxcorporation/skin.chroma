@@ -359,17 +359,38 @@
             <control type="group">
                 <control type="image">
                     <posx>0</posx>
-                    <posy>142</posy>
+                    <posy>280</posy>
                     <width>1920</width>
-                    <height>892</height>
-                    <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
+                    <height>800</height>
+                    <texture border="51">common/background_strip_horizontal.png</texture>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>330</posy>
+                    <width>50</width>
+                    <height>700</height>
+                    <texture border="1">common/background_strip_horizontal_left.png</texture>
+                </control>
+                <control type="image">
+                    <posx>1440</posx>
+                    <posy>330</posy>
+                    <width>480</width>
+                    <height>700</height>
+                    <texture border="1">common/background_strip_horizontal_right.png</texture>
+                </control>
+                <control type="image">
+                    <posx>960</posx>
+                    <posy>330</posy>
+                    <width>480</width>
+                    <height>700</height>
+                    <texture border="1">common/background_strip_horizontal_right.png</texture>
                 </control>
                 <control type="list" id="51">
                     <viewtype label="31091">List</viewtype>
-                    <posx>0</posx>
-                    <posy>183</posy>
-                    <width>1920</width>
-                    <height>810</height>
+                    <posx>TextMargin</posx>
+                    <posy>380</posy>
+                    <width>910</width>
+                    <height>600</height>
                     <pagecontrol>60</pagecontrol>
                     <onleft>9000</onleft>
                     <onright>60</onright>
@@ -380,9 +401,9 @@
                 </control>
             </control>
             <control type="scrollbar" id="60">
-                <posx>1886</posx>
-                <posy>183</posy>
-                <height>810</height>
+                <posx>910</posx>
+                <posy>380</posy>
+                <height>600</height>
                 <include>VerticalScroller</include>
                 <onleft>51</onleft>
                 <onright>60</onright>

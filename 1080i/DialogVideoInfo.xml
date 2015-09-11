@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
     <zorder>0</zorder>
-    <onload condition="System.HasAddon(script.videoextras)">XBMC.RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
+    <onload condition="System.HasAddon(script.videoextras)">RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
     <defaultcontrol always="true">2</defaultcontrol>
     <controls>
         <include>DimBG</include>
@@ -128,7 +128,7 @@
                         <description>Videos Extras</description>
                         <include>DialogMenuButton</include>
                         <label>$LOCALIZE[31509]</label>
-                        <onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
+                        <onclick>RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
                         <onright>9009</onright>
                     </control>
                     <control type="togglebutton" id="100">
