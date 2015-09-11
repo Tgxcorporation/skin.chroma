@@ -119,10 +119,12 @@
                 <control type="label" id="7">
                     <description>separator label headline</description>
                     <textoffsetx>TextMargin</textoffsetx>
+                    <textoffsety>65</textoffsety>
+                    <aligny>top</aligny>
                     <width>1240</width>
-                    <height>50</height>
+                    <height>100</height>
                     <font>LeftMenuTitleFont</font>
-                    <textcolor>NoFocusedColor</textcolor>
+                    <include>TextColor_MidColor</include>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="sliderex" id="8">

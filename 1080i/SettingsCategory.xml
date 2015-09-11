@@ -141,10 +141,12 @@
                 <control type="label" id="14">
                     <description>Default Label</description>
                     <label>-</label>
+                    <textoffsety>65</textoffsety>
+                    <aligny>top</aligny>
                     <width>1240</width>
-                    <height>50</height>
+                    <height>100</height>
                     <font>LeftMenuTitleFont</font>
-                    <textcolor>NoFocusedColor</textcolor>
+                    <include>TextColor_MidColor</include>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="image">

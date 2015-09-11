@@ -834,6 +834,7 @@
             <posy>1130</posy>
             <height>700</height>
             <include>VerticalScroller</include>
+            <onright condition="Window.IsActive(script-NextAired-TVGuide.xml)|Window.IsActive(script-NextAired-TVGuide2.xml)">2000</onright>
             <onright condition="Window.IsActive(MyWeather.xml)+!Skin.String(WeatherType,Map)">50</onright>
             <onright condition="Window.IsActive(MyWeather.xml)+Skin.String(WeatherType,Map)">155</onright>
             <onright condition="Window.IsActive(script-ExtendedInfo Script-VideoList.xml)">500</onright>
@@ -1091,45 +1092,6 @@
             <height>892</height>
             <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
         </control>
-    </include>
-    <include name="TVNextAiredListCommonLayout">
-        <posx>0</posx>
-        <width>1455</width>
-        <height>66</height>
-        <scrolltime>200</scrolltime>
-        <orientation>horizontal</orientation>
-        <onleft>9000</onleft>
-        <itemlayout height="66" width="970">
-            <control type="label">
-                <posx>25</posx>
-                <height>66</height>
-                <width>920</width>
-                <font>TvGuideChannelFont</font>
-                <include>TextColor_AlternateColor</include>
-                <label>$INFO[ListItem.Label]$INFO[ListItem.Property(ShortTime),  -  ]$INFO[ListItem.Property(Network),  -  ]</label>
-            </control>
-        </itemlayout>
-        <focusedlayout height="66" width="970">
-            <control type="group">
-                <include>ButtonFocusAnimation</include>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>970</width>
-                    <height>66</height>
-                    <bordersize>0</bordersize>
-                    <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
-                </control>
-                <control type="label">
-                    <posx>25</posx>
-                    <height>66</height>
-                    <width>920</width>
-                    <font>TvGuideChannelFont</font>
-                    <include>TextColor_MainColor</include>
-                    <label>$INFO[ListItem.Label]$INFO[ListItem.Property(ShortTime),  -  ]$INFO[ListItem.Property(Network),  -  ]</label>
-                </control>
-            </control>
-        </focusedlayout>
     </include>
     <include name="OSDInfoPanel">
         <control type="group">
@@ -1921,6 +1883,219 @@
                 <texturefocus>$PARAM[Color]/topbar/topbar_presets_focus.png</texturefocus>
                 <texturenofocus>$PARAM[Color]/topbar/topbar_presets_nofocus.png</texturenofocus>
                 <onclick>ActivateWindow(122)</onclick>
+            </control>
+        </control>
+    </include>
+    <include name="TVNextAiredListCommonLayout">
+        <posx>0</posx>
+        <width>580</width>
+        <height>$PARAM[height]</height>
+        <scrolltime>200</scrolltime>
+        <orientation>horizontal</orientation>
+        <onleft>9000</onleft>
+        <itemlayout height="$PARAM[height]" width="380">
+            <control type="label">
+                <posx>25</posx>
+                <height>$PARAM[height]</height>
+                <width>330</width>
+                <font>TvGuideChannelFont</font>
+                <textcolor>NoFocusedColor</textcolor>
+                <label>$INFO[ListItem.Label]$INFO[ListItem.Property(ShortTime),  -  ]</label>
+            </control>
+        </itemlayout>
+        <focusedlayout height="$PARAM[height]" width="380">
+            <control type="group">
+                <include>ButtonFocusAnimation</include>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>380</width>
+                    <height>$PARAM[height]</height>
+                    <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                </control>
+                <control type="label">
+                    <posx>25</posx>
+                    <height>$PARAM[height]</height>
+                    <width>330</width>
+                    <font>TvGuideChannelFont</font>
+                    <scroll>true</scroll>
+                    <include>TextColor_MainColor</include>
+                    <label>$INFO[ListItem.Label]$INFO[ListItem.Property(ShortTime),  -  ]</label>
+                </control>
+            </control>
+        </focusedlayout>
+    </include>
+    <include name="TVNextAiredFanart">
+        <control type="image">
+            <visible>Control.HasFocus($PARAM[id])</visible>
+            <include>Overlay_Fade</include>
+            <include>KenBurns</include>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+            <aspectratio aligny="top">scale</aspectratio>
+            <texture background="true">$INFO[Container($PARAM[id]).ListItem.Property(Fanart)]</texture>
+        </control>
+    </include>
+    <include name="TVNextAiredDates">
+        <control type="group">
+            <height>$PARAM[height]</height>
+            <control type="label">
+                <posx>25</posx>
+                <posy>0</posy>
+                <width>330</width>
+                <height>$PARAM[height]</height>
+                <font>TvGuideChannelFont</font>
+                <include>TextColor_MidColor</include>
+                <label>$INFO[Window(Home).Property(NextAired.$PARAM[id].Wday)] $INFO[Window(Home).Property(NextAired.$PARAM[id].Date)][COLOR=NoFocusedColor]$INFO[Container($PARAM[id]).NumItems,   (,)][/COLOR]</label>
+            </control>
+        </control>
+    </include>
+    <include name="TVNextAiredInfo">
+        <control type="group">
+            <visible>control.hasfocus($PARAM[id])</visible>
+            <include>Overlay_Fade</include>
+            <control type="image">
+                <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                <visible>IsEmpty(Container($PARAM[id]).ListItem.Property(Art(poster)))</visible>
+                <posx>1490</posx>
+                <posy>380</posy>
+                <width>380</width>
+                <height>570</height>
+                <aspectratio aligny="top">keep</aspectratio>
+                <texture>$VAR[Theme.Color]/defaultVideoBig.png</texture>
+            </control>
+            <control type="image">
+                <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                <posx>1490</posx>
+                <posy>380</posy>
+                <width>380</width>
+                <height>570</height>
+                <aspectratio aligny="top">keep</aspectratio>
+                <texture background="true">$INFO[Container($PARAM[id]).ListItem.Property(Art(poster))]</texture>
+            </control>
+            <control type="image">
+                <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                <visible>IsEmpty(Container($PARAM[id]).ListItem.Property(Art(banner)))</visible>
+                <posx>1490</posx>
+                <posy>380</posy>
+                <width>380</width>
+                <height>570</height>
+                <aspectratio aligny="top">keep</aspectratio>
+                <texture>$VAR[Theme.Color]/defaultVideoBig.png</texture>
+            </control>
+            <control type="image">
+                <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                <posx>1490</posx>
+                <posy>380</posy>
+                <width>380</width>
+                <height>570</height>
+                <aspectratio aligny="top">keep</aspectratio>
+                <texture background="true">$INFO[Container($PARAM[id]).ListItem.Property(Art(banner))]</texture>
+            </control>
+            <control type="image">
+                <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                <visible>IsEmpty(Container($PARAM[id]).ListItem.Property(Art(clearlogo)))</visible>
+                <posx>1490</posx>
+                <posy>380</posy>
+                <width>380</width>
+                <height>570</height>
+                <aspectratio aligny="top">keep</aspectratio>
+                <texture>$VAR[Theme.Color]/defaultVideoBig.png</texture>
+            </control>
+            <control type="image">
+                <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                <posx>1490</posx>
+                <posy>380</posy>
+                <width>380</width>
+                <height>570</height>
+                <aspectratio aligny="top">keep</aspectratio>
+                <texture background="true">$INFO[Container($PARAM[id]).ListItem.Property(Art(clearlogo))]</texture>
+            </control>
+            <control type="group">
+                <posx>1010</posx>
+                <posy>380</posy>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>380</width>
+                    <height>50</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>true</scroll>
+                    <label>$INFO[Container($PARAM[id]).ListItem.Label]</label>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>65</posy>
+                    <width>380</width>
+                    <height>50</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_AlternateColor</include>
+                    <scroll>false</scroll>
+                    <label>$INFO[Container($PARAM[id]).ListItem.Property(NextNumber)]</label>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>130</posy>
+                    <width>380</width>
+                    <height>50</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$INFO[Container($PARAM[id]).ListItem.Property(NextTitle)]</label>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>195</posy>
+                    <width>380</width>
+                    <height>50</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_AlternateColor</include>
+                    <scroll>false</scroll>
+                    <label>$INFO[Container($PARAM[id]).ListItem.Property(Genre)]</label>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>260</posy>
+                    <width>380</width>
+                    <height>50</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$INFO[Container($PARAM[id]).ListItem.Property(ShortTime)]$INFO[Container($PARAM[id]).ListItem.Property(NextDay), - ]</label>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>325</posy>
+                    <width>380</width>
+                    <height>50</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_AlternateColor</include>
+                    <scroll>false</scroll>
+                    <label>$INFO[Container($PARAM[id]).ListItem.Property(Runtime),, $LOCALIZE[12391]]</label>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>390</posy>
+                    <width>380</width>
+                    <height>50</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_MainColor</include>
+                    <scroll>false</scroll>
+                    <label>$INFO[Container($PARAM[id]).ListItem.Property(Network)]</label>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>455</posy>
+                    <width>380</width>
+                    <height>50</height>
+                    <font>InfoDetailsFont</font>
+                    <include>TextColor_AlternateColor</include>
+                    <scroll>false</scroll>
+                    <label>$INFO[Container($PARAM[id]).ListItem.Property(Country)]</label>
+                </control>
             </control>
         </control>
     </include>
