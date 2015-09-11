@@ -91,7 +91,7 @@
                         <posy>350</posy>
                         <width>320</width>
                         <height>320</height>
-                        <texture background="true" diffuse="green/common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
+                        <texture background="true" diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
                         <include>Animation_ViewsCDart</include>
                     </control>

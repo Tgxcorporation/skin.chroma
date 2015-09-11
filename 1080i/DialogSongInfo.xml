@@ -280,7 +280,7 @@
                                 <posy>-180</posy>
                                 <width>360</width>
                                 <height>360</height>
-                                <texture background="true" diffuse="green/common/cdart_diffuse.png">$INFO[Skin.String(MusicPath)]$INFO[ListItem.Artist]/$INFO[ListItem.Album]/cdart.png</texture>
+                                <texture background="true" diffuse="common/cdart_diffuse.png">$INFO[Skin.String(MusicPath)]$INFO[ListItem.Artist]/$INFO[ListItem.Album]/cdart.png</texture>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
                                 <include>Animation_ViewsCDart</include>
                             </control>

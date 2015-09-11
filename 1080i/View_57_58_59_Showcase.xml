@@ -345,7 +345,7 @@
                                 <posy>10</posy>
                                 <width>240</width>
                                 <height>240</height>
-                                <texture background="true" diffuse="green/common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
+                                <texture background="true" diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
                                 <include>Animation_ViewsCDart</include>
                             </control>
@@ -481,7 +481,7 @@
                                 <posy>10</posy>
                                 <width>350</width>
                                 <height>350</height>
-                                <texture background="true" diffuse="green/common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
+                                <texture background="true" diffuse="common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
                                 <include>Animation_ViewsCDart</include>
                             </control>
@@ -718,7 +718,7 @@
                                 <posy>10</posy>
                                 <width>350</width>
                                 <height>350</height>
-                                <texture background="true" diffuse="green/common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
+                                <texture background="true" diffuse="common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
                                 <include>Animation_ViewsCDart</include>
                             </control>

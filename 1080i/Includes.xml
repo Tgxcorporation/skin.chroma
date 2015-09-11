@@ -1314,7 +1314,7 @@
                             <posy>63</posy>
                             <width>253</width>
                             <height>253</height>
-                            <texture background="true" diffuse="green/common/cdart_diffuse.png">$INFO[Player.Art(discart)]</texture>
+                            <texture background="true" diffuse="common/cdart_diffuse.png">$INFO[Player.Art(discart)]</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                             <include>Animation_ViewsCDart</include>
                         </control>
