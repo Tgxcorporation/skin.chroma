@@ -22,13 +22,13 @@
     <color name="DialogColordiffuseColor_amber">30f9a53b</color>
     <color name="ColordiffuseColor_amber">fff9a53b</color>
     <!-- FUCHSIA -->
-    <color name="MainColor_fuchsia">FFff0cff</color>
+    <color name="MainColor_fuchsia">FFff59fc</color>
     <color name="AlternateColor_fuchsia">ffffffff</color>
     <color name="SelectedColor_fuchsia">ffffffff</color>
-    <color name="DisabledColor_fuchsia">60ff0cff</color>
-    <color name="MidColor_fuchsia">ccff0cff</color>
-    <color name="DialogColordiffuseColor_fuchsia">30ff0cff</color>
-    <color name="ColordiffuseColor_fuchsia">ffff0cff</color>
+    <color name="DisabledColor_fuchsia">60ff59fc</color>
+    <color name="MidColor_fuchsia">ccff59fc</color>
+    <color name="DialogColordiffuseColor_fuchsia">30ff59fc</color>
+    <color name="ColordiffuseColor_fuchsia">ffff59fc</color>
     <!-- INDIGO -->
     <color name="MainColor_indigo">FF35b7f4</color>
     <color name="AlternateColor_indigo">ffffffff</color>
@@ -43,7 +43,7 @@
     <color name="SelectedColor_titanium">ffffffff</color>
     <color name="DisabledColor_titanium">60c8c8c8</color>
     <color name="MidColor_titanium">ccc8c8c8</color>
-    <color name="DialogColordiffuseColor_titanium">3c8c8c8</color>
+    <color name="DialogColordiffuseColor_titanium">30c8c8c8</color>
     <color name="ColordiffuseColor_titanium">ffc8c8c8</color>
     <!-- ADDON COMPATIBILITY -->
     <color name="white">FF707070</color>
