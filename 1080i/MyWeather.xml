@@ -344,12 +344,12 @@
                         <posx>1490</posx>
                         <posy>380</posy>
                         <control type="image">
-                            <posx>0</posx>
+                            <posx>62</posx>
                             <posy>0</posy>
-                            <width>380</width>
-                            <height>600</height>
-                            <texture background="true">$INFO[Container(50).ListItem.Thumb]</texture>
-                            <aspectratio aligny="top">scale</aspectratio>
+                            <width>256</width>
+                            <height>256</height>
+                            <texture background="true">$INFO[Container(50).ListItem.Property(Icon)]</texture>
+                            <aspectratio aligny="top">keep</aspectratio>
                         </control>
                     </control>
                 </control>

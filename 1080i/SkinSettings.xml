@@ -1476,55 +1476,190 @@
                             <selected>Skin.HasSetting(Theme.Color.titanium)</selected>
                             <onclick>XBMC.ReloadSkin()</onclick>
                         </control>
-                        <control type="image">
+                        <control type="group">
                             <visible>control.hasfocus(852801)</visible>
                             <include>Icon_Fade</include>
-                            <posx>960</posx>
-                            <posy>380</posy>
-                            <width>860</width>
-                            <height>483</height>
-                            <aspectratio>scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/green.png</texture>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>380</posy>
+                                <width>860</width>
+                                <height>484</height>
+                                <aspectratio>scale</aspectratio>
+                                <texture>special://skin/backgrounds/default/green.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>380</posy>
+                                <width>860</width>
+                                <height>242</height>
+                                <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
+                                <texture>green/common/overlay_top.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>700</posy>
+                                <width>860</width>
+                                <height>170</height>
+                                <texture border="65">common/background_strip_horizontal_text.png</texture>
+                            </control>
+                            <control type="label">
+                                <posx>960</posx>
+                                <posy>700</posy>
+                                <width>860</width>
+                                <height>170</height>
+                                <align>center</align>
+                                <font>InfoDetailsFont</font>
+                                <textcolor>FocusedColor</textcolor>
+                                <label>$LOCALIZE[31521]</label>
+                            </control>
                         </control>
-                        <control type="image">
+                        <control type="group">
                             <visible>control.hasfocus(852802)</visible>
                             <include>Icon_Fade</include>
-                            <posx>960</posx>
-                            <posy>380</posy>
-                            <width>860</width>
-                            <height>483</height>
-                            <aspectratio>scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/amber.png</texture>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>380</posy>
+                                <width>860</width>
+                                <height>484</height>
+                                <aspectratio>scale</aspectratio>
+                                <texture>special://skin/backgrounds/default/amber.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>380</posy>
+                                <width>860</width>
+                                <height>242</height>
+                                <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
+                                <texture>amber/common/overlay_top.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>700</posy>
+                                <width>860</width>
+                                <height>170</height>
+                                <texture border="65">common/background_strip_horizontal_text.png</texture>
+                            </control>
+                            <control type="label">
+                                <posx>960</posx>
+                                <posy>700</posy>
+                                <width>860</width>
+                                <height>170</height>
+                                <align>center</align>
+                                <font>InfoDetailsFont</font>
+                                <textcolor>FocusedColor</textcolor>
+                                <label>$LOCALIZE[31522]</label>
+                            </control>
                         </control>
-                        <control type="image">
+                        <control type="group">
                             <visible>control.hasfocus(852803)</visible>
                             <include>Icon_Fade</include>
-                            <posx>960</posx>
-                            <posy>380</posy>
-                            <width>860</width>
-                            <height>483</height>
-                            <aspectratio>scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/fuchsia.png</texture>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>380</posy>
+                                <width>860</width>
+                                <height>484</height>
+                                <aspectratio>scale</aspectratio>
+                                <texture>special://skin/backgrounds/default/fuchsia.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>380</posy>
+                                <width>860</width>
+                                <height>242</height>
+                                <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
+                                <texture>fuchsia/common/overlay_top.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>700</posy>
+                                <width>860</width>
+                                <height>170</height>
+                                <texture border="65">common/background_strip_horizontal_text.png</texture>
+                            </control>
+                            <control type="label">
+                                <posx>960</posx>
+                                <posy>700</posy>
+                                <width>860</width>
+                                <height>170</height>
+                                <align>center</align>
+                                <font>InfoDetailsFont</font>
+                                <textcolor>FocusedColor</textcolor>
+                                <label>$LOCALIZE[31523]</label>
+                            </control>
                         </control>
-                        <control type="image">
+                        <control type="group">
                             <visible>control.hasfocus(852804)</visible>
                             <include>Icon_Fade</include>
-                            <posx>960</posx>
-                            <posy>380</posy>
-                            <width>860</width>
-                            <height>483</height>
-                            <aspectratio>scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/indigo.png</texture>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>380</posy>
+                                <width>860</width>
+                                <height>484</height>
+                                <aspectratio>scale</aspectratio>
+                                <texture>special://skin/backgrounds/default/indigo.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>380</posy>
+                                <width>860</width>
+                                <height>242</height>
+                                <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
+                                <texture>indigo/common/overlay_top.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>700</posy>
+                                <width>860</width>
+                                <height>170</height>
+                                <texture border="65">common/background_strip_horizontal_text.png</texture>
+                            </control>
+                            <control type="label">
+                                <posx>960</posx>
+                                <posy>700</posy>
+                                <width>860</width>
+                                <height>170</height>
+                                <align>center</align>
+                                <font>InfoDetailsFont</font>
+                                <textcolor>FocusedColor</textcolor>
+                                <label>$LOCALIZE[31524]</label>
+                            </control>
                         </control>
-                        <control type="image">
+                        <control type="group">
                             <visible>control.hasfocus(852805)</visible>
                             <include>Icon_Fade</include>
-                            <posx>960</posx>
-                            <posy>380</posy>
-                            <width>860</width>
-                            <height>483</height>
-                            <aspectratio>scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/titanium.png</texture>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>380</posy>
+                                <width>860</width>
+                                <height>484</height>
+                                <aspectratio>scale</aspectratio>
+                                <texture>special://skin/backgrounds/default/titanium.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>380</posy>
+                                <width>860</width>
+                                <height>242</height>
+                                <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
+                                <texture>titanium/common/overlay_top.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>700</posy>
+                                <width>860</width>
+                                <height>170</height>
+                                <texture border="65">common/background_strip_horizontal_text.png</texture>
+                            </control>
+                            <control type="label">
+                                <posx>960</posx>
+                                <posy>700</posy>
+                                <width>860</width>
+                                <height>170</height>
+                                <align>center</align>
+                                <font>InfoDetailsFont</font>
+                                <textcolor>FocusedColor</textcolor>
+                                <label>$LOCALIZE[31525]</label>
+                            </control>
                         </control>
                     </control>
                 </control>

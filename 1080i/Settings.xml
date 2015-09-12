@@ -57,7 +57,7 @@
                 <control type="image">
                     <posx>630</posx>
                     <posy>680</posy>
-                    <width>1140</width>+
+                    <width>1140</width>
                     <height>300</height>
                     <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
                     <texture>$VAR[Theme.Color]/common/overlay_bottom.png</texture>
