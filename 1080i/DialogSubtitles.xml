@@ -261,8 +261,6 @@
             <width>370</width>
             <height>231</height>
             <aspectratio>keep</aspectratio>
-            <include>ThumbBorder</include>
         </control>
-
     </controls>
 </window>

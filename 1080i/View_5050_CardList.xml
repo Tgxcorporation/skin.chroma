@@ -113,7 +113,7 @@
                     </control>
                     <control type="label">
                         <posx>TextMargin</posx>
-                        <posy>125</posy>
+                        <posy>140</posy>
                         <width>1290</width>
                         <height>50</height>
                         <font>InfoDetailsFont</font>
@@ -123,7 +123,7 @@
                     </control>
                     <control type="label">
                         <posx>TextMargin</posx>
-                        <posy>175</posy>
+                        <posy>205</posy>
                         <width>1290</width>
                         <height>50</height>
                         <font>InfoDetailsFont</font>
@@ -133,7 +133,7 @@
                     </control>
                     <control type="label">
                         <posx>TextMargin</posx>
-                        <posy>225</posy>
+                        <posy>270</posy>
                         <width>1290</width>
                         <height>50</height>
                         <font>InfoDetailsFont</font>
@@ -145,9 +145,9 @@
                         <visible>[Container.content(MusicVideos)|Container.Content(movies)|container.content(tvshows)|Container.Content(episodes)|Container.Content(seasons)]</visible>
                         <control type="textbox">
                             <posx>TextMargin</posx>
-                            <posy>300</posy>
+                            <posy>345</posy>
                             <width>1290</width>
-                            <height>230</height>
+                            <height>195</height>
                             <font>InfoPlotFont</font>
                             <include>TextColor_AlternateColor</include>
                             <label>$VAR[Plots]</label>
@@ -156,7 +156,7 @@
                         <control type="group">
                             <visible>!IsEmpty(ListItem.VideoResolution)</visible>
                             <posx>36</posx>
-                            <posy>550</posy>
+                            <posy>565</posy>
                             <include>CodecsCard</include>
                         </control>
                     </control>
@@ -165,9 +165,9 @@
                         <control type="textbox">
                             <visible>![Skin.HasSetting(plexbmc)+Container.Content(Artists)]</visible>
                             <posx>TextMargin</posx>
-                            <posy>300</posy>
+                            <posy>345</posy>
                             <width>1290</width>
-                            <height>306</height>
+                            <height>270</height>
                             <font>InfoPlotFont</font>
                             <include>TextColor_AlternateColor</include>
                             <label>$VAR[Plots]</label>
@@ -366,7 +366,7 @@
                     </control>
                     <control type="label">
                         <posx>TextMargin</posx>
-                        <posy>125</posy>
+                        <posy>140</posy>
                         <width>1290</width>
                         <height>50</height>
                         <font>InfoDetailsFont</font>
@@ -376,7 +376,7 @@
                     </control>
                     <control type="label">
                         <posx>TextMargin</posx>
-                        <posy>175</posy>
+                        <posy>205</posy>
                         <width>1290</width>
                         <height>50</height>
                         <font>InfoDetailsFont</font>
@@ -386,7 +386,7 @@
                     </control>
                     <control type="label">
                         <posx>TextMargin</posx>
-                        <posy>225</posy>
+                        <posy>270</posy>
                         <width>1290</width>
                         <height>50</height>
                         <font>InfoDetailsFont</font>
@@ -398,9 +398,9 @@
                         <visible>[Container.content(MusicVideos)|Container.Content(movies)|container.content(tvshows)|Container.Content(episodes)|Container.Content(seasons)]</visible>
                         <control type="textbox">
                             <posx>TextMargin</posx>
-                            <posy>300</posy>
+                            <posy>345</posy>
                             <width>1290</width>
-                            <height>230</height>
+                            <height>195</height>
                             <font>InfoPlotFont</font>
                             <include>TextColor_AlternateColor</include>
                             <label>$VAR[Plots]</label>
@@ -409,7 +409,7 @@
                         <control type="group">
                             <visible>!IsEmpty(ListItem.VideoResolution)</visible>
                             <posx>36</posx>
-                            <posy>550</posy>
+                            <posy>565</posy>
                             <include>CodecsCard</include>
                         </control>
                     </control>
@@ -418,9 +418,9 @@
                         <control type="textbox">
                             <visible>![Skin.HasSetting(plexbmc)+Container.Content(Artists)]</visible>
                             <posx>TextMargin</posx>
-                            <posy>300</posy>
+                            <posy>345</posy>
                             <width>1290</width>
-                            <height>306</height>
+                            <height>270</height>
                             <font>InfoPlotFont</font>
                             <include>TextColor_AlternateColor</include>
                             <label>$VAR[Plots]</label>

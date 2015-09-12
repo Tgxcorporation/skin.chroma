@@ -548,18 +548,6 @@
             <label>$VAR[SeekLabel]</label>
         </control>
     </include>
-    <include name="PosterThumbBig">
-        <texture background="true">$VAR[Thumbs]</texture>
-        <aspectratio scalediffuse="false">keep</aspectratio>
-    </include>
-    <include name="SquareThumbBig">
-        <texture background="true">$VAR[Thumbs]</texture>
-        <aspectratio scalediffuse="false">keep</aspectratio>
-    </include>
-    <include name="EpisodeThumbBig">
-        <texture background="true">$VAR[Thumbs]</texture>
-        <aspectratio scalediffuse="false">keep</aspectratio>
-    </include>
     <include name="9000GrouplistParameters">
         <control type="button" id="2">
             <include>LeftMenuButton</include>
@@ -1068,31 +1056,6 @@
             </control>
         </focusedlayout>
     </include>
-    <include name="CoverWrapSquareBounds">
-        <control type="image">
-            <posx>550</posx>
-            <posy>142</posy>
-            <width>1370</width>
-            <height>3892</height>
-            <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
-        </control>
-        <control type="image">
-            <posx>0</posx>
-            <posy>-858</posy>
-            <width>1920</width>
-            <height>1892</height>
-            <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
-        </control>
-    </include>
-    <include name="CoverWrapPosterBounds">
-        <control type="image">
-            <posx>550</posx>
-            <posy>142</posy>
-            <width>1370</width>
-            <height>892</height>
-            <texture border="100">$VAR[Theme.Color]/common/bg_list.png</texture>
-        </control>
-    </include>
     <include name="OSDInfoPanel">
         <control type="group">
             <visible>![
@@ -1320,9 +1283,9 @@
             </control>
         </control>
     </include>
-    <include name="DialogTransparency">
-        <colordiffuse>ddffffff</colordiffuse>
-    </include>
+    <!--<include name="DialogTransparency">-->
+        <!--<colordiffuse>ddffffff</colordiffuse>-->
+    <!--</include>-->
     <include name="WindowClosingButton">
         <control type="button" id="$PARAM[id]">
             <visible>Skin.HasSetting(WindowClosingIcon)</visible>
