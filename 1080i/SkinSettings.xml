@@ -170,34 +170,34 @@
                                 <onclick>Skin.ToggleSetting(Hide_Unwatched_Marks)</onclick>
                             </item>
                             <!--<item id="32">-->
-                                <!--<visible>Skin.HasSetting(DefaultView50)|[!Skin.HasSetting(DefaultView51)+!Skin.HasSetting(DefaultView52)]</visible>-->
-                                <!--<label>$LOCALIZE[13377]</label>-->
-                                <!--<label2>$LOCALIZE[31091]</label2>-->
-                                <!--<onclick>Skin.Reset(DefaultView50)</onclick>-->
-                                <!--<onclick>Skin.Reset(DefaultView51)</onclick>-->
-                                <!--<onclick>Skin.Reset(DefaultView52)</onclick>-->
-                                <!--<onclick>Skin.ToggleSetting(DefaultView51)</onclick>-->
-                                <!--<onclick>Skin.SetString(WeatherView,slimlist)</onclick>-->
+                            <!--<visible>Skin.HasSetting(DefaultView50)|[!Skin.HasSetting(DefaultView51)+!Skin.HasSetting(DefaultView52)]</visible>-->
+                            <!--<label>$LOCALIZE[13377]</label>-->
+                            <!--<label2>$LOCALIZE[31091]</label2>-->
+                            <!--<onclick>Skin.Reset(DefaultView50)</onclick>-->
+                            <!--<onclick>Skin.Reset(DefaultView51)</onclick>-->
+                            <!--<onclick>Skin.Reset(DefaultView52)</onclick>-->
+                            <!--<onclick>Skin.ToggleSetting(DefaultView51)</onclick>-->
+                            <!--<onclick>Skin.SetString(WeatherView,slimlist)</onclick>-->
                             <!--</item>-->
                             <!--<item id="32">-->
-                                <!--<visible>Skin.HasSetting(DefaultView51)</visible>-->
-                                <!--<label>$LOCALIZE[13377]</label>-->
-                                <!--<label2>$LOCALIZE[31096]</label2>-->
-                                <!--<onclick>Skin.Reset(DefaultView50)</onclick>-->
-                                <!--<onclick>Skin.Reset(DefaultView51)</onclick>-->
-                                <!--<onclick>Skin.Reset(DefaultView52)</onclick>-->
-                                <!--<onclick>Skin.ToggleSetting(DefaultView52)</onclick>-->
-                                <!--<onclick>Skin.SetString(WeatherView,shortlist)</onclick>-->
+                            <!--<visible>Skin.HasSetting(DefaultView51)</visible>-->
+                            <!--<label>$LOCALIZE[13377]</label>-->
+                            <!--<label2>$LOCALIZE[31096]</label2>-->
+                            <!--<onclick>Skin.Reset(DefaultView50)</onclick>-->
+                            <!--<onclick>Skin.Reset(DefaultView51)</onclick>-->
+                            <!--<onclick>Skin.Reset(DefaultView52)</onclick>-->
+                            <!--<onclick>Skin.ToggleSetting(DefaultView52)</onclick>-->
+                            <!--<onclick>Skin.SetString(WeatherView,shortlist)</onclick>-->
                             <!--</item>-->
                             <!--<item id="32">-->
-                                <!--<visible>Skin.HasSetting(DefaultView52)</visible>-->
-                                <!--<label>$LOCALIZE[13377]</label>-->
-                                <!--<label2>$LOCALIZE[535]</label2>-->
-                                <!--<onclick>Skin.Reset(DefaultView50)</onclick>-->
-                                <!--<onclick>Skin.Reset(DefaultView51)</onclick>-->
-                                <!--<onclick>Skin.Reset(DefaultView52)</onclick>-->
-                                <!--<onclick>Skin.ToggleSetting(DefaultView50)</onclick>-->
-                                <!--<onclick>Skin.SetString(WeatherView,biglist)</onclick>-->
+                            <!--<visible>Skin.HasSetting(DefaultView52)</visible>-->
+                            <!--<label>$LOCALIZE[13377]</label>-->
+                            <!--<label2>$LOCALIZE[535]</label2>-->
+                            <!--<onclick>Skin.Reset(DefaultView50)</onclick>-->
+                            <!--<onclick>Skin.Reset(DefaultView51)</onclick>-->
+                            <!--<onclick>Skin.Reset(DefaultView52)</onclick>-->
+                            <!--<onclick>Skin.ToggleSetting(DefaultView50)</onclick>-->
+                            <!--<onclick>Skin.SetString(WeatherView,biglist)</onclick>-->
                             <!--</item>-->
                             <item id="2">
                                 <visible>!Skin.HasSetting(AutoScroll)</visible>
@@ -368,16 +368,16 @@
                                 <onclick>Skin.ToggleSetting(DisableOverlayMusicPlaying)</onclick>
                             </item>
                             <!--<item id="16">-->
-                                <!--<visible>Skin.HasSetting(PVRChannelListBig)</visible>-->
-                                <!--<label>$LOCALIZE[31996]</label>-->
-                                <!--<label2>$LOCALIZE[107]</label2>-->
-                                <!--<onclick>Skin.ToggleSetting(PVRChannelListBig)</onclick>-->
+                            <!--<visible>Skin.HasSetting(PVRChannelListBig)</visible>-->
+                            <!--<label>$LOCALIZE[31996]</label>-->
+                            <!--<label2>$LOCALIZE[107]</label2>-->
+                            <!--<onclick>Skin.ToggleSetting(PVRChannelListBig)</onclick>-->
                             <!--</item>-->
                             <!--<item id="16">-->
-                                <!--<visible>!Skin.HasSetting(PVRChannelListBig)</visible>-->
-                                <!--<label>$LOCALIZE[31996]</label>-->
-                                <!--<label2>$LOCALIZE[106]</label2>-->
-                                <!--<onclick>Skin.ToggleSetting(PVRChannelListBig)</onclick>-->
+                            <!--<visible>!Skin.HasSetting(PVRChannelListBig)</visible>-->
+                            <!--<label>$LOCALIZE[31996]</label>-->
+                            <!--<label2>$LOCALIZE[106]</label2>-->
+                            <!--<onclick>Skin.ToggleSetting(PVRChannelListBig)</onclick>-->
                             <!--</item>-->
                             <item id="17">
                                 <visible>Skin.HasSetting(OSDShowInfoPaused)</visible>
@@ -602,11 +602,11 @@
                                 <label2>$INFO[Skin.String(weatherArtPath)]</label2>
                                 <onclick>Skin.SetPath(weatherArtPath)</onclick>
                             </item>
-                            <!--<item id="94">-->
-                            <!--<label>$LOCALIZE[31520]</label>-->
-                            <!--<label2>$INFO[Skin.String(weatherIconPath)]</label2>-->
-                            <!--<onclick>Skin.SetPath(weatherIconPath)</onclick>-->
-                            <!--</item>-->
+                            <item id="94">
+                                <label>$LOCALIZE[31520]</label>
+                                <label2>$INFO[Skin.String(weatherIconPath)]</label2>
+                                <onclick>Skin.SetPath(weatherIconPath)</onclick>
+                            </item>
                         </content>
                     </control>
                     <control type="scrollbar" id="503">
@@ -1170,16 +1170,16 @@
                                 <onclick>Skin.ToggleSetting(Home_DefaultBG)</onclick>
                             </item>
                             <!--<item id="62">-->
-                                <!--<visible>Skin.HasSetting(Fixed_HomeMenu)</visible>-->
-                                <!--<label>$LOCALIZE[31998]</label>-->
-                                <!--<label2>$LOCALIZE[107]</label2>-->
-                                <!--<onclick>Skin.ToggleSetting(Fixed_HomeMenu)</onclick>-->
+                            <!--<visible>Skin.HasSetting(Fixed_HomeMenu)</visible>-->
+                            <!--<label>$LOCALIZE[31998]</label>-->
+                            <!--<label2>$LOCALIZE[107]</label2>-->
+                            <!--<onclick>Skin.ToggleSetting(Fixed_HomeMenu)</onclick>-->
                             <!--</item>-->
                             <!--<item id="62">-->
-                                <!--<visible>!Skin.HasSetting(Fixed_HomeMenu)</visible>-->
-                                <!--<label>$LOCALIZE[31998]</label>-->
-                                <!--<label2>$LOCALIZE[106]</label2>-->
-                                <!--<onclick>Skin.ToggleSetting(Fixed_HomeMenu)</onclick>-->
+                            <!--<visible>!Skin.HasSetting(Fixed_HomeMenu)</visible>-->
+                            <!--<label>$LOCALIZE[31998]</label>-->
+                            <!--<label2>$LOCALIZE[106]</label2>-->
+                            <!--<onclick>Skin.ToggleSetting(Fixed_HomeMenu)</onclick>-->
                             <!--</item>-->
                             <item id="1001">
                                 <label/>
