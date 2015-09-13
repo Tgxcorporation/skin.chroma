@@ -748,28 +748,28 @@
                             <onright>9000</onright>
                             <include>VerticalScroller</include>
                         </control>
-                        <!--<control type="image">-->
-                            <!--<visible>Container(9006).HasFocus(93)+Container(9000).HasFocus(6)+!Control.hasfocus(9000)</visible>-->
-                            <!--<include>VisibleFadeEffect</include>-->
-                            <!--<posx>530</posx>-->
-                            <!--<posy>730</posy>-->
-                            <!--<width>1340</width>-->
-                            <!--<description>Default Seperator</description>-->
-                            <!--<height>50</height>-->
-                            <!--<texture border="1">common/background_strip_vertical.png</texture>-->
-                        <!--</control>-->
-                        <!--<control type="textbox">-->
-                            <!--<visible>Container(9006).HasFocus(93)+Container(9000).HasFocus(6)+!Control.hasfocus(9000)</visible>-->
-                            <!--<include>VisibleFadeEffect</include>-->
-                            <!--<posx>580</posx>-->
-                            <!--<posy>780</posy>-->
-                            <!--<width>1240</width>-->
-                            <!--<height>195</height>-->
-                            <!--<include>TextColor_AlternateColor</include>-->
-                            <!--<font>InfoPlotFont</font>-->
-                            <!--<label>$LOCALIZE[31982]</label>-->
-                            <!--<include>myautoscroll</include>-->
-                        <!--</control>-->
+                        <control type="image">
+                            <visible>Container(9006).HasFocus(93)+Container(9000).HasFocus(6)+!Control.hasfocus(9000)</visible>
+                            <include>VisibleFadeEffect</include>
+                            <posx>530</posx>
+                            <posy>730</posy>
+                            <width>1340</width>
+                            <description>Default Seperator</description>
+                            <height>50</height>
+                            <texture border="1">common/background_strip_vertical.png</texture>
+                        </control>
+                        <control type="textbox">
+                            <visible>Container(9006).HasFocus(93)+Container(9000).HasFocus(6)+!Control.hasfocus(9000)</visible>
+                            <include>VisibleFadeEffect</include>
+                            <posx>580</posx>
+                            <posy>780</posy>
+                            <width>1240</width>
+                            <height>195</height>
+                            <include>TextColor_AlternateColor</include>
+                            <font>InfoPlotFont</font>
+                            <label>$LOCALIZE[31982]</label>
+                            <include>myautoscroll</include>
+                        </control>
                     </control>
                     <!-- BACKGROUNDS -->
                     <control type="group">
