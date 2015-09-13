@@ -11,11 +11,10 @@
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">Simple and modern skin designed for Full HD TV screens.</summary>
-        <description lang="en">Simple and modern skin designed for Full HD TV screens.</description>
+        <summary lang="en">Full-featured modern skin designed for Full HD TV screens.</summary>
+        <description lang="en">Full-featured modern skin designed for Full HD TV screens.</description>
         <disclaimer lang="en">This skin does not work on Apple Tv 2</disclaimer>
         <license>Creative Commons Attribution-ShareAlike 3.0 Unported License</license>
-        <forum>http://forum.kodi.tv/forumdisplay.php?fid=211</forum>
         <source>https://github.com/Tgxcorporation/skin.chroma</source>
         <website>https://github.com/Tgxcorporation/skin.chroma/wiki</website>
         <platform>all</platform>
