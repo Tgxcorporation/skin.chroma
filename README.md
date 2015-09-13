@@ -1,7 +1,7 @@
 ## Chroma skin for Kodi 15 ISENGARD
-Simple and full-featured light or dark color skin designed for Full HD TV screens.
+Full-featured modern skin designed for Full HD TV screens.
 
-![](http://i.imgur.com/UVLYuNY.jpg)
+![](http://i.imgur.com/8ifMwfF.jpg)
 
 #### [Screenshots](https://github.com/Tgxcorporation/skin.chroma/wiki/Screenshots)
 
