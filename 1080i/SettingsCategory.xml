@@ -161,9 +161,8 @@
                     <posx>580</posx>
                     <posy>880</posy>
                     <width>1240</width>
-                    <height>120</height>
+                    <height>115</height>
                     <include>TextColor_AlternateColor</include>
-                    <align>justify</align>
                     <font>InfoPlotFont</font>
                     <include>myautoscroll</include>
                 </control>

@@ -146,7 +146,6 @@
                     <width>760</width>
                     <height>310</height>
                     <font>InfoPlotFont</font>
-                    <align>justify</align>
                     <include>TextColor_AlternateColor</include>
                     <label>$INFO[ListItem.Property(Addon.Description)]</label>
                     <pagecontrol>6060</pagecontrol>

@@ -1849,6 +1849,9 @@
             </control>
         </control>
     </include>
+    <include name="TextboxAlignment">
+        <align>justify</align>
+    </include>
     <include name="TVNextAiredListCommonLayout">
         <posx>0</posx>
         <width>580</width>
