@@ -338,9 +338,6 @@
                             <visible>!StringCompare(ListItem.Label,..)</visible>
                             <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]</visible>
                             <control type="image">
-                                <animation type="Conditional" reversible="false" condition="control.HasFocus(59)">
-                                    <include>CoverWrapFocusAnimationPoster</include>
-                                </animation>
                                 <posx>10</posx>
                                 <posy>10</posy>
                                 <width>240</width>
@@ -474,9 +471,6 @@
                                 [[Container.content(songs)+Window.IsActive(MyMusicNav.xml)]|
                                 [Window.IsActive(MyMusicSongs.xml)+!Skin.HasSetting(plexbmc)]]</visible>
                             <control type="image">
-                                <animation type="Conditional" reversible="false" condition="control.HasFocus(58)">
-                                    <include>CoverWrapFocusAnimationPoster</include>
-                                </animation>
                                 <posx>10</posx>
                                 <posy>10</posy>
                                 <width>350</width>
@@ -711,9 +705,6 @@
                                 [[Container.content(songs)+Window.IsActive(MyMusicNav.xml)]|
                                 [Window.IsActive(MyMusicSongs.xml)+!Skin.HasSetting(plexbmc)]]</visible>
                             <control type="image">
-                                <animation type="Conditional" reversible="false" condition="control.HasFocus(58)">
-                                    <include>CoverWrapFocusAnimationPoster</include>
-                                </animation>
                                 <posx>10</posx>
                                 <posy>10</posy>
                                 <width>350</width>
