@@ -169,12 +169,8 @@
                 </control>
                 <control type="togglebutton" id="4">
                     <description>Sort asc</description>
-                    <include>LeftMenuButton</include>
-                    <alttexturefocus border="5">button-focus.png</alttexturefocus>
-                    <alttexturenofocus>-</alttexturenofocus>
-                    <label>31051</label>
-                    <altlabel>31050</altlabel>
-                    <usealttexture>Container.SortDirection(Ascending)</usealttexture>
+                    <label>$LOCALIZE[21429]:  $LOCALIZE[21430]</label>
+                    <altlabel>$LOCALIZE[21429]:  $LOCALIZE[21431]</altlabel>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="label" id="201">
