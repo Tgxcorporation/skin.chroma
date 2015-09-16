@@ -353,6 +353,7 @@
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
             <onleft condition="Control.isvisible(500)">500</onleft>
+            <onleft condition="Control.isvisible(570)">570</onleft>
             <onright condition="!window.isactive(MyWeather.xml)">50</onright>
             <onleft condition="!window.isactive(MyWeather.xml)">50</onleft>
             <onup condition="!window.isactive(MyWeather.xml)">50</onup>
@@ -823,6 +824,7 @@
             <height>700</height>
             <include>VerticalScroller</include>
             <onright condition="Window.IsActive(script-NextAired-TVGuide.xml)|Window.IsActive(script-NextAired-TVGuide2.xml)">2000</onright>
+            <onright condition="Window.IsActive(EventLog.xml)">570</onright>
             <onright condition="Window.IsActive(MyWeather.xml)+!Skin.String(WeatherType,Map)">50</onright>
             <onright condition="Window.IsActive(MyWeather.xml)+Skin.String(WeatherType,Map)">155</onright>
             <onright condition="Window.IsActive(script-ExtendedInfo Script-VideoList.xml)">500</onright>
