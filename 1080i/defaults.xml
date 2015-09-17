@@ -132,6 +132,8 @@
         <include>TextureRadioOnNoFocus</include>
         <include>TextureRadioOffFocus</include>
         <include>TextureRadioOnFocus</include>
+        <include>TextureRadioOnDisabled</include>
+        <include>TextureRadioOffDisabled</include>
         <textoffsetx>20</textoffsetx>
         <pulseonselect>false</pulseonselect>
     </default>
@@ -143,6 +145,8 @@
         <include>TextureUpNoFocus</include>
         <include>TextureDownFocus</include>
         <include>TextureDownNoFocus</include>
+        <include>TextureUpDisabled</include>
+        <include>TextureDownDisabled</include>
         <include>TextureFocus</include>
         <texturenofocus>-</texturenofocus>
         <spinwidth>39</spinwidth>
@@ -169,6 +173,8 @@
         <include>TextureUpNoFocus</include>
         <include>TextureDownFocus</include>
         <include>TextureDownNoFocus</include>
+        <include>TextureUpDisabled</include>
+        <include>TextureDownDisabled</include>
         <include>TextureFocus</include>
         <texturenofocus>-</texturenofocus>
         <spinwidth>39</spinwidth>

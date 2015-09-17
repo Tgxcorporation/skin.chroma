@@ -245,6 +245,52 @@
         <include condition="Skin.HasSetting(Theme.Color.titanium)">TextureRadioOffNoFocus_titanium</include>
         <include>TextureRadioOffNoFocus_green</include>
     </include>
+    <!-- RADIO ON DISABLED -->
+    <include name="TextureRadioOnDisabled_green">
+        <textureradioondisabled colordiffuse="90ffffff" border="1">green/buttons/RadioOnNF.png</textureradioondisabled>
+    </include>
+    <include name="TextureRadioOnDisabled_amber">
+        <textureradioondisabled colordiffuse="90ffffff" border="1">amber/buttons/RadioOnNF.png</textureradioondisabled>
+    </include>
+    <include name="TextureRadioOnDisabled_fuchsia">
+        <textureradioondisabled colordiffuse="90ffffff" border="1">fuchsia/buttons/RadioOnNF.png</textureradioondisabled>
+    </include>
+    <include name="TextureRadioOnDisabled_indigo">
+        <textureradioondisabled colordiffuse="90ffffff" border="1">indigo/buttons/RadioOnNF.png</textureradioondisabled>
+    </include>
+    <include name="TextureRadioOnDisabled_titanium">
+        <textureradioondisabled colordiffuse="90ffffff" border="1">titanium/buttons/RadioOnNF.png</textureradioondisabled>
+    </include>
+    <include name="TextureRadioOnDisabled">
+        <include condition="Skin.HasSetting(Theme.Color.amber)">TextureRadioOnDisabled_amber</include>
+        <include condition="Skin.HasSetting(Theme.Color.fuchsia)">TextureRadioOnDisabled_fuchsia</include>
+        <include condition="Skin.HasSetting(Theme.Color.indigo)">TextureRadioOnDisabled_indigo</include>
+        <include condition="Skin.HasSetting(Theme.Color.titanium)">TextureRadioOnDisabled_titanium</include>
+        <include>TextureRadioOnDisabled_green</include>
+    </include>
+    <!-- RADIO OFF DISABLED -->
+    <include name="TextureRadioOffDisabled_green">
+        <textureradiooffdisabled colordiffuse="90ffffff" border="1">green/buttons/RadioOffNF.png</textureradiooffdisabled>
+    </include>
+    <include name="TextureRadioOffDisabled_amber">
+        <textureradiooffdisabled colordiffuse="90ffffff" border="1">amber/buttons/RadioOffNF.png</textureradiooffdisabled>
+    </include>
+    <include name="TextureRadioOffDisabled_fuchsia">
+        <textureradiooffdisabled colordiffuse="90ffffff" border="1">fuchsia/buttons/RadioOffNF.png</textureradiooffdisabled>
+    </include>
+    <include name="TextureRadioOffDisabled_indigo">
+        <textureradiooffdisabled colordiffuse="90ffffff" border="1">indigo/buttons/RadioOffNF.png</textureradiooffdisabled>
+    </include>
+    <include name="TextureRadioOffDisabled_titanium">
+        <textureradiooffdisabled colordiffuse="90ffffff" border="1">titanium/buttons/RadioOffNF.png</textureradiooffdisabled>
+    </include>
+    <include name="TextureRadioOffDisabled">
+        <include condition="Skin.HasSetting(Theme.Color.amber)">TextureRadioOffDisabled_amber</include>
+        <include condition="Skin.HasSetting(Theme.Color.fuchsia)">TextureRadioOffDisabled_fuchsia</include>
+        <include condition="Skin.HasSetting(Theme.Color.indigo)">TextureRadioOffDisabled_indigo</include>
+        <include condition="Skin.HasSetting(Theme.Color.titanium)">TextureRadioOffDisabled_titanium</include>
+        <include>TextureRadioOffDisabled_green</include>
+    </include>
     <!-- SPIN UP FOCUS -->
     <include name="TextureUpFocus_green">
         <textureupfocus border="1">green/buttons/SpinUpFO.png</textureupfocus>
@@ -336,6 +382,52 @@
         <include condition="Skin.HasSetting(Theme.Color.indigo)">TextureDownNoFocus_indigo</include>
         <include condition="Skin.HasSetting(Theme.Color.titanium)">TextureDownNoFocus_titanium</include>
         <include>TextureDownNoFocus_green</include>
+    </include>
+    <!-- SPIN UP DISABLED -->
+    <include name="TextureUpDisabled_green">
+        <textureupdisabled colordiffuse="90ffffff" border="1">green/buttons/SpinUpNF.png</textureupdisabled>
+    </include>
+    <include name="TextureUpDisabled_amber">
+        <textureupdisabled colordiffuse="90ffffff" border="1">amber/buttons/SpinUpNF.png</textureupdisabled>
+    </include>
+    <include name="TextureUpDisabled_fuchsia">
+        <textureupdisabled colordiffuse="90ffffff" border="1">fuchsia/buttons/SpinUpNF.png</textureupdisabled>
+    </include>
+    <include name="TextureUpDisabled_indigo">
+        <textureupdisabled colordiffuse="90ffffff" border="1">indigo/buttons/SpinUpNF.png</textureupdisabled>
+    </include>
+    <include name="TextureUpDisabled_titanium">
+        <textureupdisabled colordiffuse="90ffffff" border="1">titanium/buttons/SpinUpNF.png</textureupdisabled>
+    </include>
+    <include name="TextureUpDisabled">
+        <include condition="Skin.HasSetting(Theme.Color.amber)">TextureUpDisabled_amber</include>
+        <include condition="Skin.HasSetting(Theme.Color.fuchsia)">TextureUpDisabled_fuchsia</include>
+        <include condition="Skin.HasSetting(Theme.Color.indigo)">TextureUpDisabled_indigo</include>
+        <include condition="Skin.HasSetting(Theme.Color.titanium)">TextureUpDisabled_titanium</include>
+        <include>TextureUpDisabled_green</include>
+    </include>
+    <!-- SPIN DOWN DISABLED -->
+    <include name="TextureDownDisabled_green">
+        <texturedowndisabled colordiffuse="90ffffff" border="1">green/buttons/SpinDownNF.png</texturedowndisabled>
+    </include>
+    <include name="TextureDownDisabled_amber">
+        <texturedowndisabled colordiffuse="90ffffff" border="1">amber/buttons/SpinDownNF.png</texturedowndisabled>
+    </include>
+    <include name="TextureDownDisabled_fuchsia">
+        <texturedowndisabled colordiffuse="90ffffff" border="1">fuchsia/buttons/SpinDownNF.png</texturedowndisabled>
+    </include>
+    <include name="TextureDownDisabled_indigo">
+        <texturedowndisabled colordiffuse="90ffffff" border="1">indigo/buttons/SpinDownNF.png</texturedowndisabled>
+    </include>
+    <include name="TextureDownDisabled_titanium">
+        <texturedowndisabled colordiffuse="90ffffff" border="1">titanium/buttons/SpinDownNF.png</texturedowndisabled>
+    </include>
+    <include name="TextureDownDisabled">
+        <include condition="Skin.HasSetting(Theme.Color.amber)">TextureDownDisabled_amber</include>
+        <include condition="Skin.HasSetting(Theme.Color.fuchsia)">TextureDownDisabled_fuchsia</include>
+        <include condition="Skin.HasSetting(Theme.Color.indigo)">TextureDownDisabled_indigo</include>
+        <include condition="Skin.HasSetting(Theme.Color.titanium)">TextureDownDisabled_titanium</include>
+        <include>TextureDownDisabled_green</include>
     </include>
     <!-- SCROLLBAR VERTICAL BAR FOCUS -->
     <include name="VerticalTextureSliderBarFocus_green">
