@@ -9,7 +9,6 @@
         Window.IsVisible(VideoBookmarks) |
         Window.IsVisible(DialogSubtitles.xml) |
         Window.IsVisible(DialogAddonSettings.xml) |
-        Window.IsVisible(VisualisationPresetList.xml) |
         Window.IsVisible(PVROSDChannels) |
         Window.IsVisible(PVROSDGuide) |
         Window.IsVisible(script-cu-lrclyrics-main.xml)

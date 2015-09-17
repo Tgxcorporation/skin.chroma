@@ -29,6 +29,15 @@
                 <scroll>true</scroll>
                 <include>TextColor_MainColor</include>
             </control>
+            <control type="label" id="4">
+                <description>No Settings Label</description>
+                <posx>210</posx>
+                <posy>340</posy>
+                <width>1020</width>
+                <height>50</height>
+                <font>InfoDetailsFont</font>
+                <include>TextColor_AlternateColor</include>
+            </control>
             <control type="group">
                 <visible>control.isvisible(6)</visible>
                 <control type="image">

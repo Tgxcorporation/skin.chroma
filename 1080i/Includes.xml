@@ -1080,7 +1080,6 @@
                 Window.IsVisible(VideoBookmarks) |
                 Window.IsVisible(DialogSubtitles.xml) |
                 Window.IsVisible(DialogAddonSettings.xml) |
-                Window.IsVisible(VisualisationPresetList.xml) |
                 Window.IsVisible(PVROSDChannels) |
                 Window.IsVisible(PVROSDGuide)
                 ]</visible>
@@ -1859,7 +1858,7 @@
                 <include>TopBarButton</include>
                 <texturefocus>$PARAM[Color]/topbar/topbar_presets_focus.png</texturefocus>
                 <texturenofocus>$PARAM[Color]/topbar/topbar_presets_nofocus.png</texturenofocus>
-                <onclick>ActivateWindow(122)</onclick>
+                <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
             </control>
         </control>
     </include>
