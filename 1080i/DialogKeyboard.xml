@@ -17,12 +17,15 @@
                 <!--<include>DialogTransparency</include>-->
                 <texture border="50">$VAR[Theme.Color]/common/background_menu.png</texture>
             </control>
-            <include name="WindowClosingButton">
-                <param name="id" value="9010"/>
-                <param name="x" value="1602"/>
-                <param name="y" value="480"/>
-                <param name="onleft" value="6060"/>
-            </include>
+            <control type="group">
+                <animation effect="slide" start="0,0" end="0,-250" time="0" condition="Control.IsVisible(313)">Conditional</animation>
+                <include name="WindowClosingButton">
+                    <param name="id" value="9010"/>
+                    <param name="x" value="1602"/>
+                    <param name="y" value="480"/>
+                    <param name="onleft" value="6060"/>
+                </include>
+            </control>
             <control type="label" id="311">
                 <posx>360</posx>
                 <posy>580</posy>
@@ -459,6 +462,39 @@
                     <include>KeyboardButtons</include>
                     <onup>307</onup>
                     <ondown>309</ondown>
+                </control>
+            </control>
+            <control type="group">
+                <posx>0</posx>
+                <posy>0</posy>
+                <visible>Control.IsVisible(313)</visible>
+                <control type="image">
+                    <posx>260</posx>
+                    <posy>230</posy>
+                    <width>1392</width>
+                    <height>300</height>
+                    <!--<include>DialogTransparency</include>-->
+                    <texture border="50">$VAR[Theme.Color]/common/background_menu.png</texture>
+                </control>
+                <control type="label" id="313">
+                    <description>HZCODE label</description>
+                    <posx>360</posx>
+                    <posy>330</posy>
+                    <width>1192</width>
+                    <height>50</height>
+                    <font>InfoTitleFont</font>
+                    <scroll>true</scroll>
+                    <include>TextColor_MainColor</include>
+                </control>
+                <control type="label" id="314">
+                    <description>HZLIST label</description>
+                    <posx>360</posx>
+                    <posy>380</posy>
+                    <width>1192</width>
+                    <height>50</height>
+                    <font>InfoDetailsFont</font>
+                    <scroll>true</scroll>
+                    <include>TextColor_AlternateColor</include>
                 </control>
             </control>
         </control>
