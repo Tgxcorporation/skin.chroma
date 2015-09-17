@@ -1852,13 +1852,13 @@
                 <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
             </control>
             <control type="button" id="20">
-                <enable>Visualisation.Enabled</enable>
-                <animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.Enabled">Conditional</animation>
+                <enable>Visualisation.HasPresets</enable>
+                <animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.HasPresets">Conditional</animation>
                 <label>$LOCALIZE[31048]</label>
                 <include>TopBarButton</include>
                 <texturefocus>$PARAM[Color]/topbar/topbar_presets_focus.png</texturefocus>
                 <texturenofocus>$PARAM[Color]/topbar/topbar_presets_nofocus.png</texturenofocus>
-                <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
+                <onclick>ActivateWindow(122)</onclick>
             </control>
         </control>
     </include>
