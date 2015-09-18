@@ -118,6 +118,7 @@
                     <height>35</height>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MidColor</include>
+                    <scroll>true</scroll>
                     <label>$INFO[ListItem.EpisodeName]</label>
                 </control>
                 <control type="textbox" id="400">
