@@ -7,7 +7,7 @@ Full-featured modern skin designed for Full HD TV screens.
 
 #### [Wiki](https://github.com/Tgxcorporation/skin.chroma/wiki)
 
-#### [Changelog](https://github.com/Tgxcorporation/skin.chroma/blob/master/changelog.txt)
+#### [Changelog](https://github.com/Tgxcorporation/skin.chroma/blob/isengard/changelog.txt)
 
 #### [Download from GitHub](https://github.com/Tgxcorporation/skin.chroma/wiki/Install-from-GitHub)
 
