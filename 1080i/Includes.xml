@@ -1178,7 +1178,6 @@
                         <include>myautoscroll</include>
                     </control>
                     <control type="grouplist">
-                        <visible>!IsEmpty(VideoPlayer.VideoResolution)</visible>
                         <posx>0</posx>
                         <posy>325</posy>
                         <width>1006</width>

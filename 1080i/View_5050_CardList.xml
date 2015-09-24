@@ -154,7 +154,6 @@
                             <include>myautoscroll</include>
                         </control>
                         <control type="group">
-                            <visible>!IsEmpty(ListItem.VideoResolution)</visible>
                             <posx>36</posx>
                             <posy>565</posy>
                             <include>CodecsCard</include>
@@ -407,7 +406,6 @@
                             <include>myautoscroll</include>
                         </control>
                         <control type="group">
-                            <visible>!IsEmpty(ListItem.VideoResolution)</visible>
                             <posx>36</posx>
                             <posy>565</posy>
                             <include>CodecsCard</include>

@@ -102,7 +102,6 @@
                 </control>
                 <control type="grouplist">
                     <visible>![Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)]</visible>
-                    <visible>!IsEmpty(ListItem.VideoResolution)</visible>
                     <posx>0</posx>
                     <posy>550</posy>
                     <width>380</width>
