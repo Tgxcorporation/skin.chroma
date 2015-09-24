@@ -304,7 +304,7 @@
             <texture>badges/video/$VAR[videocodec_ExtendedInfo].png</texture>
         </control>
         <control type="image">
-            <visible>!IsEmpty(Window.Property(movie.VideoCodec))</visible>
+            <visible>!IsEmpty(Window.Property(movie.AudioChannels))</visible>
             <description>Audio Codec Image</description>
             <width>63</width>
             <height>50</height>
@@ -312,7 +312,7 @@
             <texture>badges/audio/$INFO[Window.Property(movie.AudioChannels),,.png]</texture>
         </control>
         <control type="image">
-            <visible>!IsEmpty(Window.Property(movie.VideoCodec))</visible>
+            <visible>!IsEmpty(Window.Property(movie.AudioCodec))</visible>
             <description>Audio Codec Image</description>
             <width>63</width>
             <height>50</height>
@@ -545,7 +545,7 @@
             <animation effect="slide" start="0,0" end="-80,0" time="0" condition="![!StringCompare(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
             <animation effect="slide" start="0,0" end="-80,0" time="0" condition="![[SubString(ListItem(0).Filenameandpath,bluray) | SubString(ListItem(0).Filenameandpath,blu-ray) | SubString(ListItem(0).Filenameandpath,bdrip)]|SubString(ListItem.Filenameandpath,web)|SubString(ListItem.Filenameandpath,hdtv)|SubString(ListItem.Filenameandpath,dvd) | SubString(ListItem.Filenameandpath,.ifo,Right) | SubString(ListItem.Filenameandpath,.iso,Right)|SubString(ListItem.Path,videodb://movies/sets,left)|SubString(Player.Filenameandpath,4k)]">Conditional</animation>
             <animation effect="slide" start="0,0" end="-80,0" time="0" condition="![ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)]">Conditional</animation>
-            <posx>480</posx>
+            <posx>560</posx>
             <posy>0</posy>
             <visible>!IsEmpty(ListItem.Top250) + !SubString(ListItem.Top250,0,Left)</visible>
             <control type="image" id="1">
