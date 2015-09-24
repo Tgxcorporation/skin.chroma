@@ -794,7 +794,6 @@
                         <onright>60</onright>
                     </control>
                     <control type="grouplist">
-                        <visible>!IsEmpty(Window.Property(movie.VideoResolution))</visible>
                         <posx>TextMargin</posx>
                         <posy>750</posy>
                         <width min="90" max="967">auto</width>
