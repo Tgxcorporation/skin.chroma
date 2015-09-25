@@ -6,6 +6,7 @@
         <import addon="script.favourites" version="3.2.0"/>
         <import addon="service.skin.widgets" version="0.0.27"/>
         <import addon="script.skinshortcuts" version="0.2.4"/>
+        <import addon="script.skin.helper.service" version="0.0.11"/>
     </requires>
     <extension point="xbmc.gui.skin" debugging="false">
         <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
@@ -16,6 +17,7 @@
         <disclaimer lang="en">This skin does not work on Apple Tv 2</disclaimer>
         <license>Creative Commons Attribution-ShareAlike 3.0 Unported License</license>
         <source>https://github.com/Tgxcorporation/skin.chroma</source>
+        <forum>http://forum.kodi.tv/forumdisplay.php?fid=241</forum>
         <website>https://github.com/Tgxcorporation/skin.chroma/wiki</website>
         <platform>all</platform>
     </extension>
