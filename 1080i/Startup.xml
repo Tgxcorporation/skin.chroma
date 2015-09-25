@@ -68,6 +68,16 @@
                 <height>1080</height>
                 <texture>$VAR[Theme.Color]/startup.png</texture>
             </control>
+            <control type="label">
+                <posx>0</posx>
+                <posy>1010</posy>
+                <height>36</height>
+                <width>1920</width>
+                <align>center</align>
+                <font>WindowTitleSubFont</font>
+                <include>TextColor_MidColor</include>
+                <label>$INFO[Window(Home).Property(SkinHelper.skinVersion)]</label>
+            </control>
         </control>
     </controls>
 </window>
