@@ -13,6 +13,8 @@
         <value condition="ListItem.IsResumable">$VAR[Theme.Color]/overlay_inprogress/$INFO[ListItem.Overlay]</value>
         <value condition="Skin.HasSetting(Hide_Watched_Marks)">$VAR[Theme.Color]/overlay_unwatched/$INFO[ListItem.Overlay]</value>
         <value condition="!IsEmpty(ListItem.Overlay)">$VAR[Theme.Color]/$INFO[ListItem.Overlay]</value>
+        <value condition="StringCompare(ListItem.Label2,$LOCALIZE[305])+Window.IsVisible(AddonBrowser.xml)">$VAR[Theme.Color]/OverlayWatched.png</value>
+        <value condition="!IsEmpty(ListItem.Label2)+Window.IsVisible(AddonBrowser.xml)">$VAR[Theme.Color]/OverlayInProgress.png</value>
         <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)+!IsEmpty(ListItem.Property(DBID))">$VAR[Theme.Color]/OverlayUnwatched.png</value>
     </variable>
     <variable name="Banner">
