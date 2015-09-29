@@ -78,36 +78,42 @@
                         <onright>60</onright>
                         <control type="spincontrolex" id="10">
                             <description>Frequency</description>
+                            <textwidth>515</textwidth>
                             <width>1300</width>
                             <include>LeftMenuButton</include>
                             <label>$ADDON[pvr.mediaportal.tvserver 30101]</label>
                         </control>
                         <control type="spincontrolex" id="11">
                             <description>Airtime</description>
+                            <textwidth>515</textwidth>
                             <width>1300</width>
                             <include>LeftMenuButton</include>
                             <label>$ADDON[pvr.mediaportal.tvserver 30102]</label>
                         </control>
                         <control type="spincontrolex" id="12">
                             <description>Channels</description>
+                            <textwidth>515</textwidth>
                             <width>1300</width>
                             <include>LeftMenuButton</include>
                             <label>$ADDON[pvr.mediaportal.tvserver 30103]</label>
                         </control>
                         <control type="spincontrolex" id="13">
                             <description>Keep</description>
+                            <textwidth>515</textwidth>
                             <width>1300</width>
                             <include>LeftMenuButton</include>
                             <label>$ADDON[pvr.mediaportal.tvserver 30104]</label>
                         </control>
                         <control type="spincontrolex" id="14">
                             <description>Record minutes before start</description>
+                            <textwidth>515</textwidth>
                             <width>1300</width>
                             <include>LeftMenuButton</include>
                             <label>$ADDON[pvr.mediaportal.tvserver 30105]</label>
                         </control>
                         <control type="spincontrolex" id="15">
                             <description>Record minutes after end</description>
+                            <textwidth>515</textwidth>
                             <width>1300</width>
                             <include>LeftMenuButton</include>
                             <label>$ADDON[pvr.mediaportal.tvserver 30106]</label>

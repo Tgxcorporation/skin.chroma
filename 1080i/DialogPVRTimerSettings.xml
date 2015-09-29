@@ -57,6 +57,7 @@
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="spincontrolex" id="9">
+                    <textwidth>515</textwidth>
                     <width>1300</width>
                     <include>LeftMenuButton</include>
                 </control>
