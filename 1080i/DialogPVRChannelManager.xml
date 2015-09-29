@@ -141,6 +141,7 @@
                         <label>$LOCALIZE[19206]</label>
                     </control>
                     <control type="spincontrolex" id="13">
+                        <textwidth>200</textwidth>
                         <width>670</width>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[19200]</label>

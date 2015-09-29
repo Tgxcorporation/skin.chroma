@@ -570,11 +570,13 @@
             <include>LeftMenuButton</include>
         </control>
         <control type="spincontrolex" id="12">
+            <textwidth>515</textwidth>
             <width>1300</width>
             <label>$ADDON[pvr.dvblink 32017]</label>
             <include>LeftMenuButton</include>
         </control>
         <control type="spincontrolex" id="13">
+            <textwidth>515</textwidth>
             <width>1300</width>
             <label>$ADDON[pvr.dvblink 32018]</label>
             <include>LeftMenuButton</include>
@@ -590,6 +592,7 @@
             <include>LeftMenuButton</include>
         </control>
         <control type="spincontrolex" id="16">
+            <textwidth>515</textwidth>
             <width>1300</width>
             <label>$ADDON[pvr.dvblink 32021]</label>
             <include>LeftMenuButton</include>
@@ -597,26 +600,31 @@
     </include>
     <include name="RecordPrefs_nextpvr">
         <control type="spincontrolex" id="21">
+            <textwidth>515</textwidth>
             <width>1300</width>
             <label>$ADDON[pvr.nextpvr 30120]</label>
             <include>LeftMenuButton</include>
         </control>
         <control type="spincontrolex" id="25">
+            <textwidth>515</textwidth>
             <width>1300</width>
             <label>$ADDON[pvr.nextpvr 30132]</label>
             <include>LeftMenuButton</include>
         </control>
         <control type="spincontrolex" id="26">
+            <textwidth>515</textwidth>
             <width>1300</width>
             <label>$ADDON[pvr.nextpvr 30133]</label>
             <include>LeftMenuButton</include>
         </control>
         <control type="spincontrolex" id="23">
+            <textwidth>515</textwidth>
             <width>1300</width>
             <label>$ADDON[pvr.nextpvr 30130]</label>
             <include>LeftMenuButton</include>
         </control>
         <control type="spincontrolex" id="27">
+            <textwidth>515</textwidth>
             <width>1300</width>
             <label>$ADDON[pvr.nextpvr 30134]</label>
             <include>LeftMenuButton</include>
@@ -638,16 +646,19 @@
             <include>LeftMenuButton</include>
         </control>
         <control type="spincontrolex" id="12">
+            <textwidth>515</textwidth>
             <width>1300</width>
             <label>$ADDON[pvr.wmc 30103]</label>
             <include>LeftMenuButton</include>
         </control>
         <control type="spincontrolex" id="13">
+            <textwidth>515</textwidth>
             <width>1300</width>
             <label>$ADDON[pvr.wmc 30107]</label>
             <include>LeftMenuButton</include>
         </control>
         <control type="spincontrolex" id="14">
+            <textwidth>515</textwidth>
             <width>1300</width>
             <label>$ADDON[pvr.wmc 30110]</label>
             <include>LeftMenuButton</include>

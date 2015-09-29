@@ -45,6 +45,7 @@
                     <onright>60</onright>
                     <control type="spincontrolex" id="10">
                         <label>$LOCALIZE[1008]</label>
+                        <textwidth>465</textwidth>
                         <width>1200</width>
                         <include>LeftMenuButton</include>
                     </control>
