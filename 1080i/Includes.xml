@@ -49,8 +49,8 @@
             <timeperimage>14000</timeperimage>
             <fadetime>400</fadetime>
             <randomize>true</randomize>
-            <animation effect="fade" start="0" end="100" time="250">Visible</animation>
-            <animation effect="fade" start="100" end="0" time="250">Hidden</animation>
+            <animation effect="fade" start="0" end="100" time="150">Visible</animation>
+            <animation effect="fade" start="100" end="0" time="150">Hidden</animation>
         </control>
         <control type="image">
             <visible>[Player.HasAudio + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
@@ -59,8 +59,8 @@
             <fadetime>400</fadetime>
             <aspectratio>scale</aspectratio>
             <texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
-            <animation effect="fade" start="0" end="100" time="250">Visible</animation>
-            <animation effect="fade" start="100" end="0" time="250">Hidden</animation>
+            <animation effect="fade" start="0" end="100" time="150">Visible</animation>
+            <animation effect="fade" start="100" end="0" time="150">Hidden</animation>
         </control>
         <control type="visualisation">
             <visible>[Player.HasAudio + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)]</visible>
@@ -88,8 +88,8 @@
     </include>
     <include name="DimBG">
         <control type="image">
-            <animation effect="fade" time="250" start="0" end="100" reversible="false">WindowOpen</animation>
-            <animation effect="fade" time="250" start="100" end="0" reversible="false">WindowClose</animation>
+            <animation effect="fade" time="150" start="0" end="100" reversible="false">WindowOpen</animation>
+            <animation effect="fade" time="150" start="100" end="0" reversible="false">WindowClose</animation>
             <posx>-1920</posx>
             <posy>-1080</posy>
             <width>5760</width>
@@ -793,13 +793,13 @@
     </include>
     <include name="LeftMenu">
         <control type="group">
-            <animation effect="fade" time="250" start="100" end="0" reversible="false" condition="![control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]]">Conditional</animation>
-            <animation effect="fade" time="250" start="0" end="100" reversible="false" condition="control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">Conditional</animation>
+            <animation effect="fade" time="150" start="100" end="0" reversible="false" condition="![control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]]">Conditional</animation>
+            <animation effect="fade" time="150" start="0" end="100" reversible="false" condition="control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">Conditional</animation>
             <include>OpenClose</include>
             <include>DimBG</include>
         </control>
         <control type="group">
-            <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="0,-800" condition="control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">Conditional</animation>
+            <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="0,-800" condition="control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">Conditional</animation>
             <include>OpenClose</include>
             <control type="image">
                 <animation effect="fade" time="100" start="100" end="0" condition="[control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]]">Conditional</animation>
@@ -834,7 +834,7 @@
     </include>
     <include name="LeftMenuScroller">
         <control type="scrollbar" id="9060">
-            <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="0,-800" condition="control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">Conditional</animation>
+            <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="0,-800" condition="control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">Conditional</animation>
             <include>OpenClose</include>
             <posx>1260</posx>
             <posy>1130</posy>
@@ -865,7 +865,7 @@
         <include>TextColor_MidColor</include>
     </include>
     <include name="LeftMenuButtonGroup">
-        <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="0,-800" condition="control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">Conditional</animation>
+        <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="0,-800" condition="control.isvisible(9000)+[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)|Control.HasFocus(9060)]">Conditional</animation>
         <include>OpenClose</include>
         <posx>610</posx>
         <posy>1130</posy>

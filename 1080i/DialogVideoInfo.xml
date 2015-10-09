@@ -5,6 +5,45 @@
     <defaultcontrol always="true">2</defaultcontrol>
     <controls>
         <include>DimBG</include>
+        <!--<control type="button" id="5111">-->
+            <!--<include>HiddenButton</include>-->
+            <!--<visible>[SubString(Container.FolderPath,videodb://) | SubString(Container.FolderPath,.xsp) | SubString(Container.FolderPath,plugin://)]</visible>-->
+        <!--</control>-->
+        <!--<control type="button" id="1200">-->
+            <!--<include>HiddenButton</include>-->
+            <!--<onfocus>Dialog.Close(movieinformation)</onfocus>-->
+            <!--<onfocus>RunScript(script.extendedinfo,info=extendedinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onfocus>-->
+            <!--<onclick>noop</onclick>-->
+            <!--<visible>Container.Content(movies) + Control.IsVisible(5111)</visible>-->
+        <!--</control>-->
+        <!--<control type="button" id="1200">-->
+            <!--<include>HiddenButton</include>-->
+            <!--<onfocus>Dialog.Close(movieinformation)</onfocus>-->
+            <!--<onfocus>RunScript(script.extendedinfo,info=seasoninfo,tvshow=$INFO[ListItem.TvShowTitle],season=$INFO[Window(home).Property(SeasonNumber)],silent=True)</onfocus>-->
+            <!--<onclick>noop</onclick>-->
+            <!--<visible>!Stringcompare(Container.FolderPath,videodb://tvshows/titles/) + Substring(Container.FolderPath,videodb://tvshows/titles/,left) + !Container.Content(episodes)</visible>-->
+        <!--</control>-->
+        <!--<control type="button" id="1200">-->
+            <!--<include>HiddenButton</include>-->
+            <!--<onfocus>Dialog.Close(movieinformation)</onfocus>-->
+            <!--<onfocus>RunScript(script.extendedinfo,info=extendedtvinfo,dbid=$INFO[ListItem.DBID],name=$INFO[ListItem.Title])</onfocus>-->
+            <!--<onclick>noop</onclick>-->
+            <!--<visible>Container.Content(tvshows) + Control.IsVisible(5111)</visible>-->
+        <!--</control>-->
+        <!--<control type="button" id="1200">-->
+            <!--<include>HiddenButton</include>-->
+            <!--<onfocus>Dialog.Close(movieinformation)</onfocus>-->
+            <!--<onfocus>RunScript(script.toolbox,info=yesnodialog,header=$INFO[ListItem.Label],text=Do you want to re-scrape this movie?,yesaction=SendClick(6),noaction=Action(Close))</onfocus>-->
+            <!--<onclick>noop</onclick>-->
+            <!--<visible>Container.Content(movies) + !Control.IsVisible(5111)</visible>-->
+        <!--</control>-->
+        <!--<control type="button" id="1200">-->
+            <!--<include>HiddenButton</include>-->
+            <!--<onfocus>RunScript(script.toolbox,info=blur,id='"$VAR[PosterVar]"',radius=20,prefix=VideoInfo)</onfocus>-->
+            <!--<onfocus>SetFocus(8)</onfocus>-->
+            <!--<onclick>noop</onclick>-->
+            <!--<visible>!Container.Content(movies) + !Container.Content(tvshows)</visible>-->
+        <!--</control>-->
         <control type="group">
             <include>DialogOpenClose</include>
             <control type="image">
