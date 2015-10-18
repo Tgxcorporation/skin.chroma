@@ -51,7 +51,7 @@
                     <aligny>top</aligny>
                     <font>InfoTitleFont</font>
                     <align>center</align>
-                    <include>TextColor_AlternateColor</include>
+                    <textcolor>AlternateColor</textcolor>
                     <scroll>false</scroll>
                     <label>$PARAM[labelTitle]</label>
                 </control>
@@ -81,7 +81,7 @@
                     <include name="Stars">
                         <param name="x" value="1830"/>
                         <param name="y" value="968"/>
-                        <param name="color" value="main"/>
+                        <param name="color" value="alternate"/>
                     </include>
                     <control type="label" id="46983">
                         <posx>1810</posx>
@@ -153,7 +153,8 @@
                     <posy>200</posy>
                     <width>260</width>
                     <height>390</height>
-                    <texture border="1,50,1,50">$VAR[Theme.Color]/common/frame_focus.png</texture>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                    <texture border="1,50,1,50">common/frame_focus.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
             </control>
@@ -197,7 +198,8 @@
                     <posy>190</posy>
                     <width>370</width>
                     <height>370</height>
-                    <texture border="1,50,1,50">$VAR[Theme.Color]/common/frame_focus.png</texture>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                    <texture border="1,50,1,50">common/frame_focus.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
             </control>

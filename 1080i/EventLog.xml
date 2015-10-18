@@ -81,7 +81,8 @@
                             <posy>0</posy>
                             <height>100</height>
                             <width>910</width>
-                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus_2.png</texture>
+                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                            <texture border="1">list/bg_facade_focus_2.png</texture>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
@@ -100,7 +101,7 @@
                             <width>810</width>
                             <font>FacadeListSubFont</font>
                             <scroll>true</scroll>
-                            <include>TextColor_AlternateColor</include>
+                            <textcolor>AlternateColor</textcolor>
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </control>
@@ -123,7 +124,7 @@
                     <width>380</width>
                     <height>605</height>
                     <font>InfoPlotFont</font>
-                    <include>TextColor_AlternateColor</include>
+                    <textcolor>AlternateColor</textcolor>
                     <label>$INFO[ListItem.Property(Event.Description)]</label>
                     <include>myautoscroll</include>
                 </control>

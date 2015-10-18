@@ -20,7 +20,7 @@
                 <scroll>true</scroll>
                 <align>center</align>
                 <font>NotificationFont</font>
-                <include>TextColor_AlternateColor</include>
+                <textcolor>AlternateColor</textcolor>
                 <label>$INFO[Control.GetLabel(401)]$INFO[Control.GetLabel(402),     ]</label>
             </control>
             <control type="image" id="400">

@@ -117,7 +117,8 @@
                                     <posy>0</posy>
                                     <height>100</height>
                                     <width>910</width>
-                                    <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus_2.png</texture>
+                                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                                    <texture border="1">list/bg_facade_focus_2.png</texture>
                                 </control>
                                 <control type="image">
                                     <posx>TextMargin</posx>
@@ -156,7 +157,7 @@
                                     <width>710</width>
                                     <font>FacadeListSubFont</font>
                                     <scroll>true</scroll>
-                                    <include>TextColor_AlternateColor</include>
+                                    <textcolor>AlternateColor</textcolor>
                                     <label>$INFO[ListItem.Label2]</label>
                                 </control>
                             </control>
@@ -250,7 +251,8 @@
                                     <posy>0</posy>
                                     <height>100</height>
                                     <width>910</width>
-                                    <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus_2.png</texture>
+                                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                                    <texture border="1">list/bg_facade_focus_2.png</texture>
                                 </control>
                                 <control type="image">
                                     <posx>TextMargin</posx>
@@ -289,7 +291,7 @@
                                     <width>710</width>
                                     <font>FacadeListSubFont</font>
                                     <scroll>true</scroll>
-                                    <include>TextColor_AlternateColor</include>
+                                    <textcolor>AlternateColor</textcolor>
                                     <label>$INFO[ListItem.Label2]</label>
                                 </control>
                             </control>

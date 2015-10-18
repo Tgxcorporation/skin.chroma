@@ -353,7 +353,7 @@
                 <font>BadgeFont</font>
                 <align>center</align>
                 <label>$INFO[Window.Property(movie.Top250)]</label>
-                <include>TextColor_AlternateColor</include>
+                <textcolor>AlternateColor</textcolor>
             </control>
         </control>
     </include>
@@ -640,7 +640,7 @@
                 <font>BadgeFont</font>
                 <align>center</align>
                 <label>$INFO[VideoPlayer.Top250]</label>
-                <include>TextColor_AlternateColor</include>
+                <textcolor>AlternateColor</textcolor>
             </control>
         </control>
         <control type="group" id="1">
@@ -663,7 +663,7 @@
                 <font>BadgeFont</font>
                 <align>left</align>
                 <label>$INFO[VideoPlayer.AudioLanguage]</label>
-                <include>TextColor_AlternateColor</include>
+                <textcolor>AlternateColor</textcolor>
             </control>
         </control>
         <control type="group" id="1">
@@ -686,7 +686,7 @@
                 <font>BadgeFont</font>
                 <align>left</align>
                 <label>$INFO[VideoPlayer.SubtitlesLanguage]</label>
-                <include>TextColor_AlternateColor</include>
+                <textcolor>AlternateColor</textcolor>
             </control>
         </control>
     </include>

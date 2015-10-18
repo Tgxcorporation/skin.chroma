@@ -101,7 +101,7 @@
                         <include name="Stars">
                             <param name="x" value="-3"/>
                             <param name="y" value="3"/>
-                            <param name="color" value="main"/>
+                            <param name="color" value="alternate"/>
                         </include>
                         <control type="label">
                             <posx>TextMargin</posx>
@@ -120,7 +120,7 @@
                         <width>380</width>
                         <height>50</height>
                         <font>InfoDetailsFont</font>
-                        <include>TextColor_AlternateColor</include>
+                        <textcolor>AlternateColor</textcolor>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow2]</label>
                     </control>
@@ -140,7 +140,7 @@
                         <width>380</width>
                         <height>380</height>
                         <font>InfoPlotFont</font>
-                        <include>TextColor_AlternateColor</include>
+                        <textcolor>AlternateColor</textcolor>
                         <label>$VAR[Plots]</label>
                         <include>myautoscroll</include>
                     </control>

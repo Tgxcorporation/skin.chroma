@@ -90,11 +90,12 @@
         <control type="image">
             <animation effect="fade" time="150" start="0" end="100" reversible="false">WindowOpen</animation>
             <animation effect="fade" time="150" start="100" end="0" reversible="false">WindowClose</animation>
+            <animation effect="fade" start="19" end="19" time="0" reversible="false" condition="true">Conditional</animation>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <posx>-1920</posx>
             <posy>-1080</posy>
             <width>5760</width>
             <height>3240</height>
-            <include>DialogColordiffuse</include>
             <texture border="1">common/WhiteDot.png</texture>
         </control>
     </include>
@@ -110,12 +111,12 @@
         <height>60</height>
         <label>-</label>
         <font>-</font>
+        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
     </include>
     <include name="TopBarList">
         <control type="grouplist" id="9900">
             <include>TopBarVisibleFadeEffectDialog</include>
             <include>TopBarVisibleFadeEffect</include>
-            <include>Condition_$PARAM[Color]</include>
             <posx>0</posx>
             <posy>65</posy>
             <width>1920</width>
@@ -136,89 +137,89 @@
             <align>center</align>
             <control type="button" id="1600">
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_back_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_back_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_back_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_back_nofocus.png</texturenofocus>
                 <onclick>back</onclick>
             </control>
             <control type="button" id="1602">
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_home_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_home_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_home_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_home_nofocus.png</texturenofocus>
                 <onclick>ActivateWindow(home)</onclick>
             </control>
             <control type="button" id="1604">
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_skipback_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_skipback_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_skipback_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_skipback_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Previous)</onclick>
             </control>
             <control type="button" id="1606">
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_rewind_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_rewind_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_rewind_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_rewind_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Rewind)</onclick>
             </control>
             <control type="togglebutton" id="1608">
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_pause_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_pause_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_pause_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_pause_nofocus.png</texturenofocus>
                 <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-                <alttexturefocus>$PARAM[Color]/topbar/topbar_play_focus.png</alttexturefocus>
-                <alttexturenofocus>$PARAM[Color]/topbar/topbar_play_nofocus.png</alttexturenofocus>
+                <alttexturefocus>topbar/topbar_play_focus.png</alttexturefocus>
+                <alttexturenofocus>topbar/topbar_play_nofocus.png</alttexturenofocus>
                 <onclick>PlayerControl(Play)</onclick>
             </control>
             <control type="button" id="1610">
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_stop_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_stop_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_stop_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_stop_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Stop)</onclick>
             </control>
             <control type="button" id="1612">
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_fastforward_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_fastforward_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_fastforward_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_fastforward_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Forward)</onclick>
             </control>
             <control type="button" id="1614">
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_skipforward_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_skipforward_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_skipforward_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_skipforward_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Next)</onclick>
             </control>
             <control type="button" id="1616">
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_volume_mute_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_volume_mute_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_volume_mute_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_volume_mute_nofocus.png</texturenofocus>
                 <onclick>Mute</onclick>
             </control>
             <control type="button" id="1618">
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_volume_down_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_volume_down_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_volume_down_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_volume_down_nofocus.png</texturenofocus>
                 <onclick>VolumeDown</onclick>
             </control>
             <control type="button" id="1620">
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_volume_up_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_volume_up_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_volume_up_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
                 <onclick>VolumeUp</onclick>
             </control>
             <control type="button" id="1622">
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_fullscreen_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_fullscreen_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_fullscreen_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_fullscreen_nofocus.png</texturenofocus>
                 <onclick>fullscreen</onclick>
             </control>
             <control type="button" id="1624">
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_settings_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_settings_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_settings_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_settings_nofocus.png</texturenofocus>
                 <onclick>ActivateWindow(Settings,return)</onclick>
             </control>
             <control type="button" id="1626">
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_shutdown_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_shutdown_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_shutdown_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_shutdown_nofocus.png</texturenofocus>
                 <onclick>ActivateWindow(shutdownmenu)</onclick>
             </control>
         </control>
@@ -259,21 +260,7 @@
                 <height>200</height>
                 <texture border="65">common/background_strip_horizontal_text.png</texture>
             </control>
-            <include name="TopBarList">
-                <param name="Color" value="green"/>
-            </include>
-            <include name="TopBarList">
-                <param name="Color" value="amber"/>
-            </include>
-            <include name="TopBarList">
-                <param name="Color" value="fuchsia"/>
-            </include>
-            <include name="TopBarList">
-                <param name="Color" value="indigo"/>
-            </include>
-            <include name="TopBarList">
-                <param name="Color" value="titanium"/>
-            </include>
+            <include>TopBarList</include>
             <control type="button" id="8997">
                 <description>Fake button for mouse control</description>
                 <posx>395</posx>
@@ -290,22 +277,24 @@
     </include>
     <include name="OverlayTop">
         <control type="image">
+            <include>OverlayTransparency</include>
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width>
             <height>540</height>
-            <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
-            <texture>$VAR[Theme.Color]/common/overlay_top.png</texture>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+            <texture>common/overlay_top.png</texture>
         </control>
     </include>
     <include name="OverlayBottom">
         <control type="image">
+            <include>OverlayTransparency</include>
             <posx>0</posx>
             <posy>540</posy>
             <width>1920</width>
             <height>540</height>
-            <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
-            <texture>$VAR[Theme.Color]/common/overlay_bottom.png</texture>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+            <texture>common/overlay_bottom.png</texture>
         </control>
     </include>
     <include name="OverlayFull">
@@ -325,7 +314,8 @@
             <posy>0</posy>
             <width>50</width>
             <height>50</height>
-            <texture>$VAR[Theme.Color]/buttons/More_NoFocus.png</texture>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+            <texture>buttons/More_NoFocus.png</texture>
         </control>
         <control type="label">
             <include>HeaderVisibleFadeEffect</include>
@@ -496,7 +486,7 @@
             <align>left</align>
             <scroll>true</scroll>
             <font>NotificationFont</font>
-            <include>TextColor_AlternateColor</include>
+            <textcolor>AlternateColor</textcolor>
             <label>$INFO[VideoPlayer.Title]</label>
         </control>
         <control type="label">
@@ -508,7 +498,7 @@
             <align>left</align>
             <scroll>true</scroll>
             <font>NotificationFont</font>
-            <include>TextColor_AlternateColor</include>
+            <textcolor>AlternateColor</textcolor>
             <label>$INFO[MusicPlayer.Title]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Season,$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,, - ]$INFO[VideoPlayer.Title]</label>
         </control>
         <control type="label">
@@ -520,7 +510,7 @@
             <align>left</align>
             <scroll>true</scroll>
             <font>NotificationFont</font>
-            <include>TextColor_AlternateColor</include>
+            <textcolor>AlternateColor</textcolor>
             <label>$INFO[MusicPlayer.Title]</label>
         </control>
         <!--RIGHT-->
@@ -533,7 +523,7 @@
             <width>380</width>
             <align>center</align>
             <font>NotificationFont</font>
-            <include>TextColor_AlternateColor</include>
+            <textcolor>AlternateColor</textcolor>
             <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
         </control>
         <control type="label">
@@ -548,7 +538,7 @@
             <width>380</width>
             <align>center</align>
             <font>NotificationFont</font>
-            <include>TextColor_AlternateColor</include>
+            <textcolor>AlternateColor</textcolor>
             <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
         </control>
         <control type="label">
@@ -563,7 +553,7 @@
             <width>380</width>
             <align>center</align>
             <font>NotificationFont</font>
-            <include>TextColor_AlternateColor</include>
+            <textcolor>AlternateColor</textcolor>
             <label>$INFO[System.Time]$INFO[Player.FinishTime, / ]</label>
         </control>
         <!--MIDDLE-->
@@ -621,10 +611,6 @@
         <width>72</width>
         <height>50</height>
         <font>ButtonFont</font>
-        <include>FocusedColor_MainColor</include>
-        <include>TextureFocus</include>
-        <texturenofocus>-</texturenofocus>
-        <include>AltTextureFocus</include>
         <alttexturenofocus>-</alttexturenofocus>
     </include>
     <include name="List_9009_Commons">
@@ -665,7 +651,8 @@
                     <posy>0</posy>
                     <height>100</height>
                     <width>860</width>
-                    <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus_2.png</texture>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                    <texture border="1">list/bg_facade_focus_2.png</texture>
                 </control>
                 <control type="label">
                     <posx>TextMargin</posx>
@@ -673,7 +660,7 @@
                     <height>50</height>
                     <width>760</width>
                     <font>FacadeListSubFont</font>
-                    <include>TextColor_AlternateColor</include>
+                    <textcolor>AlternateColor</textcolor>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
                 <control type="label">
@@ -711,7 +698,8 @@
             <posy>0</posy>
             <width>1920</width>
             <height>1080</height>
-            <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+            <texture>special://skin/backgrounds/default/background.png</texture>
         </control>
         <control type="multiimage">
             <include>KenBurns</include>
@@ -744,7 +732,7 @@
                 <posy>45</posy>
                 <width>101</width>
                 <height>101</height>
-                <texture>$VAR[Theme.Color]/common/header_logo_recording.png</texture>
+                <texture>common/header_logo_recording.png</texture>
             </control>
             <control type="image">
                 <visible>!Window.isvisible(DialogMuteBug.xml)</visible>
@@ -753,7 +741,8 @@
                 <posy>45</posy>
                 <width>101</width>
                 <height>101</height>
-                <texture>$VAR[Theme.Color]/common/header_logo.png</texture>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture>common/header_logo.png</texture>
             </control>
             <control type="image">
                 <visible>Window.isvisible(DialogMuteBug.xml)</visible>
@@ -762,7 +751,8 @@
                 <posy>45</posy>
                 <width>100</width>
                 <height>100</height>
-                <texture>$VAR[Theme.Color]/common/header_logo_mute.png</texture>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture>common/header_logo_mute.png</texture>
             </control>
         </control>
         <control type="group">
@@ -821,14 +811,16 @@
                 <posy>1030</posy>
                 <width>50</width>
                 <height>50</height>
-                <texture>$VAR[Theme.Color]/buttons/More_NoFocus.png</texture>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture>buttons/More_NoFocus.png</texture>
             </control>
             <control type="image">
                 <posx>560</posx>
                 <posy>1030</posy>
                 <width>800</width>
                 <height>1080</height>
-                <texture border="50">$VAR[Theme.Color]/common/background_menu.png</texture>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture border="50">common/background_menu.png</texture>
             </control>
             <control type="button" id="8999">
                 <description>Fake button for mouse control</description>
@@ -901,8 +893,6 @@
         <textwidth>560</textwidth>
         <textoffsetx>TextMargin</textoffsetx>
         <textcolor>NoFocusedColor</textcolor>
-        <include>TextureFocus</include>
-        <include>AltTextureFocus</include>
     </include>
     <include name="DialogMenuButton">
         <width>480</width>
@@ -932,12 +922,13 @@
         </control>
     </include>
     <include name="VerticalScroller">
+        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
         <animation type="Focus" reversible="false">
             <effect type="fade" start="10" end="100" time="100"/>
         </animation>
         <texturesliderbackground>-</texturesliderbackground>
-        <include>VerticalTextureSliderBarFocus</include>
-        <include>VerticalTextureSliderBarNoFocus</include>
+        <texturesliderbarfocus border="10">buttons/Scrollbar_Vertical_Focus.png</texturesliderbarfocus>
+        <texturesliderbar border="10">buttons/Scrollbar_Vertical_NoFocus.png</texturesliderbar>
         <textureslidernib>-</textureslidernib>
         <textureslidernibfocus>-</textureslidernibfocus>
         <!-- <showonepage>true</showonepage> -->
@@ -945,12 +936,13 @@
         <width>50</width>
     </include>
     <include name="HorizontalScroller">
+        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
         <animation type="Focus" reversible="false">
             <effect type="fade" start="10" end="100" time="100"/>
         </animation>
         <texturesliderbackground>-</texturesliderbackground>
-        <include>HorizontalTextureSliderBarFocus</include>
-        <include>HorizontalTextureSliderBarNoFocus</include>
+        <texturesliderbarfocus border="10">buttons/Scrollbar_Horizontal_Focus.png</texturesliderbarfocus>
+        <texturesliderbar border="10">buttons/Scrollbar_Horizontal_NoFocus.png</texturesliderbar>
         <textureslidernib>-</textureslidernib>
         <textureslidernibfocus>-</textureslidernibfocus>
         <!-- <showonepage>true</showonepage> -->
@@ -975,8 +967,8 @@
                 <urlset>1</urlset>
                 <shadowcolor>ShadowColor</shadowcolor>
                 <font>WindowTitleSubFont</font>
-                <include>TitleColor_MainColor</include>
-                <include>HeadLineColor_AlternateColor</include>
+                <titlecolor>AlternateColor</titlecolor>
+                <headlinecolor>$VAR[Picked.Theme.Color]</headlinecolor>
                 <include>TextColor_MainColor</include>
             </control>
         </control>
@@ -990,11 +982,7 @@
         <font>ButtonFont</font>
         <textoffsetx>TextMargin</textoffsetx>
         <textcolor>NoFocusedColor</textcolor>
-        <include>FocusedColor_MainColor</include>
-        <include>SelectedColor_SelectedColor</include>
-        <include>DisabledColor_DisabledColor</include>
-        <include>TextureFocus</include>
-        <texturenofocus>-</texturenofocus>
+        <disabledcolor>DisabledColor</disabledcolor>
         <pulseonselect>false</pulseonselect>
     </include>
     <include name="SkinSettings_DefaultLayout">
@@ -1044,7 +1032,8 @@
                     <posy>0</posy>
                     <height>50</height>
                     <width>1340</width>
-                    <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                    <texture border="1">list/bg_facade_focus.png</texture>
                 </control>
                 <control type="label">
                     <visible>!StringCompare(ListItem.Label,)</visible>
@@ -1181,7 +1170,7 @@
                         <width>810</width>
                         <height>270</height>
                         <font>InfoPlotFont</font>
-                        <include>TextColor_AlternateColor</include>
+                        <textcolor>AlternateColor</textcolor>
                         <label fallback="19055">$INFO[VideoPlayer.Plot]</label>
                         <include>myautoscroll</include>
                     </control>
@@ -1204,7 +1193,7 @@
                         <include name="Stars">
                             <param name="x" value="-3"/>
                             <param name="y" value="3"/>
-                            <param name="color" value="main"/>
+                            <param name="color" value="alternate"/>
                         </include>
                         <control type="label">
                             <posx>TextMargin</posx>
@@ -1233,7 +1222,7 @@
                         <width>380</width>
                         <height>50</height>
                         <font>InfoDetailsFont</font>
-                        <include>TextColor_AlternateColor</include>
+                        <textcolor>AlternateColor</textcolor>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow2]</label>
                     </control>
@@ -1253,7 +1242,7 @@
                         <width>380</width>
                         <height>50</height>
                         <font>InfoDetailsFont</font>
-                        <include>TextColor_AlternateColor</include>
+                        <textcolor>AlternateColor</textcolor>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow4]</label>
                     </control>
@@ -1288,7 +1277,8 @@
                         <width>380</width>
                         <height>380</height>
                         <aspectratio aligny="top">keep</aspectratio>
-                        <texture>$VAR[Theme.Color]/defaultVideoBig.png</texture>
+                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <texture>defaultVideoBig.png</texture>
                     </control>
                     <control type="image">
                         <animation effect="slide" start="0,0" end="63,0" time="0" condition="!Skin.HasSetting(EnableCdArt) | IsEmpty(Player.Art(discart))">Conditional</animation>
@@ -1323,8 +1313,9 @@
             <posy>$PARAM[y]</posy>
             <height>50</height>
             <width>50</width>
-            <include>DialogCloseTextureFocus</include>
-            <include>DialogCloseTextureNoFocus</include>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+            <texturefocus border="1">topbar/topbar_exit_focus.png</texturefocus>
+            <texturenofocus border="1">topbar/topbar_exit_nofocus.png</texturenofocus>
             <onclick>back</onclick>
             <onleft>$PARAM[onleft]</onleft>
             <label>-</label>
@@ -1336,37 +1327,43 @@
             <posy>$PARAM[y]</posy>
             <width>40</width>
             <height>40</height>
-            <texture>$VAR[Theme.Color]/badges/star_focus_$PARAM[color].png</texture>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+            <texture>badges/star_focus_$PARAM[color].png</texture>
         </control>
     </include>
     <include name="WatchedRecOverlay">
         <control type="image">
+            <animation effect="fade" start="$PARAM[transparency]" end="$PARAM[transparency]" time="0" reversible="false" condition="true">Conditional</animation>
             <posx>$PARAM[x]</posx>
             <posy>$PARAM[y]</posy>
             <width>$PARAM[width]</width>
             <height>$PARAM[height]</height>
             <texture>$VAR[Overlay]</texture>
             <aspectratio>keep</aspectratio>
-            <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
         </control>
         <control type="image">
+            <animation effect="fade" start="$PARAM[transparency]" end="$PARAM[transparency]" time="0" reversible="false" condition="true">Conditional</animation>
             <posx>$PARAM[x]</posx>
             <posy>$PARAM[y]</posy>
             <width>$PARAM[width]</width>
             <height>$PARAM[height]</height>
-            <texture>$VAR[Theme.Color]/OverlayRecording.png</texture>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+            <texture>OverlayRecording.png</texture>
             <aspectratio>keep</aspectratio>
-            <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <visible>ListItem.IsRecording</visible>
         </control>
         <control type="image">
+            <animation effect="fade" start="$PARAM[transparency]" end="$PARAM[transparency]" time="0" reversible="false" condition="true">Conditional</animation>
             <posx>$PARAM[x]</posx>
             <posy>$PARAM[y]</posy>
             <width>$PARAM[width]</width>
             <height>$PARAM[height]</height>
-            <texture>$VAR[Theme.Color]/OverlayTimer.png</texture>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+            <texture>OverlayTimer.png</texture>
             <aspectratio>keep</aspectratio>
-            <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <visible>ListItem.HasTimer</visible>
         </control>
     </include>
@@ -1399,16 +1396,14 @@
     <include name="ProgressBar">
         <control type="progress" id="$PARAM[id]">
             <visible>$PARAM[visible]</visible>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <posx>$PARAM[x]</posx>
             <posy>$PARAM[y]</posy>
             <height>$PARAM[height]</height>
             <width>$PARAM[width]</width>
             <texturebg>$PARAM[texturebg]</texturebg>
             <lefttexture>-</lefttexture>
-            <include name="MidTexture">
-                <param name="gfx" value="$PARAM[gfx]"/>
-                <param name="border" value="$PARAM[border]"/>
-            </include>
+            <midtexture border="$PARAM[border]">$PARAM[gfx]</midtexture>
             <righttexture>-</righttexture>
             <overlaytexture>-</overlaytexture>
             <info>$PARAM[info]</info>
@@ -1431,7 +1426,6 @@
     </include>
     <include name="TopBarVideoOSDList">
         <control type="grouplist" id="100">
-            <include>Condition_$PARAM[Color]</include>
             <posx>0</posx>
             <posy>65</posy>
             <width>1920</width>
@@ -1443,16 +1437,16 @@
             <!--***-->
             <control type="button" id="704">
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_back_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_back_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_back_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_back_nofocus.png</texturenofocus>
                 <onclick>Back</onclick>
                 <onclick>Back</onclick>
                 <onclick>Back</onclick>
             </control>
             <control type="button" id="705">
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_home_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_home_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_home_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_home_nofocus.png</texturenofocus>
                 <onclick>Back</onclick>
                 <onclick>ActivateWindow(Home)</onclick>
             </control>
@@ -1460,24 +1454,24 @@
                 <visible>VideoPlayer.Content(LiveTV)</visible>
                 <label>$LOCALIZE[210]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_channel_up_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_channel_up_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_channel_up_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_channel_up_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Previous)</onclick>
             </control>
             <control type="button" id="301">
                 <visible>VideoPlayer.Content(LiveTV)</visible>
                 <label>$LOCALIZE[209]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_channel_down_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_channel_down_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_channel_down_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_channel_down_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Next)</onclick>
             </control>
             <control type="button" id="200">
                 <visible>!VideoPlayer.Content(LiveTV)</visible>
                 <label>$LOCALIZE[210]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_skipback_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_skipback_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_skipback_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_skipback_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Previous)</onclick>
             </control>
             <control type="button" id="201">
@@ -1485,8 +1479,8 @@
                 <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
                 <label>$LOCALIZE[31354]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_rewind_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_rewind_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_rewind_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_rewind_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Rewind)</onclick>
             </control>
             <control type="togglebutton" id="202">
@@ -1495,18 +1489,18 @@
                 <label>$LOCALIZE[31351]</label>
                 <altlabel>$LOCALIZE[208]</altlabel>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_pause_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_pause_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_pause_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_pause_nofocus.png</texturenofocus>
                 <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-                <alttexturefocus>$PARAM[Color]/topbar/topbar_play_focus.png</alttexturefocus>
-                <alttexturenofocus>$PARAM[Color]/topbar/topbar_play_nofocus.png</alttexturenofocus>
+                <alttexturefocus>topbar/topbar_play_focus.png</alttexturefocus>
+                <alttexturenofocus>topbar/topbar_play_nofocus.png</alttexturenofocus>
                 <onclick>PlayerControl(Play)</onclick>
             </control>
             <control type="button" id="203">
                 <label>$LOCALIZE[31352]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_stop_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_stop_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_stop_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_stop_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Stop)</onclick>
             </control>
             <control type="button" id="204">
@@ -1514,24 +1508,24 @@
                 <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
                 <label>$LOCALIZE[31353]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_fastforward_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_fastforward_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_fastforward_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_fastforward_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Forward)</onclick>
             </control>
             <control type="button" id="205">
                 <visible>!VideoPlayer.Content(LiveTV)</visible>
                 <label>$LOCALIZE[209]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_skipforward_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_skipforward_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_skipforward_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_skipforward_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Next)</onclick>
             </control>
             <control type="button" id="306">
                 <visible>VideoPlayer.Content(LiveTV)</visible>
                 <label>$LOCALIZE[19069]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_channel_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_channel_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_channel_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_channel_nofocus.png</texturenofocus>
                 <onclick>ActivateWindow(PVROSDChannels)</onclick>
                 <onclick>Dialog.Close(VideoOSD)</onclick>
             </control>
@@ -1539,8 +1533,8 @@
                 <visible>VideoPlayer.Content(LiveTV)</visible>
                 <label>$LOCALIZE[19069]$INFO[VideoPlayer.ChannelName, - ]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_epg_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_epg_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_epg_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_epg_nofocus.png</texturenofocus>
                 <onclick>ActivateWindow(PVROSDGuide)</onclick>
                 <onclick>Dialog.Close(VideoOSD)</onclick>
             </control>
@@ -1548,8 +1542,8 @@
                 <visible>VideoPlayer.Content(LiveTV)</visible>
                 <label>$LOCALIZE[23050]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_teletext_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_teletext_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_teletext_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_teletext_nofocus.png</texturenofocus>
                 <onclick>Dialog.Close(VideoOSD)</onclick>
                 <onclick>ActivateWindow(Teletext)</onclick>
                 <!--<onclick>ActivateWindow(Teletext)</onclick>-->
@@ -1561,33 +1555,33 @@
                 <label>$LOCALIZE[264]</label>
                 <altlabel>$LOCALIZE[265]</altlabel>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_rec_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_rec_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_rec_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_rec_nofocus.png</texturenofocus>
                 <usealttexture>Player.Recording</usealttexture>
-                <alttexturefocus>$PARAM[Color]/topbar/topbar_rec_on_focus.png</alttexturefocus>
-                <alttexturenofocus>$PARAM[Color]/topbar/topbar_rec_on_nofocus.png</alttexturenofocus>
+                <alttexturefocus>topbar/topbar_rec_on_focus.png</alttexturefocus>
+                <alttexturenofocus>topbar/topbar_rec_on_nofocus.png</alttexturenofocus>
                 <onclick>PlayerControl(Record)</onclick>
             </control>
             <control type="button" id="251">
                 <label>$LOCALIZE[13395]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_video_settings_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_video_settings_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_video_settings_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_video_settings_nofocus.png</texturenofocus>
                 <onclick>ActivateWindow(OSDVideoSettings)</onclick>
             </control>
             <control type="button" id="252">
                 <label>$LOCALIZE[13396]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_volume_up_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_volume_up_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_volume_up_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
                 <onclick>ActivateWindow(OSDAudioSettings)</onclick>
             </control>
             <control type="button" id="250">
                 <visible>!VideoPlayer.Content(LiveTV)</visible>
                 <label>$LOCALIZE[31356]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_subtitles_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_subtitles_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_subtitles_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_subtitles_nofocus.png</texturenofocus>
                 <onclick>Close</onclick>
                 <onclick>Dialog.Close(VideoOSD)</onclick>
                 <onclick>ActivateWindow(SubtitleSearch)</onclick>
@@ -1596,8 +1590,8 @@
                 <visible>!VideoPlayer.Content(LiveTV)</visible>
                 <label>$LOCALIZE[298]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_bookmark2_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_bookmark2_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_bookmark2_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_bookmark2_nofocus.png</texturenofocus>
                 <onclick>ActivateWindow(VideoBookmarks)</onclick>
             </control>
             <control type="button" id="254">
@@ -1606,8 +1600,8 @@
                 <animation effect="fade" start="100" end="50" time="0" condition="!VideoPlayer.HasMenu">Conditional</animation>
                 <label>$LOCALIZE[31355]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_dvd_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_dvd_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_dvd_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_dvd_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(ShowVideoMenu)</onclick>
             </control>
             <control type="button" id="255">
@@ -1615,8 +1609,8 @@
                 <animation effect="fade" start="100" end="50" time="0" condition="!VideoPlayer.IsStereoscopic">Conditional</animation>
                 <label>$LOCALIZE[36501]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_3d_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_3d_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_3d_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_3d_nofocus.png</texturenofocus>
                 <onclick>StereoMode</onclick>
             </control>
             <!--****-->
@@ -1624,8 +1618,8 @@
                 <visible>!VideoPlayer.Content(LiveTV)</visible>
                 <label>$LOCALIZE[559]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_bookmark_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_bookmark_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_bookmark_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_bookmark_nofocus.png</texturenofocus>
                 <onclick>Close</onclick>
                 <onclick>ActivateWindow(VideoPlaylist)</onclick>
             </control>
@@ -1633,15 +1627,14 @@
             <control type="button" id="707">
                 <label>$LOCALIZE[544]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_info_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_info_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_info_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_info_nofocus.png</texturenofocus>
                 <onclick>ActivateWindow(fullscreeninfo)</onclick>
             </control>
         </control>
     </include>
     <include name="TopBarMusicOSDList">
         <control type="grouplist" id="100">
-            <include>Condition_$PARAM[Color]</include>
             <posx>0</posx>
             <posy>65</posy>
             <width>1920</width>
@@ -1652,8 +1645,8 @@
             <ondown>100</ondown>
             <control type="button" id="598">
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_back_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_back_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_back_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_back_nofocus.png</texturenofocus>
                 <onclick>Back</onclick>
                 <onclick>Back</onclick>
                 <onclick>Back</onclick>
@@ -1661,8 +1654,8 @@
             <control type="button" id="599">
                 <label>-</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_home_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_home_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_home_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_home_nofocus.png</texturenofocus>
                 <onclick>Back</onclick>
                 <onclick>ActivateWindow(Home)</onclick>
             </control>
@@ -1670,24 +1663,24 @@
                 <visible>MusicPlayer.Content(LiveTV)</visible>
                 <label>$LOCALIZE[210]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_channel_up_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_channel_up_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_channel_up_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_channel_up_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Previous)</onclick>
             </control>
             <control type="button" id="301">
                 <visible>MusicPlayer.Content(LiveTV)</visible>
                 <label>$LOCALIZE[209]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_channel_down_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_channel_down_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_channel_down_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_channel_down_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Next)</onclick>
             </control>
             <control type="button" id="600">
                 <visible>!MusicPlayer.Content(LiveTV)</visible>
                 <label>$LOCALIZE[210]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_skipback_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_skipback_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_skipback_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_skipback_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Previous)</onclick>
             </control>
             <control type="button" id="601">
@@ -1695,8 +1688,8 @@
                 <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
                 <label>$LOCALIZE[31354]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_rewind_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_rewind_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_rewind_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_rewind_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Rewind)</onclick>
             </control>
             <control type="togglebutton" id="602">
@@ -1705,18 +1698,18 @@
                 <label>$LOCALIZE[31351]</label>
                 <altlabel>$LOCALIZE[208]</altlabel>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_pause_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_pause_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_pause_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_pause_nofocus.png</texturenofocus>
                 <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-                <alttexturefocus>$PARAM[Color]/topbar/topbar_play_focus.png</alttexturefocus>
-                <alttexturenofocus>$PARAM[Color]/topbar/topbar_play_nofocus.png</alttexturenofocus>
+                <alttexturefocus>topbar/topbar_play_focus.png</alttexturefocus>
+                <alttexturenofocus>topbar/topbar_play_nofocus.png</alttexturenofocus>
                 <onclick>PlayerControl(Play)</onclick>
             </control>
             <control type="button" id="603">
                 <label>$LOCALIZE[31352]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_stop_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_stop_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_stop_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_stop_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Stop)</onclick>
             </control>
             <control type="button" id="604">
@@ -1724,24 +1717,24 @@
                 <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
                 <label>$LOCALIZE[31353]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_fastforward_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_fastforward_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_fastforward_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_fastforward_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Forward)</onclick>
             </control>
             <control type="button" id="605">
                 <visible>!MusicPlayer.Content(LiveTV)</visible>
                 <label>$LOCALIZE[209]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_skipforward_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_skipforward_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_skipforward_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_skipforward_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Next)</onclick>
             </control>
             <control type="button" id="306">
                 <visible>MusicPlayer.Content(LiveTV)</visible>
                 <label>$LOCALIZE[19019]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_channel_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_channel_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_channel_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_channel_nofocus.png</texturenofocus>
                 <onclick>ActivateWindow(PVROSDChannels)</onclick>
                 <onclick>Dialog.Close(VideoOSD)</onclick>
             </control>
@@ -1749,8 +1742,8 @@
                 <visible>MusicPlayer.Content(LiveTV)</visible>
                 <label>$LOCALIZE[19029]$INFO[MusicPlayer.ChannelName, - ]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_epg_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_epg_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_epg_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_epg_nofocus.png</texturenofocus>
                 <onclick>ActivateWindow(PVROSDGuide)</onclick>
                 <onclick>Dialog.Close(VideoOSD)</onclick>
             </control>
@@ -1766,15 +1759,15 @@
                     <description>Repeat</description>
                     <label>$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>$PARAM[Color]/topbar/topbar_repeat_focus.png</texturefocus>
-                    <texturenofocus>$PARAM[Color]/topbar/topbar_repeat_nofocus.png</texturenofocus>
+                    <texturefocus>topbar/topbar_repeat_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_repeat_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Repeat)</onclick>
                 </control>
                 <control type="image" id="4">
                     <posx>0</posx>
                     <posy>0</posy>
                     <include>TopBarButton</include>
-                    <texture>$PARAM[Color]/topbar/topbar_repeat_one_nofocus.png</texture>
+                    <texture>topbar/topbar_repeat_one_nofocus.png</texture>
                     <visible>Playlist.IsRepeatOne</visible>
                     <visible>!Control.HasFocus(1)</visible>
                 </control>
@@ -1782,7 +1775,7 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <include>TopBarButton</include>
-                    <texture>$PARAM[Color]/topbar/topbar_repeat_one_focus.png</texture>
+                    <texture>topbar/topbar_repeat_one_focus.png</texture>
                     <visible>Playlist.IsRepeatOne</visible>
                     <visible>Control.HasFocus(1)</visible>
                 </control>
@@ -1790,7 +1783,7 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <include>TopBarButton</include>
-                    <texture>$PARAM[Color]/topbar/topbar_repeat_all_nofocus.png</texture>
+                    <texture>topbar/topbar_repeat_all_nofocus.png</texture>
                     <visible>Playlist.IsRepeat</visible>
                     <visible>!Control.HasFocus(1)</visible>
                 </control>
@@ -1798,7 +1791,7 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <include>TopBarButton</include>
-                    <texture>$PARAM[Color]/topbar/topbar_repeat_all_focus.png</texture>
+                    <texture>topbar/topbar_repeat_all_focus.png</texture>
                     <visible>Playlist.IsRepeat</visible>
                     <visible>Control.HasFocus(1)</visible>
                 </control>
@@ -1808,18 +1801,18 @@
                 <label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
                 <altlabel>$LOCALIZE[590] : $LOCALIZE[16041]</altlabel>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_random_off_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_random_off_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_random_off_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_random_off_nofocus.png</texturenofocus>
                 <usealttexture>Playlist.IsRandom</usealttexture>
-                <alttexturefocus>$PARAM[Color]/topbar/topbar_random_on_focus.png</alttexturefocus>
-                <alttexturenofocus>$PARAM[Color]/topbar/topbar_random_on_nofocus.png</alttexturenofocus>
+                <alttexturefocus>topbar/topbar_random_on_focus.png</alttexturefocus>
+                <alttexturenofocus>topbar/topbar_random_on_nofocus.png</alttexturenofocus>
                 <onclick>XBMC.PlayerControl(Random)</onclick>
             </control>
             <control type="button" id="9">
                 <label>$LOCALIZE[24013]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_teletext_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_teletext_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_teletext_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_teletext_nofocus.png</texturenofocus>
                 <onclick>Close</onclick>
                 <onclick condition="IsEmpty(Skin.String(LyricPath))">Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
                 <onclick condition="!IsEmpty(Skin.String(LyricPath))">XBMC.RunScript($INFO[Skin.String(LyricPath)])</onclick>
@@ -1827,8 +1820,8 @@
             <control type="button" id="555">
                 <label>$LOCALIZE[559]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_bookmark_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_bookmark_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_bookmark_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_bookmark_nofocus.png</texturenofocus>
                 <onclick>Close</onclick>
                 <onclick>ActivateWindow(MusicPlaylist)</onclick>
             </control>
@@ -1838,34 +1831,34 @@
                 <label>$LOCALIZE[264]</label>
                 <altlabel>$LOCALIZE[265]</altlabel>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_rec_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_rec_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_rec_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_rec_nofocus.png</texturenofocus>
                 <usealttexture>Player.Recording</usealttexture>
-                <alttexturefocus>$PARAM[Color]/topbar/topbar_rec_on_focus.png</alttexturefocus>
-                <alttexturenofocus>$PARAM[Color]/topbar/topbar_rec_on_nofocus.png</alttexturenofocus>
+                <alttexturefocus>topbar/topbar_rec_on_focus.png</alttexturefocus>
+                <alttexturenofocus>topbar/topbar_rec_on_nofocus.png</alttexturenofocus>
                 <onclick>PlayerControl(Record)</onclick>
             </control>
             <control type="button" id="556">
                 <label>$LOCALIZE[20445]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_fanart_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_fanart_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_fanart_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_fanart_nofocus.png</texturenofocus>
                 <label2>$VAR[MusicPlayingFanartLabel2]</label2>
                 <onclick>Skin.ToggleSetting(MusicPlayingFanart)</onclick>
             </control>
             <control type="button" id="500">
                 <label>$LOCALIZE[24010]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_video_settings_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_video_settings_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_video_settings_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_video_settings_nofocus.png</texturenofocus>
             </control>
             <control type="button" id="19">
                 <enable>Visualisation.Enabled</enable>
                 <animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.Enabled">Conditional</animation>
                 <label>$LOCALIZE[250] $LOCALIZE[10004]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_settings_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_settings_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_settings_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_settings_nofocus.png</texturenofocus>
                 <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
             </control>
             <control type="button" id="20">
@@ -1873,8 +1866,8 @@
                 <animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.HasPresets">Conditional</animation>
                 <label>$LOCALIZE[31048]</label>
                 <include>TopBarButton</include>
-                <texturefocus>$PARAM[Color]/topbar/topbar_presets_focus.png</texturefocus>
-                <texturenofocus>$PARAM[Color]/topbar/topbar_presets_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_presets_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_presets_nofocus.png</texturenofocus>
                 <onclick>ActivateWindow(122)</onclick>
             </control>
         </control>
@@ -1907,7 +1900,8 @@
                     <posy>0</posy>
                     <width>380</width>
                     <height>$PARAM[height]</height>
-                    <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                    <texture border="1">list/bg_facade_focus.png</texture>
                 </control>
                 <control type="label">
                     <posx>25</posx>
@@ -1960,7 +1954,8 @@
                 <width>380</width>
                 <height>570</height>
                 <aspectratio aligny="top">keep</aspectratio>
-                <texture>$VAR[Theme.Color]/defaultVideoBig.png</texture>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture>defaultVideoBig.png</texture>
             </control>
             <control type="image">
                 <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
@@ -1979,7 +1974,8 @@
                 <width>380</width>
                 <height>570</height>
                 <aspectratio aligny="top">keep</aspectratio>
-                <texture>$VAR[Theme.Color]/defaultVideoBig.png</texture>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture>defaultVideoBig.png</texture>
             </control>
             <control type="image">
                 <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
@@ -1998,7 +1994,8 @@
                 <width>380</width>
                 <height>570</height>
                 <aspectratio aligny="top">keep</aspectratio>
-                <texture>$VAR[Theme.Color]/defaultVideoBig.png</texture>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture>defaultVideoBig.png</texture>
             </control>
             <control type="image">
                 <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
@@ -2028,7 +2025,7 @@
                     <width>380</width>
                     <height>50</height>
                     <font>InfoDetailsFont</font>
-                    <include>TextColor_AlternateColor</include>
+                    <textcolor>AlternateColor</textcolor>
                     <scroll>false</scroll>
                     <label>$INFO[Container($PARAM[id]).ListItem.Property(NextNumber)]</label>
                 </control>
@@ -2048,7 +2045,7 @@
                     <width>380</width>
                     <height>50</height>
                     <font>InfoDetailsFont</font>
-                    <include>TextColor_AlternateColor</include>
+                    <textcolor>AlternateColor</textcolor>
                     <scroll>false</scroll>
                     <label>$INFO[Container($PARAM[id]).ListItem.Property(Genre)]</label>
                 </control>
@@ -2068,7 +2065,7 @@
                     <width>380</width>
                     <height>50</height>
                     <font>InfoDetailsFont</font>
-                    <include>TextColor_AlternateColor</include>
+                    <textcolor>AlternateColor</textcolor>
                     <scroll>false</scroll>
                     <label>$INFO[Container($PARAM[id]).ListItem.Property(Runtime),, $LOCALIZE[12391]]</label>
                 </control>
@@ -2088,7 +2085,7 @@
                     <width>380</width>
                     <height>50</height>
                     <font>InfoDetailsFont</font>
-                    <include>TextColor_AlternateColor</include>
+                    <textcolor>AlternateColor</textcolor>
                     <scroll>false</scroll>
                     <label>$INFO[Container($PARAM[id]).ListItem.Property(Country)]</label>
                 </control>

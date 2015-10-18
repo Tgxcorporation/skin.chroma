@@ -38,7 +38,8 @@
                             <posy>0</posy>
                             <height>140</height>
                             <width>480</width>
-                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                            <texture border="1">list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
@@ -135,7 +136,8 @@
                     <posy>0</posy>
                     <width>480</width>
                     <height>270</height>
-                    <texture border="1,50,1,50">$VAR[Theme.Color]/common/frame_focus.png</texture>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                    <texture border="1,50,1,50">common/frame_focus.png</texture>
                     <aspectratio>stretch</aspectratio>
                 </control>
             </control>
@@ -521,7 +523,8 @@
                                 <posy>520</posy>
                                 <width>50</width>
                                 <height>50</height>
-                                <texture>$VAR[Theme.Color]/buttons/More_NoFocus.png</texture>
+                                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                                <texture>buttons/More_NoFocus.png</texture>
                             </control>
                             <control type="button" id="7010">
                                 <!--NAVIGATION DUMMY-->
@@ -679,7 +682,7 @@
                             <height>250</height>
                             <align>center</align>
                             <font>HomeItemFont</font>
-                            <include>TextColor_AlternateColor</include>
+                            <textcolor>AlternateColor</textcolor>
                             <label>$INFO[Container(300).ListItem.Label]</label>
                         </control>
                     </control>
@@ -692,7 +695,8 @@
                             <posy>840</posy>
                             <width>50</width>
                             <height>50</height>
-                            <texture>$VAR[Theme.Color]/buttons/More_NoFocus.png</texture>
+                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                            <texture>buttons/More_NoFocus.png</texture>
                         </control>
                         <include>Horizontal_HomeSubMenu</include>
                     </control>

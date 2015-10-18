@@ -9,7 +9,8 @@
             <posy>0</posy>
             <width>1920</width>
             <height>1080</height>
-            <texture>special://skin/backgrounds/default/$VAR[Theme.Color].png</texture>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+            <texture>special://skin/backgrounds/default/background.png</texture>
         </control>
         <control type="label">
             <visible>!Container(10001).OnScrollPrevious + !Container(10001).OnScrollNext</visible>
