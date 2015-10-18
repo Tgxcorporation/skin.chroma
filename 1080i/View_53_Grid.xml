@@ -32,23 +32,30 @@
                 <height>237</height>
                 <texture border="56">common/background_strip_horizontal_mini.png</texture>
             </control>
-            <control type="progress">
-                <visible>Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)</visible>
-                <posx>0</posx>
-                <posy>891</posy>
-                <height>137</height>
-                <width>1920</width>
-                <texturebg>common/osd_progress_dummy.png</texturebg>
-                <!-- <reveal>true</reveal> -->
-                <lefttexture>-</lefttexture>
-                <include name="MidTexture">
-                    <param name="gfx" value="OSD/osd_progress.png"/>
-                    <param name="border" value="1,1,1,1"/>
-                </include>
-                <righttexture>-</righttexture>
-                <overlaytexture>-</overlaytexture>
-                <info>ListItem.Progress</info>
-            </control>
+            <include name="ProgressBar">
+                <param name="id" value="0"/>
+                <param name="visible" value="Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)"/>
+                <param name="x" value="0"/>
+                <param name="y" value="891"/>
+                <param name="width" value="1920"/>
+                <param name="height" value="137"/>
+                <param name="texturebg" value="common/osd_progress_dummy.png"/>
+                <param name="gfx" value="OSD/osd_progress.png"/>
+                <param name="border" value="1,1,1,1"/>
+                <param name="info" value="ListItem.Progress"/>
+            </include>
+            <include name="ProgressBar">
+                <param name="id" value="0"/>
+                <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
+                <param name="x" value="0"/>
+                <param name="y" value="891"/>
+                <param name="width" value="1920"/>
+                <param name="height" value="137"/>
+                <param name="texturebg" value="common/osd_progress_dummy.png"/>
+                <param name="gfx" value="OSD/osd_progress.png"/>
+                <param name="border" value="1,1,1,1"/>
+                <param name="info" value="ListItem.PercentPlayed"/>
+            </include>
             <include>InfoData</include>
         </control>
     </include>
@@ -90,7 +97,7 @@
                         <param name="y" value="0"/>
                         <param name="width" value="50"/>
                         <param name="height" value="50"/>
-                        <param name="colordiffuse" value="NoFocusedColor"/>
+                        <param name="transparency" value="50"/>
                     </include>
                 </itemlayout>
                 <focusedlayout condition="[Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]" height="180" width="240">
@@ -109,7 +116,8 @@
                             <posy>0</posy>
                             <width>240</width>
                             <height>180</height>
-                            <texture border="1,50,1,50">$VAR[Theme.Color]/common/frame_focus.png</texture>
+                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                            <texture border="1,50,1,50">common/frame_focus.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <include name="WatchedRecOverlay">
@@ -117,7 +125,7 @@
                             <param name="y" value="0"/>
                             <param name="width" value="50"/>
                             <param name="height" value="50"/>
-                            <param name="colordiffuse" value="FocusedColor"/>
+                            <param name="transparency" value="100"/>
                         </include>
                     </control>
                 </focusedlayout>
@@ -136,7 +144,7 @@
                         <param name="y" value="0"/>
                         <param name="width" value="50"/>
                         <param name="height" value="50"/>
-                        <param name="colordiffuse" value="NoFocusedColor"/>
+                        <param name="transparency" value="50"/>
                     </include>
                 </itemlayout>
                 <focusedlayout condition="[Container.Content(TVShows)|Container.Content(movies)|Container.Content(sets)|Container.Content(seasons)] + Skin.HasSetting(53_UseBanners)" height="180" width="960">
@@ -155,7 +163,8 @@
                             <posy>0</posy>
                             <width>960</width>
                             <height>180</height>
-                            <texture border="1,50,1,50">$VAR[Theme.Color]/common/frame_focus.png</texture>
+                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                            <texture border="1,50,1,50">common/frame_focus.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <include name="WatchedRecOverlay">
@@ -163,7 +172,7 @@
                             <param name="y" value="0"/>
                             <param name="width" value="50"/>
                             <param name="height" value="50"/>
-                            <param name="colordiffuse" value="FocusedColor"/>
+                            <param name="transparency" value="100"/>
                         </include>
                     </control>
                 </focusedlayout>
@@ -182,7 +191,7 @@
                         <param name="y" value="0"/>
                         <param name="width" value="50"/>
                         <param name="height" value="50"/>
-                        <param name="colordiffuse" value="NoFocusedColor"/>
+                        <param name="transparency" value="50"/>
                     </include>
                 </itemlayout>
                 <focusedlayout condition="!Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="192" width="128">
@@ -201,7 +210,8 @@
                             <posy>0</posy>
                             <width>128</width>
                             <height>192</height>
-                            <texture border="1,50,1,50">$VAR[Theme.Color]/common/frame_focus.png</texture>
+                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                            <texture border="1,50,1,50">common/frame_focus.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <include name="WatchedRecOverlay">
@@ -209,7 +219,7 @@
                             <param name="y" value="0"/>
                             <param name="width" value="50"/>
                             <param name="height" value="50"/>
-                            <param name="colordiffuse" value="FocusedColor"/>
+                            <param name="transparency" value="100"/>
                         </include>
                     </control>
                 </focusedlayout>
@@ -228,7 +238,7 @@
                         <param name="y" value="0"/>
                         <param name="width" value="50"/>
                         <param name="height" value="50"/>
-                        <param name="colordiffuse" value="NoFocusedColor"/>
+                        <param name="transparency" value="50"/>
                     </include>
                 </itemlayout>
                 <focusedlayout condition="Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="288" width="192">
@@ -247,7 +257,8 @@
                             <posy>0</posy>
                             <width>192</width>
                             <height>288</height>
-                            <texture border="1,50,1,50">$VAR[Theme.Color]/common/frame_focus.png</texture>
+                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                            <texture border="1,50,1,50">common/frame_focus.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <include name="WatchedRecOverlay">
@@ -255,7 +266,7 @@
                             <param name="y" value="0"/>
                             <param name="width" value="50"/>
                             <param name="height" value="50"/>
-                            <param name="colordiffuse" value="FocusedColor"/>
+                            <param name="transparency" value="100"/>
                         </include>
                     </control>
                 </focusedlayout>
@@ -274,7 +285,7 @@
                         <param name="y" value="0"/>
                         <param name="width" value="50"/>
                         <param name="height" value="50"/>
-                        <param name="colordiffuse" value="NoFocusedColor"/>
+                        <param name="transparency" value="50"/>
                     </include>
                 </itemlayout>
                 <focusedlayout height="270" width="480" condition="container.content(episodes)">
@@ -293,7 +304,8 @@
                             <posy>0</posy>
                             <width>480</width>
                             <height>270</height>
-                            <texture border="1,50,1,50">$VAR[Theme.Color]/common/frame_focus.png</texture>
+                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                            <texture border="1,50,1,50">common/frame_focus.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <include name="WatchedRecOverlay">
@@ -301,7 +313,7 @@
                             <param name="y" value="0"/>
                             <param name="width" value="50"/>
                             <param name="height" value="50"/>
-                            <param name="colordiffuse" value="FocusedColor"/>
+                            <param name="transparency" value="100"/>
                         </include>
                     </control>
                 </focusedlayout>
@@ -320,7 +332,7 @@
                         <param name="y" value="0"/>
                         <param name="width" value="50"/>
                         <param name="height" value="50"/>
-                        <param name="colordiffuse" value="NoFocusedColor"/>
+                        <param name="transparency" value="50"/>
                     </include>
                 </itemlayout>
                 <focusedlayout condition="!Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="180" width="175">
@@ -339,7 +351,8 @@
                             <posy>0</posy>
                             <width>175</width>
                             <height>180</height>
-                            <texture border="1,50,1,50">$VAR[Theme.Color]/common/frame_focus.png</texture>
+                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                            <texture border="1,50,1,50">common/frame_focus.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <include name="WatchedRecOverlay">
@@ -347,7 +360,7 @@
                             <param name="y" value="0"/>
                             <param name="width" value="50"/>
                             <param name="height" value="50"/>
-                            <param name="colordiffuse" value="FocusedColor"/>
+                            <param name="transparency" value="100"/>
                         </include>
                     </control>
                 </focusedlayout>
@@ -366,7 +379,7 @@
                         <param name="y" value="0"/>
                         <param name="width" value="50"/>
                         <param name="height" value="50"/>
-                        <param name="colordiffuse" value="NoFocusedColor"/>
+                        <param name="transparency" value="50"/>
                     </include>
                 </itemlayout>
                 <focusedlayout condition="Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="270" width="275">
@@ -385,7 +398,8 @@
                             <posy>0</posy>
                             <width>275</width>
                             <height>270</height>
-                            <texture border="1,50,1,50">$VAR[Theme.Color]/common/frame_focus.png</texture>
+                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                            <texture border="1,50,1,50">common/frame_focus.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
                         <include name="WatchedRecOverlay">
@@ -393,7 +407,7 @@
                             <param name="y" value="0"/>
                             <param name="width" value="50"/>
                             <param name="height" value="50"/>
-                            <param name="colordiffuse" value="FocusedColor"/>
+                            <param name="transparency" value="100"/>
                         </include>
                     </control>
                 </focusedlayout>

@@ -6,16 +6,16 @@
     </variable>
     <variable name="Overlay">
         <value condition="![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets) | Container.HasFiles]">-</value>
-        <value condition="Skin.HasSetting(plexbmc) + ListItem.property(IsResumable)">$VAR[Theme.Color]/overlay_inprogress/$INFO[ListItem.Overlay]</value>
-        <value condition="Skin.HasSetting(plexbmc) + ListItem.property(overlay)">$VAR[Theme.Color]/$INFO[ListItem.property(overlay)]</value>
+        <value condition="Skin.HasSetting(plexbmc) + ListItem.property(IsResumable)">overlay_inprogress/$INFO[ListItem.Overlay]</value>
+        <value condition="Skin.HasSetting(plexbmc) + ListItem.property(overlay)">$INFO[ListItem.property(overlay)]</value>
         <value condition="Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)">-</value>
-        <value condition="Skin.HasSetting(Hide_Unwatched_Marks)">$VAR[Theme.Color]/overlay_watched/$INFO[ListItem.Overlay]</value>
-        <value condition="ListItem.IsResumable">$VAR[Theme.Color]/overlay_inprogress/$INFO[ListItem.Overlay]</value>
-        <value condition="Skin.HasSetting(Hide_Watched_Marks)">$VAR[Theme.Color]/overlay_unwatched/$INFO[ListItem.Overlay]</value>
-        <value condition="!IsEmpty(ListItem.Overlay)">$VAR[Theme.Color]/$INFO[ListItem.Overlay]</value>
-        <value condition="StringCompare(ListItem.Label2,$LOCALIZE[305])+Window.IsVisible(AddonBrowser.xml)">$VAR[Theme.Color]/OverlayWatched.png</value>
-        <value condition="!IsEmpty(ListItem.Label2)+Window.IsVisible(AddonBrowser.xml)">$VAR[Theme.Color]/OverlayInProgress.png</value>
-        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)+!IsEmpty(ListItem.Property(DBID))">$VAR[Theme.Color]/OverlayUnwatched.png</value>
+        <value condition="Skin.HasSetting(Hide_Unwatched_Marks)">overlay_watched/$INFO[ListItem.Overlay]</value>
+        <value condition="ListItem.IsResumable">overlay_inprogress/$INFO[ListItem.Overlay]</value>
+        <value condition="Skin.HasSetting(Hide_Watched_Marks)">overlay_unwatched/$INFO[ListItem.Overlay]</value>
+        <value condition="!IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay]</value>
+        <value condition="StringCompare(ListItem.Label2,$LOCALIZE[305])+Window.IsVisible(AddonBrowser.xml)">OverlayWatched.png</value>
+        <value condition="!IsEmpty(ListItem.Label2)+Window.IsVisible(AddonBrowser.xml)">OverlayInProgress.png</value>
+        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)+!IsEmpty(ListItem.Property(DBID))">OverlayUnwatched.png</value>
     </variable>
     <variable name="Banner">
         <value condition="StringCompare(ListItem.Label,..)+[Container.Content(TVShows)|Container.Content(movies)|Container.Content(seasons)]">$VAR[Theme.Color]/defaultFolderBackBanner.png</value>
@@ -33,40 +33,40 @@
         <!--<value>$INFO[ListItem.Icon]</value>-->
     </variable>
     <variable name="ThumbsFolderBack">
-        <value condition="[Container.content(episodes)|Window.IsActive(MyPics.xml)|Window.IsActive(MyVideoPlaylist.xml)]">$VAR[Theme.Color]/defaultFolderBackEpisode.png</value>
-        <value condition="[Container.content(actors)|Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.Content(Seasons)|Container.Content(sets)]">$VAR[Theme.Color]/defaultFolderBackPoster.png</value>
-        <value>$VAR[Theme.Color]/defaultFolderBack.png</value>
+        <value condition="[Container.content(episodes)|Window.IsActive(MyPics.xml)|Window.IsActive(MyVideoPlaylist.xml)]">defaultFolderBackEpisode.png</value>
+        <value condition="[Container.content(actors)|Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.Content(Seasons)|Container.Content(sets)]">defaultFolderBackPoster.png</value>
+        <value>defaultFolderBack.png</value>
     </variable>
     <variable name="ThumbsMissing">
-        <value condition="[Window.IsActive(DialogPVRChannelManager.xml)|Window.IsActive(DialogPVRGroupManager.xml)]+!IsEmpty(Window.Property(IsRadio))">$VAR[Theme.Color]/defaultChannelTvBig.png</value>
-        <value condition="[Window.IsActive(DialogPVRChannelManager.xml)|Window.IsActive(DialogPVRGroupManager.xml)]+!IsEmpty(Window.Property(IsRadio))">$VAR[Theme.Color]/defaultRadioBig.png</value>
-        <value condition="[Window.IsActive(DialogPVRGuideInfo.xml)|Window.IsActive(DialogPVRRecordingInfo.xml)]">$VAR[Theme.Color]/defaultChannelTvBig_Wide.png</value>
-        <value condition="[Container.content(files)]">$VAR[Theme.Color]/defaultHardDiskBig.png</value>
-        <value condition="[Container.content(years)]">$VAR[Theme.Color]/defaultYearBig.png</value>
-        <value condition="[Window.IsActive(MyPics.xml)]">$VAR[Theme.Color]/defaultPictureBig.png</value>
-        <value condition="[Window.IsActive(script-videoextras-main.xml)]">$VAR[Theme.Color]/defaultVideoBig.png</value>
-        <value condition="[Container.content(Genres)]">$VAR[Theme.Color]/defaultGenreBig.png</value>
-        <value condition="[Container.content(Playlists)]">$VAR[Theme.Color]/defaultPlaylistBig.png</value>
-        <value condition="[Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.content(episodes)|Container.Content(Seasons)]">$VAR[Theme.Color]/defaultVideoBig.png</value>
-        <value condition="[Container.content(LiveTV)]">$VAR[Theme.Color]/defaultChannelTvBig.png</value>
-        <value condition="[Container.content(Addons)|Container.content(plugins)]">$VAR[Theme.Color]/defaultExtensionBig.png</value>
-        <value condition="[Container.content(Artists)|Container.content(Actors)|Container.content(directors)]">$VAR[Theme.Color]/defaultArtistBig.png</value>
-        <value condition="[Container.content(Albums)|Container.content(songs)]">$VAR[Theme.Color]/defaultAudioBig.png</value>
-        <value condition="ListItem.IsFolder">$VAR[Theme.Color]/defaultFolderBig.png</value>
-        <value>$VAR[Theme.Color]/defaultIconBig.png</value>
+        <value condition="[Window.IsActive(DialogPVRChannelManager.xml)|Window.IsActive(DialogPVRGroupManager.xml)]+!IsEmpty(Window.Property(IsRadio))">defaultChannelTvBig.png</value>
+        <value condition="[Window.IsActive(DialogPVRChannelManager.xml)|Window.IsActive(DialogPVRGroupManager.xml)]+!IsEmpty(Window.Property(IsRadio))">defaultRadioBig.png</value>
+        <value condition="[Window.IsActive(DialogPVRGuideInfo.xml)|Window.IsActive(DialogPVRRecordingInfo.xml)]">defaultChannelTvBig_Wide.png</value>
+        <value condition="[Container.content(files)]">defaultHardDiskBig.png</value>
+        <value condition="[Container.content(years)]">defaultYearBig.png</value>
+        <value condition="[Window.IsActive(MyPics.xml)]">defaultPictureBig.png</value>
+        <value condition="[Window.IsActive(script-videoextras-main.xml)]">defaultVideoBig.png</value>
+        <value condition="[Container.content(Genres)]">defaultGenreBig.png</value>
+        <value condition="[Container.content(Playlists)]">defaultPlaylistBig.png</value>
+        <value condition="[Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.content(episodes)|Container.Content(Seasons)]">defaultVideoBig.png</value>
+        <value condition="[Container.content(LiveTV)]">defaultChannelTvBig.png</value>
+        <value condition="[Container.content(Addons)|Container.content(plugins)]">defaultExtensionBig.png</value>
+        <value condition="[Container.content(Artists)|Container.content(Actors)|Container.content(directors)]">defaultArtistBig.png</value>
+        <value condition="[Container.content(Albums)|Container.content(songs)]">defaultAudioBig.png</value>
+        <value condition="ListItem.IsFolder">defaultFolderBig.png</value>
+        <value>defaultIconBig.png</value>
     </variable>
     <variable name="Thumbs">
         <!--EXCEPTIONS-->
-        <value condition="window.IsActive(LoginScreen.xml)+StringCompare(ListItem.Thumb,unknown-user.png)">$VAR[Theme.Color]/defaultArtistBig.png</value>
-        <value condition="window.IsActive(CustomAddons.xml)">$VAR[Theme.Color]/defaultExtensionBig.png</value>
-        <value condition="StringCompare(ListItem.thumb,special://home/addons/plugin.video.plexbmc/resources/thumb.png)">$VAR[Theme.Color]/defaultAudioBig.png</value>
+        <value condition="window.IsActive(LoginScreen.xml)+StringCompare(ListItem.Thumb,unknown-user.png)">defaultArtistBig.png</value>
+        <value condition="window.IsActive(CustomAddons.xml)">defaultExtensionBig.png</value>
+        <value condition="StringCompare(ListItem.thumb,special://home/addons/plugin.video.plexbmc/resources/thumb.png)">defaultAudioBig.png</value>
         <!--<value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!SubString(ListItem.Icon,Default,Left)+[control.isvisible(58)|control.isvisible(53)]">$INFO[ListItem.Icon]</value>-->
-        <!--<value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!SubString(ListItem.Icon,Default,Left)">$VAR[Theme.Color]/common/TransparentDot.png</value>-->
-        <!--<value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+IsEmpty(ListItem.Icon)">$VAR[Theme.Color]/defaultChannelTvBig.png</value>-->
+        <!--<value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!SubString(ListItem.Icon,Default,Left)">common/TransparentDot.png</value>-->
+        <!--<value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+IsEmpty(ListItem.Icon)">defaultChannelTvBig.png</value>-->
         <!--<value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+!IsEmpty(ListItem.Icon)">common/TransparentDot.png</value>-->
         <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Icon]</value>
-        <value condition="StringCompare(ListItem.Icon,)+!IsEmpty(Window.Property(IsRadio))">$VAR[Theme.Color]/defaultRadioBig.png</value>
-        <value condition="StringCompare(ListItem.Icon,)+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]">$VAR[Theme.Color]/defaultChannelTvBig_Wide.png</value>
+        <value condition="StringCompare(ListItem.Icon,)+!IsEmpty(Window.Property(IsRadio))">defaultRadioBig.png</value>
+        <value condition="StringCompare(ListItem.Icon,)+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]">defaultChannelTvBig_Wide.png</value>
         <!--NORMAL-->
         <value condition="StringCompare(ListItem.Label,..)">$VAR[ThumbsFolderBack]</value>
         <value condition="!IsEmpty(ListItem.Icon)+!SubString(ListItem.Icon,Default,Left)">$INFO[ListItem.Icon]</value>
@@ -122,13 +122,13 @@
         <value>$LOCALIZE[13113]</value>
     </variable>
     <variable name="PVROverlayFocus">
-        <value condition="ListItem.IsRecording">$VAR[Theme.Color]/list/tvguide_button_recording_focus.png</value>
-        <value condition="ListItem.HasTimer">$VAR[Theme.Color]/list/tvguide_button_timer_focus.png</value>
-        <value>$VAR[Theme.Color]/list/bg_facade_focus.png</value>
+        <value condition="ListItem.IsRecording">list/tvguide_button_recording_focus.png</value>
+        <value condition="ListItem.HasTimer">list/tvguide_button_timer_focus.png</value>
+        <value>list/bg_facade_focus.png</value>
     </variable>
     <variable name="PVROverlayNoFocus">
-        <value condition="ListItem.IsRecording">$VAR[Theme.Color]/list/tvguide_button_recording_nofocus.png</value>
-        <value condition="ListItem.HasTimer">$VAR[Theme.Color]/list/tvguide_button_timer_nofocus.png</value>
+        <value condition="ListItem.IsRecording">list/tvguide_button_recording_nofocus.png</value>
+        <value condition="ListItem.HasTimer">list/tvguide_button_timer_nofocus.png</value>
     </variable>
     <variable name="UnfocusedTitle">
         <value condition="Window.IsActive(MyPVRGuide.xml)+control.isvisible(13)">$INFO[ListItem.StartTime,, - ]$INFO[ListItem.Label]</value>
@@ -288,7 +288,7 @@
     <variable name="Default.Art">
         <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
         <!--<value>special://skin/backgrounds/default/default.jpg</value>-->
-        <value>special://skin/backgrounds/default/$VAR[Theme.Color].png</value>
+        <value>special://skin/backgrounds/default/background.png</value>
     </variable>
     <variable name="Videos.Art">
         <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</value>
@@ -471,13 +471,14 @@
         <value condition="Window.IsActive(MyMusicNav.xml)+Container.Content(songs)">$INFO[ListItem.Path]/cdart.png</value>
         <value condition="Window.IsActive(MyMusicSongs.xml)">$INFO[ListItem.Path]cdart.png</value>
     </variable>
-    <variable name="Theme.Color">
-        <value condition="skin.hassetting(Theme.Color.amber)">amber</value>
-        <value condition="skin.hassetting(Theme.Color.fuchsia)">fuchsia</value>
-        <value condition="skin.hassetting(Theme.Color.indigo)">indigo</value>
-        <value condition="skin.hassetting(Theme.Color.titanium)">titanium</value>
-        <value condition="skin.hassetting(Theme.Color.green)">green</value>
-        <value>green</value>
+    <variable name="Picked.Theme.Color">
+        <value condition="Skin.HasSetting(Theme.Color.green)">GreenColor</value>
+        <value condition="Skin.HasSetting(Theme.Color.amber)">AmberColor</value>
+        <value condition="Skin.HasSetting(Theme.Color.fuchsia)">FuchsiaColor</value>
+        <value condition="Skin.HasSetting(Theme.Color.indigo)">IndigoColor</value>
+        <value condition="Skin.HasSetting(Theme.Color.titanium)">TitaniumColor</value>
+        <value condition="!IsEmpty(Skin.String(PickedColor))">$INFO[Skin.String(PickedColor)]</value>
+        <value>GreenColor</value>
     </variable>
     <variable name="SkinSettings.RandomBackground.Art">
         <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(1)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</value>
@@ -492,14 +493,6 @@
         <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(3)">$LOCALIZE[590]</value>
         <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(4)">$LOCALIZE[590]</value>
         <value>$INFO[Container(9004).ListItem.Thumb]</value>
-    </variable>
-    <variable name="OverlayTransparency">
-        <value condition="skin.hassetting(OverlayTransparency90)">FFFFFFFF</value>
-        <value condition="skin.hassetting(OverlayTransparency80)">E6FFFFFF</value>
-        <value condition="skin.hassetting(OverlayTransparency70)">CDFFFFFF</value>
-        <value condition="skin.hassetting(OverlayTransparency60)">B4FFFFFF</value>
-        <value condition="skin.hassetting(OverlayTransparency50)">9BFFFFFF</value>
-        <value>FFFFFFFF</value>
     </variable>
     <variable name="Plex.0.Background.Management">
         <value condition="!IsEmpty(Skin.String(Plexbmc.0.Background))">$INFO[Skin.String(Plexbmc.0.Background)]</value>

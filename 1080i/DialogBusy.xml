@@ -32,7 +32,7 @@
                 <scroll>true</scroll>
                 <align>center</align>
                 <font>NotificationFont</font>
-                <include>TextColor_AlternateColor</include>
+                <textcolor>AlternateColor</textcolor>
                 <label>$LOCALIZE[31979]$INFO[Control.GetLabel(10), ,%]</label>
             </control>
             <control type="label">
@@ -44,7 +44,7 @@
                 <scroll>true</scroll>
                 <align>center</align>
                 <font>NotificationFont</font>
-                <include>TextColor_AlternateColor</include>
+                <textcolor>AlternateColor</textcolor>
                 <label>$LOCALIZE[31979]</label>
             </control>
         </control>

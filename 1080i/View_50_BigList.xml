@@ -13,7 +13,7 @@
                     <include name="Stars">
                         <param name="x" value="-3"/>
                         <param name="y" value="3"/>
-                        <param name="color" value="main"/>
+                        <param name="color" value="alternate"/>
                     </include>
                     <control type="label">
                         <visible>![Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
@@ -54,7 +54,7 @@
                     <width>380</width>
                     <height>50</height>
                     <font>InfoDetailsFont</font>
-                    <include>TextColor_AlternateColor</include>
+                    <textcolor>AlternateColor</textcolor>
                     <scroll>false</scroll>
                     <label>$VAR[DetailsRow2]</label>
                 </control>
@@ -75,7 +75,7 @@
                     <width>380</width>
                     <height>305</height>
                     <font>InfoPlotFont</font>
-                    <include>TextColor_AlternateColor</include>
+                    <textcolor>AlternateColor</textcolor>
                     <label>$VAR[Plots]</label>
                     <include>myautoscroll</include>
                 </control>
@@ -86,7 +86,7 @@
                     <width>380</width>
                     <height>605</height>
                     <font>InfoPlotFont</font>
-                    <include>TextColor_AlternateColor</include>
+                    <textcolor>AlternateColor</textcolor>
                     <label>$VAR[Plots]</label>
                     <include>myautoscroll</include>
                 </control>
@@ -219,7 +219,7 @@
                 <param name="y" value="2"/>
                 <param name="width" value="50"/>
                 <param name="height" value="50"/>
-                <param name="colordiffuse" value="NoFocusedColor"/>
+                <param name="transparency" value="50"/>
             </include>
         </itemlayout>
         <focusedlayout height="50" width="910">
@@ -254,7 +254,8 @@
                     <posy>0</posy>
                     <height>50</height>
                     <width>910</width>
-                    <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                    <texture border="1">list/bg_facade_focus.png</texture>
                 </control>
                 <control type="label">
                     <posx>TextMargin</posx>
@@ -270,7 +271,7 @@
                     <param name="y" value="2"/>
                     <param name="width" value="50"/>
                     <param name="height" value="50"/>
-                    <param name="colordiffuse" value="FocusedColor"/>
+                    <param name="transparency" value="100"/>
                 </include>
             </control>
         </focusedlayout>

@@ -40,7 +40,7 @@
                 <scroll>true</scroll>
                 <align>center</align>
                 <font>NotificationFont</font>
-                <include>TextColor_AlternateColor</include>
+                <textcolor>AlternateColor</textcolor>
             </control>
             <control type="label" id="31">
                 <posx>TextMargin</posx>

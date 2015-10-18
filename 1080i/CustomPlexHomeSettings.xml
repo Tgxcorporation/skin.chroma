@@ -261,7 +261,8 @@
                         <posy>380</posy>
                         <height>50</height>
                         <width>50</width>
-                        <texture>$VAR[Theme.Color]/buttons/RadioOnFO.png</texture>
+                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <texture>buttons/RadioOnFO.png</texture>
                     </control>
                     <control type="image">
                         <visible>
@@ -283,7 +284,8 @@
                         <posy>380</posy>
                         <height>50</height>
                         <width>50</width>
-                        <texture>$VAR[Theme.Color]/buttons/RadioOffFO.png</texture>
+                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                        <texture>buttons/RadioOffFO.png</texture>
                     </control>
                 </control>
                 <!--MAIN MENU-->
@@ -319,7 +321,7 @@
                             <height>120</height>
                             <align>center</align>
                             <font>SmallButtonFont</font>
-                            <include>TextColor_AlternateColor</include>
+                            <textcolor>AlternateColor</textcolor>
                             <label>$LOCALIZE[31052]: [B]$INFO[Container(211).ListItem.Label][/B]</label>
                         </control>
                     </control>

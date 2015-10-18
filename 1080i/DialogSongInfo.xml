@@ -13,7 +13,8 @@
                 <width>1920</width>
                 <height>1080</height>
                 <!--<include>DialogTransparency</include>-->
-                <texture border="50">$VAR[Theme.Color]/common/background_menu.png</texture>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture border="50">common/background_menu.png</texture>
             </control>
             <include name="WindowClosingButton">
                 <param name="id" value="99010"/>
@@ -252,7 +253,7 @@
                             <width>760</width>
                             <height>310</height>
                             <font>InfoPlotFont</font>
-                            <include>TextColor_AlternateColor</include>
+                            <textcolor>AlternateColor</textcolor>
                             <pagecontrol>6060</pagecontrol>
                             <label fallback="161">$INFO[ListItem.Comment]</label>
                         </control>
@@ -311,7 +312,7 @@
                             <width>150</width>
                             <height>50</height>
                             <font>InfoRatingFont</font>
-                            <include>TextColor_AlternateColor</include>
+                            <textcolor>AlternateColor</textcolor>
                             <scroll>false</scroll>
                             <label fallback="0.0">$INFO[ListItem.Rating,,.0]</label>
                         </control>
@@ -353,7 +354,7 @@
                         <width>760</width>
                         <height>680</height>
                         <font>InfoPlotFont</font>
-                        <include>TextColor_AlternateColor</include>
+                        <textcolor>AlternateColor</textcolor>
                         <pagecontrol>5600</pagecontrol>
                         <label fallback="161">$INFO[Window(home).Property(summary)]</label>
                     </control>

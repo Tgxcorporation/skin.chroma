@@ -47,20 +47,22 @@
                     <imagepath background="true">$INFO[Container(9000).ListItem.Label2]</imagepath>
                 </control>
                 <control type="image">
+                    <include>OverlayTransparency</include>
                     <posx>630</posx>
                     <posy>380</posy>
                     <width>1140</width>
                     <height>300</height>
-                    <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
-                    <texture>$VAR[Theme.Color]/common/overlay_top.png</texture>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                    <texture>common/overlay_top.png</texture>
                 </control>
                 <control type="image">
+                    <include>OverlayTransparency</include>
                     <posx>630</posx>
                     <posy>680</posy>
                     <width>1140</width>
                     <height>300</height>
-                    <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
-                    <texture>$VAR[Theme.Color]/common/overlay_bottom.png</texture>
+                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                    <texture>common/overlay_bottom.png</texture>
                 </control>
                 <control type="image">
                     <posx>630</posx>
@@ -76,7 +78,7 @@
                     <width>1140</width>
                     <align>center</align>
                     <font>InfoTitleFont</font>
-                    <include>TextColor_AlternateColor</include>
+                    <textcolor>AlternateColor</textcolor>
                     <label>Chroma</label>
                 </control>
                 <control type="label">
@@ -118,7 +120,8 @@
                             <posy>0</posy>
                             <height>50</height>
                             <width>480</width>
-                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                            <texture border="1">list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>

@@ -58,7 +58,7 @@
                         <param name="y" value="2"/>
                         <param name="width" value="50"/>
                         <param name="height" value="50"/>
-                        <param name="colordiffuse" value="FocusedColor"/>
+                        <param name="transparency" value="100"/>
                     </include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -85,7 +85,7 @@
                             <width>460</width>
                             <height>50</height>
                             <font>InfoRatingFont</font>
-                            <include>TextColor_AlternateColor</include>
+                            <textcolor>AlternateColor</textcolor>
                             <scroll>false</scroll>
                             <label>$INFO[ListItem.RatingAndVotes]</label>
                         </control>
@@ -96,7 +96,7 @@
                             <width>460</width>
                             <height>50</height>
                             <font>InfoRatingFont</font>
-                            <include>TextColor_AlternateColor</include>
+                            <textcolor>AlternateColor</textcolor>
                             <scroll>false</scroll>
                             <label fallback="0.0">$INFO[ListItem.Rating,,.0]</label>
                         </control>
@@ -107,7 +107,7 @@
                         <width>1290</width>
                         <height>50</height>
                         <font>InfoDetailsFont</font>
-                        <include>TextColor_AlternateColor</include>
+                        <textcolor>AlternateColor</textcolor>
                         <scroll>true</scroll>
                         <label>$VAR[DetailsRow1]</label>
                     </control>
@@ -127,7 +127,7 @@
                         <width>1290</width>
                         <height>50</height>
                         <font>InfoDetailsFont</font>
-                        <include>TextColor_AlternateColor</include>
+                        <textcolor>AlternateColor</textcolor>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow3]</label>
                     </control>
@@ -149,7 +149,7 @@
                             <width>1290</width>
                             <height>195</height>
                             <font>InfoPlotFont</font>
-                            <include>TextColor_AlternateColor</include>
+                            <textcolor>AlternateColor</textcolor>
                             <label>$VAR[Plots]</label>
                             <include>myautoscroll</include>
                         </control>
@@ -168,7 +168,7 @@
                             <width>1290</width>
                             <height>270</height>
                             <font>InfoPlotFont</font>
-                            <include>TextColor_AlternateColor</include>
+                            <textcolor>AlternateColor</textcolor>
                             <label>$VAR[Plots]</label>
                             <include>myautoscroll</include>
                         </control>
@@ -179,7 +179,7 @@
                             <width>1290</width>
                             <height>535</height>
                             <font>InfoPlotFont</font>
-                            <include>TextColor_AlternateColor</include>
+                            <textcolor>AlternateColor</textcolor>
                             <label>$VAR[Plots]</label>
                             <include>myautoscroll</include>
                         </control>
@@ -310,7 +310,7 @@
                         <param name="y" value="2"/>
                         <param name="width" value="50"/>
                         <param name="height" value="50"/>
-                        <param name="colordiffuse" value="FocusedColor"/>
+                        <param name="transparency" value="100"/>
                     </include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -337,7 +337,7 @@
                             <width>460</width>
                             <height>50</height>
                             <font>InfoRatingFont</font>
-                            <include>TextColor_AlternateColor</include>
+                            <textcolor>AlternateColor</textcolor>
                             <scroll>false</scroll>
                             <label>$INFO[ListItem.RatingAndVotes]</label>
                         </control>
@@ -348,7 +348,7 @@
                             <width>460</width>
                             <height>50</height>
                             <font>InfoRatingFont</font>
-                            <include>TextColor_AlternateColor</include>
+                            <textcolor>AlternateColor</textcolor>
                             <scroll>false</scroll>
                             <label fallback="0.0">$INFO[ListItem.Rating,,.0]</label>
                         </control>
@@ -359,7 +359,7 @@
                         <width>1290</width>
                         <height>50</height>
                         <font>InfoDetailsFont</font>
-                        <include>TextColor_AlternateColor</include>
+                        <textcolor>AlternateColor</textcolor>
                         <scroll>true</scroll>
                         <label>$VAR[DetailsRow1]</label>
                     </control>
@@ -379,7 +379,7 @@
                         <width>1290</width>
                         <height>50</height>
                         <font>InfoDetailsFont</font>
-                        <include>TextColor_AlternateColor</include>
+                        <textcolor>AlternateColor</textcolor>
                         <scroll>false</scroll>
                         <label>$VAR[DetailsRow3]</label>
                     </control>
@@ -401,7 +401,7 @@
                             <width>1290</width>
                             <height>195</height>
                             <font>InfoPlotFont</font>
-                            <include>TextColor_AlternateColor</include>
+                            <textcolor>AlternateColor</textcolor>
                             <label>$VAR[Plots]</label>
                             <include>myautoscroll</include>
                         </control>
@@ -420,7 +420,7 @@
                             <width>1290</width>
                             <height>270</height>
                             <font>InfoPlotFont</font>
-                            <include>TextColor_AlternateColor</include>
+                            <textcolor>AlternateColor</textcolor>
                             <label>$VAR[Plots]</label>
                             <include>myautoscroll</include>
                         </control>
@@ -431,7 +431,7 @@
                             <width>1290</width>
                             <height>535</height>
                             <font>InfoPlotFont</font>
-                            <include>TextColor_AlternateColor</include>
+                            <textcolor>AlternateColor</textcolor>
                             <label>$VAR[Plots]</label>
                             <include>myautoscroll</include>
                         </control>

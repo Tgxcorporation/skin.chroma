@@ -218,4 +218,10 @@
             <effect type="fade" start="0" end="100" time="500" delay="3000"/>
         </animation>
     </include>
+    <include name="OverlayTransparency">
+        <animation effect="fade" start="90" end="90" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency80)">Conditional</animation>
+        <animation effect="fade" start="80" end="80" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency70)">Conditional</animation>
+        <animation effect="fade" start="70" end="70" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency60)">Conditional</animation>
+        <animation effect="fade" start="60" end="60" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency50)">Conditional</animation>
+    </include>
 </includes>

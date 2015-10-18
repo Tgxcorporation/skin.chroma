@@ -65,7 +65,8 @@
                             <posy>0</posy>
                             <height>50</height>
                             <width>480</width>
-                            <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                            <texture border="1">list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
@@ -773,7 +774,7 @@
                             <posy>780</posy>
                             <width>1240</width>
                             <height>195</height>
-                            <include>TextColor_AlternateColor</include>
+                            <textcolor>AlternateColor</textcolor>
                             <font>InfoPlotFont</font>
                             <label>$LOCALIZE[31982]</label>
                             <include>myautoscroll</include>
@@ -825,7 +826,8 @@
                                         <posy>0</posy>
                                         <height>50</height>
                                         <width>380</width>
-                                        <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus.png</texture>
+                                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                                        <texture border="1">list/bg_facade_focus.png</texture>
                                     </control>
                                     <control type="label">
                                         <posx>TextMargin</posx>
@@ -1404,8 +1406,9 @@
                             <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
                             <onclick>Skin.Reset(Theme.Color.indigo)</onclick>
                             <onclick>Skin.Reset(Theme.Color.titanium)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.custom)</onclick>
                             <onclick>Skin.ToggleSetting(Theme.Color.green)</onclick>
-                            <selected>[Skin.HasSetting(Theme.Color.green)|![Skin.HasSetting(Theme.Color.amber)|Skin.HasSetting(Theme.Color.fuchsia)|Skin.HasSetting(Theme.Color.indigo)|Skin.HasSetting(Theme.Color.titanium)]]</selected>
+                            <selected>[Skin.HasSetting(Theme.Color.green)|![Skin.HasSetting(Theme.Color.amber)|Skin.HasSetting(Theme.Color.fuchsia)|Skin.HasSetting(Theme.Color.indigo)|Skin.HasSetting(Theme.Color.titanium)|Skin.HasSetting(Theme.Color.custom)]]</selected>
                             <onclick>XBMC.ReloadSkin()</onclick>
                         </control>
                         <!-- amber -->
@@ -1426,6 +1429,7 @@
                             <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
                             <onclick>Skin.Reset(Theme.Color.indigo)</onclick>
                             <onclick>Skin.Reset(Theme.Color.titanium)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.custom)</onclick>
                             <onclick>Skin.ToggleSetting(Theme.Color.amber)</onclick>
                             <selected>Skin.HasSetting(Theme.Color.amber)</selected>
                             <onclick>XBMC.ReloadSkin()</onclick>
@@ -1448,6 +1452,7 @@
                             <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
                             <onclick>Skin.Reset(Theme.Color.indigo)</onclick>
                             <onclick>Skin.Reset(Theme.Color.titanium)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.custom)</onclick>
                             <onclick>Skin.ToggleSetting(Theme.Color.fuchsia)</onclick>
                             <selected>Skin.HasSetting(Theme.Color.fuchsia)</selected>
                             <onclick>XBMC.ReloadSkin()</onclick>
@@ -1470,6 +1475,7 @@
                             <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
                             <onclick>Skin.Reset(Theme.Color.indigo)</onclick>
                             <onclick>Skin.Reset(Theme.Color.titanium)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.custom)</onclick>
                             <onclick>Skin.ToggleSetting(Theme.Color.indigo)</onclick>
                             <selected>Skin.HasSetting(Theme.Color.indigo)</selected>
                             <onclick>XBMC.ReloadSkin()</onclick>
@@ -1485,15 +1491,39 @@
                             <include>SkinSettingsButton</include>
                             <onright>852805</onright>
                             <onleft>9000</onleft>
-                            <ondown>852801</ondown>
+                            <ondown>852806</ondown>
                             <onup>852804</onup>
                             <onclick>Skin.Reset(Theme.Color.green)</onclick>
                             <onclick>Skin.Reset(Theme.Color.amber)</onclick>
                             <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
                             <onclick>Skin.Reset(Theme.Color.indigo)</onclick>
                             <onclick>Skin.Reset(Theme.Color.titanium)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.custom)</onclick>
                             <onclick>Skin.ToggleSetting(Theme.Color.titanium)</onclick>
                             <selected>Skin.HasSetting(Theme.Color.titanium)</selected>
+                            <onclick>XBMC.ReloadSkin()</onclick>
+                        </control>
+                        <control type="radiobutton" id="852806">
+                            <include>ButtonFocusAnimation</include>
+                            <posx>530</posx>
+                            <posy>630</posy>
+                            <width>380</width>
+                            <label>$LOCALIZE[31070]</label>
+                            <radioposx>0</radioposx>
+                            <include>SkinSettingsButton</include>
+                            <onright>852806</onright>
+                            <onleft>9000</onleft>
+                            <ondown>852801</ondown>
+                            <onup>852805</onup>
+                            <onclick>Skin.Reset(Theme.Color.green)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.amber)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.indigo)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.titanium)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.custom)</onclick>
+                            <onclick>Skin.ToggleSetting(Theme.Color.custom)</onclick>
+                            <selected>Skin.HasSetting(Theme.Color.custom)</selected>
+                            <onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=PickedColor)</onclick>
                             <onclick>XBMC.ReloadSkin()</onclick>
                         </control>
                         <control type="group">
@@ -1505,15 +1535,25 @@
                                 <width>860</width>
                                 <height>484</height>
                                 <aspectratio>scale</aspectratio>
-                                <texture>special://skin/backgrounds/default/green.png</texture>
+                                <texture>special://skin/backgrounds/default/background.png</texture>
                             </control>
                             <control type="image">
                                 <posx>960</posx>
                                 <posy>380</posy>
                                 <width>860</width>
                                 <height>242</height>
-                                <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
-                                <texture>green/common/overlay_top.png</texture>
+                                <colordiffuse>GreenColor</colordiffuse>
+                                <include>OverlayTransparency</include>
+                                <texture>common/overlay_top.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>622</posy>
+                                <width>860</width>
+                                <height>242</height>
+                                <colordiffuse>GreenColor</colordiffuse>
+                                <include>OverlayTransparency</include>
+                                <texture>common/overlay_bottom.png</texture>
                             </control>
                             <control type="image">
                                 <posx>960</posx>
@@ -1542,17 +1582,26 @@
                                 <width>860</width>
                                 <height>484</height>
                                 <aspectratio>scale</aspectratio>
-                                <texture>special://skin/backgrounds/default/amber.png</texture>
+                                <texture>special://skin/backgrounds/default/background.png</texture>
                             </control>
                             <control type="image">
                                 <posx>960</posx>
                                 <posy>380</posy>
                                 <width>860</width>
                                 <height>242</height>
-                                <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
-                                <texture>amber/common/overlay_top.png</texture>
+                                <colordiffuse>AmberColor</colordiffuse>
+                                <include>OverlayTransparency</include>
+                                <texture>common/overlay_top.png</texture>
                             </control>
                             <control type="image">
+                                <posx>960</posx>
+                                <posy>622</posy>
+                                <width>860</width>
+                                <height>242</height>
+                                <colordiffuse>AmberColor</colordiffuse>
+                                <include>OverlayTransparency</include>
+                                <texture>common/overlay_bottom.png</texture>
+                            </control><control type="image">
                                 <posx>960</posx>
                                 <posy>700</posy>
                                 <width>860</width>
@@ -1579,15 +1628,25 @@
                                 <width>860</width>
                                 <height>484</height>
                                 <aspectratio>scale</aspectratio>
-                                <texture>special://skin/backgrounds/default/fuchsia.png</texture>
+                                <texture>special://skin/backgrounds/default/background.png</texture>
                             </control>
                             <control type="image">
                                 <posx>960</posx>
                                 <posy>380</posy>
                                 <width>860</width>
                                 <height>242</height>
-                                <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
-                                <texture>fuchsia/common/overlay_top.png</texture>
+                                <colordiffuse>FuchsiaColor</colordiffuse>
+                                <include>OverlayTransparency</include>
+                                <texture>common/overlay_top.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>622</posy>
+                                <width>860</width>
+                                <height>242</height>
+                                <colordiffuse>FuchsiaColor</colordiffuse>
+                                <include>OverlayTransparency</include>
+                                <texture>common/overlay_bottom.png</texture>
                             </control>
                             <control type="image">
                                 <posx>960</posx>
@@ -1616,15 +1675,25 @@
                                 <width>860</width>
                                 <height>484</height>
                                 <aspectratio>scale</aspectratio>
-                                <texture>special://skin/backgrounds/default/indigo.png</texture>
+                                <texture>special://skin/backgrounds/default/background.png</texture>
                             </control>
                             <control type="image">
                                 <posx>960</posx>
                                 <posy>380</posy>
                                 <width>860</width>
                                 <height>242</height>
-                                <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
-                                <texture>indigo/common/overlay_top.png</texture>
+                                <colordiffuse>IndigoColor</colordiffuse>
+                                <include>OverlayTransparency</include>
+                                <texture>common/overlay_top.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>622</posy>
+                                <width>860</width>
+                                <height>242</height>
+                                <colordiffuse>IndigoColor</colordiffuse>
+                                <include>OverlayTransparency</include>
+                                <texture>common/overlay_bottom.png</texture>
                             </control>
                             <control type="image">
                                 <posx>960</posx>
@@ -1653,15 +1722,25 @@
                                 <width>860</width>
                                 <height>484</height>
                                 <aspectratio>scale</aspectratio>
-                                <texture>special://skin/backgrounds/default/titanium.png</texture>
+                                <texture>special://skin/backgrounds/default/background.png</texture>
                             </control>
                             <control type="image">
                                 <posx>960</posx>
                                 <posy>380</posy>
                                 <width>860</width>
                                 <height>242</height>
-                                <colordiffuse>$VAR[OverlayTransparency]</colordiffuse>
-                                <texture>titanium/common/overlay_top.png</texture>
+                                <include>OverlayTransparency</include>
+                                <colordiffuse>TitaniumColor</colordiffuse>
+                                <texture>common/overlay_top.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>622</posy>
+                                <width>860</width>
+                                <height>242</height>
+                                <colordiffuse>TitaniumColor</colordiffuse>
+                                <include>OverlayTransparency</include>
+                                <texture>common/overlay_bottom.png</texture>
                             </control>
                             <control type="image">
                                 <posx>960</posx>
@@ -1679,6 +1758,53 @@
                                 <font>InfoDetailsFont</font>
                                 <textcolor>FocusedColor</textcolor>
                                 <label>$LOCALIZE[31525]</label>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <visible>control.hasfocus(852806)</visible>
+                            <include>Icon_Fade</include>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>380</posy>
+                                <width>860</width>
+                                <height>484</height>
+                                <aspectratio>scale</aspectratio>
+                                <texture>special://skin/backgrounds/default/background.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>380</posy>
+                                <width>860</width>
+                                <height>242</height>
+                                <colordiffuse>$INFO[Skin.String(PickedColor)]</colordiffuse>
+                                <include>OverlayTransparency</include>
+                                <texture>common/overlay_top.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>622</posy>
+                                <width>860</width>
+                                <height>242</height>
+                                <colordiffuse>$INFO[Skin.String(PickedColor)]</colordiffuse>
+                                <include>OverlayTransparency</include>
+                                <texture>common/overlay_bottom.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>700</posy>
+                                <width>860</width>
+                                <height>170</height>
+                                <texture border="65">common/background_strip_horizontal_text.png</texture>
+                            </control>
+                            <control type="label">
+                                <posx>960</posx>
+                                <posy>700</posy>
+                                <width>860</width>
+                                <height>170</height>
+                                <align>center</align>
+                                <font>InfoDetailsFont</font>
+                                <textcolor>FocusedColor</textcolor>
+                                <label>$LOCALIZE[31070]</label>
                             </control>
                         </control>
                     </control>

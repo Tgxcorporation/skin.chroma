@@ -11,7 +11,8 @@
                 <width>1920</width>
                 <height>1080</height>
                 <!--<include>DialogTransparency</include>-->
-                <texture border="50">$VAR[Theme.Color]/common/background_menu.png</texture>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture border="50">common/background_menu.png</texture>
             </control>
             <include name="WindowClosingButton">
                 <param name="id" value="99010"/>
@@ -241,7 +242,8 @@
                                 <posy>0</posy>
                                 <height>100</height>
                                 <width>670</width>
-                                <texture border="1">$VAR[Theme.Color]/list/bg_facade_focus_2.png</texture>
+                                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                                <texture border="1">list/bg_facade_focus_2.png</texture>
                             </control>
                             <control type="label">
                                 <posx>TextMargin</posx>
@@ -260,7 +262,7 @@
                                 <width>570</width>
                                 <font>FacadeListSubFont</font>
                                 <scroll>true</scroll>
-                                <include>TextColor_AlternateColor</include>
+                                <textcolor>AlternateColor</textcolor>
                                 <label>$LOCALIZE[19210]: $INFO[ListItem.Property(ClientName)]</label>
                             </control>
                         </control>

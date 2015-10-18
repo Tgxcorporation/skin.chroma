@@ -73,7 +73,7 @@
                                 <width>810</width>
                                 <height>270</height>
                                 <font>InfoPlotFont</font>
-                                <include>TextColor_AlternateColor</include>
+                                <textcolor>AlternateColor</textcolor>
                                 <label fallback="19055">$INFO[MusicPlayer.Property(Artist_Description)]</label>
                                 <include>myautoscroll</include>
                             </control>
@@ -107,7 +107,7 @@
                                 <width>380</width>
                                 <height>50</height>
                                 <font>InfoDetailsFont</font>
-                                <include>TextColor_AlternateColor</include>
+                                <textcolor>AlternateColor</textcolor>
                                 <scroll>false</scroll>
                                 <label>$VAR[DetailsRow2]</label>
                             </control>
@@ -127,7 +127,7 @@
                                 <width>380</width>
                                 <height>50</height>
                                 <font>InfoDetailsFont</font>
-                                <include>TextColor_AlternateColor</include>
+                                <textcolor>AlternateColor</textcolor>
                                 <scroll>false</scroll>
                                 <label>$VAR[DetailsRow4]</label>
                             </control>
@@ -162,7 +162,8 @@
                                 <width>380</width>
                                 <height>380</height>
                                 <aspectratio aligny="top">keep</aspectratio>
-                                <texture>$VAR[Theme.Color]/defaultAudioBig.png</texture>
+                                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                                <texture>defaultAudioBig.png</texture>
                             </control>
                             <control type="image">
                                 <posx>0</posx>
