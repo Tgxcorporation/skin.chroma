@@ -75,7 +75,7 @@
                                 <posy>0</posy>
                                 <width>100</width>
                                 <height>100</height>
-                                <colordiffuse>NoFocusedColor</colordiffuse>
+                                <include>NoFocusedIcon</include>
                                 <texture background="true">$VAR[Thumbs]</texture>
                                 <aspectratio>keep</aspectratio>
                             </control>
@@ -209,7 +209,7 @@
                                 <posy>0</posy>
                                 <width>100</width>
                                 <height>100</height>
-                                <colordiffuse>NoFocusedColor</colordiffuse>
+                                <include>NoFocusedIcon</include>
                                 <texture background="true">$VAR[Thumbs]</texture>
                                 <aspectratio>keep</aspectratio>
                             </control>
