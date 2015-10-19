@@ -80,7 +80,7 @@
             <align>center</align>
             <aligny>center</aligny>
             <include name="CodecsShowcase">
-                <param name="colordiffuse" value="Colordiffuse"/>
+                <param name="colordiffuse" value="$VAR[Picked.Theme.Color]"/>
                 <param name="TextColor" value="TextColor_MainColor"/>
             </include>
         </control>
