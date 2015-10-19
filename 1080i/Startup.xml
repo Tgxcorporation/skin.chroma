@@ -57,6 +57,7 @@
             <aspectratio aligny="top">scale</aspectratio>
             <imagepath background="true">$INFO[Skin.String(startup-multiimagepath)]</imagepath>
         </control>
+        <include>OverlayFull</include>
         <control type="group">
             <visible>![StringCompare(Skin.String(startup-screentype),image)+!IsEmpty(Skin.String(startup-imagepath))] +
                 ![StringCompare(Skin.String(startup-screentype),multiimage)+!IsEmpty(Skin.String(startup-multiimagepath))]</visible>
