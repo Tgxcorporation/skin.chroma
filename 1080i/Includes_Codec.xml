@@ -364,7 +364,7 @@
             <width>63</width>
             <height>50</height>
             <aspectratio>keep</aspectratio>
-            <include>$PARAM[colordiffuse]</include>
+            <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
             <texture>badges/video/$INFO[ListItem.VideoResolution,,.png]</texture>
         </control>
         <control type="image">
@@ -373,7 +373,7 @@
             <width>63</width>
             <height>50</height>
             <aspectratio>keep</aspectratio>
-            <include>$PARAM[colordiffuse]</include>
+            <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
             <texture>badges/video/$VAR[videocodec].png</texture>
         </control>
         <control type="image">
@@ -382,7 +382,7 @@
             <width>63</width>
             <height>50</height>
             <aspectratio>keep</aspectratio>
-            <include>$PARAM[colordiffuse]</include>
+            <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
             <texture>badges/audio/$INFO[ListItem.AudioChannels,,.png]</texture>
         </control>
         <control type="image">
@@ -391,7 +391,7 @@
             <width>63</width>
             <height>50</height>
             <aspectratio>keep</aspectratio>
-            <include>$PARAM[colordiffuse]</include>
+            <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
             <texture>badges/audio/$INFO[ListItem.AudioCodec,,.png]</texture>
         </control>
         <control type="image">
@@ -400,7 +400,7 @@
             <width>63</width>
             <height>50</height>
             <aspectratio>keep</aspectratio>
-            <include>$PARAM[colordiffuse]</include>
+            <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
             <texture>$VAR[MediaFlag_MPAA]</texture>
         </control>
         <control type="image">
@@ -409,7 +409,7 @@
             <width>63</width>
             <height>50</height>
             <aspectratio>keep</aspectratio>
-            <include>$PARAM[colordiffuse]</include>
+            <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
             <texture>badges/video/$VAR[videosource].png</texture>
         </control>
         <control type="image">
@@ -418,7 +418,7 @@
             <width>63</width>
             <height>50</height>
             <aspectratio>keep</aspectratio>
-            <include>$PARAM[colordiffuse]</include>
+            <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
             <texture>badges/video/3dbd.png</texture>
         </control>
         <control type="group" id="1">
@@ -430,7 +430,7 @@
                 <width>63</width>
                 <height>50</height>
                 <aspectratio>keep</aspectratio>
-                <include>$PARAM[colordiffuse]</include>
+                <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
                 <texture>badges/imdb.png</texture>
             </control>
             <control type="label" id="1">
