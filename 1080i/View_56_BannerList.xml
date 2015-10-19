@@ -189,9 +189,16 @@
                     <posy>0</posy>
                     <width>910</width>
                     <height>150</height>
-                    <colordiffuse>bbffffff</colordiffuse>
                     <texture background="true">$VAR[Banner]</texture>
                     <aspectratio>scale</aspectratio>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>910</width>
+                    <height>150</height>
+                    <include>NoFocusedThumb</include>
+                    <texture>common/BlackDot.png</texture>
                 </control>
             </control>
             <control type="label">

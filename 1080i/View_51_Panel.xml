@@ -187,9 +187,16 @@
                 <posy>0</posy>
                 <width>181</width>
                 <height>136</height>
-                <colordiffuse>bbffffff</colordiffuse>
                 <texture background="true">$VAR[Thumbs]</texture>
                 <aspectratio>keep</aspectratio>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>181</width>
+                <height>136</height>
+                <include>NoFocusedThumb</include>
+                <texture>common/BlackDot.png</texture>
             </control>
             <include name="ProgressBar">
                 <param name="id" value="0"/>
@@ -282,9 +289,16 @@
                 <posy>0</posy>
                 <width>130</width>
                 <height>200</height>
-                <colordiffuse>bbffffff</colordiffuse>
                 <texture background="true">$VAR[Thumbs]</texture>
                 <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>130</width>
+                <height>200</height>
+                <include>NoFocusedThumb</include>
+                <texture>common/BlackDot.png</texture>
             </control>
             <include name="WatchedRecOverlay">
                 <param name="x" value="0"/>
@@ -329,9 +343,16 @@
                 <posy>0</posy>
                 <width>303</width>
                 <height>200</height>
-                <colordiffuse>bbffffff</colordiffuse>
                 <texture background="true">$VAR[Thumbs]</texture>
                 <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>303</width>
+                <height>200</height>
+                <include>NoFocusedThumb</include>
+                <texture>common/BlackDot.png</texture>
             </control>
             <include name="WatchedRecOverlay">
                 <param name="x" value="0"/>
@@ -376,9 +397,16 @@
                 <posy>0</posy>
                 <width>200</width>
                 <height>200</height>
-                <colordiffuse>bbffffff</colordiffuse>
                 <texture background="true">$VAR[Thumbs]</texture>
                 <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>200</width>
+                <height>200</height>
+                <include>NoFocusedThumb</include>
+                <texture>common/BlackDot.png</texture>
             </control>
             <include name="WatchedRecOverlay">
                 <param name="x" value="0"/>

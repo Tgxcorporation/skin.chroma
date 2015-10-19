@@ -132,9 +132,16 @@
                 <posy>200</posy>
                 <width>260</width>
                 <height>390</height>
-                <colordiffuse>bbffffff</colordiffuse>
                 <texture background="true">$VAR[Thumbs]</texture>
                 <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>200</posy>
+                <width>260</width>
+                <height>390</height>
+                <include>NoFocusedThumb</include>
+                <texture>common/BlackDot.png</texture>
             </control>
         </itemlayout>
         <focusedlayout height="590" width="260">
@@ -177,9 +184,16 @@
                 <posy>190</posy>
                 <width>370</width>
                 <height>370</height>
-                <colordiffuse>bbffffff</colordiffuse>
                 <texture background="true">$VAR[Thumbs]</texture>
                 <aspectratio>stretch</aspectratio>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>190</posy>
+                <width>370</width>
+                <height>370</height>
+                <include>NoFocusedThumb</include>
+                <texture>common/BlackDot.png</texture>
             </control>
         </itemlayout>
         <focusedlayout height="560" width="370">
