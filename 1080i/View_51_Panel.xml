@@ -166,6 +166,7 @@
                     <width>340</width>
                     <height>510</height>
                     <aspectratio aligny="top">scale</aspectratio>
+                    <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                     <texture background="true">$VAR[Thumbs]</texture>
                 </control>
                 <control type="image">
@@ -175,6 +176,7 @@
                     <width>380</width>
                     <height>380</height>
                     <aspectratio aligny="top">keep</aspectratio>
+                    <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                     <texture background="true">$VAR[Thumbs]</texture>
                 </control>
             </control>
@@ -188,6 +190,7 @@
                 <width>181</width>
                 <height>136</height>
                 <colordiffuse>bbffffff</colordiffuse>
+                <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                 <texture background="true">$VAR[Thumbs]</texture>
                 <aspectratio>keep</aspectratio>
             </control>
@@ -231,6 +234,7 @@
                     <posy>0</posy>
                     <width>181</width>
                     <height>136</height>
+                    <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                     <texture background="true">$VAR[Thumbs]</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
@@ -283,6 +287,7 @@
                 <width>130</width>
                 <height>200</height>
                 <colordiffuse>bbffffff</colordiffuse>
+                <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                 <texture background="true">$VAR[Thumbs]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
@@ -302,6 +307,7 @@
                     <posy>0</posy>
                     <width>130</width>
                     <height>200</height>
+                    <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                     <texture background="true">$VAR[Thumbs]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
@@ -330,6 +336,7 @@
                 <width>303</width>
                 <height>200</height>
                 <colordiffuse>bbffffff</colordiffuse>
+                <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                 <texture background="true">$VAR[Thumbs]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
@@ -349,6 +356,7 @@
                     <posy>0</posy>
                     <width>303</width>
                     <height>200</height>
+                    <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                     <texture background="true">$VAR[Thumbs]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>
@@ -377,6 +385,7 @@
                 <width>200</width>
                 <height>200</height>
                 <colordiffuse>bbffffff</colordiffuse>
+                <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                 <texture background="true">$VAR[Thumbs]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
@@ -396,6 +405,7 @@
                     <posy>0</posy>
                     <width>200</width>
                     <height>200</height>
+                    <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                     <texture background="true">$VAR[Thumbs]</texture>
                     <aspectratio>scale</aspectratio>
                 </control>

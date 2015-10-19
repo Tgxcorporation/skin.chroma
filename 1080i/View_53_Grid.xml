@@ -90,6 +90,7 @@
                         <height>180</height>
                         <aspectratio>scale</aspectratio>
                         <colordiffuse>bbffffff</colordiffuse>
+                        <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                         <texture background="true">$VAR[Thumbs]</texture>
                     </control>
                     <include name="WatchedRecOverlay">
@@ -109,6 +110,7 @@
                             <width>240</width>
                             <height>180</height>
                             <aspectratio>scale</aspectratio>
+                            <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                             <texture background="true">$VAR[Thumbs]</texture>
                         </control>
                         <control type="image">
@@ -184,6 +186,7 @@
                         <height>192</height>
                         <aspectratio>scale</aspectratio>
                         <colordiffuse>bbffffff</colordiffuse>
+                        <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                         <texture background="true">$VAR[Thumbs]</texture>
                     </control>
                     <include name="WatchedRecOverlay">
@@ -203,6 +206,7 @@
                             <width>128</width>
                             <height>192</height>
                             <aspectratio>scale</aspectratio>
+                            <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                             <texture background="true">$VAR[Thumbs]</texture>
                         </control>
                         <control type="image">
@@ -231,6 +235,7 @@
                         <height>288</height>
                         <colordiffuse>bbffffff</colordiffuse>
                         <aspectratio>scale</aspectratio>
+                        <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                         <texture background="true">$VAR[Thumbs]</texture>
                     </control>
                     <include name="WatchedRecOverlay">
@@ -250,6 +255,7 @@
                             <width>192</width>
                             <height>288</height>
                             <aspectratio>scale</aspectratio>
+                            <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                             <texture background="true">$VAR[Thumbs]</texture>
                         </control>
                         <control type="image">
@@ -278,6 +284,7 @@
                         <height>270</height>
                         <aspectratio>scale</aspectratio>
                         <colordiffuse>bbffffff</colordiffuse>
+                        <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                         <texture background="true">$VAR[Thumbs]</texture>
                     </control>
                     <include name="WatchedRecOverlay">
@@ -297,6 +304,7 @@
                             <width>480</width>
                             <height>270</height>
                             <aspectratio>scale</aspectratio>
+                            <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                             <texture background="true">$VAR[Thumbs]</texture>
                         </control>
                         <control type="image">
@@ -325,6 +333,7 @@
                         <height>180</height>
                         <aspectratio>scale</aspectratio>
                         <colordiffuse>bbffffff</colordiffuse>
+                        <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                         <texture background="true">$VAR[Thumbs]</texture>
                     </control>
                     <include name="WatchedRecOverlay">
@@ -344,6 +353,7 @@
                             <width>175</width>
                             <height>180</height>
                             <aspectratio>scale</aspectratio>
+                            <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                             <texture background="true">$VAR[Thumbs]</texture>
                         </control>
                         <control type="image">
@@ -372,6 +382,7 @@
                         <height>270</height>
                         <aspectratio>scale</aspectratio>
                         <colordiffuse>bbffffff</colordiffuse>
+                        <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                         <texture background="true">$VAR[Thumbs]</texture>
                     </control>
                     <include name="WatchedRecOverlay">
@@ -391,6 +402,7 @@
                             <width>275</width>
                             <height>270</height>
                             <aspectratio>scale</aspectratio>
+                            <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                             <texture background="true">$VAR[Thumbs]</texture>
                         </control>
                         <control type="image">

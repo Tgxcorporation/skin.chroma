@@ -170,6 +170,7 @@
                     <posy>0</posy>
                     <width>380</width>
                     <height>380</height>
+                    <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                     <aspectratio aligny="top">keep</aspectratio>
                     <texture background="true">$VAR[Thumbs]</texture>
                 </control>
