@@ -225,6 +225,6 @@
         <animation effect="fade" start="60" end="60" time="0" reversible="false" condition="skin.hassetting(OverlayTransparency50)">Conditional</animation>
     </include>
     <include name="NoFocusedThumb">
-        <animation effect="fade" start="100" end="27" time="100" reversible="false" condition="true">Conditional</animation>
+        <animation effect="fade" start="100" end="20" time="100" reversible="false" condition="true">Conditional</animation>
     </include>
 </includes>
