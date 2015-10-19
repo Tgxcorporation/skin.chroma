@@ -166,7 +166,6 @@
                     <width>340</width>
                     <height>510</height>
                     <aspectratio aligny="top">scale</aspectratio>
-                    <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                     <texture background="true">$VAR[Thumbs]</texture>
                 </control>
                 <control type="image">
@@ -176,7 +175,6 @@
                     <width>380</width>
                     <height>600</height>
                     <aspectratio aligny="top">keep</aspectratio>
-                    <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                     <texture background="true">$VAR[Thumbs]</texture>
                 </control>
             </control>

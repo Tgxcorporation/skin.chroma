@@ -111,7 +111,6 @@
                     <width>340</width>
                     <height>510</height>
                     <aspectratio aligny="top">scale</aspectratio>
-                    <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                     <texture background="true">$VAR[Thumbs]</texture>
                 </control>
             </control>

@@ -118,7 +118,6 @@
                             <width>50</width>
                             <height>50</height>
                             <colordiffuse>NoFocusedColor</colordiffuse>
-                            <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                             <texture background="true">$VAR[Thumbs]</texture>
                             <aspectratio>keep</aspectratio>
                         </control>
@@ -147,7 +146,6 @@
                                 <posy>0</posy>
                                 <width>50</width>
                                 <height>50</height>
-                                <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                                 <texture background="true">$VAR[Thumbs]</texture>
                                 <aspectratio>keep</aspectratio>
                             </control>
@@ -180,7 +178,6 @@
                             <width>50</width>
                             <height>50</height>
                             <colordiffuse>NoFocusedColor</colordiffuse>
-                            <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                             <texture background="true">$VAR[Thumbs]</texture>
                             <aspectratio>keep</aspectratio>
                         </control>
@@ -209,7 +206,6 @@
                                 <posy>0</posy>
                                 <width>50</width>
                                 <height>50</height>
-                                <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                                 <texture background="true">$VAR[Thumbs]</texture>
                                 <aspectratio>keep</aspectratio>
                             </control>
@@ -242,7 +238,6 @@
                         <posy>0</posy>
                         <width>380</width>
                         <height>570</height>
-                        <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                         <texture background="true">$VAR[Thumbs]</texture>
                         <aspectratio aligny="top">keep</aspectratio>
                     </control>
@@ -252,7 +247,6 @@
                         <posy>0</posy>
                         <width>380</width>
                         <height>570</height>
-                        <colordiffuse>$VAR[ThumbsIcons]</colordiffuse>
                         <texture flipx="true" background="true">$VAR[Thumbs]</texture>
                         <aspectratio aligny="top">keep</aspectratio>
                     </control>

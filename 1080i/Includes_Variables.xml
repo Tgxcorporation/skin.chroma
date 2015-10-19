@@ -76,27 +76,6 @@
         <value condition="!IsEmpty(ListItem.Art(thumb))+!SubString(ListItem.Art(thumb),Default,Left)">$INFO[ListItem.Art(thumb)]</value>
         <value>$VAR[ThumbsMissing]</value>
     </variable>
-    <variable name="ThumbsIcons">
-        <!--EXCEPTIONS-->
-        <value condition="window.IsActive(LoginScreen.xml)+StringCompare(ListItem.Thumb,unknown-user.png)">$VAR[Picked.Theme.Color]</value>
-        <value condition="window.IsActive(CustomAddons.xml)">$VAR[Picked.Theme.Color]</value>
-        <value condition="StringCompare(ListItem.thumb,special://home/addons/plugin.video.plexbmc/resources/thumb.png)">$VAR[Picked.Theme.Color]</value>
-        <!--<value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!SubString(ListItem.Icon,Default,Left)+[control.isvisible(58)|control.isvisible(53)]">$INFO[ListItem.Icon]</value>-->
-        <!--<value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!SubString(ListItem.Icon,Default,Left)">common/TransparentDot.png</value>-->
-        <!--<value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+IsEmpty(ListItem.Icon)">defaultChannelTvBig.png</value>-->
-        <!--<value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+!IsEmpty(ListItem.Icon)">common/TransparentDot.png</value>-->
-        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">ffffffff</value>
-        <value condition="StringCompare(ListItem.Icon,)+!IsEmpty(Window.Property(IsRadio))">$VAR[Picked.Theme.Color]</value>
-        <value condition="StringCompare(ListItem.Icon,)+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]">$VAR[Picked.Theme.Color]</value>
-        <!--NORMAL-->
-        <value condition="StringCompare(ListItem.Label,..)">$VAR[Picked.Theme.Color]</value>
-        <value condition="!IsEmpty(ListItem.Icon)+!SubString(ListItem.Icon,Default,Left)">ffffffff</value>
-        <value condition="!IsEmpty(ListItem.Property(Icon))+!SubString(ListItem.Property(Icon),Default,Left)">ffffffff</value>
-        <value condition="!IsEmpty(ListItem.Art(poster))+!SubString(ListItem.Art(poster),Default,Left)">ffffffff</value>
-        <value condition="!IsEmpty(ListItem.thumb)+!SubString(ListItem.thumb,Default,Left)">ffffffff</value>
-        <value condition="!IsEmpty(ListItem.Art(thumb))+!SubString(ListItem.Art(thumb),Default,Left)">ffffffff</value>
-        <value>$VAR[Picked.Theme.Color]</value>
-    </variable>
     <variable name="GlobalSubTitles">
         <value condition="Skin.hassetting(plexbmc) + !Window.IsActive(Home) + !IsEmpty(Window.Property(heading))">$INFO[Window.Property(heading)]</value>
         <value condition="Window.IsActive(56) | Window.IsActive(SkinSettings.xml)">$LOCALIZE[20077]</value>
