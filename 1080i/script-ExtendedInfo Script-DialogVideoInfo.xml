@@ -1221,7 +1221,7 @@
                                 <posy>7</posy>
                                 <width>50</width>
                                 <height>50</height>
-                                <colordiffuse>NoFocusedColor</colordiffuse>
+                                <include>NoFocusedIcon</include>
                                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                 <texture>OverlayWatched.png</texture>
                                 <aspectratio aligny="center">keep</aspectratio>
@@ -1369,7 +1369,7 @@
                                 <posy>7</posy>
                                 <width>50</width>
                                 <height>50</height>
-                                <colordiffuse>NoFocusedColor</colordiffuse>
+                                <include>NoFocusedIcon</include>
                                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                 <texture>OverlayWatched.png</texture>
                                 <aspectratio aligny="center">keep</aspectratio>
@@ -1895,7 +1895,7 @@
                                 <posy>0</posy>
                                 <width>50</width>
                                 <height>50</height>
-                                <colordiffuse>NoFocusedColor</colordiffuse>
+                                <include>NoFocusedIcon</include>
                                 <texture>$INFO[ListItem.Property(iso_3166_1),flags/,.png]</texture>
                                 <aspectratio>keep</aspectratio>
                             </control>
@@ -2493,7 +2493,7 @@
                                 <posy>7</posy>
                                 <width>50</width>
                                 <height>50</height>
-                                <colordiffuse>NoFocusedColor</colordiffuse>
+                                <include>NoFocusedIcon</include>
                                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                 <texture>OverlayWatched.png</texture>
                                 <aspectratio aligny="center">keep</aspectratio>

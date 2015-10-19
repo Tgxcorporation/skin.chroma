@@ -191,7 +191,7 @@
                                 <posy>0</posy>
                                 <height>100</height>
                                 <width>100</width>
-                                <colordiffuse>NoFocusedColor</colordiffuse>
+                                <include>NoFocusedIcon</include>
                                 <texture>$INFO[ListItem.Property(Icon)]</texture>
                                 <aspectratio>keep</aspectratio>
                             </control>
