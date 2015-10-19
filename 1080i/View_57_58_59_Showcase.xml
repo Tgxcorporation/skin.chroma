@@ -317,9 +317,16 @@
                         <posy>130</posy>
                         <width>260</width>
                         <height>390</height>
-                        <colordiffuse>bbffffff</colordiffuse>
                         <texture background="true">$VAR[Thumbs]</texture>
                         <aspectratio>scale</aspectratio>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>130</posy>
+                        <width>260</width>
+                        <height>390</height>
+                        <include>NoFocusedThumb</include>
+                        <texture>common/BlackDot.png</texture>
                     </control>
                     <include name="WatchedRecOverlay">
                         <param name="x" value="0"/>
@@ -450,9 +457,16 @@
                         <posy>190</posy>
                         <width>370</width>
                         <height>370</height>
-                        <colordiffuse>bbffffff</colordiffuse>
                         <texture background="true">$VAR[Thumbs]</texture>
                         <aspectratio>scale</aspectratio>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>190</posy>
+                        <width>370</width>
+                        <height>370</height>
+                        <include>NoFocusedThumb</include>
+                        <texture>common/BlackDot.png</texture>
                     </control>
                     <include name="WatchedRecOverlay">
                         <param name="x" value="0"/>
@@ -583,9 +597,16 @@
                         <posy>0</posy>
                         <width>500</width>
                         <height>280</height>
-                        <colordiffuse>bbffffff</colordiffuse>
                         <texture background="true">$VAR[Thumbs]</texture>
                         <aspectratio>scale</aspectratio>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>500</width>
+                        <height>280</height>
+                        <include>NoFocusedThumb</include>
+                        <texture>common/BlackDot.png</texture>
                     </control>
                     <include name="WatchedRecOverlay">
                         <param name="x" value="0"/>
@@ -686,9 +707,16 @@
                         <posy>190</posy>
                         <width>370</width>
                         <height>277</height>
-                        <colordiffuse>bbffffff</colordiffuse>
                         <texture background="true">$VAR[Thumbs]</texture>
                         <aspectratio>scale</aspectratio>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>190</posy>
+                        <width>370</width>
+                        <height>277</height>
+                        <include>NoFocusedThumb</include>
+                        <texture>common/BlackDot.png</texture>
                     </control>
                     <include name="WatchedRecOverlay">
                         <param name="x" value="0"/>

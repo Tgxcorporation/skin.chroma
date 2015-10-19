@@ -115,9 +115,16 @@
                 <posy>0</posy>
                 <width>480</width>
                 <height>270</height>
-                <colordiffuse>bbffffff</colordiffuse>
                 <texture background="true">$INFO[ListItem.Icon]</texture>
                 <aspectratio>scale</aspectratio>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>480</width>
+                <height>270</height>
+                <include>NoFocusedThumb</include>
+                <texture>common/BlackDot.png</texture>
             </control>
         </itemlayout>
         <focusedlayout height="270" width="480">
@@ -543,7 +550,6 @@
                                     <posy>380</posy>
                                     <width>1920</width>
                                     <height>190</height>
-                                    <colordiffuse>bbffffff</colordiffuse>
                                     <texture border="61">common/background_strip_horizontal.png</texture>
                                 </control>
                                 <control type="grouplist" id="701">

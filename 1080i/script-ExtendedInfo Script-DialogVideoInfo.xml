@@ -2275,9 +2275,16 @@
                                 <posy>0</posy>
                                 <width>155</width>
                                 <height>233</height>
-                                <colordiffuse>bbffffff</colordiffuse>
                                 <texture background="true">$INFO[ListItem.Thumb]</texture>
                                 <aspectratio>scale</aspectratio>
+                            </control>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <width>155</width>
+                                <height>233</height>
+                                <include>NoFocusedThumb</include>
+                                <texture>common/BlackDot.png</texture>
                             </control>
                         </itemlayout>
                         <focusedlayout height="233" width="155">
@@ -2368,9 +2375,16 @@
                                 <posy>0</posy>
                                 <width>258</width>
                                 <height>145</height>
-                                <colordiffuse>bbffffff</colordiffuse>
                                 <texture background="true">$INFO[ListItem.Thumb]</texture>
                                 <aspectratio>scale</aspectratio>
+                            </control>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <width>258</width>
+                                <height>145</height>
+                                <include>NoFocusedThumb</include>
+                                <texture>common/BlackDot.png</texture>
                             </control>
                         </itemlayout>
                         <focusedlayout height="145" width="258">
