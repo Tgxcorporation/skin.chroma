@@ -195,17 +195,17 @@
                             [[Container.content(songs)+Window.IsActive(MyMusicNav.xml)]|
                             [Window.IsActive(MyMusicSongs.xml)+!Skin.HasSetting(plexbmc)]]</visible>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>100</posy>
-                            <width>380</width>
-                            <height>380</height>
+                            <posx>10</posx>
+                            <posy>200</posy>
+                            <width>360</width>
+                            <height>360</height>
                             <texture background="true" diffuse="common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                             <include>Animation_ViewsCDart</include>
                         </control>
                         <control type="image">
                             <posx>15</posx>
-                            <posy>500</posy>
+                            <posy>380</posy>
                             <width>350</width>
                             <height>25</height>
                             <texture flipy="true" border="25,0,25,0">common/cover_shadow.png</texture>
@@ -447,17 +447,17 @@
                             [[Container.content(songs)+Window.IsActive(MyMusicNav.xml)]|
                             [Window.IsActive(MyMusicSongs.xml)+!Skin.HasSetting(plexbmc)]]</visible>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>100</posy>
-                            <width>380</width>
-                            <height>380</height>
+                            <posx>10</posx>
+                            <posy>200</posy>
+                            <width>360</width>
+                            <height>360</height>
                             <texture background="true" diffuse="common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                             <include>Animation_ViewsCDart</include>
                         </control>
                         <control type="image">
                             <posx>15</posx>
-                            <posy>500</posy>
+                            <posy>380</posy>
                             <width>350</width>
                             <height>25</height>
                             <texture flipy="true" border="25,0,25,0">common/cover_shadow.png</texture>
