@@ -119,14 +119,13 @@
                     <!-- CDART AUDIO -->
                     <visible>!Skin.HasSetting(plexbmc)</visible>
                     <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+
-                        [[Container.content(songs)+Window.IsActive(MyMusicNav.xml)]|
-                        [Window.IsActive(MyMusicSongs.xml)+!Skin.HasSetting(plexbmc)]]</visible>
+                        [Container.content(songs)|Container.content(albums)]</visible>
                     <control type="image">
                         <posx>10</posx>
                         <posy>200</posy>
                         <width>360</width>
                         <height>360</height>
-                        <texture background="true" diffuse="common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
+                        <texture background="true" diffuse="common/cdart_diffuse.png">http://localhost:52307/getmusicart&amp;dbid=$INFO[Listitem.DBID]&amp;type=discart&amp;contenttype=$VAR[ContentType]&amp;fallback=$INFO[ListItem.Thumb]</texture>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
                         <include>Animation_ViewsCDart</include>
                     </control>
