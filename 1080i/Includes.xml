@@ -589,14 +589,6 @@
             <selected>Skin.HasSetting(53_BigGrid)</selected>
             <label>$LOCALIZE[538]</label>
         </control>
-        <control type="radiobutton" id="9158">
-            <visible>Control.IsVisible(52)</visible>
-            <font>LeftMenuSubButtonFont</font>
-            <include>LeftMenuButton</include>
-            <onclick>Skin.ToggleSetting(52_ShowPlot)</onclick>
-            <selected>Skin.HasSetting(52_ShowPlot)</selected>
-            <label>$LOCALIZE[31968]</label>
-        </control>
         <control type="label" id="9181">
             <include>LeftMenuTitleLabel</include>
             <include>LeftMenuButton</include>
@@ -1306,6 +1298,97 @@
     <!--<include name="DialogTransparency">-->
         <!--<colordiffuse>ddffffff</colordiffuse>-->
     <!--</include>-->
+    <include name="ThumbsImages">
+        <control type="group">
+            <visible>$PARAM[visible]</visible>
+            <!--EXCEPTIONS-->
+            <control type="image">
+                <visible>[
+                    [window.IsActive(LoginScreen.xml)+StringCompare(ListItem.Thumb,unknown-user.png)]|
+                    [window.IsActive(CustomAddons.xml)]|
+                    [StringCompare(ListItem.thumb,special://home/addons/plugin.video.plexbmc/resources/thumb.png)]|
+                    [StringCompare(ListItem.Icon,)+!IsEmpty(Window.Property(IsRadio))]|
+                    [StringCompare(ListItem.Icon,)+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]]|
+                    [StringCompare(ListItem.Label,..)]
+                    ]</visible>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">$PARAM[aspectratio]</aspectratio>
+                <texture>$VAR[ThumbsExceptions]</texture>
+            </control>
+            <!--NORMAL-->
+            <control type="image">
+                <visible>[
+                    [Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)]|
+                    [!IsEmpty(ListItem.Art(poster))+!SubString(ListItem.Art(poster),Default,Left)]|
+                    [!IsEmpty(ListItem.Icon)+!SubString(ListItem.Icon,Default,Left)]|
+                    [!IsEmpty(ListItem.Property(Icon))+!SubString(ListItem.Property(Icon),Default,Left)]|
+                    [!IsEmpty(ListItem.thumb)+!SubString(ListItem.thumb,Default,Left)]|
+                    [!IsEmpty(ListItem.Art(thumb))+!SubString(ListItem.Art(thumb),Default,Left)]
+                    ]</visible>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">$PARAM[aspectratio]</aspectratio>
+                <texture background="true" flipx="$PARAM[flipx]">$VAR[Thumbs]</texture>
+            </control>
+            <!--MISSING THUMBS-->
+            <control type="image">
+                <visible>![
+                    [window.IsActive(LoginScreen.xml)+StringCompare(ListItem.Thumb,unknown-user.png)]|
+                    [window.IsActive(CustomAddons.xml)]|
+                    [StringCompare(ListItem.thumb,special://home/addons/plugin.video.plexbmc/resources/thumb.png)]|
+                    [StringCompare(ListItem.Icon,)+!IsEmpty(Window.Property(IsRadio))]|
+                    [StringCompare(ListItem.Icon,)+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]]|
+                    [StringCompare(ListItem.Label,..)]
+                    ]
+                    +
+                    ![
+                    [Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)]|
+                    [!IsEmpty(ListItem.Art(poster))+!SubString(ListItem.Art(poster),Default,Left)]|
+                    [!IsEmpty(ListItem.Icon)+!SubString(ListItem.Icon,Default,Left)]|
+                    [!IsEmpty(ListItem.Property(Icon))+!SubString(ListItem.Property(Icon),Default,Left)]|
+                    [!IsEmpty(ListItem.thumb)+!SubString(ListItem.thumb,Default,Left)]|
+                    [!IsEmpty(ListItem.Art(thumb))+!SubString(ListItem.Art(thumb),Default,Left)]
+                    ]</visible>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">$PARAM[aspectratio]</aspectratio>
+                <texture>$VAR[ThumbsMissing]</texture>
+            </control>
+        </control>
+    </include>
+    <include name="BannersImages">
+        <control type="group">
+            <visible>$PARAM[visible]</visible>
+            <control type="image">
+                <visible>StringCompare(ListItem.Label,..)+[Container.Content(TVShows)|Container.Content(movies)|Container.Content(seasons)]</visible>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">$PARAM[aspectratio]</aspectratio>
+                <texture>defaultFolderBackBanner.png</texture>
+            </control>
+            <control type="image">
+                <visible>![StringCompare(ListItem.Label,..)+[Container.Content(TVShows)|Container.Content(movies)|Container.Content(seasons)]]</visible>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]" fallback="common/TransparentDot.png">$PARAM[aspectratio]</aspectratio>
+                <texture background="true">$VAR[Banners]</texture>
+            </control>
+        </control>
+    </include>
     <include name="WindowClosingButton">
         <control type="button" id="$PARAM[id]">
             <visible>Skin.HasSetting(WindowClosingIcon)</visible>

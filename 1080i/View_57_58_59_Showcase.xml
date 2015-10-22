@@ -312,14 +312,17 @@
                 <movement>0</movement>
                 <preloaditems>4</preloaditems>
                 <itemlayout height="540" width="260">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>130</posy>
-                        <width>260</width>
-                        <height>390</height>
-                        <texture background="true">$VAR[Thumbs]</texture>
-                        <aspectratio>scale</aspectratio>
-                    </control>
+                    <include name="ThumbsImages">
+                        <param name="visible" value="true"/>
+                        <param name="x" value="0"/>
+                        <param name="y" value="130"/>
+                        <param name="width" value="260"/>
+                        <param name="height" value="390"/>
+                        <param name="aspectratio" value="scale"/>
+                        <param name="align" value="center"/>
+                        <param name="aligny" value="center"/>
+                        <param name="flipy" value="false"/>
+                    </include>
                     <control type="image">
                         <posx>0</posx>
                         <posy>130</posy>
@@ -362,14 +365,17 @@
                                 <texture border="25,0,25,0">common/cover_shadow.png</texture>
                             </control>
                         </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>130</posy>
-                            <width>260</width>
-                            <height>390</height>
-                            <texture background="true">$VAR[Thumbs]</texture>
-                            <aspectratio>scale</aspectratio>
-                        </control>
+                        <include name="ThumbsImages">
+                            <param name="visible" value="true"/>
+                            <param name="x" value="0"/>
+                            <param name="y" value="130"/>
+                            <param name="width" value="260"/>
+                            <param name="height" value="390"/>
+                            <param name="aspectratio" value="scale"/>
+                            <param name="align" value="center"/>
+                            <param name="aligny" value="center"/>
+                            <param name="flipy" value="false"/>
+                        </include>
                         <control type="image">
                             <posx>0</posx>
                             <posy>130</posy>
@@ -452,14 +458,17 @@
                 <movement>0</movement>
                 <preloaditems>4</preloaditems>
                 <itemlayout height="560" width="370">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>190</posy>
-                        <width>370</width>
-                        <height>370</height>
-                        <texture background="true">$VAR[Thumbs]</texture>
-                        <aspectratio>scale</aspectratio>
-                    </control>
+                    <include name="ThumbsImages">
+                        <param name="visible" value="true"/>
+                        <param name="x" value="0"/>
+                        <param name="y" value="190"/>
+                        <param name="width" value="370"/>
+                        <param name="height" value="370"/>
+                        <param name="aspectratio" value="scale"/>
+                        <param name="align" value="center"/>
+                        <param name="aligny" value="center"/>
+                        <param name="flipy" value="false"/>
+                    </include>
                     <control type="image">
                         <posx>0</posx>
                         <posy>190</posy>
@@ -501,14 +510,17 @@
                                 <texture border="25,0,25,0">common/cover_shadow.png</texture>
                             </control>
                         </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>190</posy>
-                            <width>370</width>
-                            <height>370</height>
-                            <texture background="true">$VAR[Thumbs]</texture>
-                            <aspectratio>scale</aspectratio>
-                        </control>
+                        <include name="ThumbsImages">
+                            <param name="visible" value="true"/>
+                            <param name="x" value="0"/>
+                            <param name="y" value="190"/>
+                            <param name="width" value="370"/>
+                            <param name="height" value="370"/>
+                            <param name="aspectratio" value="scale"/>
+                            <param name="align" value="center"/>
+                            <param name="aligny" value="center"/>
+                            <param name="flipy" value="false"/>
+                        </include>
                         <control type="image">
                             <posx>0</posx>
                             <posy>190</posy>
@@ -591,14 +603,17 @@
                 <movement>0</movement>
                 <preloaditems>4</preloaditems>
                 <itemlayout height="280" width="500">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>500</width>
-                        <height>280</height>
-                        <texture background="true">$VAR[Thumbs]</texture>
-                        <aspectratio>scale</aspectratio>
-                    </control>
+                    <include name="ThumbsImages">
+                        <param name="visible" value="true"/>
+                        <param name="x" value="0"/>
+                        <param name="y" value="0"/>
+                        <param name="width" value="500"/>
+                        <param name="height" value="280"/>
+                        <param name="aspectratio" value="scale"/>
+                        <param name="align" value="center"/>
+                        <param name="aligny" value="center"/>
+                        <param name="flipy" value="false"/>
+                    </include>
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
@@ -618,14 +633,17 @@
                 <focusedlayout height="280" width="500">
                     <control type="group">
                         <include>ButtonFocusAnimation</include>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>500</width>
-                            <height>280</height>
-                            <texture background="true">$VAR[Thumbs]</texture>
-                            <aspectratio>scale</aspectratio>
-                        </control>
+                        <include name="ThumbsImages">
+                            <param name="visible" value="true"/>
+                            <param name="x" value="0"/>
+                            <param name="y" value="0"/>
+                            <param name="width" value="500"/>
+                            <param name="height" value="280"/>
+                            <param name="aspectratio" value="scale"/>
+                            <param name="align" value="center"/>
+                            <param name="aligny" value="center"/>
+                            <param name="flipy" value="false"/>
+                        </include>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -701,14 +719,17 @@
                 <movement>0</movement>
                 <preloaditems>4</preloaditems>
                 <itemlayout height="560" width="370">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>190</posy>
-                        <width>370</width>
-                        <height>277</height>
-                        <texture background="true">$VAR[Thumbs]</texture>
-                        <aspectratio>scale</aspectratio>
-                    </control>
+                    <include name="ThumbsImages">
+                        <param name="visible" value="true"/>
+                        <param name="x" value="0"/>
+                        <param name="y" value="190"/>
+                        <param name="width" value="370"/>
+                        <param name="height" value="277"/>
+                        <param name="aspectratio" value="scale"/>
+                        <param name="align" value="center"/>
+                        <param name="aligny" value="center"/>
+                        <param name="flipy" value="false"/>
+                    </include>
                     <control type="image">
                         <posx>0</posx>
                         <posy>190</posy>
@@ -751,14 +772,17 @@
                                 <texture border="25,0,25,0">common/cover_shadow.png</texture>
                             </control>
                         </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>190</posy>
-                            <width>370</width>
-                            <height>277</height>
-                            <texture background="true">$VAR[Thumbs]</texture>
-                            <aspectratio>scale</aspectratio>
-                        </control>
+                        <include name="ThumbsImages">
+                            <param name="visible" value="true"/>
+                            <param name="x" value="0"/>
+                            <param name="y" value="190"/>
+                            <param name="width" value="370"/>
+                            <param name="height" value="277"/>
+                            <param name="aspectratio" value="scale"/>
+                            <param name="align" value="center"/>
+                            <param name="aligny" value="center"/>
+                            <param name="flipy" value="false"/>
+                        </include>
                         <control type="image">
                             <posx>0</posx>
                             <posy>190</posy>

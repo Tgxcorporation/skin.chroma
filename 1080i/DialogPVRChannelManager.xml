@@ -160,15 +160,17 @@
                         <label>$LOCALIZE[19202]</label>
                     </control>
                 </control>
-                <control type="image">
-                    <description>Current Channel Icon</description>
-                    <posx>50</posx>
-                    <posy>450</posy>
-                    <width>570</width>
-                    <height>300</height>
-                    <aspectratio align="left">keep</aspectratio>
-                    <texture background="true">$VAR[Thumbs]</texture>
-                </control>
+                <include name="ThumbsImages">
+                    <param name="visible" value="true"/>
+                    <param name="x" value="50"/>
+                    <param name="y" value="450"/>
+                    <param name="width" value="570"/>
+                    <param name="height" value="380"/>
+                    <param name="aspectratio" value="keep"/>
+                    <param name="align" value="left"/>
+                    <param name="aligny" value="center"/>
+                    <param name="flipy" value="false"/>
+                </include>
             </control>
             <control type="group">
                 <posx>1200</posx>

@@ -127,14 +127,17 @@
         <focusposition>4</focusposition>
         <orientation>horizontal</orientation>
         <itemlayout height="590" width="260">
-            <control type="image">
-                <posx>0</posx>
-                <posy>200</posy>
-                <width>260</width>
-                <height>390</height>
-                <texture background="true">$VAR[Thumbs]</texture>
-                <aspectratio>stretch</aspectratio>
-            </control>
+            <include name="ThumbsImages">
+                <param name="visible" value="true"/>
+                <param name="x" value="0"/>
+                <param name="y" value="200"/>
+                <param name="width" value="260"/>
+                <param name="height" value="390"/>
+                <param name="aspectratio" value="stretch"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="center"/>
+                <param name="flipy" value="false"/>
+            </include>
             <control type="image">
                 <posx>0</posx>
                 <posy>200</posy>
@@ -147,14 +150,17 @@
         <focusedlayout height="590" width="260">
             <control type="group">
                 <include>ButtonFocusAnimation</include>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>200</posy>
-                    <width>260</width>
-                    <height>390</height>
-                    <texture background="true">$VAR[Thumbs]</texture>
-                    <aspectratio>stretch</aspectratio>
-                </control>
+                <include name="ThumbsImages">
+                    <param name="visible" value="true"/>
+                    <param name="x" value="0"/>
+                    <param name="y" value="200"/>
+                    <param name="width" value="260"/>
+                    <param name="height" value="390"/>
+                    <param name="aspectratio" value="stretch"/>
+                    <param name="align" value="center"/>
+                    <param name="aligny" value="center"/>
+                    <param name="flipy" value="false"/>
+                </include>
                 <control type="image">
                     <posx>0</posx>
                     <posy>200</posy>
@@ -179,14 +185,17 @@
         <movement>0</movement>
         <preloaditems>4</preloaditems>
         <itemlayout height="560" width="370">
-            <control type="image">
-                <posx>0</posx>
-                <posy>190</posy>
-                <width>370</width>
-                <height>370</height>
-                <texture background="true">$VAR[Thumbs]</texture>
-                <aspectratio>stretch</aspectratio>
-            </control>
+            <include name="ThumbsImages">
+                <param name="visible" value="true"/>
+                <param name="x" value="0"/>
+                <param name="y" value="190"/>
+                <param name="width" value="370"/>
+                <param name="height" value="370"/>
+                <param name="aspectratio" value="stretch"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="center"/>
+                <param name="flipy" value="false"/>
+            </include>
             <control type="image">
                 <posx>0</posx>
                 <posy>190</posy>
@@ -199,14 +208,17 @@
         <focusedlayout height="560" width="370">
             <control type="group">
                 <include>ButtonFocusAnimation</include>
-                <control type="image">
-                    <posx>0</posx>
-                    <posy>190</posy>
-                    <width>370</width>
-                    <height>370</height>
-                    <texture background="true">$VAR[Thumbs]</texture>
-                    <aspectratio>stretch</aspectratio>
-                </control>
+                <include name="ThumbsImages">
+                    <param name="visible" value="true"/>
+                    <param name="x" value="0"/>
+                    <param name="y" value="190"/>
+                    <param name="width" value="370"/>
+                    <param name="height" value="370"/>
+                    <param name="aspectratio" value="stretch"/>
+                    <param name="align" value="center"/>
+                    <param name="aligny" value="center"/>
+                    <param name="flipy" value="false"/>
+                </include>
                 <control type="image">
                     <posx>0</posx>
                     <posy>190</posy>
