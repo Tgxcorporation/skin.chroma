@@ -232,24 +232,28 @@
                             <texture flipy="true" border="25,0,25,0">common/cover_shadow.png</texture>
                         </control>
                     </control>
-                    <control type="image">
-                        <visible>[Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]</visible>
-                        <posx>20</posx>
-                        <posy>0</posy>
-                        <width>340</width>
-                        <height>510</height>
-                        <aspectratio aligny="top">scale</aspectratio>
-                        <texture background="true">$VAR[Thumbs]</texture>
-                    </control>
-                    <control type="image">
-                        <visible>![Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]</visible>
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>380</width>
-                        <height>600</height>
-                        <aspectratio aligny="top">keep</aspectratio>
-                        <texture background="true">$VAR[Thumbs]</texture>
-                    </control>
+                    <include name="ThumbsImages">
+                        <param name="visible" value="[Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]"/>
+                        <param name="x" value="20"/>
+                        <param name="y" value="0"/>
+                        <param name="width" value="340"/>
+                        <param name="height" value="510"/>
+                        <param name="aspectratio" value="scale"/>
+                        <param name="align" value="center"/>
+                        <param name="aligny" value="top"/>
+                        <param name="flipy" value="false"/>
+                    </include>
+                    <include name="ThumbsImages">
+                        <param name="visible" value="![Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]"/>
+                        <param name="x" value="0"/>
+                        <param name="y" value="0"/>
+                        <param name="width" value="380"/>
+                        <param name="height" value="600"/>
+                        <param name="aspectratio" value="keep"/>
+                        <param name="align" value="center"/>
+                        <param name="aligny" value="top"/>
+                        <param name="flipy" value="false"/>
+                    </include>
                 </control>
             </control>
         </itemlayout>
@@ -483,24 +487,28 @@
                             <texture flipy="true" border="25,0,25,0">common/cover_shadow.png</texture>
                         </control>
                     </control>
-                    <control type="image">
-                        <visible>[Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]</visible>
-                        <posx>20</posx>
-                        <posy>0</posy>
-                        <width>340</width>
-                        <height>510</height>
-                        <aspectratio aligny="top">scale</aspectratio>
-                        <texture background="true">$VAR[Thumbs]</texture>
-                    </control>
-                    <control type="image">
-                        <visible>![Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]</visible>
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>380</width>
-                        <height>600</height>
-                        <aspectratio aligny="top">keep</aspectratio>
-                        <texture background="true">$VAR[Thumbs]</texture>
-                    </control>
+                    <include name="ThumbsImages">
+                        <param name="visible" value="[Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]"/>
+                        <param name="x" value="20"/>
+                        <param name="y" value="0"/>
+                        <param name="width" value="340"/>
+                        <param name="height" value="510"/>
+                        <param name="aspectratio" value="scale"/>
+                        <param name="align" value="center"/>
+                        <param name="aligny" value="top"/>
+                        <param name="flipy" value="false"/>
+                    </include>
+                    <include name="ThumbsImages">
+                        <param name="visible" value="![Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]"/>
+                        <param name="x" value="0"/>
+                        <param name="y" value="0"/>
+                        <param name="width" value="380"/>
+                        <param name="height" value="600"/>
+                        <param name="aspectratio" value="keep"/>
+                        <param name="align" value="center"/>
+                        <param name="aligny" value="top"/>
+                        <param name="flipy" value="false"/>
+                    </include>
                 </control>
             </control>
         </focusedlayout>

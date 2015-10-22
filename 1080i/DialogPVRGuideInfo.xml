@@ -114,14 +114,17 @@
                 <control type="group">
                     <posx>910</posx>
                     <posy>0</posy>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>380</width>
-                        <height>285</height>
-                        <texture background="true">$VAR[Thumbs]</texture>
-                        <aspectratio aligny="top">keep</aspectratio>
-                    </control>
+                    <include name="ThumbsImages">
+                        <param name="visible" value="true"/>
+                        <param name="x" value="0"/>
+                        <param name="y" value="0"/>
+                        <param name="width" value="380"/>
+                        <param name="height" value="285"/>
+                        <param name="aspectratio" value="keep"/>
+                        <param name="align" value="center"/>
+                        <param name="aligny" value="top"/>
+                        <param name="flipy" value="false"/>
+                    </include>
                     <control type="group">
                         <posx>0</posx>
                         <posy>320</posy>

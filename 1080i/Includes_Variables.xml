@@ -17,8 +17,7 @@
         <value condition="!IsEmpty(ListItem.Label2)+Window.IsVisible(AddonBrowser.xml)">OverlayInProgress.png</value>
         <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)+!IsEmpty(ListItem.Property(DBID))">OverlayUnwatched.png</value>
     </variable>
-    <variable name="Banner">
-        <value condition="StringCompare(ListItem.Label,..)+[Container.Content(TVShows)|Container.Content(movies)|Container.Content(seasons)]">$VAR[Theme.Color]/defaultFolderBackBanner.png</value>
+    <variable name="Banners">
         <value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
         <value condition="Skin.HasSetting(plexbmc)+Container.Content(episodes)">$INFO[ListItem.Property(banner)]</value>
         <value condition="Container.Content(episodes)">$INFO[ListItem.Art(tvshow.banner)]</value>
@@ -37,8 +36,20 @@
         <value condition="[Container.content(actors)|Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.Content(Seasons)|Container.Content(sets)]">defaultFolderBackPoster.png</value>
         <value>defaultFolderBack.png</value>
     </variable>
+    <variable name="ThumbsExceptions">
+        <value condition="window.IsActive(LoginScreen.xml)+StringCompare(ListItem.Thumb,unknown-user.png)">defaultArtistBig.png</value>
+        <value condition="window.IsActive(CustomAddons.xml)">defaultExtensionBig.png</value>
+        <value condition="StringCompare(ListItem.thumb,special://home/addons/plugin.video.plexbmc/resources/thumb.png)">defaultAudioBig.png</value>
+        <!--<value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!SubString(ListItem.Icon,Default,Left)+[control.isvisible(58)|control.isvisible(53)]">$INFO[ListItem.Icon]</value>-->
+        <!--<value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!SubString(ListItem.Icon,Default,Left)">common/TransparentDot.png</value>-->
+        <!--<value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+IsEmpty(ListItem.Icon)">defaultChannelTvBig.png</value>-->
+        <!--<value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+!IsEmpty(ListItem.Icon)">common/TransparentDot.png</value>-->
+        <value condition="StringCompare(ListItem.Icon,)+!IsEmpty(Window.Property(IsRadio))">defaultRadioBig.png</value>
+        <value condition="StringCompare(ListItem.Icon,)+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]">defaultChannelTvBig_Wide.png</value>
+        <value condition="StringCompare(ListItem.Label,..)">$VAR[ThumbsFolderBack]</value>
+    </variable>
     <variable name="ThumbsMissing">
-        <value condition="[Window.IsActive(DialogPVRChannelManager.xml)|Window.IsActive(DialogPVRGroupManager.xml)]+!IsEmpty(Window.Property(IsRadio))">defaultChannelTvBig.png</value>
+        <value condition="[Window.IsActive(DialogPVRChannelManager.xml)|Window.IsActive(DialogPVRGroupManager.xml)]+IsEmpty(Window.Property(IsRadio))">defaultChannelTvBig.png</value>
         <value condition="[Window.IsActive(DialogPVRChannelManager.xml)|Window.IsActive(DialogPVRGroupManager.xml)]+!IsEmpty(Window.Property(IsRadio))">defaultRadioBig.png</value>
         <value condition="[Window.IsActive(DialogPVRGuideInfo.xml)|Window.IsActive(DialogPVRRecordingInfo.xml)]">defaultChannelTvBig_Wide.png</value>
         <value condition="[Container.content(files)]">defaultHardDiskBig.png</value>
@@ -56,25 +67,12 @@
         <value>defaultIconBig.png</value>
     </variable>
     <variable name="Thumbs">
-        <!--EXCEPTIONS-->
-        <value condition="window.IsActive(LoginScreen.xml)+StringCompare(ListItem.Thumb,unknown-user.png)">defaultArtistBig.png</value>
-        <value condition="window.IsActive(CustomAddons.xml)">defaultExtensionBig.png</value>
-        <value condition="StringCompare(ListItem.thumb,special://home/addons/plugin.video.plexbmc/resources/thumb.png)">defaultAudioBig.png</value>
-        <!--<value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!SubString(ListItem.Icon,Default,Left)+[control.isvisible(58)|control.isvisible(53)]">$INFO[ListItem.Icon]</value>-->
-        <!--<value condition="[Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]+!SubString(ListItem.Icon,Default,Left)">common/TransparentDot.png</value>-->
-        <!--<value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+IsEmpty(ListItem.Icon)">defaultChannelTvBig.png</value>-->
-        <!--<value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+!IsEmpty(ListItem.Icon)">common/TransparentDot.png</value>-->
         <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Icon]</value>
-        <value condition="StringCompare(ListItem.Icon,)+!IsEmpty(Window.Property(IsRadio))">defaultRadioBig.png</value>
-        <value condition="StringCompare(ListItem.Icon,)+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]">defaultChannelTvBig_Wide.png</value>
-        <!--NORMAL-->
-        <value condition="StringCompare(ListItem.Label,..)">$VAR[ThumbsFolderBack]</value>
         <value condition="!IsEmpty(ListItem.Art(poster))+!SubString(ListItem.Art(poster),Default,Left)">$INFO[ListItem.Art(poster)]</value>
         <value condition="!IsEmpty(ListItem.Icon)+!SubString(ListItem.Icon,Default,Left)">$INFO[ListItem.Icon]</value>
         <value condition="!IsEmpty(ListItem.Property(Icon))+!SubString(ListItem.Property(Icon),Default,Left)">$INFO[ListItem.Property(Icon)]</value>
         <value condition="!IsEmpty(ListItem.thumb)+!SubString(ListItem.thumb,Default,Left)">$INFO[ListItem.thumb]</value>
         <value condition="!IsEmpty(ListItem.Art(thumb))+!SubString(ListItem.Art(thumb),Default,Left)">$INFO[ListItem.Art(thumb)]</value>
-        <value>$VAR[ThumbsMissing]</value>
     </variable>
     <variable name="GlobalSubTitles">
         <value condition="Skin.hassetting(plexbmc) + !Window.IsActive(Home) + !IsEmpty(Window.Property(heading))">$INFO[Window.Property(heading)]</value>
