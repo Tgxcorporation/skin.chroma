@@ -429,7 +429,7 @@
                                 <width>360</width>
                                 <height>360</height>
                                 <texture background="true" diffuse="common/cdart_diffuse.png">http://localhost:52307/getmusicart&amp;dbid=$INFO[Listitem.DBID]&amp;type=discart&amp;contenttype=$VAR[ContentType]&amp;fallback=$INFO[ListItem.Thumb]</texture>
-                                <aspectratio align="center" aligny="center">keep</aspectratio>
+                                <aspectratio align="center" aligny="center">stretch</aspectratio>
                                 <include>Animation_ViewsCDart</include>
                             </control>
                             <control type="image">
@@ -625,7 +625,7 @@
                                 <width>360</width>
                                 <height>360</height>
                                 <texture background="true" diffuse="common/cdart_diffuse.png">http://localhost:52307/getmusicart&amp;dbid=$INFO[Listitem.DBID]&amp;type=discart&amp;contenttype=$VAR[ContentType]&amp;fallback=$INFO[ListItem.Thumb]</texture>
-                                <aspectratio align="center" aligny="center">keep</aspectratio>
+                                <aspectratio align="center" aligny="center">stretch</aspectratio>
                                 <include>Animation_ViewsCDart</include>
                             </control>
                             <control type="image">
@@ -768,7 +768,7 @@
                                 <width>360</width>
                                 <height>360</height>
                                 <texture background="true" diffuse="common/cdart_diffuse.png">http://localhost:52307/getmusicart&amp;dbid=$INFO[Listitem.DBID]&amp;type=discart&amp;contenttype=$VAR[ContentType]&amp;fallback=$INFO[ListItem.Thumb]</texture>
-                                <aspectratio align="center" aligny="center">keep</aspectratio>
+                                <aspectratio align="center" aligny="center">stretch</aspectratio>
                                 <include>Animation_ViewsCDart</include>
                             </control>
                             <control type="image">
