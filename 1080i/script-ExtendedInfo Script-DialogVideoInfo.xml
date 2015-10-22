@@ -818,8 +818,8 @@
                                 <posy>-180</posy>
                                 <width>360</width>
                                 <height>360</height>
-                                <texture background="true" diffuse="common/cdart_diffuse.png">$INFO[Window.Property(movie.DiscArt)]</texture>
-                                <aspectratio align="center" aligny="center">keep</aspectratio>
+                                <texture background="true" diffuse="common/cdart_diffuse.png">$VAR[VideoCdArt]</texture>
+                                <aspectratio align="center" aligny="center">stretch</aspectratio>
                                 <include>Animation_ViewsCDart</include>
                             </control>
                             <control type="image">
@@ -902,8 +902,8 @@
                                 <posy>-180</posy>
                                 <width>360</width>
                                 <height>360</height>
-                                <texture background="true" diffuse="common/cdart_diffuse.png">$INFO[Window.Property(movie.DiscArt)]</texture>
-                                <aspectratio align="center" aligny="center">keep</aspectratio>
+                                <texture background="true" diffuse="common/cdart_diffuse.png">$VAR[VideoCdArt]</texture>
+                                <aspectratio align="center" aligny="center">stretch</aspectratio>
                                 <include>Animation_ViewsCDart</include>
                             </control>
                             <control type="image">
