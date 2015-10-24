@@ -465,6 +465,7 @@
         <value>$LOCALIZE[13278]</value>
     </variable>
     <variable name="ContentType">
+        <value condition="Container.Content(artists)">artists</value>
         <value condition="Container.Content(albums)">albums</value>
         <value condition="Container.Content(songs)">songs</value>
     </variable>
@@ -731,6 +732,13 @@
         <value condition="Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml)+!IsEmpty(Window.Property(movie.DiscArt))">$INFO[Window.Property(movie.DiscArt)]</value>
         <value condition="!IsEmpty(ListItem.Art(discart))">$INFO[ListItem.Art(discart)]</value>
         <value>$INFO[ListItem.Art(poster)]</value>
+    </variable>
+    <variable name="MusicCdArt">
+        <value condition="!Skin.HasSetting(plexbmc)+!StringCompare(ListItem.Label,..)+Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;dbid=$INFO[Listitem.DBID]&amp;type=discart&amp;contenttype=$VAR[ContentType]&amp;fallback=$INFO[ListItem.Thumb]</value>
+    </variable>
+    <variable name="VideoPlayerCdArt">
+        <value condition="!IsEmpty(Player.Art(discart))">$INFO[Player.Art(discart)]</value>
+        <value>$INFO[VideoPlayer.Cover]</value>
     </variable>
     <variable name="MusicPlayerCdArt">
         <value condition="!IsEmpty(Window(Home).Property(SkinHelper.Player.Music.DiscArt))">$INFO[Window(Home).Property(SkinHelper.Player.Music.DiscArt)]</value>

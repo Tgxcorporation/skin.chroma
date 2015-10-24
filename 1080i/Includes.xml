@@ -1228,26 +1228,27 @@
                 </control>
                 <control type="group">
                     <posx>1490</posx>
-                    <control type="group">
-                        <!-- CDART -->
+                    <include name="DiscArt">
+                        <param name="visible" value="!IsEmpty(VideoPlayer.Cover)"/>
+                        <param name="x" value="126"/>
+                        <param name="y" value="63"/>
+                        <param name="width" value="253"/>
+                        <param name="height" value="253"/>
+                        <param name="texture" value="$VAR[VideoPlayerCdArt]"/>
+                        <param name="visibleShadow" value="false"/>
+                        <param name="xShadow" value="0"/>
+                        <param name="yShadow" value="0"/>
+                        <param name="widthShadow" value="0"/>
+                        <param name="flipyShadow" value="false"/>
+                    </include>
+                    <control type="image">
                         <visible>!Skin.HasSetting(plexbmc)</visible>
                         <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(VideoPlayer.Cover)</visible>
-                        <control type="image">
-                            <posx>126</posx>
-                            <posy>63</posy>
-                            <width>253</width>
-                            <height>253</height>
-                            <texture background="true" diffuse="common/cdart_diffuse.png">$INFO[Player.Art(discart)]</texture>
-                            <aspectratio align="center" aligny="center">keep</aspectratio>
-                            <include>Animation_ViewsCDart</include>
-                        </control>
-                        <control type="image">
-                            <posx>253</posx>
-                            <posy>0</posy>
-                            <width>25</width>
-                            <height>380</height>
-                            <texture border="0,25,0,25">common/cover_shadow_vertical.png</texture>
-                        </control>
+                        <posx>253</posx>
+                        <posy>0</posy>
+                        <width>25</width>
+                        <height>380</height>
+                        <texture border="0,25,0,25">common/cover_shadow_vertical.png</texture>
                     </control>
                     <control type="image">
                         <visible>IsEmpty(VideoPlayer.Cover)</visible>
@@ -1260,7 +1261,7 @@
                         <texture>defaultVideoBig.png</texture>
                     </control>
                     <control type="image">
-                        <animation effect="slide" start="0,0" end="63,0" time="0" condition="!Skin.HasSetting(EnableCdArt) | IsEmpty(Player.Art(discart))">Conditional</animation>
+                        <animation effect="slide" start="0,0" end="63,0" time="0" condition="!Skin.HasSetting(EnableCdArt)">Conditional</animation>
                         <visible>VideoPlayer.Content(movies)|VideoPlayer.Content(musicvideos)</visible>
                         <posx>0</posx>
                         <posy>0</posy>
@@ -1283,7 +1284,7 @@
         </control>
     </include>
     <!--<include name="DialogTransparency">-->
-        <!--<colordiffuse>ddffffff</colordiffuse>-->
+    <!--<colordiffuse>ddffffff</colordiffuse>-->
     <!--</include>-->
     <include name="ThumbsImages">
         <control type="group">
@@ -1298,6 +1299,7 @@
                     [StringCompare(ListItem.Icon,)+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]]|
                     [StringCompare(ListItem.Label,..)]
                     ]</visible>
+                <include>Icon_Fade</include>
                 <posx>$PARAM[x]</posx>
                 <posy>$PARAM[y]</posy>
                 <width>$PARAM[width]</width>
@@ -1316,6 +1318,7 @@
                     [!IsEmpty(ListItem.thumb)+!SubString(ListItem.thumb,Default,Left)]|
                     [!IsEmpty(ListItem.Art(thumb))+!SubString(ListItem.Art(thumb),Default,Left)]
                     ]</visible>
+                <include>Icon_Fade</include>
                 <posx>$PARAM[x]</posx>
                 <posy>$PARAM[y]</posy>
                 <width>$PARAM[width]</width>
@@ -1342,6 +1345,7 @@
                     [!IsEmpty(ListItem.thumb)+!SubString(ListItem.thumb,Default,Left)]|
                     [!IsEmpty(ListItem.Art(thumb))+!SubString(ListItem.Art(thumb),Default,Left)]
                     ]</visible>
+                <include>Icon_Fade</include>
                 <posx>$PARAM[x]</posx>
                 <posy>$PARAM[y]</posy>
                 <width>$PARAM[width]</width>
@@ -1460,6 +1464,30 @@
                 <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">keep</aspectratio>
                 <include>PulseClearLogo</include>
                 <texture background="true">$VAR[DefaultClearLogo]</texture>
+            </control>
+        </control>
+    </include>
+    <include name="DiscArt">
+        <control type="group">
+            <visible>!Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableCdArt)</visible>
+            <visible>$PARAM[visible]</visible>
+            <include>Icon_Fade</include>
+            <control type="image">
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <texture background="true" diffuse="common/cdart_diffuse.png">$PARAM[texture]</texture>
+                <aspectratio align="center" aligny="center">stretch</aspectratio>
+                <include>Animation_ViewsCDart</include>
+            </control>
+            <control type="image">
+                <visible>$PARAM[visibleShadow]</visible>
+                <posx>$PARAM[xShadow]</posx>
+                <posy>$PARAM[yShadow]</posy>
+                <width>$PARAM[widthShadow]</width>
+                <height>25</height>
+                <texture flipy="$PARAM[flipyShadow]" border="25,0,25,0">common/cover_shadow.png</texture>
             </control>
         </control>
     </include>
