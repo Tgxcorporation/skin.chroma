@@ -342,28 +342,20 @@
                 <focusedlayout height="540" width="260">
                     <control type="group">
                         <include>ButtonFocusAnimation</include>
-                        <control type="group">
-                            <!-- CDART -->
-                            <visible>!Skin.HasSetting(plexbmc)</visible>
-                            <visible>!StringCompare(ListItem.Label,..)</visible>
-                            <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]</visible>
-                            <control type="image">
-                                <posx>10</posx>
-                                <posy>10</posy>
-                                <width>240</width>
-                                <height>240</height>
-                                <texture background="true" diffuse="common/cdart_diffuse.png">$VAR[VideoCdArt]</texture>
-                                <aspectratio align="center" aligny="center">stretch</aspectratio>
-                                <include>Animation_ViewsCDart</include>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>115</posy>
-                                <width>260</width>
-                                <height>25</height>
-                                <texture border="25,0,25,0">common/cover_shadow.png</texture>
-                            </control>
-                        </control>
+                        <!-- CDART VIDEO -->
+                        <include name="DiscArt">
+                            <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                            <param name="x" value="10"/>
+                            <param name="y" value="10"/>
+                            <param name="width" value="240"/>
+                            <param name="height" value="240"/>
+                            <param name="texture" value="$VAR[VideoCdArt]"/>
+                            <param name="visibleShadow" value="true"/>
+                            <param name="xShadow" value="0"/>
+                            <param name="yShadow" value="115"/>
+                            <param name="widthShadow" value="260"/>
+                            <param name="flipyShadow" value="false"/>
+                        </include>
                         <include name="ThumbsImages">
                             <param name="visible" value="true"/>
                             <param name="x" value="0"/>
@@ -487,28 +479,20 @@
                 <focusedlayout height="560" width="370">
                     <control type="group">
                         <include>ButtonFocusAnimation</include>
-                        <control type="group">
-                            <!-- CDART AUDIO -->
-                            <visible>!Skin.HasSetting(plexbmc)</visible>
-                            <visible>!StringCompare(ListItem.Label,..)</visible>
-                            <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]</visible>
-                            <control type="image">
-                                <posx>10</posx>
-                                <posy>10</posy>
-                                <width>350</width>
-                                <height>350</height>
-                                <texture background="true" diffuse="common/cdart_diffuse.png">http://localhost:52307/getmusicart&amp;dbid=$INFO[Listitem.DBID]&amp;type=discart&amp;contenttype=$VAR[ContentType]&amp;fallback=$INFO[ListItem.Thumb]</texture>
-                                <aspectratio align="center" aligny="center">stretch</aspectratio>
-                                <include>Animation_ViewsCDart</include>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>165</posy>
-                                <width>370</width>
-                                <height>25</height>
-                                <texture border="25,0,25,0">common/cover_shadow.png</texture>
-                            </control>
-                        </control>
+                        <!-- CDART MUSIC -->
+                        <include name="DiscArt">
+                            <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
+                            <param name="x" value="10"/>
+                            <param name="y" value="10"/>
+                            <param name="width" value="350"/>
+                            <param name="height" value="350"/>
+                            <param name="texture" value="$VAR[MusicCdArt]"/>
+                            <param name="visibleShadow" value="true"/>
+                            <param name="xShadow" value="0"/>
+                            <param name="yShadow" value="165"/>
+                            <param name="widthShadow" value="370"/>
+                            <param name="flipyShadow" value="false"/>
+                        </include>
                         <include name="ThumbsImages">
                             <param name="visible" value="true"/>
                             <param name="x" value="0"/>
