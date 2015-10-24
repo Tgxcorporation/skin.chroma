@@ -73,11 +73,13 @@
                     <control type="group">
                         <visible>IntegerGreaterThan(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
                         <visible>!Container.Content(Addons)</visible>
-                        <include name="Stars">
-                            <param name="x" value="50"/>
-                            <param name="y" value="78"/>
-                            <param name="color" value="alternate"/>
-                        </include>
+                        <control type="image">
+                            <posx>50</posx>
+                            <posy>78</posy>
+                            <width>40</width>
+                            <height>40</height>
+                            <texture>badges/star_focus_alternate.png</texture>
+                        </control>
                         <control type="label">
                             <visible>![Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
                             <posx>100</posx>
@@ -313,11 +315,13 @@
                     <control type="group">
                         <visible>IntegerGreaterThan(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
                         <visible>!Container.Content(Addons)</visible>
-                        <include name="Stars">
-                            <param name="x" value="50"/>
-                            <param name="y" value="78"/>
-                            <param name="color" value="alternate"/>
-                        </include>
+                        <control type="image">
+                            <posx>50</posx>
+                            <posy>78</posy>
+                            <width>40</width>
+                            <height>40</height>
+                            <texture>badges/star_focus_alternate.png</texture>
+                        </control>
                         <control type="label">
                             <visible>![Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
                             <posx>100</posx>

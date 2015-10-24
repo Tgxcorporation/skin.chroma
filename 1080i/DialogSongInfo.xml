@@ -306,7 +306,7 @@
                             <width>150</width>
                             <height>50</height>
                             <font>InfoRatingFont</font>
-                            <textcolor>AlternateColor</textcolor>
+                            <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
                             <label fallback="0.0">$INFO[ListItem.Rating,,.0]</label>
                         </control>
