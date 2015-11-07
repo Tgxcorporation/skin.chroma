@@ -2,223 +2,11 @@
 <includes>
     <include name="Horizontal_Home_Layout">
         <control type="group">
-            <animation effect="slide" tween="circle" time="200" start="0,0" end="0,510" reversible="true" condition="!control.isvisible(495678).isvisible+[Control.HasFocus(900)|Control.HasFocus(901)|Control.HasFocus(311)|Control.HasFocus(312)|Control.HasFocus(313)|Control.HasFocus(314)|Control.HasFocus(315)|Control.HasFocus(316)|Control.HasFocus(511)|Control.HasFocus(212)|Control.HasFocus(411)|Control.HasFocus(412)|Control.HasFocus(413)|Control.HasFocus(111)|Control.HasFocus(211)|Control.HasFocus(514)|Control.HasFocus(515)|Control.HasFocus(516)|Control.HasFocus(513)|Control.HasFocus(512)]">Conditional</animation>
-            <animation effect="slide" tween="circle" time="200" start="0,0" end="0,650" reversible="true" condition="control.isvisible(495678).isvisible+[Control.HasFocus(900)|Control.HasFocus(901)|Control.HasFocus(311)|Control.HasFocus(312)|Control.HasFocus(313)|Control.HasFocus(314)|Control.HasFocus(315)|Control.HasFocus(316)|Control.HasFocus(511)|Control.HasFocus(212)|Control.HasFocus(411)|Control.HasFocus(412)|Control.HasFocus(413)|Control.HasFocus(111)|Control.HasFocus(211)|Control.HasFocus(514)|Control.HasFocus(515)|Control.HasFocus(516)|Control.HasFocus(513)|Control.HasFocus(512)]">Conditional</animation>
+            <animation effect="slide" tween="circle" time="200" start="0,0" end="0,510" reversible="true" condition="!control.isvisible(495678).isvisible+[Control.HasFocus(900)|Control.HasFocus(901)|Control.HasFocus(311)|Control.HasFocus(312)|Control.HasFocus(511)|Control.HasFocus(212)|Control.HasFocus(411)|Control.HasFocus(412)|Control.HasFocus(700011)|Control.HasFocus(700012)|Control.HasFocus(700013)|Control.HasFocus(700014)|Control.HasFocus(700015)|Control.HasFocus(700021)|Control.HasFocus(700022)|Control.HasFocus(700023)|Control.HasFocus(700024)|Control.HasFocus(700025)|Control.HasFocus(700031)|Control.HasFocus(700032)|Control.HasFocus(700033)|Control.HasFocus(700034)|Control.HasFocus(700035)|Control.HasFocus(700041)|Control.HasFocus(700042)|Control.HasFocus(700043)|Control.HasFocus(700044)|Control.HasFocus(700045)|Control.HasFocus(700051)|Control.HasFocus(700052)|Control.HasFocus(700053)|Control.HasFocus(700054)|Control.HasFocus(700055)]">Conditional</animation>
+            <animation effect="slide" tween="circle" time="200" start="0,0" end="0,650" reversible="true" condition="control.isvisible(495678).isvisible+[Control.HasFocus(900)|Control.HasFocus(901)|Control.HasFocus(311)|Control.HasFocus(312)|Control.HasFocus(511)|Control.HasFocus(212)|Control.HasFocus(411)|Control.HasFocus(412)|Control.HasFocus(700011)|Control.HasFocus(700012)|Control.HasFocus(700013)|Control.HasFocus(700014)|Control.HasFocus(700015)|Control.HasFocus(700021)|Control.HasFocus(700022)|Control.HasFocus(700023)|Control.HasFocus(700024)|Control.HasFocus(700025)|Control.HasFocus(700031)|Control.HasFocus(700032)|Control.HasFocus(700033)|Control.HasFocus(700034)|Control.HasFocus(700035)|Control.HasFocus(700041)|Control.HasFocus(700042)|Control.HasFocus(700043)|Control.HasFocus(700044)|Control.HasFocus(700045)|Control.HasFocus(700051)|Control.HasFocus(700052)|Control.HasFocus(700053)|Control.HasFocus(700054)|Control.HasFocus(700055)]">Conditional</animation>
             <control type="group" id="700">
                 <include>Icon_Fade</include>
                 <posy>-1730</posy>
-                <!--ADDONS-->
-                <include condition="!Skin.HasSetting(Hide.Favourites)" name="Widget">
-                    <param name="gfxType" value="Square"/>
-                    <param name="content" value="AddonContent"/>
-                    <param name="id" value="211"/>
-                    <param name="visibility" value="[!IsEmpty(Skin.String(ShelfAddons.1.Label)) | !IsEmpty(Skin.String(ShelfAddons.2.Label)) | !IsEmpty(Skin.String(ShelfAddons.3.Label)) | !IsEmpty(Skin.String(ShelfAddons.4.Label)) | !IsEmpty(Skin.String(ShelfAddons.5.Label))]+StringCompare(Container(300).ListItem.Property(widget),Addon)"/>
-                    <param name="labelTitle" value="$INFO[Container(211).ListItem.Label]"/>
-                    <param name="labelLeft" value=""/>
-                    <param name="labelCenter" value=""/>
-                    <param name="labelRight" value=""/>
-                    <param name="visibilityLabelRight" value="false"/>
-                    <param name="animationDown" value="true"/>
-                </include>
-                <!--FAVOURITES-->
-                <include condition="Skin.HasSetting(Shelf.Addons)" name="Widget">
-                    <param name="gfxType" value="Square"/>
-                    <param name="content" value="FavouriteContent"/>
-                    <param name="id" value="111"/>
-                    <param name="visibility" value="!IsEmpty(Window(Home).Property(favourite.1.path))+StringCompare(Container(300).ListItem.Property(widget),Favourite)"/>
-                    <param name="labelTitle" value="$INFO[Container(111).ListItem.Label]"/>
-                    <param name="labelLeft" value=""/>
-                    <param name="labelCenter" value=""/>
-                    <param name="labelRight" value=""/>
-                    <param name="visibilityLabelRight" value="false"/>
-                    <param name="animationDown" value="true"/>
-                </include>
-                <!--MOVIES-->
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="Widget">
-                    <param name="gfxType" value="Poster"/>
-                    <param name="content" value="RecentMovieContent"/>
-                    <param name="id" value="311"/>
-                    <param name="visibility" value="!IsEmpty(Window(Home).Property(RecentMovie.1.Title))+SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)+StringCompare(Container(300).ListItem.Property(widget),Movie)"/>
-                    <param name="labelTitle" value="$INFO[Container(311).ListItem.Label]"/>
-                    <param name="labelLeft" value="$INFO[Container(311).ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
-                    <param name="labelCenter" value="$INFO[Container(311).ListItem.Property(Year)]$INFO[Container(311).ListItem.Property(Mpaa),       ]$INFO[Container(311).ListItem.Property(Genre),       ]"/>
-                    <param name="labelRight" value="$INFO[Container(311).ListItem.Property(Rating)]"/>
-                    <param name="visibilityLabelRight" value="true"/>
-                    <param name="animationDown" value="false"/>
-                </include>
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="Widget">
-                    <param name="gfxType" value="Poster"/>
-                    <param name="content" value="RecommendedMovieContent"/>
-                    <param name="id" value="312"/>
-                    <param name="visibility" value="!IsEmpty(Window(Home).Property(RecommendedMovie.1.Title))+SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)+StringCompare(Container(300).ListItem.Property(widget),Movie)"/>
-                    <param name="labelTitle" value="$INFO[Container(312).ListItem.Label]"/>
-                    <param name="labelLeft" value="$INFO[Container(312).ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
-                    <param name="labelCenter" value="$INFO[Container(312).ListItem.Property(Year)]$INFO[Container(312).ListItem.Property(Mpaa),       ]$INFO[Container(312).ListItem.Property(Genre),       ]"/>
-                    <param name="labelRight" value="$INFO[Container(312).ListItem.Property(Rating)]"/>
-                    <param name="visibilityLabelRight" value="true"/>
-                    <param name="animationDown" value="false"/>
-                </include>
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="Widget">
-                    <param name="gfxType" value="Poster"/>
-                    <param name="content" value="RandomMovieContent"/>
-                    <param name="id" value="313"/>
-                    <param name="visibility" value="!IsEmpty(Window(Home).Property(RandomMovie.1.Title))+SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)+StringCompare(Container(300).ListItem.Property(widget),Movie)"/>
-                    <param name="labelTitle" value="$INFO[Container(313).ListItem.Label]"/>
-                    <param name="labelLeft" value="$INFO[Container(313).ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
-                    <param name="labelCenter" value="$INFO[Container(313).ListItem.Property(Year)]$INFO[Container(313).ListItem.Property(Mpaa),       ]$INFO[Container(313).ListItem.Property(Genre),       ]"/>
-                    <param name="labelRight" value="$INFO[Container(313).ListItem.Property(Rating)]"/>
-                    <param name="visibilityLabelRight" value="true"/>
-                    <param name="animationDown" value="false"/>
-                </include>
-                <!--EPISODES-->
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="Widget">
-                    <param name="gfxType" value="Poster"/>
-                    <param name="content" value="RecentEpisodeContent"/>
-                    <param name="id" value="411"/>
-                    <param name="visibility" value="!IsEmpty(Window(Home).Property(RecentEpisode.1.Title))+SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)+StringCompare(Container(300).ListItem.Property(widget),Episode)"/>
-                    <param name="labelTitle" value="$INFO[Container(411).ListItem.Property(TVshowTitle)]"/>
-                    <param name="labelLeft" value="$INFO[Container(411).ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
-                    <param name="labelCenter" value="$INFO[Container(411).ListItem.Property(SeasonEpisode),,       ]$INFO[Container(411).ListItem.Label]"/>
-                    <param name="labelRight" value="$INFO[Container(411).ListItem.Property(Rating)]"/>
-                    <param name="visibilityLabelRight" value="true"/>
-                    <param name="animationDown" value="false"/>
-                </include>
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="Widget">
-                    <param name="gfxType" value="Poster"/>
-                    <param name="content" value="RecommendedEpisodeContent"/>
-                    <param name="id" value="412"/>
-                    <param name="visibility" value="!IsEmpty(Window(Home).Property(RecommendedEpisode.1.Title))+SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)+StringCompare(Container(300).ListItem.Property(widget),Episode)"/>
-                    <param name="labelTitle" value="$INFO[Container(412).ListItem.Property(TVshowTitle)]"/>
-                    <param name="labelLeft" value="$INFO[Container(412).ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
-                    <param name="labelCenter" value="$INFO[Container(412).ListItem.Property(SeasonEpisode),,       ]$INFO[Container(412).ListItem.Label]"/>
-                    <param name="labelRight" value="$INFO[Container(412).ListItem.Property(Rating)]"/>
-                    <param name="visibilityLabelRight" value="true"/>
-                    <param name="animationDown" value="false"/>
-                </include>
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="Widget">
-                    <param name="gfxType" value="Poster"/>
-                    <param name="content" value="RandomEpisodeContent"/>
-                    <param name="id" value="413"/>
-                    <param name="visibility" value="!IsEmpty(Window(Home).Property(RandomEpisode.1.Title))+SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)+StringCompare(Container(300).ListItem.Property(widget),Episode)"/>
-                    <param name="labelTitle" value="$INFO[Container(413).ListItem.Property(TVshowTitle)]"/>
-                    <param name="labelLeft" value="$INFO[Container(413).ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
-                    <param name="labelCenter" value="$INFO[Container(413).ListItem.Property(SeasonEpisode),,       ]$INFO[Container(413).ListItem.Label]"/>
-                    <param name="labelRight" value="$INFO[Container(413).ListItem.Property(Rating)]"/>
-                    <param name="visibilityLabelRight" value="true"/>
-                    <param name="animationDown" value="false"/>
-                </include>
-                <!--CONCERTS-->
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="Widget">
-                    <param name="gfxType" value="Poster"/>
-                    <param name="content" value="RecentMusicVideoContent"/>
-                    <param name="id" value="314"/>
-                    <param name="visibility" value="!IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))+SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)+StringCompare(Container(300).ListItem.Property(widget),Concert)"/>
-                    <param name="labelTitle" value="$INFO[Container(314).ListItem.Label]"/>
-                    <param name="labelLeft" value=""/>
-                    <param name="labelCenter" value="$INFO[Container(314).ListItem.Label2,,       ]$INFO[Container(314).ListItem.Property(Year),,       ]$INFO[Container(314).ListItem.Property(Genre)]"/>
-                    <param name="labelRight" value=""/>
-                    <param name="visibilityLabelRight" value="false"/>
-                    <param name="animationDown" value="false"/>
-                </include>
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="Widget">
-                    <param name="gfxType" value="Poster"/>
-                    <param name="content" value="RecommendedMusicVideoContent"/>
-                    <param name="id" value="315"/>
-                    <param name="visibility" value="!IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))+SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)+StringCompare(Container(300).ListItem.Property(widget),Concert)"/>
-                    <param name="labelTitle" value="$INFO[Container(315).ListItem.Label]"/>
-                    <param name="labelLeft" value=""/>
-                    <param name="labelCenter" value="$INFO[Container(315).ListItem.Label2,,       ]$INFO[Container(315).ListItem.Property(Year),,       ]$INFO[Container(315).ListItem.Property(Genre)]"/>
-                    <param name="labelRight" value=""/>
-                    <param name="visibilityLabelRight" value="false"/>
-                    <param name="animationDown" value="false"/>
-                </include>
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="Widget">
-                    <param name="gfxType" value="Poster"/>
-                    <param name="content" value="RandomMusicVideoContent"/>
-                    <param name="id" value="316"/>
-                    <param name="visibility" value="!IsEmpty(Window(Home).Property(RandomMusicVideo.1.Title))+SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)+StringCompare(Container(300).ListItem.Property(widget),Concert)"/>
-                    <param name="labelTitle" value="$INFO[Container(316).ListItem.Label]"/>
-                    <param name="labelLeft" value=""/>
-                    <param name="labelCenter" value="$INFO[Container(316).ListItem.Label2,,       ]$INFO[Container(316).ListItem.Property(Year),,       ]$INFO[Container(316).ListItem.Property(Genre)]"/>
-                    <param name="labelRight" value=""/>
-                    <param name="visibilityLabelRight" value="false"/>
-                    <param name="animationDown" value="false"/>
-                </include>
-                <!--CLIPS-->
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="Widget">
-                    <param name="gfxType" value="Square"/>
-                    <param name="content" value="RecentMusicVideoContent"/>
-                    <param name="id" value="514"/>
-                    <param name="visibility" value="!IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))+SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)+StringCompare(Container(300).ListItem.Property(widget),Clip)"/>
-                    <param name="labelTitle" value="$INFO[Container(514).ListItem.Label]"/>
-                    <param name="labelLeft" value=""/>
-                    <param name="labelCenter" value="$INFO[Container(514).ListItem.Label2,,       ]$INFO[Container(514).ListItem.Property(Year),,       ]$INFO[Container(514).ListItem.Property(Genre)]"/>
-                    <param name="labelRight" value=""/>
-                    <param name="visibilityLabelRight" value="false"/>
-                    <param name="animationDown" value="false"/>
-                </include>
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="Widget">
-                    <param name="gfxType" value="Square"/>
-                    <param name="content" value="RecommendedMusicVideoContent"/>
-                    <param name="id" value="515"/>
-                    <param name="visibility" value="!IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))+SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)+StringCompare(Container(300).ListItem.Property(widget),Clip)"/>
-                    <param name="labelTitle" value="$INFO[Container(515).ListItem.Label]"/>
-                    <param name="labelLeft" value=""/>
-                    <param name="labelCenter" value="$INFO[Container(515).ListItem.Label2,,       ]$INFO[Container(515).ListItem.Property(Year),,       ]$INFO[Container(515).ListItem.Property(Genre)]"/>
-                    <param name="labelRight" value=""/>
-                    <param name="visibilityLabelRight" value="false"/>
-                    <param name="animationDown" value="false"/>
-                </include>
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="Widget">
-                    <param name="gfxType" value="Square"/>
-                    <param name="content" value="RandomMusicVideoContent"/>
-                    <param name="id" value="516"/>
-                    <param name="visibility" value="!IsEmpty(Window(Home).Property(RandomMusicVideo.1.Title))+SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)+StringCompare(Container(300).ListItem.Property(widget),Clip)"/>
-                    <param name="labelTitle" value="$INFO[Container(516).ListItem.Label]"/>
-                    <param name="labelLeft" value=""/>
-                    <param name="labelCenter" value="$INFO[Container(516).ListItem.Label2,,       ]$INFO[Container(516).ListItem.Property(Year),,       ]$INFO[Container(516).ListItem.Property(Genre)]"/>
-                    <param name="labelRight" value=""/>
-                    <param name="visibilityLabelRight" value="false"/>
-                    <param name="animationDown" value="false"/>
-                </include>
-                <!--ALBUMS-->
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="Widget">
-                    <param name="gfxType" value="Square"/>
-                    <param name="content" value="RecentAlbumContent"/>
-                    <param name="id" value="511"/>
-                    <param name="visibility" value="!IsEmpty(Window(Home).Property(RecentAlbum.1.Title))+SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)+StringCompare(Container(300).ListItem.Property(widget),Music)"/>
-                    <param name="labelTitle" value="$INFO[Container(511).ListItem.Label]"/>
-                    <param name="labelLeft" value=""/>
-                    <param name="labelCenter" value="$INFO[Container(511).ListItem.Label2,,       ]$INFO[Container(511).ListItem.Property(Year),,       ]$INFO[Container(511).ListItem.Property(Genre)]"/>
-                    <param name="labelRight" value=""/>
-                    <param name="visibilityLabelRight" value="false"/>
-                    <param name="animationDown" value="false"/>
-                </include>
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="Widget">
-                    <param name="gfxType" value="Square"/>
-                    <param name="content" value="RecommendedAlbumContent"/>
-                    <param name="id" value="512"/>
-                    <param name="visibility" value="!IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))+SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)+StringCompare(Container(300).ListItem.Property(widget),Music)"/>
-                    <param name="labelTitle" value="$INFO[Container(512).ListItem.Label]"/>
-                    <param name="labelLeft" value=""/>
-                    <param name="labelCenter" value="$INFO[Container(512).ListItem.Label2,,       ]$INFO[Container(512).ListItem.Property(Year),,       ]$INFO[Container(512).ListItem.Property(Genre)]"/>
-                    <param name="labelRight" value=""/>
-                    <param name="visibilityLabelRight" value="false"/>
-                    <param name="animationDown" value="false"/>
-                </include>
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="Widget">
-                    <param name="gfxType" value="Square"/>
-                    <param name="content" value="RandomAlbumContent"/>
-                    <param name="id" value="513"/>
-                    <param name="visibility" value="!IsEmpty(Window(Home).Property(RandomAlbum.1.Title))+SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)+StringCompare(Container(300).ListItem.Property(widget),Music)"/>
-                    <param name="labelTitle" value="$INFO[Container(513).ListItem.Label]"/>
-                    <param name="labelLeft" value=""/>
-                    <param name="labelCenter" value="$INFO[Container(513).ListItem.Label2,,       ]$INFO[Container(513).ListItem.Property(Year),,       ]$INFO[Container(513).ListItem.Property(Genre)]"/>
-                    <param name="labelRight" value=""/>
-                    <param name="visibilityLabelRight" value="false"/>
-                    <param name="animationDown" value="false"/>
-                </include>
-
 
                 <!-- -->
                 <!--PLEX-->
@@ -326,6 +114,342 @@
                     <param name="visibilityLabelRight" value="false"/>
                     <param name="animationDown" value="false"/>
                 </include>
+
+                <!-- -->
+                <!--CUSTOM WIDGETS-->
+                <!-- -->
+
+                <!--WIDGET 1-->
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Poster"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
+                    <param name="id" value="700011"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType),movies)|[StringCompare(Container(300).ListItem.Property(widgetType),musicvideos)+StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+                    <param name="labelTitle" value="$INFO[Container(700011).ListItem.Label]"/>
+                    <param name="labelLeft" value="$INFO[Container(700011).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                    <param name="labelCenter" value="$INFO[Container(700011).ListItem.Year]$INFO[Container(700011).ListItem.MPAA,       ]$INFO[Container(700011).ListItem.Genre,       ]"/>
+                    <param name="labelRight" value="$INFO[Container(700011).ListItem.Rating]"/>
+                    <param name="visibilityLabelRight" value="true"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Episode"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
+                    <param name="id" value="700012"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+                    <param name="labelTitle" value="$INFO[Container(700012).ListItem.Label]"/>
+                    <param name="labelLeft" value="$INFO[Container(700012).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                    <param name="labelCenter" value="$INFO[Container(700012).ListItem.Artist,,       ]$INFO[Container(700012).ListItem.Year]$INFO[Container(700012).ListItem.MPAA,       ]$INFO[Container(700012).ListItem.Genre,       ]"/>
+                    <param name="labelRight" value="$INFO[Container(700012).ListItem.Rating]"/>
+                    <param name="visibilityLabelRight" value="true"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Square"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
+                    <param name="id" value="700013"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType),albums)"/>
+                    <param name="labelTitle" value="$INFO[Container(700013).ListItem.Label]"/>
+                    <param name="labelLeft" value=""/>
+                    <param name="labelCenter" value="$INFO[Container(700013).ListItem.Artist,,       ]$INFO[Container(700013).ListItem.Year]$INFO[Container(700013).ListItem.Genre,       ]"/>
+                    <param name="labelRight" value=""/>
+                    <param name="visibilityLabelRight" value="false"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Channel"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
+                    <param name="id" value="700014"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType),pvr)"/>
+                    <param name="labelTitle" value="$INFO[Container(700014).ListItem.Label]"/>
+                    <param name="labelLeft" value=""/>
+                    <param name="labelCenter" value="$INFO[Container(700014).ListItem.Label2,,       ]$INFO[Container(700014).ListItem.Duration,, $LOCALIZE[31297]       ]$INFO[Container(700014).ListItem.Genre]"/>
+                    <param name="labelRight" value=""/>
+                    <param name="visibilityLabelRight" value="false"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Square"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
+                    <param name="id" value="700015"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType),video)|StringCompare(Container(300).ListItem.Property(widgetType),picture)"/>
+                    <param name="labelTitle" value="$INFO[Container(700015).ListItem.Label]"/>
+                    <param name="labelLeft" value=""/>
+                    <param name="labelCenter" value=""/>
+                    <param name="labelRight" value=""/>
+                    <param name="visibilityLabelRight" value="false"/>
+                    <param name="animationDown" value="true"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget)]"/>
+                </include>
+                <!--WIDGET 2-->
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Poster"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
+                    <param name="id" value="700021"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.1),movies)|[StringCompare(Container(300).ListItem.Property(widgetType.1),musicvideos)+StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+                    <param name="labelTitle" value="$INFO[Container(700021).ListItem.Label]"/>
+                    <param name="labelLeft" value="$INFO[Container(700021).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                    <param name="labelCenter" value="$INFO[Container(700021).ListItem.Year]$INFO[Container(700021).ListItem.MPAA,       ]$INFO[Container(700021).ListItem.Genre,       ]"/>
+                    <param name="labelRight" value="$INFO[Container(700021).ListItem.Rating]"/>
+                    <param name="visibilityLabelRight" value="true"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Episode"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
+                    <param name="id" value="700022"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.1),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.1),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+                    <param name="labelTitle" value="$INFO[Container(700022).ListItem.Label]"/>
+                    <param name="labelLeft" value="$INFO[Container(700022).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                    <param name="labelCenter" value="$INFO[Container(700022).ListItem.Artist,,       ]$INFO[Container(700022).ListItem.Year]$INFO[Container(700022).ListItem.MPAA,       ]$INFO[Container(700022).ListItem.Genre,       ]"/>
+                    <param name="labelRight" value="$INFO[Container(700022).ListItem.Rating]"/>
+                    <param name="visibilityLabelRight" value="true"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Square"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
+                    <param name="id" value="700023"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.1),albums)"/>
+                    <param name="labelTitle" value="$INFO[Container(700023).ListItem.Label]"/>
+                    <param name="labelLeft" value=""/>
+                    <param name="labelCenter" value="$INFO[Container(700023).ListItem.Artist,,       ]$INFO[Container(700023).ListItem.Year]$INFO[Container(700023).ListItem.Genre,       ]"/>
+                    <param name="labelRight" value=""/>
+                    <param name="visibilityLabelRight" value="false"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Channel"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
+                    <param name="id" value="700024"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.1),pvr)"/>
+                    <param name="labelTitle" value="$INFO[Container(700024).ListItem.Label]"/>
+                    <param name="labelLeft" value=""/>
+                    <param name="labelCenter" value="$INFO[Container(700024).ListItem.Label2,,       ]$INFO[Container(700024).ListItem.Duration,, $LOCALIZE[31297]       ]$INFO[Container(700024).ListItem.Genre]"/>
+                    <param name="labelRight" value=""/>
+                    <param name="visibilityLabelRight" value="false"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Square"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
+                    <param name="id" value="700025"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.1),video)|StringCompare(Container(300).ListItem.Property(widgetType.1),picture)"/>
+                    <param name="labelTitle" value="$INFO[Container(700025).ListItem.Label]"/>
+                    <param name="labelLeft" value=""/>
+                    <param name="labelCenter" value=""/>
+                    <param name="labelRight" value=""/>
+                    <param name="visibilityLabelRight" value="false"/>
+                    <param name="animationDown" value="true"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.1)]"/>
+                </include>
+                <!--WIDGET 3-->
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Poster"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
+                    <param name="id" value="700031"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.2),movies)|[StringCompare(Container(300).ListItem.Property(widgetType.2),musicvideos)+StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+                    <param name="labelTitle" value="$INFO[Container(700031).ListItem.Label]"/>
+                    <param name="labelLeft" value="$INFO[Container(700031).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                    <param name="labelCenter" value="$INFO[Container(700031).ListItem.Year]$INFO[Container(700031).ListItem.MPAA,       ]$INFO[Container(700031).ListItem.Genre,       ]"/>
+                    <param name="labelRight" value="$INFO[Container(700031).ListItem.Rating]"/>
+                    <param name="visibilityLabelRight" value="true"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Episode"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
+                    <param name="id" value="700032"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.2),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.2),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+                    <param name="labelTitle" value="$INFO[Container(700032).ListItem.Label]"/>
+                    <param name="labelLeft" value="$INFO[Container(700032).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                    <param name="labelCenter" value="$INFO[Container(700032).ListItem.Artist,,       ]$INFO[Container(700032).ListItem.Year]$INFO[Container(700032).ListItem.MPAA,       ]$INFO[Container(700032).ListItem.Genre,       ]"/>
+                    <param name="labelRight" value="$INFO[Container(700032).ListItem.Rating]"/>
+                    <param name="visibilityLabelRight" value="true"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Square"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
+                    <param name="id" value="700033"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.2),albums)"/>
+                    <param name="labelTitle" value="$INFO[Container(700033).ListItem.Label]"/>
+                    <param name="labelLeft" value=""/>
+                    <param name="labelCenter" value="$INFO[Container(700033).ListItem.Artist,,       ]$INFO[Container(700033).ListItem.Year]$INFO[Container(700033).ListItem.Genre,       ]"/>
+                    <param name="labelRight" value=""/>
+                    <param name="visibilityLabelRight" value="false"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Channel"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
+                    <param name="id" value="700034"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.2),pvr)"/>
+                    <param name="labelTitle" value="$INFO[Container(700034).ListItem.Label]"/>
+                    <param name="labelLeft" value=""/>
+                    <param name="labelCenter" value="$INFO[Container(700034).ListItem.Label2,,       ]$INFO[Container(700034).ListItem.Duration,, $LOCALIZE[31297]       ]$INFO[Container(700034).ListItem.Genre]"/>
+                    <param name="labelRight" value=""/>
+                    <param name="visibilityLabelRight" value="false"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Square"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
+                    <param name="id" value="700035"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.2),video)|StringCompare(Container(300).ListItem.Property(widgetType.2),picture)"/>
+                    <param name="labelTitle" value="$INFO[Container(700035).ListItem.Label]"/>
+                    <param name="labelLeft" value=""/>
+                    <param name="labelCenter" value=""/>
+                    <param name="labelRight" value=""/>
+                    <param name="visibilityLabelRight" value="false"/>
+                    <param name="animationDown" value="true"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
+                </include>
+                <!--WIDGET 4-->
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Poster"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
+                    <param name="id" value="700041"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.3),movies)|[StringCompare(Container(300).ListItem.Property(widgetType.3),musicvideos)+StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+                    <param name="labelTitle" value="$INFO[Container(700041).ListItem.Label]"/>
+                    <param name="labelLeft" value="$INFO[Container(700041).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                    <param name="labelCenter" value="$INFO[Container(700041).ListItem.Year]$INFO[Container(700041).ListItem.MPAA,       ]$INFO[Container(700041).ListItem.Genre,       ]"/>
+                    <param name="labelRight" value="$INFO[Container(700041).ListItem.Rating]"/>
+                    <param name="visibilityLabelRight" value="true"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Episode"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
+                    <param name="id" value="700042"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.3),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.3),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+                    <param name="labelTitle" value="$INFO[Container(700042).ListItem.Label]"/>
+                    <param name="labelLeft" value="$INFO[Container(700042).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                    <param name="labelCenter" value="$INFO[Container(700042).ListItem.Artist,,       ]$INFO[Container(700042).ListItem.Year]$INFO[Container(700042).ListItem.MPAA,       ]$INFO[Container(700042).ListItem.Genre,       ]"/>
+                    <param name="labelRight" value="$INFO[Container(700042).ListItem.Rating]"/>
+                    <param name="visibilityLabelRight" value="true"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Square"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
+                    <param name="id" value="700043"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.3),albums)"/>
+                    <param name="labelTitle" value="$INFO[Container(700043).ListItem.Label]"/>
+                    <param name="labelLeft" value=""/>
+                    <param name="labelCenter" value="$INFO[Container(700043).ListItem.Artist,,       ]$INFO[Container(700043).ListItem.Year]$INFO[Container(700043).ListItem.Genre,       ]"/>
+                    <param name="labelRight" value=""/>
+                    <param name="visibilityLabelRight" value="false"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Channel"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
+                    <param name="id" value="700044"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.3),pvr)"/>
+                    <param name="labelTitle" value="$INFO[Container(700044).ListItem.Label]"/>
+                    <param name="labelLeft" value=""/>
+                    <param name="labelCenter" value="$INFO[Container(700044).ListItem.Label2,,       ]$INFO[Container(700044).ListItem.Duration,, $LOCALIZE[31297]       ]$INFO[Container(700044).ListItem.Genre]"/>
+                    <param name="labelRight" value=""/>
+                    <param name="visibilityLabelRight" value="false"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Square"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
+                    <param name="id" value="700045"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.3),video)|StringCompare(Container(300).ListItem.Property(widgetType.3),picture)"/>
+                    <param name="labelTitle" value="$INFO[Container(700045).ListItem.Label]"/>
+                    <param name="labelLeft" value=""/>
+                    <param name="labelCenter" value=""/>
+                    <param name="labelRight" value=""/>
+                    <param name="visibilityLabelRight" value="false"/>
+                    <param name="animationDown" value="true"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
+                </include>
+                <!--WIDGET 5-->
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Poster"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
+                    <param name="id" value="700051"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.4),movies)|[StringCompare(Container(300).ListItem.Property(widgetType.4),musicvideos)+StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+                    <param name="labelTitle" value="$INFO[Container(700051).ListItem.Label]"/>
+                    <param name="labelLeft" value="$INFO[Container(700051).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                    <param name="labelCenter" value="$INFO[Container(700051).ListItem.Year]$INFO[Container(700051).ListItem.MPAA,       ]$INFO[Container(700051).ListItem.Genre,       ]"/>
+                    <param name="labelRight" value="$INFO[Container(700051).ListItem.Rating]"/>
+                    <param name="visibilityLabelRight" value="true"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Episode"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
+                    <param name="id" value="700052"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.4),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.4),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
+                    <param name="labelTitle" value="$INFO[Container(700052).ListItem.Label]"/>
+                    <param name="labelLeft" value="$INFO[Container(700052).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                    <param name="labelCenter" value="$INFO[Container(700052).ListItem.Artist,,       ]$INFO[Container(700052).ListItem.Year]$INFO[Container(700052).ListItem.MPAA,       ]$INFO[Container(700052).ListItem.Genre,       ]"/>
+                    <param name="labelRight" value="$INFO[Container(700052).ListItem.Rating]"/>
+                    <param name="visibilityLabelRight" value="true"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Square"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
+                    <param name="id" value="700053"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.4),albums)"/>
+                    <param name="labelTitle" value="$INFO[Container(700053).ListItem.Label]"/>
+                    <param name="labelLeft" value=""/>
+                    <param name="labelCenter" value="$INFO[Container(700053).ListItem.Artist,,       ]$INFO[Container(700053).ListItem.Year]$INFO[Container(700053).ListItem.Genre,       ]"/>
+                    <param name="labelRight" value=""/>
+                    <param name="visibilityLabelRight" value="false"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Channel"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
+                    <param name="id" value="700054"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.4),pvr)"/>
+                    <param name="labelTitle" value="$INFO[Container(700054).ListItem.Label]"/>
+                    <param name="labelLeft" value=""/>
+                    <param name="labelCenter" value="$INFO[Container(700054).ListItem.Label2,,       ]$INFO[Container(700054).ListItem.Duration,, $LOCALIZE[31297]       ]$INFO[Container(700054).ListItem.Genre]"/>
+                    <param name="labelRight" value=""/>
+                    <param name="visibilityLabelRight" value="false"/>
+                    <param name="animationDown" value="false"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc)" name="CustomWidget">
+                    <param name="gfxType" value="Square"/>
+                    <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
+                    <param name="id" value="700055"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.4),video)|StringCompare(Container(300).ListItem.Property(widgetType.4),picture)"/>
+                    <param name="labelTitle" value="$INFO[Container(700055).ListItem.Label]"/>
+                    <param name="labelLeft" value=""/>
+                    <param name="labelCenter" value=""/>
+                    <param name="labelRight" value=""/>
+                    <param name="visibilityLabelRight" value="false"/>
+                    <param name="animationDown" value="true"/>
+                    <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
+                </include>
+                
             </control>
             <control type="group">
                 <include>OpenClose</include>
@@ -354,22 +478,22 @@
                         <onleft>300</onleft>
                         <onright>300</onright>
                         <ondown>9001</ondown>
-                        <onup condition="[[IntegerGreaterThan(Container(211).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Addon)]|
-        [[IntegerGreaterThan(Container(111).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Favourite)]|
-        [!Skin.HasSetting(plexbmc)+[
-        [[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)|IntegerGreaterThan(Container(313).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Movie)]|
-        [[IntegerGreaterThan(Container(314).NumItems,0)|IntegerGreaterThan(Container(315).NumItems,0)|IntegerGreaterThan(Container(316).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Concert)]|
-        [[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(412).NumItems,0)|IntegerGreaterThan(Container(413).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Episode)]|
-        [[IntegerGreaterThan(Container(511).NumItems,0)|IntegerGreaterThan(Container(512).NumItems,0)|IntegerGreaterThan(Container(513).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Music)]|
-        [[IntegerGreaterThan(Container(514).NumItems,0)|IntegerGreaterThan(Container(515).NumItems,0)|IntegerGreaterThan(Container(516).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Clip)]]
-        ]|
-        [Skin.HasSetting(plexbmc)+[
-        [[IntegerGreaterThan(Container(900).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),photo)]|
-        [[IntegerGreaterThan(Container(901).NumItems,0)]+StringCompare(Container(300).ListItem.Label,$LOCALIZE[31010])]|
-        [[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),movie)]|
-        [[IntegerGreaterThan(Container(511).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),artist)]|
-        [[IntegerGreaterThan(Container(212).NumItems,0)]+Container(300).HasFocus(50)]|
-        [[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(412).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),show)]]]">7010</onup>
+                        <onup condition="[
+                            [!Skin.HasSetting(plexbmc)+[Control.isvisible(700011)|Control.isvisible(700012)|Control.isvisible(700013)|Control.isvisible(700014)|Control.isvisible(700015)|
+                                                        Control.isvisible(700021)|Control.isvisible(700022)|Control.isvisible(700023)|Control.isvisible(700024)|Control.isvisible(700025)|
+                                                        Control.isvisible(700031)|Control.isvisible(700032)|Control.isvisible(700033)|Control.isvisible(700034)|Control.isvisible(700045)|
+                                                        Control.isvisible(700041)|Control.isvisible(700042)|Control.isvisible(700043)|Control.isvisible(700044)|Control.isvisible(700045)|
+                                                        Control.isvisible(700051)|Control.isvisible(700052)|Control.isvisible(700053)|Control.isvisible(700054)|Control.isvisible(700055)]
+                            ]|
+                            [Skin.HasSetting(plexbmc)+[
+                            [[IntegerGreaterThan(Container(900).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),photo)]|
+                            [[IntegerGreaterThan(Container(901).NumItems,0)]+StringCompare(Container(300).ListItem.Label,$LOCALIZE[31010])]|
+                            [[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),movie)]|
+                            [[IntegerGreaterThan(Container(511).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),artist)]|
+                            [[IntegerGreaterThan(Container(212).NumItems,0)]+Container(300).HasFocus(50)]|
+                            [[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(412).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),show)]
+                            ]]
+                            ]">7010</onup>
                         <onup>9900</onup>
                         <pagecontrol>-</pagecontrol>
                         <focusposition>2</focusposition>
@@ -425,14 +549,12 @@
                 <control type="group">
                     <include>Icon_Fade</include>
                     <control type="group">
-                        <visible>[[IntegerGreaterThan(Container(211).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Addon)]|
-                            [[IntegerGreaterThan(Container(111).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Favourite)]|
-                            [!Skin.HasSetting(plexbmc)+[
-                            [[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)|IntegerGreaterThan(Container(313).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Movie)]|
-                            [[IntegerGreaterThan(Container(314).NumItems,0)|IntegerGreaterThan(Container(315).NumItems,0)|IntegerGreaterThan(Container(316).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Concert)]|
-                            [[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(412).NumItems,0)|IntegerGreaterThan(Container(413).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Episode)]|
-                            [[IntegerGreaterThan(Container(511).NumItems,0)|IntegerGreaterThan(Container(512).NumItems,0)|IntegerGreaterThan(Container(513).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Music)]|
-                            [[IntegerGreaterThan(Container(514).NumItems,0)|IntegerGreaterThan(Container(515).NumItems,0)|IntegerGreaterThan(Container(516).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Clip)]]
+                        <visible>[
+                            [!Skin.HasSetting(plexbmc)+[Control.isvisible(700011)|Control.isvisible(700012)|Control.isvisible(700013)|Control.isvisible(700014)|Control.isvisible(700015)|
+                                                        Control.isvisible(700021)|Control.isvisible(700022)|Control.isvisible(700023)|Control.isvisible(700024)|Control.isvisible(700025)|
+                                                        Control.isvisible(700031)|Control.isvisible(700032)|Control.isvisible(700033)|Control.isvisible(700034)|Control.isvisible(700045)|
+                                                        Control.isvisible(700041)|Control.isvisible(700042)|Control.isvisible(700043)|Control.isvisible(700044)|Control.isvisible(700045)|
+                                                        Control.isvisible(700051)|Control.isvisible(700052)|Control.isvisible(700053)|Control.isvisible(700054)|Control.isvisible(700055)]
                             ]|
                             [Skin.HasSetting(plexbmc)+[
                             [[IntegerGreaterThan(Container(900).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),photo)]|
@@ -440,7 +562,9 @@
                             [[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),movie)]|
                             [[IntegerGreaterThan(Container(511).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),artist)]|
                             [[IntegerGreaterThan(Container(212).NumItems,0)]+Container(300).HasFocus(50)]|
-                            [[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(412).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),show)]]]</visible>
+                            [[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(412).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),show)]
+                            ]]
+                            ]</visible>
                         <include>VisibleFadeEffect</include>
                         <control type="image">
                             <posx>935</posx>
@@ -507,64 +631,80 @@
                                             <font>FacadeListMainFont</font>
                                             <include>TextColor_MainColor</include>
                                             <align>center</align>
+                                            <scroll>true</scroll>
                                             <label>$INFO[ListItem.Label]</label>
                                         </control>
                                     </control>
                                 </focusedlayout>
                                 <content>
+                                    <!--RECENTLY ADDED-->
                                     <item id="702">
                                         <visible>[control.isvisible(212)+IntegerGreaterThan(Container(212).NumItems,0)]|
                                             [control.isvisible(311)+IntegerGreaterThan(Container(311).NumItems,0)]|
-                                            [control.isvisible(314)+IntegerGreaterThan(Container(314).NumItems,0)]|
                                             [control.isvisible(411)+IntegerGreaterThan(Container(411).NumItems,0)]|
                                             [control.isvisible(511)+IntegerGreaterThan(Container(511).NumItems,0)]|
-                                            [control.isvisible(514)+IntegerGreaterThan(Container(514).NumItems,0)]|
                                             [control.isvisible(900)+IntegerGreaterThan(Container(900).NumItems,0)]|
                                             [control.isvisible(901)+IntegerGreaterThan(Container(901).NumItems,0)]</visible>
                                         <label>$LOCALIZE[31961]</label>
-                                        <onclick condition="control.isvisible(111)">SetFocus(111)</onclick>
-                                        <onclick condition="control.isvisible(211)">SetFocus(211)</onclick>
                                         <onclick condition="control.isvisible(212)">SetFocus(212)</onclick>
                                         <onclick condition="control.isvisible(311)">SetFocus(311)</onclick>
-                                        <onclick condition="control.isvisible(314)">SetFocus(314)</onclick>
                                         <onclick condition="control.isvisible(411)">SetFocus(411)</onclick>
                                         <onclick condition="control.isvisible(511)">SetFocus(511)</onclick>
-                                        <onclick condition="control.isvisible(514)">SetFocus(514)</onclick>
                                         <onclick condition="control.isvisible(900)">SetFocus(900)</onclick>
                                         <onclick condition="control.isvisible(901)">SetFocus(901)</onclick>
                                     </item>
+                                    <!--RECOMMENDED-->
                                     <item id="703">
                                         <visible>[control.isvisible(312)+IntegerGreaterThan(Container(312).NumItems,0)]|
-                                            [control.isvisible(315)+IntegerGreaterThan(Container(315).NumItems,0)]|
-                                            [control.isvisible(412)+IntegerGreaterThan(Container(412).NumItems,0)]|
-                                            [control.isvisible(512)+IntegerGreaterThan(Container(512).NumItems,0)]|
-                                            [control.isvisible(515)+IntegerGreaterThan(Container(515).NumItems,0)]</visible>
+                                            [control.isvisible(412)+IntegerGreaterThan(Container(412).NumItems,0)]</visible>
                                         <label>$LOCALIZE[31966]</label>
                                         <onclick condition="control.isvisible(312)">SetFocus(312)</onclick>
-                                        <onclick condition="control.isvisible(315)">SetFocus(315)</onclick>
                                         <onclick condition="control.isvisible(412)">SetFocus(412)</onclick>
-                                        <onclick condition="control.isvisible(512)">SetFocus(512)</onclick>
-                                        <onclick condition="control.isvisible(515)">SetFocus(515)</onclick>
                                     </item>
-                                    <item id="704">
-                                        <visible>[control.isvisible(313)+IntegerGreaterThan(Container(313).NumItems,0)]|
-                                            [control.isvisible(316)+IntegerGreaterThan(Container(316).NumItems,0)]|
-                                            [control.isvisible(413)+IntegerGreaterThan(Container(413).NumItems,0)]|
-                                            [control.isvisible(513)+IntegerGreaterThan(Container(513).NumItems,0)]|
-                                            [control.isvisible(516)+IntegerGreaterThan(Container(516).NumItems,0)]</visible>
-                                        <label>$LOCALIZE[31987]</label>
-                                        <onclick condition="control.isvisible(313)">SetFocus(313)</onclick>
-                                        <onclick condition="control.isvisible(316)">SetFocus(316)</onclick>
-                                        <onclick condition="control.isvisible(413)">SetFocus(413)</onclick>
-                                        <onclick condition="control.isvisible(513)">SetFocus(513)</onclick>
-                                        <onclick condition="control.isvisible(516)">SetFocus(516)</onclick>
+                                    <item id="7001">
+                                        <visible>!IsEmpty(Container(300).ListItem.Property(widgetName))</visible>
+                                        <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
+                                        <onclick condition="control.isvisible(700011)">SetFocus(700011)</onclick>
+                                        <onclick condition="control.isvisible(700012)">SetFocus(700012)</onclick>
+                                        <onclick condition="control.isvisible(700013)">SetFocus(700013)</onclick>
+                                        <onclick condition="control.isvisible(700014)">SetFocus(700014)</onclick>
+                                        <onclick condition="control.isvisible(700015)">SetFocus(700015)</onclick>
                                     </item>
-                                    <item id="705">
-                                        <visible>[control.isvisible(111)+IntegerGreaterThan(Container(111).NumItems,0)]|
-                                            [control.isvisible(211)+IntegerGreaterThan(Container(211).NumItems,0)]</visible>
-                                        <label>$LOCALIZE[31060]</label>
-                                        <onclick condition="control.isvisible(111)">SetFocus(111)</onclick>
-                                        <onclick condition="control.isvisible(211)">SetFocus(211)</onclick>
+                                    <item id="7002">
+                                        <visible>!IsEmpty(Container(300).ListItem.Property(widgetName.1))</visible>
+                                        <label>$INFO[Container(300).ListItem.Property(widgetName.1)]</label>
+                                        <onclick condition="control.isvisible(700021)">SetFocus(700021)</onclick>
+                                        <onclick condition="control.isvisible(700022)">SetFocus(700022)</onclick>
+                                        <onclick condition="control.isvisible(700023)">SetFocus(700023)</onclick>
+                                        <onclick condition="control.isvisible(700024)">SetFocus(700024)</onclick>
+                                        <onclick condition="control.isvisible(700025)">SetFocus(700025)</onclick>
+                                    </item>
+                                    <item id="7003">
+                                        <visible>!IsEmpty(Container(300).ListItem.Property(widgetName.2))</visible>
+                                        <label>$INFO[Container(300).ListItem.Property(widgetName.2)]</label>
+                                        <onclick condition="control.isvisible(700031)">SetFocus(700031)</onclick>
+                                        <onclick condition="control.isvisible(700032)">SetFocus(700032)</onclick>
+                                        <onclick condition="control.isvisible(700033)">SetFocus(700033)</onclick>
+                                        <onclick condition="control.isvisible(700034)">SetFocus(700034)</onclick>
+                                        <onclick condition="control.isvisible(700035)">SetFocus(700035)</onclick>
+                                    </item>
+                                    <item id="7004">
+                                        <visible>!IsEmpty(Container(300).ListItem.Property(widgetName.3))</visible>
+                                        <label>$INFO[Container(300).ListItem.Property(widgetName.3)]</label>
+                                        <onclick condition="control.isvisible(700041)">SetFocus(700041)</onclick>
+                                        <onclick condition="control.isvisible(700042)">SetFocus(700042)</onclick>
+                                        <onclick condition="control.isvisible(700043)">SetFocus(700043)</onclick>
+                                        <onclick condition="control.isvisible(700044)">SetFocus(700044)</onclick>
+                                        <onclick condition="control.isvisible(700045)">SetFocus(700045)</onclick>
+                                    </item>
+                                    <item id="7005">
+                                        <visible>!IsEmpty(Container(300).ListItem.Property(widgetName.4))</visible>
+                                        <label>$INFO[Container(300).ListItem.Property(widgetName.4)]</label>
+                                        <onclick condition="control.isvisible(700051)">SetFocus(700051)</onclick>
+                                        <onclick condition="control.isvisible(700052)">SetFocus(700052)</onclick>
+                                        <onclick condition="control.isvisible(700053)">SetFocus(700053)</onclick>
+                                        <onclick condition="control.isvisible(700054)">SetFocus(700054)</onclick>
+                                        <onclick condition="control.isvisible(700055)">SetFocus(700055)</onclick>
                                     </item>
                                 </content>
                             </control>
@@ -679,6 +819,7 @@
                                         <width>380</width>
                                         <font>FacadeListMainFont</font>
                                         <label>$INFO[ListItem.Label]</label>
+                                        <scroll>true</scroll>
                                         <include>TextColor_MainColor</include>
                                     </control>
                                 </control>

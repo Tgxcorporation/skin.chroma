@@ -2,22 +2,13 @@
 <window>
     <defaultcontrol always="true">10</defaultcontrol>
     <allowoverlay>no</allowoverlay>
+    <onload>AlarmClock(StartupDelay,SetFocus(12),$VAR[StartupDelay],silent)</onload>
+    <animation type="WindowOpen" reversible="false">
+        <effect type="fade" start="0" end="100" time="150" />
+    </animation>
     <controls>
         <control type="button" id="10">
             <include>HiddenButton</include>
-            <onfocus>SetFocus(11)</onfocus>
-        </control>
-        <!-- Show home if skin widgets loading is finished -->
-        <control type="button" id="11">
-            <include>HiddenButton</include>
-            <onfocus condition="!System.HasAddon(service.skin.widgets) | Skin.HasSetting(Hide.RecentlyAdded) | Skin.HasSetting(plexbmc) | Skin.HasSetting(Use.FastStart)">SetFocus(12)</onfocus>
-            <onfocus condition="![!System.HasAddon(service.skin.widgets) | Skin.HasSetting(Hide.RecentlyAdded) | Skin.HasSetting(plexbmc) | Skin.HasSetting(Use.FastStart)]">SetFocus(11)</onfocus>
-            <visible>IsEmpty(Window(Home).Property(SkinWidgets_Running))</visible>
-        </control>
-        <control type="button" id="11">
-            <include>HiddenButton</include>
-            <onfocus>SetFocus(12)</onfocus>
-            <visible>!IsEmpty(Window(Home).Property(SkinWidgets_Running))</visible>
         </control>
         <control type="button" id="12">
             <include>HiddenButton</include>
@@ -51,9 +42,9 @@
             <posy>0</posy>
             <width>1920</width>
             <height>1080</height>
-            <timeperimage>9000</timeperimage>
+            <timeperimage>2000</timeperimage>
             <randomize>true</randomize>
-            <fadetime>400</fadetime>
+            <fadetime>300</fadetime>
             <aspectratio aligny="top">scale</aspectratio>
             <imagepath background="true">$INFO[Skin.String(startup-multiimagepath)]</imagepath>
         </control>
