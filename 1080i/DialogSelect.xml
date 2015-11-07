@@ -24,7 +24,7 @@
             <control type="label" id="1">
                 <posx>260</posx>
                 <posy>240</posy>
-                <width>1400</width>
+                <width>920</width>
                 <height>50</height>
                 <font>InfoTitleFont</font>
                 <scroll>true</scroll>
@@ -42,7 +42,7 @@
                 <control type="label">
                     <posx>260</posx>
                     <posy>282</posy>
-                    <width>1400</width>
+                    <width>920</width>
                     <height>35</height>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MidColor</include>
