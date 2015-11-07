@@ -32,10 +32,19 @@
             <texture>common/overlay_bottom.png</texture>
         </control>
         <control type="image">
+            <visible>!Window.IsActive(CustomPlexHomeSettings.xml)</visible>
             <posx>530</posx>
             <posy>635</posy>
             <width>1340</width>
             <height>395</height>
+            <texture border="55">common/background_strip_horizontal.png</texture>
+        </control>
+        <control type="image">
+            <visible>Window.IsActive(CustomPlexHomeSettings.xml)</visible>
+            <posx>530</posx>
+            <posy>610</posy>
+            <width>1340</width>
+            <height>420</height>
             <texture border="55">common/background_strip_horizontal.png</texture>
         </control>
         <control type="image">
