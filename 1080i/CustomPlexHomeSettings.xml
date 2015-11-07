@@ -297,7 +297,7 @@
                     <include>SkinShortcuts_Window_Navigation</include>
                     <control type="scrollbar" id="260">
                         <posx>530</posx>
-                        <posy>821</posy>
+                        <posy>861</posy>
                         <width>1340</width>
                         <include>HorizontalScroller</include>
                         <onup>211</onup>
@@ -316,7 +316,7 @@
                         </control>
                         <control type="label">
                             <posx>580</posx>
-                            <posy>840</posy>
+                            <posy>860</posy>
                             <width>1240</width>
                             <height>120</height>
                             <align>center</align>
