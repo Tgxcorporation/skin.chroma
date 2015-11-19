@@ -633,57 +633,68 @@
     <variable name="Plex.0.Icon.Management">
         <value condition="!IsEmpty(Skin.String(Plexbmc.0.Icon))">$INFO[Skin.String(Plexbmc.0.Icon)]</value>
         <value condition="!IsEmpty(Window(Home).Property(plexbmc.0.art))">$INFO[Window(Home).Property(plexbmc.0.art)]</value>
-        <value>$VAR[Default.Art]</value>
+        <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
     </variable>
     <variable name="Plex.1.Icon.Management">
         <value condition="!IsEmpty(Skin.String(Plexbmc.1.Icon))">$INFO[Skin.String(Plexbmc.1.Icon)]</value>
         <value condition="!IsEmpty(Window(Home).Property(plexbmc.1.art))">$INFO[Window(Home).Property(plexbmc.1.art)]</value>
-        <value>$VAR[Default.Art]</value>
+        <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
     </variable>
     <variable name="Plex.2.Icon.Management">
         <value condition="!IsEmpty(Skin.String(Plexbmc.2.Icon))">$INFO[Skin.String(Plexbmc.2.Icon)]</value>
         <value condition="!IsEmpty(Window(Home).Property(plexbmc.2.art))">$INFO[Window(Home).Property(plexbmc.2.art)]</value>
-        <value>$VAR[Default.Art]</value>
+        <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
     </variable>
     <variable name="Plex.3.Icon.Management">
         <value condition="!IsEmpty(Skin.String(Plexbmc.3.Icon))">$INFO[Skin.String(Plexbmc.3.Icon)]</value>
         <value condition="!IsEmpty(Window(Home).Property(plexbmc.3.art))">$INFO[Window(Home).Property(plexbmc.3.art)]</value>
-        <value>$VAR[Default.Art]</value>
+        <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
     </variable>
     <variable name="Plex.4.Icon.Management">
         <value condition="!IsEmpty(Skin.String(Plexbmc.4.Icon))">$INFO[Skin.String(Plexbmc.4.Icon)]</value>
         <value condition="!IsEmpty(Window(Home).Property(plexbmc.4.art))">$INFO[Window(Home).Property(plexbmc.4.art)]</value>
-        <value>$VAR[Default.Art]</value>
+        <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
     </variable>
     <variable name="Plex.5.Icon.Management">
         <value condition="!IsEmpty(Skin.String(Plexbmc.5.Icon))">$INFO[Skin.String(Plexbmc.5.Icon)]</value>
         <value condition="!IsEmpty(Window(Home).Property(plexbmc.5.art))">$INFO[Window(Home).Property(plexbmc.5.art)]</value>
-        <value>$VAR[Default.Art]</value>
+        <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
     </variable>
     <variable name="Plex.6.Icon.Management">
         <value condition="!IsEmpty(Skin.String(PlPlexbmcex.6.Icon))">$INFO[Skin.String(Plexbmc.6.Icon)]</value>
         <value condition="!IsEmpty(Window(Home).Property(plexbmc.6.art))">$INFO[Window(Home).Property(plexbmc.6.art)]</value>
-        <value>$VAR[Default.Art]</value>
+        <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
     </variable>
     <variable name="Plex.7.Icon.Management">
         <value condition="!IsEmpty(Skin.String(Plexbmc.7.Icon))">$INFO[Skin.String(Plexbmc.7.Icon)]</value>
         <value condition="!IsEmpty(Window(Home).Property(plexbmc.7.art))">$INFO[Window(Home).Property(plexbmc.7.art)]</value>
-        <value>$VAR[Default.Art]</value>
+        <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
     </variable>
     <variable name="Plex.8.Icon.Management">
         <value condition="!IsEmpty(Skin.String(Plexbmc.8.Icon))">$INFO[Skin.String(Plexbmc.8.Icon)]</value>
         <value condition="!IsEmpty(Window(Home).Property(plexbmc.8.art))">$INFO[Window(Home).Property(plexbmc.8.art)]</value>
-        <value>$VAR[Default.Art]</value>
+        <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
     </variable>
     <variable name="Plex.9.Icon.Management">
         <value condition="!IsEmpty(Skin.String(Plexbmc.9.Icon))">$INFO[Skin.String(Plexbmc.9.Icon)]</value>
         <value condition="!IsEmpty(Window(Home).Property(plexbmc.9.art))">$INFO[Window(Home).Property(plexbmc.9.art)]</value>
-        <value>$VAR[Default.Art]</value>
+        <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
     </variable>
     <variable name="Plex.10.Icon.Management">
         <value condition="!IsEmpty(Skin.String(Plexbmc.10.Icon))">$INFO[Skin.String(Plexbmc.10.Icon)]</value>
         <value condition="!IsEmpty(Window(Home).Property(plexbmc.10.art))">$INFO[Window(Home).Property(plexbmc.10.art)]</value>
-        <value>$VAR[Default.Art]</value>
+        <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
     </variable>
     <variable name="Plex.Channels.Icon.Management">
         <value condition="!IsEmpty(Skin.String(Plexbmc.Channels.Icon))">$INFO[Skin.String(Plexbmc.Channels.Icon)]</value>
