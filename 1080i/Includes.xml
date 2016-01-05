@@ -727,6 +727,7 @@
             </control>
             <control type="image">
                 <visible>!Window.isvisible(DialogMuteBug.xml)</visible>
+                <visible>!Window.isvisible(DialogBusy.xml)</visible>
                 <include>Icon_Fade</include>
                 <posx>42</posx>
                 <posy>45</posy>
@@ -737,6 +738,7 @@
             </control>
             <control type="image">
                 <visible>Window.isvisible(DialogMuteBug.xml)</visible>
+                <visible>!Window.isvisible(DialogBusy.xml)</visible>
                 <include>Icon_Fade</include>
                 <posx>42</posx>
                 <posy>45</posy>
@@ -744,6 +746,18 @@
                 <height>100</height>
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture>common/header_logo_mute.png</texture>
+            </control>
+            <control type="multiimage">
+                <visible>Window.isvisible(DialogBusy.xml)</visible>
+                <include>Icon_Fade</include>
+                <posx>42</posx>
+                <posy>45</posy>
+                <width>101</width>
+                <height>101</height>
+                <imagepath>special://skin/extras/loading</imagepath>
+                <timeperimage>100</timeperimage>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <fadetime>0</fadetime>
             </control>
         </control>
         <control type="group">
