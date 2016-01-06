@@ -1329,6 +1329,7 @@
                             <onleft>9000</onleft>
                             <ondown>852802</ondown>
                             <onup>852805</onup>
+                            <onclick>Skin.Reset(Theme.Color.sweep)</onclick>
                             <onclick>Skin.Reset(Theme.Color.green)</onclick>
                             <onclick>Skin.Reset(Theme.Color.amber)</onclick>
                             <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
@@ -1336,7 +1337,7 @@
                             <onclick>Skin.Reset(Theme.Color.titanium)</onclick>
                             <onclick>Skin.Reset(Theme.Color.custom)</onclick>
                             <onclick>Skin.ToggleSetting(Theme.Color.green)</onclick>
-                            <selected>[Skin.HasSetting(Theme.Color.green)|![Skin.HasSetting(Theme.Color.amber)|Skin.HasSetting(Theme.Color.fuchsia)|Skin.HasSetting(Theme.Color.indigo)|Skin.HasSetting(Theme.Color.titanium)|Skin.HasSetting(Theme.Color.custom)]]</selected>
+                            <selected>[Skin.HasSetting(Theme.Color.green)|![Skin.HasSetting(Theme.Color.amber)|Skin.HasSetting(Theme.Color.fuchsia)|Skin.HasSetting(Theme.Color.indigo)|Skin.HasSetting(Theme.Color.titanium)|Skin.HasSetting(Theme.Color.custom)|Skin.HasSetting(Theme.Color.sweep)]]</selected>
                             <onclick>XBMC.ReloadSkin()</onclick>
                         </control>
                         <!-- amber -->
@@ -1352,6 +1353,7 @@
                             <onleft>9000</onleft>
                             <ondown>852803</ondown>
                             <onup>852801</onup>
+                            <onclick>Skin.Reset(Theme.Color.sweep)</onclick>
                             <onclick>Skin.Reset(Theme.Color.green)</onclick>
                             <onclick>Skin.Reset(Theme.Color.amber)</onclick>
                             <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
@@ -1375,6 +1377,7 @@
                             <onleft>9000</onleft>
                             <ondown>852804</ondown>
                             <onup>852802</onup>
+                            <onclick>Skin.Reset(Theme.Color.sweep)</onclick>
                             <onclick>Skin.Reset(Theme.Color.green)</onclick>
                             <onclick>Skin.Reset(Theme.Color.amber)</onclick>
                             <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
@@ -1398,6 +1401,7 @@
                             <onleft>9000</onleft>
                             <ondown>852805</ondown>
                             <onup>852803</onup>
+                            <onclick>Skin.Reset(Theme.Color.sweep)</onclick>
                             <onclick>Skin.Reset(Theme.Color.green)</onclick>
                             <onclick>Skin.Reset(Theme.Color.amber)</onclick>
                             <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
@@ -1421,6 +1425,7 @@
                             <onleft>9000</onleft>
                             <ondown>852806</ondown>
                             <onup>852804</onup>
+                            <onclick>Skin.Reset(Theme.Color.sweep)</onclick>
                             <onclick>Skin.Reset(Theme.Color.green)</onclick>
                             <onclick>Skin.Reset(Theme.Color.amber)</onclick>
                             <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
@@ -1431,6 +1436,7 @@
                             <selected>Skin.HasSetting(Theme.Color.titanium)</selected>
                             <onclick>XBMC.ReloadSkin()</onclick>
                         </control>
+                        <!--custom-->
                         <control type="radiobutton" id="852806">
                             <include>ButtonFocusAnimation</include>
                             <posx>530</posx>
@@ -1441,8 +1447,9 @@
                             <include>SkinSettingsButton</include>
                             <onright>852806</onright>
                             <onleft>9000</onleft>
-                            <ondown>852801</ondown>
+                            <ondown>852807</ondown>
                             <onup>852805</onup>
+                            <onclick>Skin.Reset(Theme.Color.sweep)</onclick>
                             <onclick>Skin.Reset(Theme.Color.green)</onclick>
                             <onclick>Skin.Reset(Theme.Color.amber)</onclick>
                             <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
@@ -1452,6 +1459,30 @@
                             <onclick>Skin.ToggleSetting(Theme.Color.custom)</onclick>
                             <selected>Skin.HasSetting(Theme.Color.custom)</selected>
                             <onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=PickedColor)</onclick>
+                            <onclick>XBMC.ReloadSkin()</onclick>
+                        </control>
+                        <!-- sweep -->
+                        <control type="radiobutton" id="852807">
+                            <include>ButtonFocusAnimation</include>
+                            <posx>530</posx>
+                            <posy>680</posy>
+                            <width>380</width>
+                            <label>$LOCALIZE[31047]</label>
+                            <radioposx>0</radioposx>
+                            <include>SkinSettingsButton</include>
+                            <onright>852807</onright>
+                            <onleft>9000</onleft>
+                            <ondown>852801</ondown>
+                            <onup>852806</onup>
+                            <onclick>Skin.Reset(Theme.Color.sweep)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.green)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.amber)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.indigo)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.titanium)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.custom)</onclick>
+                            <onclick>Skin.ToggleSetting(Theme.Color.sweep)</onclick>
+                            <selected>Skin.HasSetting(Theme.Color.sweep)</selected>
                             <onclick>XBMC.ReloadSkin()</onclick>
                         </control>
                         <control type="group">
@@ -1733,6 +1764,53 @@
                                 <font>InfoDetailsFont</font>
                                 <textcolor>FocusedColor</textcolor>
                                 <label>$LOCALIZE[31070]</label>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <visible>control.hasfocus(852807)</visible>
+                            <include>Icon_Fade</include>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>380</posy>
+                                <width>860</width>
+                                <height>484</height>
+                                <aspectratio>scale</aspectratio>
+                                <texture>special://skin/backgrounds/default/background.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>380</posy>
+                                <width>860</width>
+                                <height>242</height>
+                                <colordiffuse>$VAR[ColorSweep]</colordiffuse>
+                                <include>OverlayTransparency</include>
+                                <texture>common/overlay_top.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>622</posy>
+                                <width>860</width>
+                                <height>242</height>
+                                <colordiffuse>$VAR[ColorSweep]</colordiffuse>
+                                <include>OverlayTransparency</include>
+                                <texture>common/overlay_bottom.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>700</posy>
+                                <width>860</width>
+                                <height>170</height>
+                                <texture border="65">common/background_strip_horizontal_text.png</texture>
+                            </control>
+                            <control type="label">
+                                <posx>960</posx>
+                                <posy>700</posy>
+                                <width>860</width>
+                                <height>170</height>
+                                <align>center</align>
+                                <font>InfoDetailsFont</font>
+                                <textcolor>FocusedColor</textcolor>
+                                <label>$LOCALIZE[31047]</label>
                             </control>
                         </control>
                     </control>

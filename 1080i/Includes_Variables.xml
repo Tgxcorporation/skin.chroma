@@ -547,6 +547,7 @@
         <value condition="Container.Content(songs)">songs</value>
     </variable>
     <variable name="Picked.Theme.Color">
+        <value condition="Skin.HasSetting(Theme.Color.sweep)">$VAR[ColorSweep]</value>
         <value condition="Skin.HasSetting(Theme.Color.green)">GreenColor</value>
         <value condition="Skin.HasSetting(Theme.Color.amber)">AmberColor</value>
         <value condition="Skin.HasSetting(Theme.Color.fuchsia)">FuchsiaColor</value>
@@ -857,5 +858,67 @@
         <value condition="Skin.HasSetting(StartupDelay5)">00:05</value>
         <value condition="Skin.HasSetting(StartupDelay10)">00:10</value>
         <value>00:02</value>
+    </variable>
+    <variable name="ColorSweep">
+        <value condition="StringCompare(System.Time(ss),00)">ffb2f536</value>
+        <value condition="StringCompare(System.Time(ss),01)">ff9ff536</value>
+        <value condition="StringCompare(System.Time(ss),02)">ff8cf536</value>
+        <value condition="StringCompare(System.Time(ss),03)">ff79f536</value>
+        <value condition="StringCompare(System.Time(ss),04)">ff66f536</value>
+        <value condition="StringCompare(System.Time(ss),05)">ff52f536</value>
+        <value condition="StringCompare(System.Time(ss),06)">ff3ff536</value>
+        <value condition="StringCompare(System.Time(ss),07)">ff36f53f</value>
+        <value condition="StringCompare(System.Time(ss),08)">ff36f553</value>
+        <value condition="StringCompare(System.Time(ss),09)">ff36f566</value>
+        <value condition="StringCompare(System.Time(ss),10)">ff36f579</value>
+        <value condition="StringCompare(System.Time(ss),11)">ff36f58c</value>
+        <value condition="StringCompare(System.Time(ss),12)">ff36f59f</value>
+        <value condition="StringCompare(System.Time(ss),13)">ff36f5b2</value>
+        <value condition="StringCompare(System.Time(ss),14)">ff36f5c5</value>
+        <value condition="StringCompare(System.Time(ss),15)">ff36f5d8</value>
+        <value condition="StringCompare(System.Time(ss),16)">ff36f5eb</value>
+        <value condition="StringCompare(System.Time(ss),17)">ff36ebf5</value>
+        <value condition="StringCompare(System.Time(ss),18)">ff36d8f5</value>
+        <value condition="StringCompare(System.Time(ss),19)">ff36c5f5</value>
+        <value condition="StringCompare(System.Time(ss),20)">ff36b2f5</value>
+        <value condition="StringCompare(System.Time(ss),21)">ff369ff5</value>
+        <value condition="StringCompare(System.Time(ss),22)">ff368cf5</value>
+        <value condition="StringCompare(System.Time(ss),23)">ff3679f5</value>
+        <value condition="StringCompare(System.Time(ss),24)">ff3666f5</value>
+        <value condition="StringCompare(System.Time(ss),25)">ff3653f5</value>
+        <value condition="StringCompare(System.Time(ss),26)">ff3643f5</value>
+        <value condition="StringCompare(System.Time(ss),27)">ff3936f5</value>
+        <value condition="StringCompare(System.Time(ss),28)">ff4c36f5</value>
+        <value condition="StringCompare(System.Time(ss),29)">ff5f36f5</value>
+        <value condition="StringCompare(System.Time(ss),30)">ff7236f5</value>
+        <value condition="StringCompare(System.Time(ss),31)">ff8536f5</value>
+        <value condition="StringCompare(System.Time(ss),32)">ff9936f5</value>
+        <value condition="StringCompare(System.Time(ss),33)">ffac36f5</value>
+        <value condition="StringCompare(System.Time(ss),34)">ffbf36f5</value>
+        <value condition="StringCompare(System.Time(ss),35)">ffd236f6</value>
+        <value condition="StringCompare(System.Time(ss),36)">ffe536f5</value>
+        <value condition="StringCompare(System.Time(ss),37)">fff536f2</value>
+        <value condition="StringCompare(System.Time(ss),38)">fff536df</value>
+        <value condition="StringCompare(System.Time(ss),39)">fff536cb</value>
+        <value condition="StringCompare(System.Time(ss),40)">fff536b8</value>
+        <value condition="StringCompare(System.Time(ss),41)">fff536a5</value>
+        <value condition="StringCompare(System.Time(ss),42)">fff53692</value>
+        <value condition="StringCompare(System.Time(ss),43)">fff53680</value>
+        <value condition="StringCompare(System.Time(ss),44)">fff5366c</value>
+        <value condition="StringCompare(System.Time(ss),45)">fff53659</value>
+        <value condition="StringCompare(System.Time(ss),46)">fff53646</value>
+        <value condition="StringCompare(System.Time(ss),47)">fff53936</value>
+        <value condition="StringCompare(System.Time(ss),48)">fff54c36</value>
+        <value condition="StringCompare(System.Time(ss),49)">fff55f36</value>
+        <value condition="StringCompare(System.Time(ss),50)">fff57236</value>
+        <value condition="StringCompare(System.Time(ss),51)">fff58536</value>
+        <value condition="StringCompare(System.Time(ss),52)">fff59936</value>
+        <value condition="StringCompare(System.Time(ss),53)">fff5ac36</value>
+        <value condition="StringCompare(System.Time(ss),54)">fff5bf36</value>
+        <value condition="StringCompare(System.Time(ss),55)">fff5d236</value>
+        <value condition="StringCompare(System.Time(ss),56)">fff5e536</value>
+        <value condition="StringCompare(System.Time(ss),57)">fff2f536</value>
+        <value condition="StringCompare(System.Time(ss),58)">ffdff536</value>
+        <value condition="StringCompare(System.Time(ss),59)">ffcbf536</value>
     </variable>
 </includes>
