@@ -12,17 +12,17 @@
             <texture>special://skin/backgrounds/default/background.png</texture>
         </control>
         <include>OverlayFull</include>
-        <control type="label">
+        <control type="multiimage">
             <visible>!Container(10001).OnScrollPrevious + !Container(10001).OnScrollNext</visible>
             <include>Icon_Fade</include>
-            <posx>0</posx>
-            <posy>0</posy>
-            <height>1080</height>
-            <width>1920</width>
-            <align>center</align>
-            <font>FacadeListMainFont</font>
-            <include>TextColor_MainColor</include>
-            <label>$LOCALIZE[13413]...</label>
+            <posx>910</posx>
+            <posy>490</posy>
+            <width>101</width>
+            <height>101</height>
+            <imagepath>special://skin/extras/loading</imagepath>
+            <timeperimage>60</timeperimage>
+            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+            <fadetime>0</fadetime>
         </control>
         <control type="list" id="10001">
             <left>0</left>
