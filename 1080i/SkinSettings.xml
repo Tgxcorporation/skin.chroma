@@ -1066,8 +1066,8 @@
                                 [Container(9004).HasFocus(2)+Skin.HasSetting(Movies.Background.EnableRandomFanart)]|
                                 [Container(9004).HasFocus(3)+Skin.HasSetting(TVShows.Background.EnableRandomFanart)]|
                                 [Container(9004).HasFocus(4)+Skin.HasSetting(Music.Background.EnableRandomFanart)]|
-                                [Container(9004).HasFocus(5)+Skin.HasSetting(Pictures.Background.EnableRandomFanart)]
-                                [Container(9004).HasFocus(13)+Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)]
+                                [Container(9004).HasFocus(5)+Skin.HasSetting(Pictures.Background.EnableRandomFanart)]|
+                                [Container(9004).HasFocus(13)+Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)]|
                                 [Container(9004).HasFocus(14)+Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)]
                                 ]</visible>
                             <include>ButtonFocusAnimation</include>
@@ -1098,8 +1098,8 @@
                                 [Container(9004).HasFocus(2)+Skin.HasSetting(Movies.Background.EnableRandomFanart)]|
                                 [Container(9004).HasFocus(3)+Skin.HasSetting(TVShows.Background.EnableRandomFanart)]|
                                 [Container(9004).HasFocus(4)+Skin.HasSetting(Music.Background.EnableRandomFanart)]|
-                                [Container(9004).HasFocus(5)+Skin.HasSetting(Pictures.Background.EnableRandomFanart)]
-                                [Container(9004).HasFocus(13)+Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)]
+                                [Container(9004).HasFocus(5)+Skin.HasSetting(Pictures.Background.EnableRandomFanart)]|
+                                [Container(9004).HasFocus(13)+Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)]|
                                 [Container(9004).HasFocus(14)+Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)]
                                 ]</visible>
                             <include>ButtonFocusAnimation</include>
@@ -1197,14 +1197,14 @@
                             <onclick condition="Container(9004).HasFocus(2)">Skin.Reset(Movies.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(3)">Skin.Reset(TVShows.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(4)">Skin.Reset(Music.Background)</onclick>
-                            <onclick condition="Container(9004).HasFocus(0)+Skin.HasSetting(Default.Background.EnableRandomFanart)">Skin.ToggleSetting(Default.Background.EnableRandomFanart)</onclick>
-                            <onclick condition="Container(9004).HasFocus(1)+Skin.HasSetting(Videos.Background.EnableRandomFanart)">Skin.ToggleSetting(Videos.Background.EnableRandomFanart)</onclick>
-                            <onclick condition="Container(9004).HasFocus(2)+Skin.HasSetting(Movies.Background.EnableRandomFanart)">Skin.ToggleSetting(Movies.Background.EnableRandomFanart)</onclick>
-                            <onclick condition="Container(9004).HasFocus(3)+Skin.HasSetting(TVShows.Background.EnableRandomFanart)">Skin.ToggleSetting(TVShows.Background.EnableRandomFanart)</onclick>
-                            <onclick condition="Container(9004).HasFocus(4)+Skin.HasSetting(Music.Background.EnableRandomFanart)">Skin.ToggleSetting(Music.Background.EnableRandomFanart)</onclick>
-                            <onclick condition="Container(9004).HasFocus(5)+Skin.HasSetting(Pictures.Background.EnableRandomFanart)">Skin.ToggleSetting(Pictures.Background.EnableRandomFanart)</onclick>
-                            <onclick condition="Container(9004).HasFocus(13)+Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)">Skin.ToggleSetting(MusicVideos.Background.EnableRandomFanart)</onclick>
-                            <onclick condition="Container(9004).HasFocus(14)+Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)">Skin.ToggleSetting(MusicVideos.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(0)+Skin.HasSetting(Default.Background.EnableRandomFanart)">Skin.Reset(Default.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(1)+Skin.HasSetting(Videos.Background.EnableRandomFanart)">Skin.Reset(Videos.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(2)+Skin.HasSetting(Movies.Background.EnableRandomFanart)">Skin.Reset(Movies.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(3)+Skin.HasSetting(TVShows.Background.EnableRandomFanart)">Skin.Reset(TVShows.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(4)+Skin.HasSetting(Music.Background.EnableRandomFanart)">Skin.Reset(Music.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(5)+Skin.HasSetting(Pictures.Background.EnableRandomFanart)">Skin.Reset(Pictures.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(13)+Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)">Skin.Reset(MusicVideos.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(14)+Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)">Skin.Reset(MusicVideos.Background.EnableRandomFanart)</onclick>
                             <onclick condition="Container(9004).HasFocus(5)">Skin.Reset(Pictures.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(6)">Skin.Reset(Favourites.Background)</onclick>
                             <!-- <onclick condition="Container(9004).HasFocus(7)">Skin.Reset(Weather.Background)</onclick> -->
