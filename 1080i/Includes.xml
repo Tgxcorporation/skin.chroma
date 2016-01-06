@@ -326,7 +326,7 @@
             <aligny>top</aligny>
             <font>WindowTitleFont</font>
             <include>TextColor_MainColor</include>
-            <label>$INFO[System.Time] - $INFO[System.Time(ss)]</label>
+            <label>$INFO[System.Time]</label>
         </control>
         <control type="label">
             <include>HeaderVisibleFadeEffect</include>
