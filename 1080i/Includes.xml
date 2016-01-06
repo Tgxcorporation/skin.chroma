@@ -742,7 +742,7 @@
                 <width>101</width>
                 <height>101</height>
                 <imagepath>special://skin/extras/loading</imagepath>
-                <timeperimage>100</timeperimage>
+                <timeperimage>60</timeperimage>
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <fadetime>0</fadetime>
             </control>
