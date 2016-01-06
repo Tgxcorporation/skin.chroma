@@ -301,6 +301,22 @@ msgctxt "#31070"
 msgid "Custom Color"
 msgstr ""
 
+msgctxt "#31071"
+msgid "Random Global Fanart"
+msgstr ""
+
+msgctxt "#31072"
+msgid "Random Picture Fanart"
+msgstr ""
+
+msgctxt "#31073"
+msgid "Random Clip Fanart"
+msgstr ""
+
+msgctxt "#31074"
+msgid "Random Concert Fanart"
+msgstr ""
+
 #empty strings from id 31071 to 31089
 #Viewtype
 
