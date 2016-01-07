@@ -17,6 +17,7 @@
                 <animation effect="slide" time="0" start="0,0" end="0,-500" condition="IntegerGreaterThan(Container(9009).NumItems,6)+!IntegerGreaterThan(Container(9009).NumItems,7)">conditional</animation>
                 <animation effect="slide" time="0" start="0,0" end="0,-550" condition="IntegerGreaterThan(Container(9009).NumItems,7)+!IntegerGreaterThan(Container(9009).NumItems,8)">conditional</animation>
                 <animation effect="slide" time="0" start="0,0" end="0,-600" condition="IntegerGreaterThan(Container(9009).NumItems,8)+!IntegerGreaterThan(Container(9009).NumItems,9)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,-650" condition="IntegerGreaterThan(Container(9009).NumItems,9)+!IntegerGreaterThan(Container(9009).NumItems,10)">conditional</animation>
                 <control type="image">
                     <posx>460</posx>
                     <posy>1080</posy>
