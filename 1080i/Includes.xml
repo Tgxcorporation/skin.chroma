@@ -1242,7 +1242,7 @@
                 <control type="group">
                     <posx>1490</posx>
                     <include name="DiscArt">
-                        <param name="visible" value="!IsEmpty(VideoPlayer.Cover)"/>
+                        <param name="visible" value="!IsEmpty(VideoPlayer.Cover)+!VideoPlayer.Content(LiveTV)"/>
                         <param name="x" value="126"/>
                         <param name="y" value="63"/>
                         <param name="width" value="253"/>
