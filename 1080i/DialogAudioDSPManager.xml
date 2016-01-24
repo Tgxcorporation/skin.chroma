@@ -250,7 +250,7 @@
                                 <posx>0</posx>
                                 <posy>0</posy>
                                 <height>100</height>
-                                <width>860</width>
+                                <width>670</width>
                                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                 <texture border="1">list/bg_facade_focus_2.png</texture>
                             </control>
@@ -258,7 +258,7 @@
                                 <posx>TextMargin</posx>
                                 <posy>6</posy>
                                 <height>50</height>
-                                <width>760</width>
+                                <width>570</width>
                                 <font>FacadeListMainFont</font>
                                 <scroll>true</scroll>
                                 <include>TextColor_MainColor</include>
@@ -268,7 +268,7 @@
                                 <posx>TextMargin</posx>
                                 <posy>44</posy>
                                 <height>50</height>
-                                <width>760</width>
+                                <width>570</width>
                                 <font>FacadeListSubFont</font>
                                 <scroll>true</scroll>
                                 <textcolor>AlternateColor</textcolor>
@@ -278,7 +278,7 @@
                     </focusedlayout>
                 </control>
                 <control type="scrollbar" id="60">
-                    <posx>810</posx>
+                    <posx>620</posx>
                     <posy>100</posy>
                     <height>700</height>
                     <include>VerticalScroller</include>
@@ -347,7 +347,7 @@
                                 <posx>0</posx>
                                 <posy>0</posy>
                                 <height>100</height>
-                                <width>860</width>
+                                <width>670</width>
                                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                 <texture border="1">list/bg_facade_focus_2.png</texture>
                             </control>
@@ -355,7 +355,7 @@
                                 <posx>TextMargin</posx>
                                 <posy>6</posy>
                                 <height>50</height>
-                                <width>760</width>
+                                <width>570</width>
                                 <font>FacadeListMainFont</font>
                                 <scroll>true</scroll>
                                 <include>TextColor_MainColor</include>
@@ -365,7 +365,7 @@
                                 <posx>TextMargin</posx>
                                 <posy>44</posy>
                                 <height>50</height>
-                                <width>760</width>
+                                <width>570</width>
                                 <font>FacadeListSubFont</font>
                                 <scroll>true</scroll>
                                 <textcolor>AlternateColor</textcolor>
@@ -375,7 +375,7 @@
                     </focusedlayout>
                 </control>
                 <control type="scrollbar" id="61">
-                    <posx>810</posx>
+                    <posx>620</posx>
                     <posy>100</posy>
                     <height>700</height>
                     <include>VerticalScroller</include>
