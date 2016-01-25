@@ -3,8 +3,7 @@
     <include name="CustomWidget">
         <control type="group">
             <animation effect="slide" tween="circle" time="150" start="0,0" end="0,1170" reversible="true" condition="Control.HasFocus($PARAM[id])+!Control.IsVisible(495678)">Conditional</animation>
-            <animation effect="slide" tween="circle" time="150" start="0,0" end="0,1030" reversible="true" condition="Control.HasFocus($PARAM[id])+Control.IsVisible(495678)">Conditional</animation>
-            <animation effect="slide" tween="circle" time="150" start="0,0" end="0,1030" reversible="true" condition="Control.HasFocus($PARAM[id])+Control.IsVisible(495678)">Conditional</animation>
+            <animation effect="slide" tween="circle" time="150" start="0,0" end="0,940" reversible="true" condition="Control.HasFocus($PARAM[id])+Control.IsVisible(495678)">Conditional</animation>
             <control type="group">
                 <visible>Control.IsVisible($PARAM[id])</visible>
                 <!--POSTERS-->
@@ -162,8 +161,7 @@
     <include name="Widget">
         <control type="group">
             <animation effect="slide" tween="circle" time="150" start="0,0" end="0,1170" reversible="true" condition="Control.HasFocus($PARAM[id])+!Control.IsVisible(495678)">Conditional</animation>
-            <animation effect="slide" tween="circle" time="150" start="0,0" end="0,1030" reversible="true" condition="Control.HasFocus($PARAM[id])+Control.IsVisible(495678)">Conditional</animation>
-            <animation effect="slide" tween="circle" time="150" start="0,0" end="0,1030" reversible="true" condition="Control.HasFocus($PARAM[id])+Control.IsVisible(495678)">Conditional</animation>
+            <animation effect="slide" tween="circle" time="150" start="0,0" end="0,940" reversible="true" condition="Control.HasFocus($PARAM[id])+Control.IsVisible(495678)">Conditional</animation>
             <control type="group">
                 <visible>Control.IsVisible($PARAM[id])</visible>
                 <!--SQUARES-->
