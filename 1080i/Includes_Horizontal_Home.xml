@@ -125,7 +125,7 @@
                     <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
                     <param name="id" value="700011"/>
                     <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType),movies)|[StringCompare(Container(300).ListItem.Property(widgetType),musicvideos)+StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                    <param name="labelTitle" value="$INFO[Container(700011).ListItem.Label]"/>
+                    <param name="labelTitle" value="$INFO[Container(700011).ListItem.TVShowTitle,, - ]$INFO[Container(700011).ListItem.Label]"/>
                     <param name="labelLeft" value="$INFO[Container(700011).ListItem.Duration,, $LOCALIZE[31297]]"/>
                     <param name="labelCenter" value="$INFO[Container(700011).ListItem.Year]$INFO[Container(700011).ListItem.MPAA,       ]$INFO[Container(700011).ListItem.Genre,       ]"/>
                     <param name="labelRight" value="$INFO[Container(700011).ListItem.Rating]"/>
@@ -138,7 +138,7 @@
                     <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
                     <param name="id" value="700012"/>
                     <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                    <param name="labelTitle" value="$INFO[Container(700012).ListItem.Label]"/>
+                    <param name="labelTitle" value="$INFO[Container(700012).ListItem.TVShowTitle,, - ]$INFO[Container(700012).ListItem.Label]"/>
                     <param name="labelLeft" value="$INFO[Container(700012).ListItem.Duration,, $LOCALIZE[31297]]"/>
                     <param name="labelCenter" value="$INFO[Container(700012).ListItem.Artist,,       ]$INFO[Container(700012).ListItem.Year]$INFO[Container(700012).ListItem.MPAA,       ]$INFO[Container(700012).ListItem.Genre,       ]"/>
                     <param name="labelRight" value="$INFO[Container(700012).ListItem.Rating]"/>
@@ -191,7 +191,7 @@
                     <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
                     <param name="id" value="700021"/>
                     <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.1),movies)|[StringCompare(Container(300).ListItem.Property(widgetType.1),musicvideos)+StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                    <param name="labelTitle" value="$INFO[Container(700021).ListItem.Label]"/>
+                    <param name="labelTitle" value="$INFO[Container(700021).ListItem.TVShowTitle,, - ]$INFO[Container(700021).ListItem.Label]"/>
                     <param name="labelLeft" value="$INFO[Container(700021).ListItem.Duration,, $LOCALIZE[31297]]"/>
                     <param name="labelCenter" value="$INFO[Container(700021).ListItem.Year]$INFO[Container(700021).ListItem.MPAA,       ]$INFO[Container(700021).ListItem.Genre,       ]"/>
                     <param name="labelRight" value="$INFO[Container(700021).ListItem.Rating]"/>
@@ -204,7 +204,7 @@
                     <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
                     <param name="id" value="700022"/>
                     <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.1),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.1),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                    <param name="labelTitle" value="$INFO[Container(700022).ListItem.Label]"/>
+                    <param name="labelTitle" value="$INFO[Container(700022).ListItem.TVShowTitle,, - ]$INFO[Container(700022).ListItem.Label]"/>
                     <param name="labelLeft" value="$INFO[Container(700022).ListItem.Duration,, $LOCALIZE[31297]]"/>
                     <param name="labelCenter" value="$INFO[Container(700022).ListItem.Artist,,       ]$INFO[Container(700022).ListItem.Year]$INFO[Container(700022).ListItem.MPAA,       ]$INFO[Container(700022).ListItem.Genre,       ]"/>
                     <param name="labelRight" value="$INFO[Container(700022).ListItem.Rating]"/>
@@ -257,7 +257,7 @@
                     <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
                     <param name="id" value="700031"/>
                     <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.2),movies)|[StringCompare(Container(300).ListItem.Property(widgetType.2),musicvideos)+StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                    <param name="labelTitle" value="$INFO[Container(700031).ListItem.Label]"/>
+                    <param name="labelTitle" value="$INFO[Container(700031).ListItem.TVShowTitle,, - ]$INFO[Container(700031).ListItem.Label]"/>
                     <param name="labelLeft" value="$INFO[Container(700031).ListItem.Duration,, $LOCALIZE[31297]]"/>
                     <param name="labelCenter" value="$INFO[Container(700031).ListItem.Year]$INFO[Container(700031).ListItem.MPAA,       ]$INFO[Container(700031).ListItem.Genre,       ]"/>
                     <param name="labelRight" value="$INFO[Container(700031).ListItem.Rating]"/>
@@ -270,7 +270,7 @@
                     <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
                     <param name="id" value="700032"/>
                     <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.2),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.2),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                    <param name="labelTitle" value="$INFO[Container(700032).ListItem.Label]"/>
+                    <param name="labelTitle" value="$INFO[Container(700032).ListItem.TVShowTitle,, - ]$INFO[Container(700032).ListItem.Label]"/>
                     <param name="labelLeft" value="$INFO[Container(700032).ListItem.Duration,, $LOCALIZE[31297]]"/>
                     <param name="labelCenter" value="$INFO[Container(700032).ListItem.Artist,,       ]$INFO[Container(700032).ListItem.Year]$INFO[Container(700032).ListItem.MPAA,       ]$INFO[Container(700032).ListItem.Genre,       ]"/>
                     <param name="labelRight" value="$INFO[Container(700032).ListItem.Rating]"/>
@@ -323,7 +323,7 @@
                     <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
                     <param name="id" value="700041"/>
                     <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.3),movies)|[StringCompare(Container(300).ListItem.Property(widgetType.3),musicvideos)+StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                    <param name="labelTitle" value="$INFO[Container(700041).ListItem.Label]"/>
+                    <param name="labelTitle" value="$INFO[Container(700041).ListItem.TVShowTitle,, - ]$INFO[Container(700041).ListItem.Label]"/>
                     <param name="labelLeft" value="$INFO[Container(700041).ListItem.Duration,, $LOCALIZE[31297]]"/>
                     <param name="labelCenter" value="$INFO[Container(700041).ListItem.Year]$INFO[Container(700041).ListItem.MPAA,       ]$INFO[Container(700041).ListItem.Genre,       ]"/>
                     <param name="labelRight" value="$INFO[Container(700041).ListItem.Rating]"/>
@@ -336,7 +336,7 @@
                     <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
                     <param name="id" value="700042"/>
                     <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.3),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.3),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                    <param name="labelTitle" value="$INFO[Container(700042).ListItem.Label]"/>
+                    <param name="labelTitle" value="$INFO[Container(700042).ListItem.TVShowTitle,, - ]$INFO[Container(700042).ListItem.Label]"/>
                     <param name="labelLeft" value="$INFO[Container(700042).ListItem.Duration,, $LOCALIZE[31297]]"/>
                     <param name="labelCenter" value="$INFO[Container(700042).ListItem.Artist,,       ]$INFO[Container(700042).ListItem.Year]$INFO[Container(700042).ListItem.MPAA,       ]$INFO[Container(700042).ListItem.Genre,       ]"/>
                     <param name="labelRight" value="$INFO[Container(700042).ListItem.Rating]"/>
@@ -389,7 +389,7 @@
                     <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
                     <param name="id" value="700051"/>
                     <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.4),movies)|[StringCompare(Container(300).ListItem.Property(widgetType.4),musicvideos)+StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                    <param name="labelTitle" value="$INFO[Container(700051).ListItem.Label]"/>
+                    <param name="labelTitle" value="$INFO[Container(700051).ListItem.TVShowTitle,, - ]$INFO[Container(700051).ListItem.Label]"/>
                     <param name="labelLeft" value="$INFO[Container(700051).ListItem.Duration,, $LOCALIZE[31297]]"/>
                     <param name="labelCenter" value="$INFO[Container(700051).ListItem.Year]$INFO[Container(700051).ListItem.MPAA,       ]$INFO[Container(700051).ListItem.Genre,       ]"/>
                     <param name="labelRight" value="$INFO[Container(700051).ListItem.Rating]"/>
@@ -402,7 +402,7 @@
                     <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
                     <param name="id" value="700052"/>
                     <param name="visibility" value="StringCompare(Container(300).ListItem.Property(widgetType.4),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.4),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                    <param name="labelTitle" value="$INFO[Container(700052).ListItem.Label]"/>
+                    <param name="labelTitle" value="$INFO[Container(700052).ListItem.TVShowTitle,, - ]$INFO[Container(700052).ListItem.Label]"/>
                     <param name="labelLeft" value="$INFO[Container(700052).ListItem.Duration,, $LOCALIZE[31297]]"/>
                     <param name="labelCenter" value="$INFO[Container(700052).ListItem.Artist,,       ]$INFO[Container(700052).ListItem.Year]$INFO[Container(700052).ListItem.MPAA,       ]$INFO[Container(700052).ListItem.Genre,       ]"/>
                     <param name="labelRight" value="$INFO[Container(700052).ListItem.Rating]"/>
@@ -596,6 +596,31 @@
                                 <posy>430</posy>
                                 <width>2400</width>
                                 <height>90</height>
+                                <onup condition="control.isvisible(700011)+StringCompare(Container(701).CurrentItem,1)">700011</onup>
+                                <onup condition="control.isvisible(700012)+StringCompare(Container(701).CurrentItem,1)">700012</onup>
+                                <onup condition="control.isvisible(700013)+StringCompare(Container(701).CurrentItem,1)">700013</onup>
+                                <onup condition="control.isvisible(700014)+StringCompare(Container(701).CurrentItem,1)">700014</onup>
+                                <onup condition="control.isvisible(700015)+StringCompare(Container(701).CurrentItem,1)">700015</onup>
+                                <onup condition="control.isvisible(700021)+StringCompare(Container(701).CurrentItem,2)">700021</onup>
+                                <onup condition="control.isvisible(700022)+StringCompare(Container(701).CurrentItem,2)">700022</onup>
+                                <onup condition="control.isvisible(700023)+StringCompare(Container(701).CurrentItem,2)">700023</onup>
+                                <onup condition="control.isvisible(700024)+StringCompare(Container(701).CurrentItem,2)">700024</onup>
+                                <onup condition="control.isvisible(700025)+StringCompare(Container(701).CurrentItem,2)">700025</onup>
+                                <onup condition="control.isvisible(700031)+StringCompare(Container(701).CurrentItem,3)">700031</onup>
+                                <onup condition="control.isvisible(700032)+StringCompare(Container(701).CurrentItem,3)">700032</onup>
+                                <onup condition="control.isvisible(700033)+StringCompare(Container(701).CurrentItem,3)">700033</onup>
+                                <onup condition="control.isvisible(700034)+StringCompare(Container(701).CurrentItem,3)">700034</onup>
+                                <onup condition="control.isvisible(700035)+StringCompare(Container(701).CurrentItem,3)">700035</onup>
+                                <onup condition="control.isvisible(700041)+StringCompare(Container(701).CurrentItem,4)">700041</onup>
+                                <onup condition="control.isvisible(700042)+StringCompare(Container(701).CurrentItem,4)">700042</onup>
+                                <onup condition="control.isvisible(700043)+StringCompare(Container(701).CurrentItem,4)">700043</onup>
+                                <onup condition="control.isvisible(700044)+StringCompare(Container(701).CurrentItem,4)">700044</onup>
+                                <onup condition="control.isvisible(700045)+StringCompare(Container(701).CurrentItem,4)">700045</onup>
+                                <onup condition="control.isvisible(700051)+StringCompare(Container(701).CurrentItem,5)">700051</onup>
+                                <onup condition="control.isvisible(700052)+StringCompare(Container(701).CurrentItem,5)">700052</onup>
+                                <onup condition="control.isvisible(700053)+StringCompare(Container(701).CurrentItem,5)">700053</onup>
+                                <onup condition="control.isvisible(700054)+StringCompare(Container(701).CurrentItem,5)">700054</onup>
+                                <onup condition="control.isvisible(700055)+StringCompare(Container(701).CurrentItem,5)">700055</onup>
                                 <ondown>300</ondown>
                                 <focusposition>2</focusposition>
                                 <orientation>horizontal</orientation>
@@ -659,6 +684,7 @@
                                         <onclick condition="control.isvisible(312)">SetFocus(312)</onclick>
                                         <onclick condition="control.isvisible(412)">SetFocus(412)</onclick>
                                     </item>
+                                    <!--CUSTOM WIDGETS-->
                                     <item id="7001">
                                         <visible>!IsEmpty(Container(300).ListItem.Property(widgetName))</visible>
                                         <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
