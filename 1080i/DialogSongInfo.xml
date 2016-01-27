@@ -43,7 +43,7 @@
                     <posy>0</posy>
                     <height>700</height>
                     <include>DialogMenuButtonGroup</include>
-                    <ondown>9001</ondown>
+                    <ondown>9000</ondown>
                     <onright>9060</onright>
                     <control type="button" id="501">
                         <description>Info</description>
@@ -62,15 +62,9 @@
                         <width>480</width>
                         <label>-</label>
                     </control>
-                    <control type="button" id="14">
+                    <control type="button" id="7">
                         <include>DialogMenuButton</include>
-                        <label>$LOCALIZE[563] -</label>
-                        <onclick>DecreaseRating</onclick>
-                    </control>
-                    <control type="button" id="15">
-                        <include>DialogMenuButton</include>
-                        <label>$LOCALIZE[563] +</label>
-                        <onclick>IncreaseRating</onclick>
+                        <label>$LOCALIZE[38023]</label>
                     </control>
                     <control type="button" id="12">
                         <include>DialogMenuButton</include>
@@ -87,32 +81,6 @@
                     <param name="onright" value="49"/>
                     <param name="onleft" value="9000"/>
                 </include>
-                <control type="grouplist" id="9001">
-                    <posx>TextMargin</posx>
-                    <posy>700</posy>
-                    <width>480</width>
-                    <height>100</height>
-                    <itemgap>0</itemgap>
-                    <aligny>bottom</aligny>
-                    <align>center</align>
-                    <orientation>vertical</orientation>
-                    <onup>9000</onup>
-                    <ondown>9001</ondown>
-                    <onleft>9001</onleft>
-                    <onright>49</onright>
-                    <control type="button" id="11">
-                        <include>ButtonFocusAnimation</include>
-                        <label>$LOCALIZE[222]</label>
-                        <width>480</width>
-                        <include>DialogMenuButton</include>
-                    </control>
-                    <control type="button" id="10">
-                        <include>ButtonFocusAnimation</include>
-                        <label>$LOCALIZE[186]</label>
-                        <width>480</width>
-                        <include>DialogMenuButton</include>
-                    </control>
-                </control>
             </control>
             <control type="group">
                 <posx>530</posx>
@@ -308,7 +276,7 @@
                             <font>InfoRatingFont</font>
                             <include>TextColor_MainColor</include>
                             <scroll>false</scroll>
-                            <label fallback="0.0">$INFO[ListItem.Rating,,.0]</label>
+                            <label fallback="0.0">$INFO[ListItem.UserRating,,.0]</label>
                         </control>
                         <include name="ClearArtLogo">
                             <param name="x" value="0"/>
@@ -360,7 +328,7 @@
                         <include>VerticalScroller</include>
                         <onleft>9000</onleft>
                         <onright>5600</onright>
-                        <ondown>9001</ondown>
+                        <ondown>9000</ondown>
                     </control>
                 </control>
             </control>
