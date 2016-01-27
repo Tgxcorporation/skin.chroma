@@ -58,10 +58,6 @@
                         <label>$LOCALIZE[24021]</label>
                         <include>DialogMenuButton</include>
                     </control>
-                    <control type="button" id="11">
-                        <label>$LOCALIZE[24048]</label>
-                        <include>DialogMenuButton</include>
-                    </control>
                     <control type="button" id="6">
                         <label>$LOCALIZE[24022]</label>
                         <include>DialogMenuButton</include>
