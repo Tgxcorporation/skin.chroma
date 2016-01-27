@@ -596,6 +596,14 @@
                                 <posy>430</posy>
                                 <width>2400</width>
                                 <height>90</height>
+                                <onup condition="control.isvisible(212)+IntegerGreaterThan(Container(212).NumItems,0)+StringCompare(Container(701).ListItem.Label,$LOCALIZE[31961])">212</onup>
+                                <onup condition="control.isvisible(311)+IntegerGreaterThan(Container(311).NumItems,0)+StringCompare(Container(701).ListItem.Label,$LOCALIZE[31961])">311</onup>
+                                <onup condition="control.isvisible(411)+IntegerGreaterThan(Container(411).NumItems,0)+StringCompare(Container(701).ListItem.Label,$LOCALIZE[31961])">411</onup>
+                                <onup condition="control.isvisible(511)+IntegerGreaterThan(Container(511).NumItems,0)+StringCompare(Container(701).ListItem.Label,$LOCALIZE[31961])">511</onup>
+                                <onup condition="control.isvisible(900)+IntegerGreaterThan(Container(900).NumItems,0)+StringCompare(Container(701).ListItem.Label,$LOCALIZE[31961])">900</onup>
+                                <onup condition="control.isvisible(901)+IntegerGreaterThan(Container(901).NumItems,0)+StringCompare(Container(701).ListItem.Label,$LOCALIZE[31961])">901</onup>
+                                <onup condition="control.isvisible(312)+IntegerGreaterThan(Container(311).NumItems,0)+StringCompare(Container(701).ListItem.Label,$LOCALIZE[31966])">312</onup>
+                                <onup condition="control.isvisible(412)+IntegerGreaterThan(Container(411).NumItems,0)+StringCompare(Container(701).ListItem.Label,$LOCALIZE[31966])">412</onup>
                                 <onup condition="control.isvisible(700011)+StringCompare(Container(701).CurrentItem,1)">700011</onup>
                                 <onup condition="control.isvisible(700012)+StringCompare(Container(701).CurrentItem,1)">700012</onup>
                                 <onup condition="control.isvisible(700013)+StringCompare(Container(701).CurrentItem,1)">700013</onup>
