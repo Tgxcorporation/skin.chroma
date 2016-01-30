@@ -52,25 +52,30 @@
                     </control>
                     <control type="edit" id="11">
                         <width>1200</width>
+                        <textwidth>1100</textwidth>
                         <include>LeftMenuButton</include>
                     </control>
                     <control type="edit" id="16">
                         <width>1200</width>
+                        <textwidth>1100</textwidth>
                         <include>LeftMenuButton</include>
                     </control>
                     <control type="edit" id="13">
                         <label>$LOCALIZE[1013]</label>
                         <width>1200</width>
+                        <textwidth>1100</textwidth>
                         <include>LeftMenuButton</include>
                     </control>
                     <control type="edit" id="14">
                         <label>$LOCALIZE[1014]</label>
                         <width>1200</width>
+                        <textwidth>1100</textwidth>
                         <include>LeftMenuButton</include>
                     </control>
                     <control type="edit" id="15">
                         <label>$LOCALIZE[15052]</label>
                         <width>1200</width>
+                        <textwidth>1100</textwidth>
                         <include>LeftMenuButton</include>
                     </control>
                 </control>
