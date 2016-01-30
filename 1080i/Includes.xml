@@ -1550,9 +1550,8 @@
                 <include>TopBarButton</include>
                 <texturefocus>topbar/topbar_back_focus.png</texturefocus>
                 <texturenofocus>topbar/topbar_back_nofocus.png</texturenofocus>
-                <onclick>Back</onclick>
-                <onclick>Back</onclick>
-                <onclick>Back</onclick>
+                <onclick>Dialog.Close(VideoOSD,true)</onclick>
+                <onclick>fullscreen</onclick>
             </control>
             <control type="button" id="705">
                 <include>TopBarButton</include>
@@ -1758,9 +1757,8 @@
                 <include>TopBarButton</include>
                 <texturefocus>topbar/topbar_back_focus.png</texturefocus>
                 <texturenofocus>topbar/topbar_back_nofocus.png</texturenofocus>
-                <onclick>Back</onclick>
-                <onclick>Back</onclick>
-                <onclick>Back</onclick>
+                <onclick>Dialog.Close(MusicOSD,true)</onclick>
+                <onclick>fullscreen</onclick>
             </control>
             <control type="button" id="599">
                 <label>-</label>
