@@ -851,7 +851,7 @@
     </variable>
     <variable name="VideoPlayerCdArt">
         <value condition="!IsEmpty(Player.Art(discart))">$INFO[Player.Art(discart)]</value>
-        <value>$INFO[VideoPlayer.Cover]</value>
+        <value condition="!VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Cover]</value>
     </variable>
     <variable name="MusicPlayerCdArt">
         <value condition="!IsEmpty(Window(Home).Property(SkinHelper.Player.Music.DiscArt))">$INFO[Window(Home).Property(SkinHelper.Player.Music.DiscArt)]</value>
