@@ -20,15 +20,6 @@
                     <visible>[Player.Paused |Player.ShowInfo | Window.IsActive(MusicOSD)] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(script-cu-lrclyrics-main.xml)]</visible>
                     <include>OSDOpenClose</include>
                     <include>OSDFade</include>
-                    <control type="image">
-                        <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
-                        <posx>100</posx>
-                        <posy>260</posy>
-                        <width>380</width>
-                        <height>150</height>
-                        <aspectratio aligny="bottom" align="left">keep</aspectratio>
-                        <texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Music.ClearLogo)]</texture>
-                    </control>
                     <!--<include name="WindowClosingButton">-->
                         <!--<param name="id" value="9010"/>-->
                         <!--<param name="x" value="1860"/>-->
@@ -167,6 +158,24 @@
                             </control>
                          </control>
                     </control>
+                    <control type="image">
+                        <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
+                        <posx>100</posx>
+                        <posy>260</posy>
+                        <width>380</width>
+                        <height>150</height>
+                        <aspectratio aligny="bottom" align="left">keep</aspectratio>
+                        <texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Music.ClearLogo)]</texture>
+                    </control>
+                    <include name="StudioArt">
+                        <param name="x" value="1010"/>
+                        <param name="y" value="260"/>
+                        <param name="width" value="380"/>
+                        <param name="height" value="150"/>
+                        <param name="visible" value="true"/>
+                        <param name="align" value="center"/>
+                        <param name="aligny" value="bottom"/>
+                    </include>
                 </control>
             </control>
         </control>

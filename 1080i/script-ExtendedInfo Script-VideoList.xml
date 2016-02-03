@@ -18,15 +18,6 @@
             <animation effect="slide" tween="circle" easing="inout" time="150" start="0,0" end="-2200,0" condition="Control.HasFocus(505050)">conditional</animation>
             <include>NowPlayingSlideEffect</include>
             <include>OpenClose</include>
-            <include name="ClearArtLogo">
-                <param name="x" value="430r"/>
-                <param name="y" value="180"/>
-                <param name="width" value="380"/>
-                <param name="height" value="150"/>
-                <param name="visible" value="!Player.HasMedia"/>
-                <param name="align" value="center"/>
-                <param name="aligny" value="bottom"/>
-            </include>
             <control type="group">
                 <control type="image">
                     <posx>0</posx>
@@ -91,6 +82,24 @@
                 <onleft>500</onleft>
                 <onright>505050</onright>
             </control>
+            <include name="ClearArtLogo">
+                <param name="x" value="430r"/>
+                <param name="y" value="180"/>
+                <param name="width" value="380"/>
+                <param name="height" value="150"/>
+                <param name="visible" value="!Player.HasMedia"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="bottom"/>
+            </include>
+            <include name="StudioArt">
+                <param name="x" value="1010"/>
+                <param name="y" value="180"/>
+                <param name="width" value="380"/>
+                <param name="height" value="150"/>
+                <param name="visible" value="!Player.HasMedia"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="bottom"/>
+            </include>
             <control type="group">
                 <control type="group">
                     <posx>1010</posx>

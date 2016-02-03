@@ -1097,40 +1097,7 @@
                 ]</visible>
             <include>OSDFade</include>
             <include>OpenClose</include>
-            <control type="group">
-                <animation effect="slide" start="0,0" end="-63,0" time="0" condition="VideoPlayer.Content(movies)|VideoPlayer.Content(musicvideos)">Conditional</animation>
-                <!-- CLEAR ART / LOGO -->
-                <control type="image">
-                    <visible>Skin.HasSetting(EnableClearArt)</visible>
-                    <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableClearLogo)+
-                    [!IsEmpty(Player.Art(clearlogo))|!IsEmpty(Player.Art(tvshow.clearlogo))]+
-                    [!IsEmpty(Player.Art(clearart))|!IsEmpty(Player.Art(tvshow.clearart))]">
-                        <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
-                        <effect type="fade" start="100" end="0" time="500" delay="3000"/>
-                    </animation>
-                    <posx>430r</posx>
-                    <posy>260</posy>
-                    <width>380</width>
-                    <height>150</height>
-                    <aspectratio aligny="bottom">keep</aspectratio>
-                    <texture background="true">$VAR[VideoPlayerClearArt]</texture>
-                </control>
-                <control type="image">
-                    <visible>Skin.HasSetting(EnableClearLogo)</visible>
-                    <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableClearArt)+
-                    [!IsEmpty(Player.Art(clearlogo))|!IsEmpty(Player.Art(tvshow.clearlogo))]+
-                    [!IsEmpty(Player.Art(clearart))|!IsEmpty(Player.Art(tvshow.clearart))]">
-                        <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
-                        <effect type="fade" start="0" end="100" time="500" delay="3000"/>
-                    </animation>
-                    <posx>430r</posx>
-                    <posy>260</posy>
-                    <width>380</width>
-                    <height>150</height>
-                    <aspectratio aligny="bottom">keep</aspectratio>
-                    <texture background="true">$VAR[VideoPlayerClearLogo]</texture>
-                </control>
-            </control>
+
             <include name="WindowClosingButton">
                 <param name="id" value="9010"/>
                 <param name="x" value="1860"/>
@@ -1307,6 +1274,49 @@
                     </control>
                 </control>
             </control>
+            <control type="group">
+                <animation effect="slide" start="0,0" end="-63,0" time="0" condition="VideoPlayer.Content(movies)|VideoPlayer.Content(musicvideos)">Conditional</animation>
+                <!-- CLEAR ART / LOGO -->
+                <control type="image">
+                    <visible>Skin.HasSetting(EnableClearArt)</visible>
+                    <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableClearLogo)+
+                    [!IsEmpty(Player.Art(clearlogo))|!IsEmpty(Player.Art(tvshow.clearlogo))]+
+                    [!IsEmpty(Player.Art(clearart))|!IsEmpty(Player.Art(tvshow.clearart))]">
+                        <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
+                        <effect type="fade" start="100" end="0" time="500" delay="3000"/>
+                    </animation>
+                    <posx>430r</posx>
+                    <posy>260</posy>
+                    <width>380</width>
+                    <height>150</height>
+                    <aspectratio aligny="bottom">keep</aspectratio>
+                    <texture background="true">$VAR[VideoPlayerClearArt]</texture>
+                </control>
+                <control type="image">
+                    <visible>Skin.HasSetting(EnableClearLogo)</visible>
+                    <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableClearArt)+
+                    [!IsEmpty(Player.Art(clearlogo))|!IsEmpty(Player.Art(tvshow.clearlogo))]+
+                    [!IsEmpty(Player.Art(clearart))|!IsEmpty(Player.Art(tvshow.clearart))]">
+                        <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
+                        <effect type="fade" start="0" end="100" time="500" delay="3000"/>
+                    </animation>
+                    <posx>430r</posx>
+                    <posy>260</posy>
+                    <width>380</width>
+                    <height>150</height>
+                    <aspectratio aligny="bottom">keep</aspectratio>
+                    <texture background="true">$VAR[VideoPlayerClearLogo]</texture>
+                </control>
+            </control>
+            <include name="StudioArt">
+                <param name="x" value="1010"/>
+                <param name="y" value="260"/>
+                <param name="width" value="380"/>
+                <param name="height" value="150"/>
+                <param name="visible" value="true"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="bottom"/>
+            </include>
         </control>
     </include>
     <!--<include name="DialogTransparency">-->
@@ -1490,6 +1500,33 @@
                 <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">keep</aspectratio>
                 <include>PulseClearLogo</include>
                 <texture background="true">$VAR[DefaultClearLogo]</texture>
+            </control>
+        </control>
+    </include>
+    <include name="StudioArt">
+        <control type="group">
+            <visible>!Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableStudioArt)</visible>
+            <control type="image">
+                <animation effect="slide" start="0,0" end="1,1" time="0" reversible="false" condition="true">Conditional</animation>
+                <visible>$PARAM[visible]</visible>
+                <include>Icon_Fade</include>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">keep</aspectratio>
+                <colordiffuse>ff000000</colordiffuse>
+                <texture background="true">$VAR[DefaultStudioArt]</texture>
+            </control>
+            <control type="image">
+                <visible>$PARAM[visible]</visible>
+                <include>Icon_Fade</include>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">keep</aspectratio>
+                <texture background="true">$VAR[DefaultStudioArt]</texture>
             </control>
         </control>
     </include>

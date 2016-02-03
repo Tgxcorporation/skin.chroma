@@ -268,15 +268,6 @@
         <control type="group">
             <visible>Control.IsVisible(50)</visible>
             <include>Facade_Fade</include>
-            <include name="ClearArtLogo">
-                <param name="x" value="430r"/>
-                <param name="y" value="180"/>
-                <param name="width" value="380"/>
-                <param name="height" value="150"/>
-                <param name="visible" value="!Player.HasMedia"/>
-                <param name="align" value="center"/>
-                <param name="aligny" value="bottom"/>
-            </include>
             <control type="group">
                 <control type="image">
                     <posx>0</posx>
@@ -329,12 +320,6 @@
                 <onleft>50</onleft>
                 <onright>505050</onright>
             </control>
-        </control>
-    </include>
-    <include name="View_50_BigList_Extras">
-        <control type="group">
-            <visible>Control.IsVisible(51)</visible>
-            <include>Facade_Fade</include>
             <include name="ClearArtLogo">
                 <param name="x" value="430r"/>
                 <param name="y" value="180"/>
@@ -344,6 +329,21 @@
                 <param name="align" value="center"/>
                 <param name="aligny" value="bottom"/>
             </include>
+            <include name="StudioArt">
+                <param name="x" value="1010"/>
+                <param name="y" value="180"/>
+                <param name="width" value="380"/>
+                <param name="height" value="150"/>
+                <param name="visible" value="!Player.HasMedia"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="bottom"/>
+            </include>
+        </control>
+    </include>
+    <include name="View_50_BigList_Extras">
+        <control type="group">
+            <visible>Control.IsVisible(51)</visible>
+            <include>Facade_Fade</include>
             <control type="group">
                 <control type="image">
                     <posx>0</posx>
@@ -396,6 +396,24 @@
                 <onleft>51</onleft>
                 <onright>60</onright>
             </control>
+            <include name="ClearArtLogo">
+                <param name="x" value="430r"/>
+                <param name="y" value="180"/>
+                <param name="width" value="380"/>
+                <param name="height" value="150"/>
+                <param name="visible" value="!Player.HasMedia"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="bottom"/>
+            </include>
+            <include name="StudioArt">
+                <param name="x" value="1010"/>
+                <param name="y" value="180"/>
+                <param name="width" value="380"/>
+                <param name="height" value="150"/>
+                <param name="visible" value="!Player.HasMedia"/>
+                <param name="align" value="center"/>
+                <param name="aligny" value="bottom"/>
+            </include>
         </control>
     </include>
     <include name="View_50_BigList_Custom_Addons">

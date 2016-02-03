@@ -75,6 +75,15 @@
                 <height>900</height>
                 <texture border="1">common/background_strip_horizontal_right.png</texture>
             </control>
+            <include name="StudioArt">
+                <param name="x" value="960r"/>
+                <param name="y" value="70"/>
+                <param name="width" value="380"/>
+                <param name="height" value="120"/>
+                <param name="visible" value="true"/>
+                <param name="align" value="right"/>
+                <param name="aligny" value="bottom"/>
+            </include>
             <!-- SIDE MENU -->
             <control type="group">
                 <posy>240</posy>

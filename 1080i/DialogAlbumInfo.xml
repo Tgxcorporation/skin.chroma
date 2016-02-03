@@ -434,6 +434,15 @@
                             <param name="aligny" value="top"/>
                             <param name="flipy" value="false"/>
                         </include>
+                        <include name="StudioArt">
+                            <param name="x" value="0"/>
+                            <param name="y" value="430"/>
+                            <param name="width" value="380"/>
+                            <param name="height" value="150"/>
+                            <param name="visible" value="true"/>
+                            <param name="align" value="center"/>
+                            <param name="aligny" value="center"/>
+                        </include>
                         <include name="ClearArtLogo">
                             <param name="x" value="0"/>
                             <param name="y" value="620"/>
@@ -620,6 +629,15 @@
                             <param name="aligny" value="top"/>
                             <param name="flipy" value="false"/>
                         </include>
+                        <include name="StudioArt">
+                            <param name="x" value="0"/>
+                            <param name="y" value="430"/>
+                            <param name="width" value="380"/>
+                            <param name="height" value="150"/>
+                            <param name="visible" value="true"/>
+                            <param name="align" value="center"/>
+                            <param name="aligny" value="center"/>
+                        </include>
                         <include name="ClearArtLogo">
                             <param name="x" value="0"/>
                             <param name="y" value="620"/>
@@ -761,6 +779,15 @@
                             <texture background="true">$INFO[Container(5041).Listitem.Icon]</texture>
                             <aspectratio aligny="top">keep</aspectratio>
                         </control>
+                        <include name="StudioArt">
+                            <param name="x" value="0"/>
+                            <param name="y" value="430"/>
+                            <param name="width" value="380"/>
+                            <param name="height" value="150"/>
+                            <param name="visible" value="true"/>
+                            <param name="align" value="center"/>
+                            <param name="aligny" value="center"/>
+                        </include>
                         <include name="ClearArtLogo">
                             <param name="x" value="0"/>
                             <param name="y" value="620"/>

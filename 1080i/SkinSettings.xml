@@ -568,6 +568,19 @@
                                 <onclick>Skin.ToggleSetting(EnableClearArt)</onclick>
                                 <!--<onclick>Skin.Reset(EnableClearLogo)</onclick>-->
                             </item>
+                            <item id="25">
+                                <visible>Skin.HasSetting(EnableStudioArt)</visible>
+                                <label>$LOCALIZE[31075]</label>
+                                <label2>$LOCALIZE[107]</label2>
+                                <onclick>Skin.ToggleSetting(EnableStudioArt)</onclick>
+                            </item>
+                            <item id="25">
+                                <visible>!Skin.HasSetting(EnableStudioArt)</visible>
+                                <label>$LOCALIZE[31075]</label>
+                                <label2>$LOCALIZE[106]</label2>
+                                <onclick>Skin.ToggleSetting(EnableStudioArt)</onclick>
+                                <!--<onclick>Skin.Reset(EnableClearLogo)</onclick>-->
+                            </item>
                             <!--<item id="91">-->
                             <!--<visible>!Skin.HasSetting(TVTunes.Enabled)</visible>-->
                             <!--<label>$LOCALIZE[31984]</label>-->

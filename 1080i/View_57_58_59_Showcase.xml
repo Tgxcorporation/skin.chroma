@@ -96,15 +96,6 @@
                     <visible>Control.hasfocus(505050)|Control.isvisible(54)</visible>
                     <control type="group">
                         <!--<visible>![StringCompare(ListItem.Label,..)]</visible>-->
-                        <include name="ClearArtLogo">
-                            <param name="x" value="0"/>
-                            <param name="y" value="742"/>
-                            <param name="width" value="1920"/>
-                            <param name="height" value="150"/>
-                            <param name="visible" value="true"/>
-                            <param name="align" value="center"/>
-                            <param name="aligny" value="bottom"/>
-                        </include>
                         <control type="image">
                             <posx>0</posx>
                             <posy>841</posy>
@@ -135,6 +126,15 @@
                             <param name="gfx" value="OSD/osd_progress.png"/>
                             <param name="border" value="1,1,1,1"/>
                             <param name="info" value="ListItem.PercentPlayed"/>
+                        </include>
+                        <include name="ClearArtLogo">
+                            <param name="x" value="0"/>
+                            <param name="y" value="742"/>
+                            <param name="width" value="1920"/>
+                            <param name="height" value="150"/>
+                            <param name="visible" value="true"/>
+                            <param name="align" value="center"/>
+                            <param name="aligny" value="bottom"/>
                         </include>
                         <include>InfoData</include>
                     </control>
@@ -227,18 +227,6 @@
                 <visible>Control.isvisible(59)|Control.isvisible(58)|Control.isvisible(57)</visible>
                 <control type="group">
                     <!--<visible>![StringCompare(ListItem.Label,..)]</visible>-->
-                    <control type="group">
-                        <visible>Control.isvisible(54)</visible>
-                        <include name="ClearArtLogo">
-                            <param name="x" value="0"/>
-                            <param name="y" value="742"/>
-                            <param name="width" value="1920"/>
-                            <param name="height" value="150"/>
-                            <param name="visible" value="true"/>
-                            <param name="align" value="center"/>
-                            <param name="aligny" value="bottom"/>
-                        </include>
-                    </control>
                     <control type="image">
                         <posx>0</posx>
                         <posy>836</posy>
@@ -270,6 +258,18 @@
                         <param name="border" value="1,1,1,1"/>
                         <param name="info" value="ListItem.PercentPlayed"/>
                     </include>
+                    <control type="group">
+                        <visible>Control.isvisible(54)</visible>
+                        <include name="ClearArtLogo">
+                            <param name="x" value="0"/>
+                            <param name="y" value="742"/>
+                            <param name="width" value="1920"/>
+                            <param name="height" value="150"/>
+                            <param name="visible" value="true"/>
+                            <param name="align" value="center"/>
+                            <param name="aligny" value="bottom"/>
+                        </include>
+                    </control>
                     <include>InfoData</include>
                 </control>
             </control>
@@ -279,15 +279,6 @@
         <control type="group">
             <visible>Control.IsVisible(59)</visible>
             <include>Facade_Fade</include>
-            <include name="ClearArtLogo">
-                <param name="x" value="430r"/>
-                <param name="y" value="252"/>
-                <param name="width" value="380"/>
-                <param name="height" value="150"/>
-                <param name="visible" value="true"/>
-                <param name="align" value="right"/>
-                <param name="aligny" value="bottom"/>
-            </include>
             <control type="image">
                 <posx>0</posx>
                 <posy>352</posy>
@@ -412,19 +403,28 @@
                 <onup>59</onup>
                 <ondown>9000</ondown>
             </control>
-        </control>
-        <control type="group">
-            <visible>Control.IsVisible(58)</visible>
-            <include>Facade_Fade</include>
             <include name="ClearArtLogo">
                 <param name="x" value="430r"/>
-                <param name="y" value="272"/>
+                <param name="y" value="252"/>
                 <param name="width" value="380"/>
                 <param name="height" value="150"/>
                 <param name="visible" value="true"/>
                 <param name="align" value="right"/>
                 <param name="aligny" value="bottom"/>
             </include>
+            <include name="StudioArt">
+                <param name="x" value="50"/>
+                <param name="y" value="252"/>
+                <param name="width" value="380"/>
+                <param name="height" value="150"/>
+                <param name="visible" value="true"/>
+                <param name="align" value="left"/>
+                <param name="aligny" value="bottom"/>
+            </include>
+        </control>
+        <control type="group">
+            <visible>Control.IsVisible(58)</visible>
+            <include>Facade_Fade</include>
             <control type="image">
                 <posx>0</posx>
                 <posy>372</posy>
@@ -549,19 +549,28 @@
                 <onup>58</onup>
                 <ondown>9000</ondown>
             </control>
-        </control>
-        <control type="group">
-            <visible>Control.IsVisible(57)</visible>
-            <include>Facade_Fade</include>
             <include name="ClearArtLogo">
                 <param name="x" value="430r"/>
-                <param name="y" value="362"/>
+                <param name="y" value="272"/>
                 <param name="width" value="380"/>
                 <param name="height" value="150"/>
                 <param name="visible" value="true"/>
                 <param name="align" value="right"/>
                 <param name="aligny" value="bottom"/>
             </include>
+            <include name="StudioArt">
+                <param name="x" value="50"/>
+                <param name="y" value="272"/>
+                <param name="width" value="380"/>
+                <param name="height" value="150"/>
+                <param name="visible" value="true"/>
+                <param name="align" value="left"/>
+                <param name="aligny" value="bottom"/>
+            </include>
+        </control>
+        <control type="group">
+            <visible>Control.IsVisible(57)</visible>
+            <include>Facade_Fade</include>
             <control type="image">
                 <posx>0</posx>
                 <posy>462</posy>
@@ -655,14 +664,6 @@
                 <texturenofocus>-</texturenofocus>
                 <onclick>Control.Move(57,1)</onclick>
             </control>
-            <control type="scrollbar" id="607">
-                <posx>0</posx>
-                <posy>891</posy>
-                <width>1920</width>
-                <include>HorizontalScroller</include>
-                <onup>57</onup>
-                <ondown>9000</ondown>
-            </control>
             <control type="button">
                 <posx>0</posx>
                 <posy>560</posy>
@@ -672,6 +673,32 @@
                 <texturenofocus>-</texturenofocus>
                 <onclick>Control.Move(57,-1)</onclick>
             </control>
+            <control type="scrollbar" id="607">
+                <posx>0</posx>
+                <posy>891</posy>
+                <width>1920</width>
+                <include>HorizontalScroller</include>
+                <onup>57</onup>
+                <ondown>9000</ondown>
+            </control>
+            <include name="ClearArtLogo">
+                <param name="x" value="430r"/>
+                <param name="y" value="362"/>
+                <param name="width" value="380"/>
+                <param name="height" value="150"/>
+                <param name="visible" value="true"/>
+                <param name="align" value="right"/>
+                <param name="aligny" value="bottom"/>
+            </include>
+            <include name="StudioArt">
+                <param name="x" value="50"/>
+                <param name="y" value="362"/>
+                <param name="width" value="380"/>
+                <param name="height" value="150"/>
+                <param name="visible" value="true"/>
+                <param name="align" value="left"/>
+                <param name="aligny" value="bottom"/>
+            </include>
         </control>
     </include>
     <include name="View_57_58_59_Showcase_PVR">
