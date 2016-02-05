@@ -313,7 +313,7 @@
             <align>center</align>
             <font>InfoTitleSubFont</font>
             <textcolor>AlternateColor</textcolor>
-            <label>$ADDON[script.skinshortcuts 32099] 4</label>
+            <label>$ADDON[script.skinshortcuts 32099] 5</label>
         </control>
         <control type="label">
             <posx>1622</posx>
