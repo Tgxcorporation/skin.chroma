@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="true">21</defaultcontrol>
     <controls>
-        <!--<include>DimBG</include>-->
+        <include condition="!Window.IsVisible(DialogKeyboard.xml)">DimBG</include>
         <control type="group">
             <include>DialogOpenClose</include>
             <posx>0</posx>
