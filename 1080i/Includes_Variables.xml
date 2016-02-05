@@ -854,7 +854,7 @@
     </variable>
     <variable name="MusicPlayerCdArt">
         <value condition="!IsEmpty(Window(Home).Property(SkinHelper.Player.Music.DiscArt))">$INFO[Window(Home).Property(SkinHelper.Player.Music.DiscArt)]</value>
-        <value>$INFO[MusicPlayer.Cover]</value>
+        <value>$INFO[Player.Art(thumb)]</value>
     </variable>
     <variable name="DefaultStudioArt">
         <value condition="Skin.HasSetting(EnableStudioArt) + [Window.IsActive(MusicVisualisation.xml)]">resource://resource.images.recordlabels.white/$INFO[MusicPlayer.Property(Album_Label)].png</value>
