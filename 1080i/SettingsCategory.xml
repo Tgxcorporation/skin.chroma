@@ -165,6 +165,10 @@
                     <font>InfoPlotFont</font>
                     <include>myautoscroll</include>
                 </control>
+                <control type="edit" id="12">
+                    <textwidth>1240</textwidth>
+                    <include>LeftMenuButton</include>
+                </control>
             </control>
         </control>
         <control type="label">
