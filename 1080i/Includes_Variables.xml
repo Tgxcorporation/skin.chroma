@@ -855,7 +855,7 @@
     </variable>
     <variable name="MusicPlayerCdArt">
         <value condition="!IsEmpty(Window(Home).Property(SkinHelper.Player.Music.DiscArt))">$INFO[Window(Home).Property(SkinHelper.Player.Music.DiscArt)]</value>
-        <value>$INFO[MusicPlayer.Cover]</value>
+        <value>$INFO[Player.Art(thumb)]</value>
     </variable>
     <variable name="DefaultClearArt">
         <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>

@@ -135,7 +135,7 @@
                         <control type="group">
                             <posx>1490</posx>
                             <include name="DiscArt">
-                                <param name="visible" value="!IsEmpty(MusicPlayer.Cover)"/>
+                                <param name="visible" value="!IsEmpty(Player.Art(thumb))"/>
                                 <param name="x" value="10"/>
                                 <param name="y" value="-180"/>
                                 <param name="width" value="360"/>
@@ -148,7 +148,7 @@
                                 <param name="flipyShadow" value="false"/>
                             </include>
                             <control type="image">
-                                <visible>IsEmpty(MusicPlayer.Cover)</visible>
+                                <visible>IsEmpty(Player.Art(thumb))</visible>
                                 <posx>0</posx>
                                 <posy>0</posy>
                                 <width>380</width>
@@ -163,7 +163,7 @@
                                 <width>380</width>
                                 <height>380</height>
                                 <aspectratio aligny="top">scale</aspectratio>
-                                <texture background="true">$INFO[MusicPlayer.Cover]</texture>
+                                <texture background="true">$INFO[Player.Art(thumb)]</texture>
                             </control>
                          </control>
                     </control>
