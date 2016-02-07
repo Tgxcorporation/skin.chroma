@@ -440,59 +440,204 @@
                         <include>SkinSettings_DefaultLayout</include>
                         <content>
                             <item id="29">
-                                <visible>Skin.HasSetting(OverlayTransparency50)</visible>
+                                <visible>Skin.HasSetting(OverlayTransparency00)</visible>
                                 <label>$LOCALIZE[13324]</label>
-                                <label2>50%</label2>
+                                <label2>0%</label2>
+                                <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency40)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency50)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency60)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency70)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency80)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency90)</onclick>
-                                <onclick>Skin.ToggleSetting(OverlayTransparency90)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency100)</onclick>
+                                <onclick>Skin.ToggleSetting(OverlayTransparency100)</onclick>
+                            </item>
+                            <item id="29">
+                                <visible>Skin.HasSetting(OverlayTransparency10)</visible>
+                                <label>$LOCALIZE[13324]</label>
+                                <label2>10%</label2>
+                                <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency40)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency50)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency60)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency70)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency80)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency100)</onclick>
+                                <onclick>Skin.ToggleSetting(OverlayTransparency00)</onclick>
+                            </item>
+                            <item id="29">
+                                <visible>Skin.HasSetting(OverlayTransparency20)</visible>
+                                <label>$LOCALIZE[13324]</label>
+                                <label2>20%</label2>
+                                <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency40)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency50)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency60)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency70)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency80)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency100)</onclick>
+                                <onclick>Skin.ToggleSetting(OverlayTransparency10)</onclick>
+                            </item>
+                            <item id="29">
+                                <visible>Skin.HasSetting(OverlayTransparency30)</visible>
+                                <label>$LOCALIZE[13324]</label>
+                                <label2>30%</label2>
+                                <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency40)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency50)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency60)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency70)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency80)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency100)</onclick>
+                                <onclick>Skin.ToggleSetting(OverlayTransparency20)</onclick>
+                            </item>
+                            <item id="29">
+                                <visible>Skin.HasSetting(OverlayTransparency40)</visible>
+                                <label>$LOCALIZE[13324]</label>
+                                <label2>40%</label2>
+                                <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency40)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency50)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency60)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency70)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency80)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency100)</onclick>
+                                <onclick>Skin.ToggleSetting(OverlayTransparency30)</onclick>
+                            </item>
+                            <item id="29">
+                                <visible>Skin.HasSetting(OverlayTransparency50)</visible>
+                                <label>$LOCALIZE[13324]</label>
+                                <label2>50%</label2>
+                                <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency40)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency50)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency60)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency70)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency80)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency100)</onclick>
+                                <onclick>Skin.ToggleSetting(OverlayTransparency40)</onclick>
                             </item>
                             <item id="29">
                                 <visible>Skin.HasSetting(OverlayTransparency60)</visible>
                                 <label>$LOCALIZE[13324]</label>
                                 <label2>60%</label2>
+                                <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency40)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency50)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency60)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency70)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency80)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency100)</onclick>
                                 <onclick>Skin.ToggleSetting(OverlayTransparency50)</onclick>
                             </item>
                             <item id="29">
                                 <visible>Skin.HasSetting(OverlayTransparency70)</visible>
                                 <label>$LOCALIZE[13324]</label>
                                 <label2>70%</label2>
+                                <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency40)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency50)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency60)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency70)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency80)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency100)</onclick>
                                 <onclick>Skin.ToggleSetting(OverlayTransparency60)</onclick>
                             </item>
                             <item id="29">
                                 <visible>Skin.HasSetting(OverlayTransparency80)</visible>
                                 <label>$LOCALIZE[13324]</label>
                                 <label2>80%</label2>
+                                <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency40)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency50)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency60)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency70)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency80)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency100)</onclick>
                                 <onclick>Skin.ToggleSetting(OverlayTransparency70)</onclick>
                             </item>
                             <item id="29">
-                                <visible>Skin.HasSetting(OverlayTransparency90)|[!Skin.HasSetting(OverlayTransparency50)+!Skin.HasSetting(OverlayTransparency60)+!Skin.HasSetting(OverlayTransparency70)+!Skin.HasSetting(OverlayTransparency80)+!Skin.HasSetting(OverlayTransparency90)]</visible>
+                                <visible>Skin.HasSetting(OverlayTransparency90)</visible>
                                 <label>$LOCALIZE[13324]</label>
                                 <label2>90%</label2>
+                                <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency40)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency50)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency60)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency70)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency80)</onclick>
                                 <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency100)</onclick>
                                 <onclick>Skin.ToggleSetting(OverlayTransparency80)</onclick>
+                            </item>
+                            <item id="29">
+                                <visible>Skin.HasSetting(OverlayTransparency100)|
+                                    [
+                                    !Skin.HasSetting(OverlayTransparency00)+
+                                    !Skin.HasSetting(OverlayTransparency10)+
+                                    !Skin.HasSetting(OverlayTransparency20)+
+                                    !Skin.HasSetting(OverlayTransparency30)+
+                                    !Skin.HasSetting(OverlayTransparency40)+
+                                    !Skin.HasSetting(OverlayTransparency50)+
+                                    !Skin.HasSetting(OverlayTransparency60)+
+                                    !Skin.HasSetting(OverlayTransparency70)+
+                                    !Skin.HasSetting(OverlayTransparency80)+
+                                    !Skin.HasSetting(OverlayTransparency90)+
+                                    !Skin.HasSetting(OverlayTransparency100)
+                                    ]</visible>
+                                <label>$LOCALIZE[13324]</label>
+                                <label2>100%</label2>
+                                <onclick>Skin.Reset(OverlayTransparency00)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency10)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency20)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency30)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency40)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency50)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency60)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency70)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency80)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency90)</onclick>
+                                <onclick>Skin.Reset(OverlayTransparency100)</onclick>
+                                <onclick>Skin.ToggleSetting(OverlayTransparency90)</onclick>
                             </item>
                             <item id="16">
                                 <visible>Skin.HasSetting(KenBurnsEffect)</visible>
