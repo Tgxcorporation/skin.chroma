@@ -45,11 +45,11 @@
                 <posx>TextMargin</posx>
                 <posy>970</posy>
                 <height>40</height>
-                <width>150</width>
+                <width>250</width>
                 <font>InfoDetailsFont</font>
                 <include>TextColor_MainColor</include>
                 <scroll>false</scroll>
-                <label>$INFO[ListItem.Duration,, $LOCALIZE[31297]]</label>
+                <label>$VAR[Fanart_Details2]</label>
             </control>
         </control>
         <control type="label" id="45742">
