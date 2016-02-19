@@ -4,11 +4,7 @@
         <control type="group">
             <animation effect="slide" tween="circle" time="200" start="0,0" end="0,510" reversible="true" condition="!control.isvisible(495678).isvisible+control.isvisible(378433)">Conditional</animation>
             <animation effect="slide" tween="circle" time="200" start="0,0" end="0,650" reversible="true" condition="control.isvisible(495678).isvisible+control.isvisible(378433)">Conditional</animation>
-            <control type="group" id="700">
-                <include>Icon_Fade</include>
-                <posy>-1730</posy>
-                <include>WidgetsCollection</include>
-            </control>
+            <include>WidgetsCollection</include>
             <control type="group">
                 <include>OpenClose</include>
                 <include>NowPlayingSlideEffect</include>
