@@ -293,12 +293,12 @@
                                 <label>$LOCALIZE[31038]</label>
                                 <onclick>RunScript(script.skinshortcuts,type=resetall&amp;warning=false)</onclick>
                                 <onclick>Skin.ResetSettings</onclick>
-                                <onclick>XBMC.ReloadSkin()</onclick>
+                                <onclick>ReloadSkin()</onclick>
                             </item>
                             <item id="126">
                                 <label>$LOCALIZE[31944]</label>
                                 <onclick>RunScript(script.skinshortcuts,type=resetall&amp;warning=false)</onclick>
-                                <onclick>XBMC.ReloadSkin()</onclick>
+                                <onclick>ReloadSkin()</onclick>
                             </item>
                             <item id="127">
                                 <label>$ADDON[script.skin.helper.service 32028]</label>
@@ -1540,7 +1540,7 @@
                             <onclick>Skin.Reset(Theme.Color.custom)</onclick>
                             <onclick>Skin.ToggleSetting(Theme.Color.green)</onclick>
                             <selected>[Skin.HasSetting(Theme.Color.green)|![Skin.HasSetting(Theme.Color.amber)|Skin.HasSetting(Theme.Color.fuchsia)|Skin.HasSetting(Theme.Color.indigo)|Skin.HasSetting(Theme.Color.titanium)|Skin.HasSetting(Theme.Color.custom)|Skin.HasSetting(Theme.Color.sweep)]]</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                         <!-- amber -->
                         <control type="radiobutton" id="852802">
@@ -1564,7 +1564,7 @@
                             <onclick>Skin.Reset(Theme.Color.custom)</onclick>
                             <onclick>Skin.ToggleSetting(Theme.Color.amber)</onclick>
                             <selected>Skin.HasSetting(Theme.Color.amber)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                         <!-- fuchsia -->
                         <control type="radiobutton" id="852803">
@@ -1588,7 +1588,7 @@
                             <onclick>Skin.Reset(Theme.Color.custom)</onclick>
                             <onclick>Skin.ToggleSetting(Theme.Color.fuchsia)</onclick>
                             <selected>Skin.HasSetting(Theme.Color.fuchsia)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                         <!-- indigo -->
                         <control type="radiobutton" id="852804">
@@ -1612,7 +1612,7 @@
                             <onclick>Skin.Reset(Theme.Color.custom)</onclick>
                             <onclick>Skin.ToggleSetting(Theme.Color.indigo)</onclick>
                             <selected>Skin.HasSetting(Theme.Color.indigo)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                         <!-- titanium -->
                         <control type="radiobutton" id="852805">
@@ -1636,7 +1636,7 @@
                             <onclick>Skin.Reset(Theme.Color.custom)</onclick>
                             <onclick>Skin.ToggleSetting(Theme.Color.titanium)</onclick>
                             <selected>Skin.HasSetting(Theme.Color.titanium)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                         <!--custom-->
                         <control type="radiobutton" id="852806">
@@ -1661,7 +1661,7 @@
                             <onclick>Skin.ToggleSetting(Theme.Color.custom)</onclick>
                             <selected>Skin.HasSetting(Theme.Color.custom)</selected>
                             <onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=PickedColor)</onclick>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                         <!-- sweep -->
                         <control type="radiobutton" id="852807">
@@ -1685,7 +1685,7 @@
                             <onclick>Skin.Reset(Theme.Color.custom)</onclick>
                             <onclick>Skin.ToggleSetting(Theme.Color.sweep)</onclick>
                             <selected>Skin.HasSetting(Theme.Color.sweep)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                         <control type="group">
                             <visible>control.hasfocus(852801)</visible>
