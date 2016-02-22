@@ -187,7 +187,7 @@
         <!-- SIDE MENU -->
         <control type="group">
             <visible>!Skin.HasSetting(EnableKioskMode)</visible>
-            <visible>!Window.IsVisible(script-ExtendedInfo Script-T9Search.xml)</visible>
+            <visible>!Window.IsVisible(script-script.module.t9.search-Main.xml)</visible>
             <include>LeftMenu</include>
             <include>Icon_Fade</include>
             <control type="group">
