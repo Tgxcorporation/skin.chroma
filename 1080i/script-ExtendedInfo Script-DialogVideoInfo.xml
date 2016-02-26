@@ -223,14 +223,6 @@
                         <onclick>XBMC.RunScript(script.videoextras,display,"$INFO[Window.Property(FilenameAndPath)]")</onclick>
                         <onright>9009</onright>
                     </control>
-                    <control type="togglebutton" id="101">
-                        <visible>System.HasAddon(script.tvtunes)</visible>
-                        <description>Tv Tunes</description>
-                        <include>DialogMenuButton</include>
-                        <label>$LOCALIZE[31956]</label>
-                        <onclick>XBMC.RunScript(script.tvtunes,mode=solo)</onclick>
-                        <onright>9009</onright>
-                    </control>
                 </control>
                 <include name="DialogMenuScroller">
                     <param name="y" value="0"/>
