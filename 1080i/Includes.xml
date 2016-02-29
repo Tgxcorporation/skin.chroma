@@ -1413,7 +1413,7 @@
                 <posy>$PARAM[y]</posy>
                 <width>$PARAM[width]</width>
                 <height>$PARAM[height]</height>
-                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]" fallback="common/TransparentDot.png">$PARAM[aspectratio]</aspectratio>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">$PARAM[aspectratio]</aspectratio>
                 <texture background="true">$VAR[Banners]</texture>
             </control>
         </control>
@@ -1460,7 +1460,6 @@
             <posy>$PARAM[y]</posy>
             <width>$PARAM[width]</width>
             <height>$PARAM[height]</height>
-            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture>OverlayRecording.png</texture>
             <aspectratio>keep</aspectratio>
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
@@ -1472,7 +1471,6 @@
             <posy>$PARAM[y]</posy>
             <width>$PARAM[width]</width>
             <height>$PARAM[height]</height>
-            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
             <texture>OverlayTimer.png</texture>
             <aspectratio>keep</aspectratio>
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>

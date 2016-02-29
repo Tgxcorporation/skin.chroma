@@ -73,7 +73,6 @@
                     </control>
                     <control type="label">
                         <include>TextColor_MainColor</include>
-                        <onright>3110</onright>
                         <label>$INFO[Window.Property(colorname)]</label>
                         <include>DialogMenuButton</include>
                     </control>
