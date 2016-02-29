@@ -22,7 +22,6 @@ Added options to reset custom weather fanart and icons.
 Added Color Sweep option.
 Removed support for script.grab.fanart. Added option to enable random background for default art, pictures, musicvideos.
 Improved Home Widgets navigation.
-Added support for Studio Logos and Music Labels Logos.
 Added more levels of transparency for background overlay.
 Enhanced Cover Wrap / Fanart views.
 Updated languages from Transifex.
