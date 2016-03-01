@@ -561,11 +561,6 @@
         <value condition="!IsEmpty(Container(211).ListItem.Property(Background))">$INFO[Container(211).ListItem.Property(Background)]</value>
         <value>$LOCALIZE[13278]</value>
     </variable>
-    <variable name="ContentType">
-        <value condition="Container.Content(artists)">artists</value>
-        <value condition="Container.Content(albums)">albums</value>
-        <value condition="Container.Content(songs)">songs</value>
-    </variable>
     <variable name="Picked.Theme.Color">
         <value condition="Skin.HasSetting(Theme.Color.sweep)">$VAR[ColorSweep]</value>
         <value condition="Skin.HasSetting(Theme.Color.green)">GreenColor</value>
