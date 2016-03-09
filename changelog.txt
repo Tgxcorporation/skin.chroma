@@ -1,4 +1,5 @@
 1.5.0
+Added update library command in music screen.
 Improved Media Info Logos management.
 Added backup and restore of skin settings.
 Added skin version info.
