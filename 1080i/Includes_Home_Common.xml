@@ -3,7 +3,7 @@
     <include name="CustomWidget">
         <control type="group">
             <animation effect="slide" tween="circle" time="150" start="0,0" end="0,1170" reversible="true" condition="Control.HasFocus($PARAM[id])+!Control.IsVisible(495678)">Conditional</animation>
-            <animation effect="slide" tween="circle" time="150" start="0,0" end="0,940" reversible="true" condition="Control.HasFocus($PARAM[id])+Control.IsVisible(495678)">Conditional</animation>
+            <animation effect="slide" tween="circle" time="150" start="0,0" end="0,1030" reversible="true" condition="Control.HasFocus($PARAM[id])+Control.IsVisible(495678)">Conditional</animation>
             <control type="group">
                 <visible>Control.IsVisible($PARAM[id])</visible>
                 <!--POSTERS-->
@@ -161,12 +161,12 @@
     <include name="Widget">
         <control type="group">
             <animation effect="slide" tween="circle" time="150" start="0,0" end="0,1170" reversible="true" condition="Control.HasFocus($PARAM[id])+!Control.IsVisible(495678)">Conditional</animation>
-            <animation effect="slide" tween="circle" time="150" start="0,0" end="0,940" reversible="true" condition="Control.HasFocus($PARAM[id])+Control.IsVisible(495678)">Conditional</animation>
+            <animation effect="slide" tween="circle" time="150" start="0,0" end="0,1030" reversible="true" condition="Control.HasFocus($PARAM[id])+Control.IsVisible(495678)">Conditional</animation>
             <control type="group">
                 <visible>Control.IsVisible($PARAM[id])</visible>
                 <!--SQUARES-->
                 <control type="image">
-                    <visible>![Control.IsVisible(311)|Control.IsVisible(312)|Control.IsVisible(313)|Control.IsVisible(314)|Control.IsVisible(315)|Control.IsVisible(316)|Control.IsVisible(317)|Control.IsVisible(318)|Control.IsVisible(411)|Control.IsVisible(412)|Control.IsVisible(413)|Control.IsVisible(417)]</visible>
+                    <visible>[Control.IsVisible(212)|Control.IsVisible(511)|Control.IsVisible(901)|Control.IsVisible(900)]</visible>
                     <posx>0</posx>
                     <posy>372</posy>
                     <width>1920</width>
@@ -175,37 +175,11 @@
                 </control>
                 <!--POSTERS-->
                 <control type="image">
-                    <visible>[Skin.HasSetting(plexbmc)+
-                        [Control.IsVisible(311)
-                        |Control.IsVisible(312)
-                        |Control.IsVisible(313)
-                        |Control.IsVisible(314)
-                        |Control.IsVisible(315)
-                        |Control.IsVisible(316)
-                        |Control.IsVisible(411)
-                        |Control.IsVisible(412)
-                        |Control.IsVisible(413)]]
-                        |
-                        [!Skin.HasSetting(plexbmc)+
-                        [Control.IsVisible(311)
-                        |Control.IsVisible(312)
-                        |Control.IsVisible(313)
-                        |Control.IsVisible(314)
-                        |Control.IsVisible(315)
-                        |Control.IsVisible(316)]]</visible>
+                    <visible>[Control.IsVisible(311)|Control.IsVisible(312)|Control.IsVisible(411)|Control.IsVisible(412)]</visible>
                     <posx>0</posx>
                     <posy>352</posy>
                     <width>1920</width>
                     <height>726</height>
-                    <texture border="51">common/background_strip_horizontal.png</texture>
-                </control>
-                <!--EPISODES-->
-                <control type="image">
-                    <visible>[!Skin.HasSetting(plexbmc)+[Control.IsVisible(411)|Control.IsVisible(412)|Control.IsVisible(413)|Control.IsVisible(417)]]</visible>
-                    <posx>0</posx>
-                    <posy>462</posy>
-                    <width>2130</width>
-                    <height>616</height>
                     <texture border="51">common/background_strip_horizontal.png</texture>
                 </control>
                 <control type="image">
