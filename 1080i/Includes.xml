@@ -377,13 +377,7 @@
             </control>
             <control type="group">
                 <visible>Player.HasMedia+!Window.IsActive(Startup.xml)</visible>
-                <visible>![control.hasfocus(212)|control.hasfocus(311)|control.hasfocus(314)|
-                    control.hasfocus(411)|control.hasfocus(511)|control.hasfocus(514)|
-                    control.hasfocus(900)|control.hasfocus(901)|control.hasfocus(312)|
-                    control.hasfocus(315)|control.hasfocus(412)|control.hasfocus(512)|
-                    control.hasfocus(515)|control.hasfocus(313)|control.hasfocus(316)|
-                    control.hasfocus(413)|control.hasfocus(513)|control.hasfocus(513)|
-                    control.hasfocus(111)|control.hasfocus(211)]</visible>
+                <visible>!Control.IsVisible(378433)</visible>
                 <include>NowPlayingVisibleFadeEffect</include>
                 <include>SeekBar</include>
             </control>

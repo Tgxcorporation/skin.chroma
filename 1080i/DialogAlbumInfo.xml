@@ -186,21 +186,30 @@
                 </control>
                 <!--BIOGRAPHY REVIEW-->
                 <control type="group" id="5000">
+                    <!--<visible>![Control.HasFocus(503)|-->
+                        <!--Control.HasFocus(502)|-->
+                        <!--Control.HasFocus(504)|-->
+                        <!--Control.HasFocus(505)|-->
+                        <!--Control.HasFocus(506)|-->
+                        <!--Control.HasFocus(507)|-->
+                        <!--Control.HasFocus(508)|-->
+                        <!--Control.HasFocus(509)|-->
+                        <!--ControlGroup(5020).HasFocus|-->
+                        <!--ControlGroup(5040).HasFocus|-->
+                        <!--ControlGroup(5050).HasFocus|-->
+                        <!--ControlGroup(5060).HasFocus|-->
+                        <!--ControlGroup(5070).HasFocus|-->
+                        <!--ControlGroup(5080).HasFocus|-->
+                        <!--ControlGroup(5090).HasFocus]</visible>-->
                     <visible>![Control.HasFocus(503)|
                         Control.HasFocus(502)|
                         Control.HasFocus(504)|
-                        Control.HasFocus(505)|
-                        Control.HasFocus(506)|
                         Control.HasFocus(507)|
                         Control.HasFocus(508)|
-                        Control.HasFocus(509)|
                         ControlGroup(5020).HasFocus|
                         ControlGroup(5040).HasFocus|
-                        ControlGroup(5050).HasFocus|
-                        ControlGroup(5060).HasFocus|
                         ControlGroup(5070).HasFocus|
-                        ControlGroup(5080).HasFocus|
-                        ControlGroup(5090).HasFocus]</visible>
+                        ControlGroup(5080).HasFocus]</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="group">
                         <visible>container.content(Albums)</visible>
