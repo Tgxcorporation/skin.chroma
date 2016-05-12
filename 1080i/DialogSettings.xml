@@ -92,7 +92,7 @@
                 <control type="scrollbar" id="60">
                     <posx>1250</posx>
                     <posy>100</posy>
-                    <height>550</height>
+                    <height>500</height>
                     <onleft>5</onleft>
                     <onright>5</onright>
                     <include>VerticalScroller</include>
