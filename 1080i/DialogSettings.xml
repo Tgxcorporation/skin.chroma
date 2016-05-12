@@ -80,11 +80,13 @@
                 </control>
                 <control type="label" id="14">
                     <description>Default Label</description>
+                    <label>-</label>
+                    <textoffsety>65</textoffsety>
+                    <aligny>top</aligny>
                     <width>1300</width>
                     <height>99</height>
-                    <label>-</label>
                     <font>LeftMenuTitleFont</font>
-                    <textcolor>AlternateColor</textcolor>
+                    <include>TextColor_MidColor</include>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="scrollbar" id="60">
