@@ -78,23 +78,7 @@
                     <control type="button" id="7">
                         <include>DialogMenuButton</include>
                         <label>$LOCALIZE[38023]</label>
-                    </control>
-                    <control type="group" id="34384">
-                        <include name="Stars">
-                            <param name="x" value="50"/>
-                            <param name="y" value="0"/>
-                            <param name="color" value="alternate"/>
-                        </include>
-                        <control type="label">
-                            <posx>100</posx>
-                            <posy>0</posy>
-                            <width>150</width>
-                            <height>50</height>
-                            <font>InfoRatingFont</font>
-                            <include>TextColor_MainColor</include>
-                            <scroll>false</scroll>
-                            <label fallback="0.0">$INFO[ListItem.UserRating,,.0]</label>
-                        </control>
+                        <visible>Control.IsEnabled(7)</visible>
                     </control>
                 </control>
                 <include name="DialogMenuScroller">
@@ -179,6 +163,18 @@
                                 <label2>$INFO[ListItem.TrackNumber]</label2>
                                 <onclick>noop</onclick>
                                 <visible>!IsEmpty(ListItem.TrackNumber)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[563]:</label>
+                                <label2>$INFO[ListItem.RatingAndVotes]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[38018]:</label>
+                                <label2>$INFO[ListItem.Userrating]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.Userrating)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[427]:</label>
