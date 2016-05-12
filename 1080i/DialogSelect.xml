@@ -83,7 +83,7 @@
                     <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
                     <scroll>false</scroll>
-                    <label>$INFO[Container(6).ListItem.Property(Addon.Version),$LOCALIZE[24051] ]</label>
+                    <label>$INFO[Container(6).ListItem.AddonVersion,$LOCALIZE[24051] ]</label>
                 </control>
                 <control type="label">
                     <posx>1280</posx>
@@ -93,7 +93,7 @@
                     <font>InfoDetailsFont</font>
                     <include>TextColor_MainColor</include>
                     <scroll>false</scroll>
-                    <label>$INFO[Container(6).ListItem.Property(Addon.Creator),$LOCALIZE[21863]: ]</label>
+                    <label>$INFO[Container(6).ListItem.AddonCreator,$LOCALIZE[21863]: ]</label>
                 </control>
                 <control type="textbox">
                     <posx>1280</posx>
@@ -102,7 +102,7 @@
                     <height>235</height>
                     <font>InfoPlotFont</font>
                     <textcolor>AlternateColor</textcolor>
-                    <label>$INFO[Container(6).ListItem.Property(Addon.Summary)]</label>
+                    <label>$INFO[Container(6).ListItem.AddonSummary]</label>
                     <include>myautoscroll</include>
                 </control>
                 <control type="scrollbar" id="60">
