@@ -52,7 +52,7 @@
                     <control type="grouplist" id="3">
                         <height>500</height>
                         <onup>9900</onup>
-                        <onright>9060</onright>
+                        <onright>5</onright>
                         <ondown>20</ondown>
                         <onback>5</onback>
                         <include>DialogMenuButtonGroup</include>
@@ -140,10 +140,10 @@
                 <control type="label" id="14">
                     <description>Default Label</description>
                     <label>-</label>
-                    <textoffsety>65</textoffsety>
+                    <textoffsety>15</textoffsety>
                     <aligny>top</aligny>
-                    <width>1240</width>
-                    <height>100</height>
+                    <width>1340</width>
+                    <height>49</height>
                     <font>LeftMenuTitleFont</font>
                     <include>TextColor_MidColor</include>
                     <include>LeftMenuButton</include>
