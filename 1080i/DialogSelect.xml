@@ -5,7 +5,6 @@
         <include>DimBG</include>
         <control type="group">
             <include>DialogOpenClose</include>
-            <animation effect="slide" start="0,0" end="0,100" time="0" condition="!control.isvisible(5)">Conditional</animation>
             <control type="image">
                 <posx>160</posx>
                 <posy>140</posy>
@@ -109,17 +108,18 @@
                 <control type="scrollbar" id="60">
                     <posx>1180</posx>
                     <posy>340</posy>
-                    <height>600</height>
+                    <height>550</height>
                     <include>VerticalScroller</include>
                     <onleft>6</onleft>
                     <onright>6</onright>
+                    <ondown>9001</ondown>
                 </control>
             </control>
             <control type="panel" id="6">
                 <posx>210</posx>
                 <posy>340</posy>
                 <width>1020</width>
-                <height>600</height>
+                <height>550</height>
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
                 <onleft>6</onleft>
@@ -174,10 +174,11 @@
                 <control type="scrollbar" id="61">
                     <posx>1660</posx>
                     <posy>340</posy>
-                    <height>600</height>
+                    <height>550</height>
                     <include>VerticalScroller</include>
                     <onleft>3</onleft>
                     <onright>3</onright>
+                    <ondown>9001</ondown>
                 </control>
             </control>
             <control type="panel" id="3">
@@ -226,7 +227,11 @@
                 </focusedlayout>
             </control>
             <control type="image">
-                <visible>control.hasfocus(5)+control.isvisible(3)</visible>
+                <animation effect="slide" time="0" start="0,0" end="0,0" condition="[control.isvisible(5)+control.isvisible(7)]+control.hasfocus(5)">Conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,50" condition="[control.isvisible(5)+control.isvisible(7)]+control.hasfocus(7)">Conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,25" condition="[!control.isvisible(5)+control.isvisible(7)]+control.hasfocus(7)">Conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,25" condition="[control.isvisible(5)+!control.isvisible(7)]+control.hasfocus(5)">Conditional</animation>
+                <visible>[control.hasfocus(5)|control.hasfocus(7)]+control.isvisible(3)</visible>
                 <posx>210</posx>
                 <posy>940</posy>
                 <width>1500</width>
@@ -235,25 +240,11 @@
                 <texture border="1">list/bg_facade_focus.png</texture>
             </control>
             <control type="image">
-                <visible>control.hasfocus(7)+control.isvisible(3)</visible>
-                <posx>210</posx>
-                <posy>940</posy>
-                <width>1500</width>
-                <height>50</height>
-                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                <texture border="1">list/bg_facade_focus.png</texture>
-            </control>
-            <control type="image">
-                <visible>control.hasfocus(5)+control.isvisible(6)</visible>
-                <posx>210</posx>
-                <posy>940</posy>
-                <width>1020</width>
-                <height>50</height>
-                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                <texture border="1">list/bg_facade_focus.png</texture>
-            </control>
-            <control type="image">
-                <visible>control.hasfocus(7)+control.isvisible(6)</visible>
+                <animation effect="slide" time="0" start="0,0" end="0,0" condition="[control.isvisible(5)+control.isvisible(7)]+control.hasfocus(5)">Conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,50" condition="[control.isvisible(5)+control.isvisible(7)]+control.hasfocus(7)">Conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,25" condition="[!control.isvisible(5)+control.isvisible(7)]+control.hasfocus(7)">Conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,25" condition="[control.isvisible(5)+!control.isvisible(7)]+control.hasfocus(5)">Conditional</animation>
+                <visible>[control.hasfocus(5)|control.hasfocus(7)]+control.isvisible(6)</visible>
                 <posx>210</posx>
                 <posy>940</posy>
                 <width>1020</width>
@@ -265,9 +256,8 @@
                 <posx>210</posx>
                 <posy>940</posy>
                 <width>1020</width>
-                <height>50</height>
+                <height>100</height>
                 <itemgap>0</itemgap>
-                <aligny>bottom</aligny>
                 <align>center</align>
                 <orientation>vertical</orientation>
                 <onup>6</onup>
