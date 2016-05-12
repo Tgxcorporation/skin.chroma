@@ -18,7 +18,7 @@
                 Window.IsVisible(PVROSDChannels) |
                 Window.IsVisible(PVROSDGuide)
                 ]</visible>
-            <visible>!window.IsVisible(DialogVolumeBar.xml)</visible>
+            <visible>![Window.IsVisible(DialogVolumeBar.xml)+!Player.Muted]</visible>
             <include>TopBarOSDVisibleFadeEffect</include>
             <include>TopBarVisibleFadeEffectDialog</include>
             <control type="image">

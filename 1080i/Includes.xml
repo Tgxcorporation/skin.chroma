@@ -711,7 +711,7 @@
             <include>ScrollOffsetLabelVisibleFadeEffect</include>
             <include>HeaderVisibleFadeEffect</include>
             <control type="image">
-                <visible>!Window.isvisible(DialogMuteBug.xml)</visible>
+                <visible>!Player.Muted</visible>
                 <include>Icon_Fade</include>
                 <visible>PVR.IsRecording</visible>
                 <animation effect="fade" start="50" time="3000" condition="true" pulse="true">Conditional</animation><posx>42</posx>
@@ -721,7 +721,7 @@
                 <texture>common/header_logo_recording.png</texture>
             </control>
             <control type="image">
-                <visible>!Window.isvisible(DialogMuteBug.xml)</visible>
+                <visible>!Player.Muted</visible>
                 <visible>!Window.isvisible(DialogBusy.xml)</visible>
                 <include>Icon_Fade</include>
                 <posx>42</posx>
@@ -732,7 +732,7 @@
                 <texture>common/header_logo.png</texture>
             </control>
             <control type="image">
-                <visible>Window.isvisible(DialogMuteBug.xml)</visible>
+                <visible>Player.Muted</visible>
                 <visible>!Window.isvisible(DialogBusy.xml)</visible>
                 <include>Icon_Fade</include>
                 <posx>42</posx>

@@ -5,6 +5,7 @@
         <control type="group">
             <include>TopDialogVisibleFadeEffect</include>
             <include>OverlayTopOSDDialog</include>
+            <animation effect="fade" start="100" end="0" time="150" tween="sine" condition="Player.Muted">Conditional</animation>
             <control type="image">
                 <posx>0</posx>
                 <posy>-5</posy>
