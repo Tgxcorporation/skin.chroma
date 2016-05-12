@@ -14,7 +14,7 @@
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture border="50">common/background_menu.png</texture>
             </control>
-            <include name="WindowClosingButton">
+            <include content="WindowClosingButton">
                 <param name="id" value="99010"/>
                 <param name="x" value="1870"/>
                 <param name="y" value="140"/>
@@ -160,7 +160,7 @@
                         <label>$LOCALIZE[19202]</label>
                     </control>
                 </control>
-                <include name="ThumbsImages">
+                <include content="ThumbsImages">
                     <param name="visible" value="true"/>
                     <param name="x" value="50"/>
                     <param name="y" value="450"/>

@@ -16,7 +16,7 @@
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture border="50">common/background_menu.png</texture>
             </control>
-            <include name="WindowClosingButton">
+            <include content="WindowClosingButton">
                 <param name="id" value="99010"/>
                 <param name="x" value="1870"/>
                 <param name="y" value="140"/>
@@ -81,7 +81,7 @@
                         <visible>Control.IsEnabled(7)</visible>
                     </control>
                 </control>
-                <include name="DialogMenuScroller">
+                <include content="DialogMenuScroller">
                     <param name="y" value="0"/>
                     <param name="height" value="700"/>
                     <param name="onright" value="49"/>
@@ -115,7 +115,7 @@
                         <include>TextColor_MidColor</include>
                         <label>$LOCALIZE[658]</label>
                     </control>
-                    <include name="DummyButton">
+                    <include content="DummyButton">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>
@@ -257,7 +257,7 @@
                     <control type="group">
                         <posx>910</posx>
                         <posy>0</posy>
-                        <include name="DiscArt">
+                        <include content="DiscArt">
                             <param name="visible" value="!IsEmpty(ListItem.Thumb)"/>
                             <param name="x" value="10"/>
                             <param name="y" value="-180"/>
@@ -270,7 +270,7 @@
                             <param name="widthShadow" value="380"/>
                             <param name="flipyShadow" value="false"/>
                         </include>
-                        <include name="ThumbsImages">
+                        <include content="ThumbsImages">
                             <param name="visible" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
@@ -281,7 +281,7 @@
                             <param name="aligny" value="top"/>
                             <param name="flipy" value="false"/>
                         </include>
-                        <include name="StudioArt">
+                        <include content="StudioArt">
                             <param name="x" value="0"/>
                             <param name="y" value="430"/>
                             <param name="width" value="380"/>
@@ -290,7 +290,7 @@
                             <param name="align" value="center"/>
                             <param name="aligny" value="center"/>
                         </include>
-                        <include name="ClearArtLogo">
+                        <include content="ClearArtLogo">
                             <param name="x" value="0"/>
                             <param name="y" value="620"/>
                             <param name="width" value="380"/>
@@ -314,7 +314,7 @@
                         <include>TextColor_MidColor</include>
                         <label>$LOCALIZE[20037]</label>
                     </control>
-                    <include name="DummyButton">
+                    <include content="DummyButton">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>

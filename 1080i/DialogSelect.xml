@@ -15,7 +15,7 @@
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture border="50">common/background_menu.png</texture>
             </control>
-            <include name="WindowClosingButton">
+            <include content="WindowClosingButton">
                 <param name="id" value="9010"/>
                 <param name="x" value="1710"/>
                 <param name="y" value="140"/>
@@ -26,6 +26,7 @@
                 <posy>240</posy>
                 <width>920</width>
                 <height>50</height>
+                <label>$LOCALIZE[13406]</label>
                 <font>InfoTitleFont</font>
                 <scroll>true</scroll>
                 <include>TextColor_MainColor</include>
@@ -183,7 +184,7 @@
                 <posx>210</posx>
                 <posy>340</posy>
                 <width>1500</width>
-                <height>600</height>
+                <height>550</height>
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
                 <onleft>3</onleft>
@@ -227,7 +228,16 @@
             <control type="image">
                 <visible>control.hasfocus(5)+control.isvisible(3)</visible>
                 <posx>210</posx>
-                <posy>990</posy>
+                <posy>940</posy>
+                <width>1500</width>
+                <height>50</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture border="1">list/bg_facade_focus.png</texture>
+            </control>
+            <control type="image">
+                <visible>control.hasfocus(7)+control.isvisible(3)</visible>
+                <posx>210</posx>
+                <posy>940</posy>
                 <width>1500</width>
                 <height>50</height>
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
@@ -236,7 +246,16 @@
             <control type="image">
                 <visible>control.hasfocus(5)+control.isvisible(6)</visible>
                 <posx>210</posx>
-                <posy>990</posy>
+                <posy>940</posy>
+                <width>1020</width>
+                <height>50</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                <texture border="1">list/bg_facade_focus.png</texture>
+            </control>
+            <control type="image">
+                <visible>control.hasfocus(7)+control.isvisible(6)</visible>
+                <posx>210</posx>
+                <posy>940</posy>
                 <width>1020</width>
                 <height>50</height>
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
@@ -244,7 +263,7 @@
             </control>
             <control type="grouplist" id="9001">
                 <posx>210</posx>
-                <posy>990</posy>
+                <posy>940</posy>
                 <width>1020</width>
                 <height>50</height>
                 <itemgap>0</itemgap>
@@ -256,6 +275,13 @@
                 <onleft>9001</onleft>
                 <onright>9001</onright>
                 <control type="button" id="5">
+                    <description>Manual button</description>
+                    <texturefocus>-</texturefocus>
+                    <width>1020</width>
+                    <include>LeftMenuButton</include>
+                </control>
+                <control type="button" id="7">
+                    <description>Cancel button</description>
                     <texturefocus>-</texturefocus>
                     <width>1020</width>
                     <include>LeftMenuButton</include>

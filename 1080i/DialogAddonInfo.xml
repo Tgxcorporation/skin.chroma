@@ -14,7 +14,7 @@
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture border="50">common/background_menu.png</texture>
             </control>
-            <include name="WindowClosingButton">
+            <include content="WindowClosingButton">
                 <param name="id" value="9010"/>
                 <param name="x" value="1870"/>
                 <param name="y" value="140"/>
@@ -72,7 +72,7 @@
                         <include>DialogMenuButton</include>
                     </control>
                 </control>
-                <include name="DialogMenuScroller">
+                <include content="DialogMenuScroller">
                     <param name="y" value="0"/>
                     <param name="height" value="800"/>
                     <param name="onright" value="6060"/>
@@ -166,7 +166,7 @@
             <control type="group">
                 <posx>1440</posx>
                 <posy>240</posy>
-                <include name="ThumbsImages">
+                <include content="ThumbsImages">
                     <param name="visible" value="true"/>
                     <param name="x" value="0"/>
                     <param name="y" value="0"/>

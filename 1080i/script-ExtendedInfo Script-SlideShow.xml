@@ -70,7 +70,7 @@
             <texturenofocus>-</texturenofocus>
             <onclick>Control.Move(5000,-1)</onclick>
         </control>
-        <include name="WindowClosingButton">
+        <include content="WindowClosingButton">
             <param name="id" value="99010"/>
             <param name="x" value="1870"/>
             <param name="y" value="0"/>

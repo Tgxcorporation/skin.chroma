@@ -26,46 +26,46 @@
         </control>
         <control type="group">
             <visible>!IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))+!Skin.HasSetting(DisableFanart)</visible>
-            <include name="TVNextAiredFanart">
+            <include content="TVNextAiredFanart">
                 <param name="id" value="200"/>
             </include>
-            <include name="TVNextAiredFanart">
+            <include content="TVNextAiredFanart">
                 <param name="id" value="201"/>
             </include>
-            <include name="TVNextAiredFanart">
+            <include content="TVNextAiredFanart">
                 <param name="id" value="202"/>
             </include>
-            <include name="TVNextAiredFanart">
+            <include content="TVNextAiredFanart">
                 <param name="id" value="203"/>
             </include>
-            <include name="TVNextAiredFanart">
+            <include content="TVNextAiredFanart">
                 <param name="id" value="204"/>
             </include>
-            <include name="TVNextAiredFanart">
+            <include content="TVNextAiredFanart">
                 <param name="id" value="205"/>
             </include>
-            <include name="TVNextAiredFanart">
+            <include content="TVNextAiredFanart">
                 <param name="id" value="206"/>
             </include>
-            <include name="TVNextAiredFanart">
+            <include content="TVNextAiredFanart">
                 <param name="id" value="207"/>
             </include>
-            <include name="TVNextAiredFanart">
+            <include content="TVNextAiredFanart">
                 <param name="id" value="208"/>
             </include>
-            <include name="TVNextAiredFanart">
+            <include content="TVNextAiredFanart">
                 <param name="id" value="209"/>
             </include>
-            <include name="TVNextAiredFanart">
+            <include content="TVNextAiredFanart">
                 <param name="id" value="210"/>
             </include>
-            <include name="TVNextAiredFanart">
+            <include content="TVNextAiredFanart">
                 <param name="id" value="211"/>
             </include>
-            <include name="TVNextAiredFanart">
+            <include content="TVNextAiredFanart">
                 <param name="id" value="212"/>
             </include>
-            <include name="TVNextAiredFanart">
+            <include content="TVNextAiredFanart">
                 <param name="id" value="213"/>
             </include>
         </control>
@@ -120,59 +120,59 @@
                     <posy>380</posy>
                     <orientation>vertical</orientation>
                     <itemgap>0</itemgap>
-                    <include name="TVNextAiredDates">
+                    <include content="TVNextAiredDates">
                         <param name="id" value="200"/>
                         <param name="height" value="43"/>
                     </include>
-                    <include name="TVNextAiredDates">
+                    <include content="TVNextAiredDates">
                         <param name="id" value="201"/>
                         <param name="height" value="43"/>
                     </include>
-                    <include name="TVNextAiredDates">
+                    <include content="TVNextAiredDates">
                         <param name="id" value="202"/>
                         <param name="height" value="43"/>
                     </include>
-                    <include name="TVNextAiredDates">
+                    <include content="TVNextAiredDates">
                         <param name="id" value="203"/>
                         <param name="height" value="43"/>
                     </include>
-                    <include name="TVNextAiredDates">
+                    <include content="TVNextAiredDates">
                         <param name="id" value="204"/>
                         <param name="height" value="43"/>
                     </include>
-                    <include name="TVNextAiredDates">
+                    <include content="TVNextAiredDates">
                         <param name="id" value="205"/>
                         <param name="height" value="43"/>
                     </include>
-                    <include name="TVNextAiredDates">
+                    <include content="TVNextAiredDates">
                         <param name="id" value="206"/>
                         <param name="height" value="43"/>
                     </include>
-                    <include name="TVNextAiredDates">
+                    <include content="TVNextAiredDates">
                         <param name="id" value="207"/>
                         <param name="height" value="43"/>
                     </include>
-                    <include name="TVNextAiredDates">
+                    <include content="TVNextAiredDates">
                         <param name="id" value="208"/>
                         <param name="height" value="43"/>
                     </include>
-                    <include name="TVNextAiredDates">
+                    <include content="TVNextAiredDates">
                         <param name="id" value="209"/>
                         <param name="height" value="43"/>
                     </include>
-                    <include name="TVNextAiredDates">
+                    <include content="TVNextAiredDates">
                         <param name="id" value="210"/>
                         <param name="height" value="43"/>
                     </include>
-                    <include name="TVNextAiredDates">
+                    <include content="TVNextAiredDates">
                         <param name="id" value="211"/>
                         <param name="height" value="43"/>
                     </include>
-                    <include name="TVNextAiredDates">
+                    <include content="TVNextAiredDates">
                         <param name="id" value="212"/>
                         <param name="height" value="43"/>
                     </include>
-                    <include name="TVNextAiredDates">
+                    <include content="TVNextAiredDates">
                         <param name="id" value="213"/>
                         <param name="height" value="43"/>
                     </include>
@@ -185,7 +185,7 @@
                         <onup>213</onup>
                         <ondown>201</ondown>
                         <onright>200</onright>
-                        <include name="TVNextAiredListCommonLayout">
+                        <include content="TVNextAiredListCommonLayout">
                             <param name="height" value="43"/>
                         </include>
                     </control>
@@ -194,7 +194,7 @@
                         <onup>200</onup>
                         <ondown>202</ondown>
                         <onright>201</onright>
-                        <include name="TVNextAiredListCommonLayout">
+                        <include content="TVNextAiredListCommonLayout">
                             <param name="height" value="43"/>
                         </include>
                     </control>
@@ -203,7 +203,7 @@
                         <onup>201</onup>
                         <ondown>203</ondown>
                         <onright>202</onright>
-                        <include name="TVNextAiredListCommonLayout">
+                        <include content="TVNextAiredListCommonLayout">
                             <param name="height" value="43"/>
                         </include>
                     </control>
@@ -212,7 +212,7 @@
                         <onup>202</onup>
                         <ondown>204</ondown>
                         <onright>203</onright>
-                        <include name="TVNextAiredListCommonLayout">
+                        <include content="TVNextAiredListCommonLayout">
                             <param name="height" value="43"/>
                         </include>
                     </control>
@@ -221,7 +221,7 @@
                         <onup>203</onup>
                         <ondown>205</ondown>
                         <onright>204</onright>
-                        <include name="TVNextAiredListCommonLayout">
+                        <include content="TVNextAiredListCommonLayout">
                             <param name="height" value="43"/>
                         </include>
                     </control>
@@ -230,7 +230,7 @@
                         <onup>204</onup>
                         <ondown>206</ondown>
                         <onright>205</onright>
-                        <include name="TVNextAiredListCommonLayout">
+                        <include content="TVNextAiredListCommonLayout">
                             <param name="height" value="43"/>
                         </include>
                     </control>
@@ -239,7 +239,7 @@
                         <onup>205</onup>
                         <ondown>207</ondown>
                         <onright>206</onright>
-                        <include name="TVNextAiredListCommonLayout">
+                        <include content="TVNextAiredListCommonLayout">
                             <param name="height" value="43"/>
                         </include>
                     </control>
@@ -248,7 +248,7 @@
                         <onup>206</onup>
                         <ondown>208</ondown>
                         <onright>207</onright>
-                        <include name="TVNextAiredListCommonLayout">
+                        <include content="TVNextAiredListCommonLayout">
                             <param name="height" value="43"/>
                         </include>
                     </control>
@@ -257,7 +257,7 @@
                         <onup>207</onup>
                         <ondown>209</ondown>
                         <onright>208</onright>
-                        <include name="TVNextAiredListCommonLayout">
+                        <include content="TVNextAiredListCommonLayout">
                             <param name="height" value="43"/>
                         </include>
                     </control>
@@ -266,7 +266,7 @@
                         <onup>208</onup>
                         <ondown>210</ondown>
                         <onright>209</onright>
-                        <include name="TVNextAiredListCommonLayout">
+                        <include content="TVNextAiredListCommonLayout">
                             <param name="height" value="43"/>
                         </include>
                     </control>
@@ -275,7 +275,7 @@
                         <onup>209</onup>
                         <ondown>211</ondown>
                         <onright>210</onright>
-                        <include name="TVNextAiredListCommonLayout">
+                        <include content="TVNextAiredListCommonLayout">
                             <param name="height" value="43"/>
                         </include>
                     </control>
@@ -284,7 +284,7 @@
                         <onup>210</onup>
                         <ondown>212</ondown>
                         <onright>211</onright>
-                        <include name="TVNextAiredListCommonLayout">
+                        <include content="TVNextAiredListCommonLayout">
                             <param name="height" value="43"/>
                         </include>
                     </control>
@@ -293,7 +293,7 @@
                         <onup>211</onup>
                         <ondown>213</ondown>
                         <onright>212</onright>
-                        <include name="TVNextAiredListCommonLayout">
+                        <include content="TVNextAiredListCommonLayout">
                             <param name="height" value="43"/>
                         </include>
                     </control>
@@ -302,7 +302,7 @@
                         <onup>212</onup>
                         <ondown>200</ondown>
                         <onright>213</onright>
-                        <include name="TVNextAiredListCommonLayout">
+                        <include content="TVNextAiredListCommonLayout">
                             <param name="height" value="43"/>
                         </include>
                     </control>
@@ -311,46 +311,46 @@
                 <control type="group">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <include name="TVNextAiredInfo">
+                    <include content="TVNextAiredInfo">
                         <param name="id" value="200"/>
                     </include>
-                    <include name="TVNextAiredInfo">
+                    <include content="TVNextAiredInfo">
                         <param name="id" value="201"/>
                     </include>
-                    <include name="TVNextAiredInfo">
+                    <include content="TVNextAiredInfo">
                         <param name="id" value="202"/>
                     </include>
-                    <include name="TVNextAiredInfo">
+                    <include content="TVNextAiredInfo">
                         <param name="id" value="203"/>
                     </include>
-                    <include name="TVNextAiredInfo">
+                    <include content="TVNextAiredInfo">
                         <param name="id" value="204"/>
                     </include>
-                    <include name="TVNextAiredInfo">
+                    <include content="TVNextAiredInfo">
                         <param name="id" value="205"/>
                     </include>
-                    <include name="TVNextAiredInfo">
+                    <include content="TVNextAiredInfo">
                         <param name="id" value="206"/>
                     </include>
-                    <include name="TVNextAiredInfo">
+                    <include content="TVNextAiredInfo">
                         <param name="id" value="207"/>
                     </include>
-                    <include name="TVNextAiredInfo">
+                    <include content="TVNextAiredInfo">
                         <param name="id" value="208"/>
                     </include>
-                    <include name="TVNextAiredInfo">
+                    <include content="TVNextAiredInfo">
                         <param name="id" value="209"/>
                     </include>
-                    <include name="TVNextAiredInfo">
+                    <include content="TVNextAiredInfo">
                         <param name="id" value="210"/>
                     </include>
-                    <include name="TVNextAiredInfo">
+                    <include content="TVNextAiredInfo">
                         <param name="id" value="211"/>
                     </include>
-                    <include name="TVNextAiredInfo">
+                    <include content="TVNextAiredInfo">
                         <param name="id" value="212"/>
                     </include>
-                    <include name="TVNextAiredInfo">
+                    <include content="TVNextAiredInfo">
                         <param name="id" value="213"/>
                     </include>
                 </control>

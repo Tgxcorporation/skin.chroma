@@ -5,7 +5,7 @@
         <include>DimBG</include>
         <control type="group">
             <include>DialogOpenClose</include>
-            <include name="WindowClosingButton">
+            <include content="WindowClosingButton">
                 <param name="id" value="99900"/>
                 <param name="x" value="855"/>
                 <param name="y" value="390"/>

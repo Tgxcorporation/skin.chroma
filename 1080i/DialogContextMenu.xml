@@ -87,7 +87,7 @@
                 <onleft>996</onleft>
                 <onright>998</onright>
             </control>
-            <include name="WindowClosingButton">
+            <include content="WindowClosingButton">
                 <param name="id" value="998"/>
                 <param name="x" value="750"/>
                 <param name="y" value="0"/>

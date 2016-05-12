@@ -32,7 +32,7 @@
                 <height>237</height>
                 <texture border="56">common/background_strip_horizontal_mini.png</texture>
             </control>
-            <include name="ProgressBar">
+            <include content="ProgressBar">
                 <param name="id" value="0"/>
                 <param name="visible" value="Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)"/>
                 <param name="x" value="0"/>
@@ -44,7 +44,7 @@
                 <param name="border" value="1,1,1,1"/>
                 <param name="info" value="ListItem.Progress"/>
             </include>
-            <include name="ProgressBar">
+            <include content="ProgressBar">
                 <param name="id" value="0"/>
                 <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
                 <param name="x" value="0"/>
@@ -83,7 +83,7 @@
                 <preloaditems>4</preloaditems>
                 <pagecontrol>60</pagecontrol>
                 <itemlayout condition="[Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]" height="180" width="240">
-                    <include name="ThumbsImages">
+                    <include content="ThumbsImages">
                         <param name="visible" value="true"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
@@ -102,7 +102,7 @@
                         <include>NoFocusedThumb</include>
                         <texture>common/BlackDot.png</texture>
                     </control>
-                    <include name="WatchedRecOverlay">
+                    <include content="WatchedRecOverlay">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="50"/>
@@ -113,7 +113,7 @@
                 <focusedlayout condition="[Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]" height="180" width="240">
                     <control type="group">
                         <include>ButtonFocusAnimation</include>
-                        <include name="ThumbsImages">
+                        <include content="ThumbsImages">
                             <param name="visible" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
@@ -133,7 +133,7 @@
                             <texture border="1,50,1,50">common/frame_focus.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
-                        <include name="WatchedRecOverlay">
+                        <include content="WatchedRecOverlay">
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
                             <param name="width" value="50"/>
@@ -143,7 +143,7 @@
                     </control>
                 </focusedlayout>
                 <itemlayout condition="[Container.Content(TVShows)|Container.Content(movies)|Container.Content(sets)|Container.Content(seasons)] + Skin.HasSetting(53_UseBanners)" height="180" width="960">
-                    <include name="BannersImages">
+                    <include content="BannersImages">
                         <param name="visible" value="true"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
@@ -162,7 +162,7 @@
                         <include>NoFocusedThumb</include>
                         <texture>common/BlackDot.png</texture>
                     </control>
-                    <include name="WatchedRecOverlay">
+                    <include content="WatchedRecOverlay">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="50"/>
@@ -173,7 +173,7 @@
                 <focusedlayout condition="[Container.Content(TVShows)|Container.Content(movies)|Container.Content(sets)|Container.Content(seasons)] + Skin.HasSetting(53_UseBanners)" height="180" width="960">
                     <control type="group">
                         <include>ButtonFocusAnimation</include>
-                        <include name="BannersImages">
+                        <include content="BannersImages">
                             <param name="visible" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
@@ -193,7 +193,7 @@
                             <texture border="1,50,1,50">common/frame_focus.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
-                        <include name="WatchedRecOverlay">
+                        <include content="WatchedRecOverlay">
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
                             <param name="width" value="50"/>
@@ -203,7 +203,7 @@
                     </control>
                 </focusedlayout>
                 <itemlayout condition="!Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="192" width="128">
-                    <include name="ThumbsImages">
+                    <include content="ThumbsImages">
                         <param name="visible" value="true"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
@@ -222,7 +222,7 @@
                         <include>NoFocusedThumb</include>
                         <texture>common/BlackDot.png</texture>
                     </control>
-                    <include name="WatchedRecOverlay">
+                    <include content="WatchedRecOverlay">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="50"/>
@@ -233,7 +233,7 @@
                 <focusedlayout condition="!Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="192" width="128">
                     <control type="group">
                         <include>ButtonFocusAnimation</include>
-                        <include name="ThumbsImages">
+                        <include content="ThumbsImages">
                             <param name="visible" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
@@ -253,7 +253,7 @@
                             <texture border="1,50,1,50">common/frame_focus.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
-                        <include name="WatchedRecOverlay">
+                        <include content="WatchedRecOverlay">
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
                             <param name="width" value="50"/>
@@ -263,7 +263,7 @@
                     </control>
                 </focusedlayout>
                 <itemlayout condition="Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="288" width="192">
-                    <include name="ThumbsImages">
+                    <include content="ThumbsImages">
                         <param name="visible" value="true"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
@@ -282,7 +282,7 @@
                         <include>NoFocusedThumb</include>
                         <texture>common/BlackDot.png</texture>
                     </control>
-                    <include name="WatchedRecOverlay">
+                    <include content="WatchedRecOverlay">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="50"/>
@@ -293,7 +293,7 @@
                 <focusedlayout condition="Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="288" width="192">
                     <control type="group">
                         <include>ButtonFocusAnimation</include>
-                        <include name="ThumbsImages">
+                        <include content="ThumbsImages">
                             <param name="visible" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
@@ -313,7 +313,7 @@
                             <texture border="1,50,1,50">common/frame_focus.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
-                        <include name="WatchedRecOverlay">
+                        <include content="WatchedRecOverlay">
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
                             <param name="width" value="50"/>
@@ -323,7 +323,7 @@
                     </control>
                 </focusedlayout>
                 <itemlayout height="270" width="480" condition="container.content(episodes)">
-                    <include name="ThumbsImages">
+                    <include content="ThumbsImages">
                         <param name="visible" value="true"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
@@ -342,7 +342,7 @@
                         <include>NoFocusedThumb</include>
                         <texture>common/BlackDot.png</texture>
                     </control>
-                    <include name="WatchedRecOverlay">
+                    <include content="WatchedRecOverlay">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="50"/>
@@ -353,7 +353,7 @@
                 <focusedlayout height="270" width="480" condition="container.content(episodes)">
                     <control type="group">
                         <include>ButtonFocusAnimation</include>
-                        <include name="ThumbsImages">
+                        <include content="ThumbsImages">
                             <param name="visible" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
@@ -373,7 +373,7 @@
                             <texture border="1,50,1,50">common/frame_focus.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
-                        <include name="WatchedRecOverlay">
+                        <include content="WatchedRecOverlay">
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
                             <param name="width" value="50"/>
@@ -383,7 +383,7 @@
                     </control>
                 </focusedlayout>
                 <itemlayout condition="!Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="180" width="175">
-                    <include name="ThumbsImages">
+                    <include content="ThumbsImages">
                         <param name="visible" value="true"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
@@ -402,7 +402,7 @@
                         <include>NoFocusedThumb</include>
                         <texture>common/BlackDot.png</texture>
                     </control>
-                    <include name="WatchedRecOverlay">
+                    <include content="WatchedRecOverlay">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="50"/>
@@ -413,7 +413,7 @@
                 <focusedlayout condition="!Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="180" width="175">
                     <control type="group">
                         <include>ButtonFocusAnimation</include>
-                        <include name="ThumbsImages">
+                        <include content="ThumbsImages">
                             <param name="visible" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
@@ -433,7 +433,7 @@
                             <texture border="1,50,1,50">common/frame_focus.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
-                        <include name="WatchedRecOverlay">
+                        <include content="WatchedRecOverlay">
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
                             <param name="width" value="50"/>
@@ -443,7 +443,7 @@
                     </control>
                 </focusedlayout>
                 <itemlayout condition="Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="270" width="275">
-                    <include name="ThumbsImages">
+                    <include content="ThumbsImages">
                         <param name="visible" value="true"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
@@ -462,7 +462,7 @@
                         <include>NoFocusedThumb</include>
                         <texture>common/BlackDot.png</texture>
                     </control>
-                    <include name="WatchedRecOverlay">
+                    <include content="WatchedRecOverlay">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="50"/>
@@ -473,7 +473,7 @@
                 <focusedlayout condition="Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]" height="270" width="275">
                     <control type="group">
                         <include>ButtonFocusAnimation</include>
-                        <include name="ThumbsImages">
+                        <include content="ThumbsImages">
                             <param name="visible" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
@@ -493,7 +493,7 @@
                             <texture border="1,50,1,50">common/frame_focus.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
-                        <include name="WatchedRecOverlay">
+                        <include content="WatchedRecOverlay">
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
                             <param name="width" value="50"/>

@@ -10,7 +10,7 @@
                 <control type="group">
                     <visible>Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)|
                         [!Container.Content(Addons)+[IntegerGreaterThan(ListItem.Rating,0)|[Container.Content(songs)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]]]</visible>
-                    <include name="Stars">
+                    <include content="Stars">
                         <param name="x" value="-3"/>
                         <param name="y" value="3"/>
                         <param name="color" value="alternate"/>
@@ -116,7 +116,7 @@
                 <posx>1490</posx>
                 <posy>380</posy>
                 <!-- CDART MUSIC -->
-                <include name="DiscArt">
+                <include content="DiscArt">
                     <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                     <param name="x" value="10"/>
                     <param name="y" value="200"/>
@@ -130,7 +130,7 @@
                     <param name="flipyShadow" value="true"/>
                 </include>
                 <!-- CDART VIDEO -->
-                <include name="DiscArt">
+                <include content="DiscArt">
                     <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                     <param name="x" value="30"/>
                     <param name="y" value="350"/>
@@ -143,7 +143,7 @@
                     <param name="widthShadow" value="340"/>
                     <param name="flipyShadow" value="true"/>
                 </include>
-                <include name="ThumbsImages">
+                <include content="ThumbsImages">
                     <param name="visible" value="[Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]"/>
                     <param name="x" value="20"/>
                     <param name="y" value="0"/>
@@ -154,7 +154,7 @@
                     <param name="aligny" value="top"/>
                     <param name="flipy" value="false"/>
                 </include>
-                <include name="ThumbsImages">
+                <include content="ThumbsImages">
                     <param name="visible" value="![Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)|Container.Content(sets)]"/>
                     <param name="x" value="0"/>
                     <param name="y" value="0"/>
@@ -170,7 +170,7 @@
     </include>
     <include name="BannerList_Layout">
         <itemlayout height="150" width="910">
-            <include name="BannersImages">
+            <include content="BannersImages">
                 <param name="visible" value="![Container.Content(episodes)|Container.Content(seasons)]"/>
                 <param name="x" value="0"/>
                 <param name="y" value="0"/>
@@ -197,7 +197,7 @@
                 <textcolor>NoFocusedColor</textcolor>
                 <label>$VAR[BannerText]</label>
             </control>
-            <include name="WatchedRecOverlay">
+            <include content="WatchedRecOverlay">
                 <param name="x" value="0"/>
                 <param name="y" value="0"/>
                 <param name="width" value="50"/>
@@ -208,7 +208,7 @@
         <focusedlayout height="150" width="910">
             <control type="group">
                 <include>ListFocusAnimation</include>
-                <include name="BannersImages">
+                <include content="BannersImages">
                     <param name="visible" value="![Container.Content(episodes)|Container.Content(seasons)]"/>
                     <param name="x" value="0"/>
                     <param name="y" value="0"/>
@@ -243,7 +243,7 @@
                     <texture>$VAR[Overlay]</texture>
                     <aspectratio aligny="center">keep</aspectratio>
                 </control>
-                <include name="WatchedRecOverlay">
+                <include content="WatchedRecOverlay">
                     <param name="x" value="0"/>
                     <param name="y" value="0"/>
                     <param name="width" value="50"/>
@@ -309,7 +309,7 @@
                 <onleft>56</onleft>
                 <onright>505050</onright>
             </control>
-            <include name="ClearArtLogo">
+            <include content="ClearArtLogo">
                 <param name="x" value="430r"/>
                 <param name="y" value="180"/>
                 <param name="width" value="380"/>
@@ -318,7 +318,7 @@
                 <param name="align" value="center"/>
                 <param name="aligny" value="bottom"/>
             </include>
-            <include name="StudioArt">
+            <include content="StudioArt">
                 <param name="x" value="1010"/>
                 <param name="y" value="180"/>
                 <param name="width" value="380"/>

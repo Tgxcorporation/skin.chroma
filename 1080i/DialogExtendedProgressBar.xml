@@ -20,7 +20,7 @@
                 <!--&lt;!&ndash;<colordiffuse>aaffffff</colordiffuse>&ndash;&gt;-->
                 <!--<texture border="51">common/background_strip_horizontal_mini.png</texture>-->
             <!--</control>-->
-            <include name="ProgressBar">
+            <include content="ProgressBar">
                 <param name="id" value="32"/>
                 <param name="visible" value="true"/>
                 <param name="x" value="0"/>

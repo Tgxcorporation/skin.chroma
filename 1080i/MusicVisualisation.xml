@@ -20,7 +20,7 @@
                     <visible>[Player.Paused |Player.ShowInfo | Window.IsActive(MusicOSD)] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList) | Window.IsVisible(script-cu-lrclyrics-main.xml)]</visible>
                     <include>OSDOpenClose</include>
                     <include>OSDFade</include>
-                    <!--<include name="WindowClosingButton">-->
+                    <!--<include content="WindowClosingButton">-->
                         <!--<param name="id" value="9010"/>-->
                         <!--<param name="x" value="1860"/>-->
                         <!--<param name="y" value="360"/>-->
@@ -125,7 +125,7 @@
                         </control>
                         <control type="group">
                             <posx>1490</posx>
-                            <include name="DiscArt">
+                            <include content="DiscArt">
                                 <param name="visible" value="!IsEmpty(Player.Art(thumb))"/>
                                 <param name="x" value="10"/>
                                 <param name="y" value="-180"/>
@@ -167,7 +167,7 @@
                         <aspectratio aligny="bottom" align="left">keep</aspectratio>
                         <texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Music.ClearLogo)]</texture>
                     </control>
-                    <include name="StudioArt">
+                    <include content="StudioArt">
                         <param name="x" value="1010"/>
                         <param name="y" value="260"/>
                         <param name="width" value="380"/>

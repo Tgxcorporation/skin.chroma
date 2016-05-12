@@ -16,7 +16,7 @@
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture border="50">common/background_menu.png</texture>
             </control>
-            <include name="WindowClosingButton">
+            <include content="WindowClosingButton">
                 <param name="id" value="99010"/>
                 <param name="x" value="1870"/>
                 <param name="y" value="140"/>
@@ -158,7 +158,7 @@
                         <onright>49</onright>
                     </control>
                 </control>
-                <include name="DialogMenuScroller">
+                <include content="DialogMenuScroller">
                     <param name="y" value="0"/>
                     <param name="height" value="800"/>
                     <param name="onright" value="49"/>
@@ -229,7 +229,7 @@
                             <include>TextColor_MidColor</include>
                             <label>$LOCALIZE[10523]</label>
                         </control>
-                        <include name="DummyButton">
+                        <include content="DummyButton">
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
                             <param name="width" value="860"/>
@@ -425,7 +425,7 @@
                     <control type="group">
                         <posx>910</posx>
                         <posy>0</posy>
-                        <include name="DiscArt">
+                        <include content="DiscArt">
                             <param name="visible" value="!IsEmpty(ListItem.Thumb)+container.content(Albums)"/>
                             <param name="x" value="10"/>
                             <param name="y" value="-180"/>
@@ -438,7 +438,7 @@
                             <param name="widthShadow" value="380"/>
                             <param name="flipyShadow" value="false"/>
                         </include>
-                        <include name="ThumbsImages">
+                        <include content="ThumbsImages">
                             <param name="visible" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
@@ -449,7 +449,7 @@
                             <param name="aligny" value="top"/>
                             <param name="flipy" value="false"/>
                         </include>
-                        <include name="StudioArt">
+                        <include content="StudioArt">
                             <param name="x" value="0"/>
                             <param name="y" value="430"/>
                             <param name="width" value="380"/>
@@ -458,7 +458,7 @@
                             <param name="align" value="center"/>
                             <param name="aligny" value="center"/>
                         </include>
-                        <include name="ClearArtLogo">
+                        <include content="ClearArtLogo">
                             <param name="x" value="0"/>
                             <param name="y" value="620"/>
                             <param name="width" value="380"/>
@@ -483,7 +483,7 @@
                         <include>TextColor_MidColor</include>
                         <label>$LOCALIZE[21888] - $INFO[Container(50).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include name="DummyButton">
+                    <include content="DummyButton">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>
@@ -620,7 +620,7 @@
                     <control type="group">
                         <posx>910</posx>
                         <posy>0</posy>
-                        <include name="DiscArt">
+                        <include content="DiscArt">
                             <param name="visible" value="!IsEmpty(ListItem.Thumb)+container.content(Albums)"/>
                             <param name="x" value="10"/>
                             <param name="y" value="-180"/>
@@ -633,7 +633,7 @@
                             <param name="widthShadow" value="380"/>
                             <param name="flipyShadow" value="false"/>
                         </include>
-                        <include name="ThumbsImages">
+                        <include content="ThumbsImages">
                             <param name="visible" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
@@ -644,7 +644,7 @@
                             <param name="aligny" value="top"/>
                             <param name="flipy" value="false"/>
                         </include>
-                        <include name="StudioArt">
+                        <include content="StudioArt">
                             <param name="x" value="0"/>
                             <param name="y" value="430"/>
                             <param name="width" value="380"/>
@@ -653,7 +653,7 @@
                             <param name="align" value="center"/>
                             <param name="aligny" value="center"/>
                         </include>
-                        <include name="ClearArtLogo">
+                        <include content="ClearArtLogo">
                             <param name="x" value="0"/>
                             <param name="y" value="620"/>
                             <param name="width" value="380"/>
@@ -678,7 +678,7 @@
                         <include>TextColor_MidColor</include>
                         <label>$LOCALIZE[21888] - $INFO[Container(5041).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include name="DummyButton">
+                    <include content="DummyButton">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>
@@ -763,7 +763,7 @@
                     <control type="group">
                         <posx>910</posx>
                         <posy>0</posy>
-                        <include name="DiscArt">
+                        <include content="DiscArt">
                             <param name="visible" value="!IsEmpty(ListItem.Thumb)+container.content(Albums)"/>
                             <param name="x" value="10"/>
                             <param name="y" value="-180"/>
@@ -794,7 +794,7 @@
                             <texture background="true">$INFO[Container(5041).Listitem.Icon]</texture>
                             <aspectratio aligny="top">keep</aspectratio>
                         </control>
-                        <include name="StudioArt">
+                        <include content="StudioArt">
                             <param name="x" value="0"/>
                             <param name="y" value="430"/>
                             <param name="width" value="380"/>
@@ -803,7 +803,7 @@
                             <param name="align" value="center"/>
                             <param name="aligny" value="center"/>
                         </include>
-                        <include name="ClearArtLogo">
+                        <include content="ClearArtLogo">
                             <param name="x" value="0"/>
                             <param name="y" value="620"/>
                             <param name="width" value="380"/>
@@ -827,7 +827,7 @@
                 <!--<include>TextColor_MidColor</include>-->
                 <!--<label>$LOCALIZE[31971] - $INFO[Container(5051).NumItems] $LOCALIZE[31025]</label>-->
                 <!--</control>-->
-                <!--<include name="DummyButton">-->
+                <!--<include content="DummyButton">-->
                 <!--<param name="x" value="0"/>-->
                 <!--<param name="y" value="0"/>-->
                 <!--<param name="width" value="860"/>-->
@@ -943,7 +943,7 @@
                 <!--<include>TextColor_MidColor</include>-->
                 <!--<label>$LOCALIZE[31942] - $INFO[Container(5061).NumItems] $LOCALIZE[31025]</label>-->
                 <!--</control>-->
-                <!--<include name="DummyButton">-->
+                <!--<include content="DummyButton">-->
                 <!--<param name="x" value="0"/>-->
                 <!--<param name="y" value="0"/>-->
                 <!--<param name="width" value="860"/>-->
@@ -1059,7 +1059,7 @@
                         <include>TextColor_MidColor</include>
                         <label>$LOCALIZE[20389] - $INFO[Container(5071).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include name="DummyButton">
+                    <include content="DummyButton">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>
@@ -1178,7 +1178,7 @@
                         <include>TextColor_MidColor</include>
                         <label>$ADDON[script.extendedinfo 32118] - $INFO[Container(5081).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include name="DummyButton">
+                    <include content="DummyButton">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>
@@ -1277,7 +1277,7 @@
                         <!--<include>TextColor_MidColor</include>-->
                         <!--<label>Twitter - $INFO[Container(5091).NumItems] $LOCALIZE[31025]</label>-->
                     <!--</control>-->
-                    <!--<include name="DummyButton">-->
+                    <!--<include content="DummyButton">-->
                         <!--<param name="x" value="0"/>-->
                         <!--<param name="y" value="0"/>-->
                         <!--<param name="width" value="860"/>-->

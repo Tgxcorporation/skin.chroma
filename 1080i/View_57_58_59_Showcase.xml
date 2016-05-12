@@ -3,7 +3,7 @@
     <include name="InfoData">
         <control type="group">
             <visible>control.isvisible(54)|control.hasfocus(505050)</visible>
-            <include name="WatchedRecOverlay">
+            <include content="WatchedRecOverlay">
                 <param name="x" value="0"/>
                 <param name="y" value="841"/>
                 <param name="width" value="50"/>
@@ -24,8 +24,8 @@
             <label>$VAR[Fanart_Title]</label>
         </control>
         <control type="group" id="45741">
-            <visible>![Container.content(actors) | container.content(albums) | container.content(addons)]+[SubString(ListItem.StarRating,rating1)|SubString(ListItem.StarRating,rating2)|SubString(ListItem.StarRating,rating3)|SubString(ListItem.StarRating,rating4)|SubString(ListItem.StarRating,rating5)]</visible>
-            <include name="Stars">
+            <!--<visible>![Container.content(actors) | container.content(albums) | container.content(addons)]+[SubString(ListItem.StarRating,rating1)|SubString(ListItem.StarRating,rating2)|SubString(ListItem.StarRating,rating3)|SubString(ListItem.StarRating,rating4)|SubString(ListItem.StarRating,rating5)]</visible>-->
+            <include content="Stars">
                 <param name="x" value="1830"/>
                 <param name="y" value="968"/>
                 <param name="color" value="alternate"/>
@@ -79,7 +79,7 @@
             <orientation>horizontal</orientation>
             <align>center</align>
             <aligny>center</aligny>
-            <include name="CodecsShowcase">
+            <include content="CodecsShowcase">
                 <param name="colordiffuse" value="$VAR[Picked.Theme.Color]"/>
                 <param name="TextColor" value="TextColor_MainColor"/>
             </include>
@@ -103,7 +103,7 @@
                             <height>237</height>
                             <texture border="56">common/background_strip_horizontal_mini.png</texture>
                         </control>
-                        <include name="ProgressBar">
+                        <include content="ProgressBar">
                             <param name="id" value="0"/>
                             <param name="visible" value="Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)"/>
                             <param name="x" value="0"/>
@@ -115,7 +115,7 @@
                             <param name="border" value="1,1,1,1"/>
                             <param name="info" value="ListItem.Progress"/>
                         </include>
-                        <include name="ProgressBar">
+                        <include content="ProgressBar">
                             <param name="id" value="0"/>
                             <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
                             <param name="x" value="0"/>
@@ -127,7 +127,7 @@
                             <param name="border" value="1,1,1,1"/>
                             <param name="info" value="ListItem.PercentPlayed"/>
                         </include>
-                        <include name="ClearArtLogo">
+                        <include content="ClearArtLogo">
                             <param name="x" value="0"/>
                             <param name="y" value="742"/>
                             <param name="width" value="1920"/>
@@ -175,7 +175,7 @@
                             <control type="group">
                                 <visible>!IsEmpty(Container(500).ListItem.RatingAndVotes)</visible>
                                 <include>Icon_Fade</include>
-                                <include name="Stars">
+                                <include content="Stars">
                                     <param name="x" value="1830"/>
                                     <param name="y" value="968"/>
                                     <param name="color" value="alternate"/>
@@ -234,7 +234,7 @@
                         <height>247</height>
                         <texture border="56">common/background_strip_horizontal_text.png</texture>
                     </control>
-                    <include name="ProgressBar">
+                    <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)"/>
                         <param name="x" value="0"/>
@@ -246,7 +246,7 @@
                         <param name="border" value="1,1,1,1"/>
                         <param name="info" value="ListItem.Progress"/>
                     </include>
-                    <include name="ProgressBar">
+                    <include content="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
                         <param name="x" value="0"/>
@@ -260,7 +260,7 @@
                     </include>
                     <control type="group">
                         <visible>Control.isvisible(54)</visible>
-                        <include name="ClearArtLogo">
+                        <include content="ClearArtLogo">
                             <param name="x" value="0"/>
                             <param name="y" value="742"/>
                             <param name="width" value="1920"/>
@@ -303,7 +303,7 @@
                 <movement>0</movement>
                 <preloaditems>4</preloaditems>
                 <itemlayout height="540" width="260">
-                    <include name="ThumbsImages">
+                    <include content="ThumbsImages">
                         <param name="visible" value="true"/>
                         <param name="x" value="0"/>
                         <param name="y" value="130"/>
@@ -322,7 +322,7 @@
                         <include>NoFocusedThumb</include>
                         <texture>common/BlackDot.png</texture>
                     </control>
-                    <include name="WatchedRecOverlay">
+                    <include content="WatchedRecOverlay">
                         <param name="x" value="0"/>
                         <param name="y" value="130"/>
                         <param name="width" value="50"/>
@@ -334,7 +334,7 @@
                     <control type="group">
                         <include>ButtonFocusAnimation</include>
                         <!-- CDART VIDEO -->
-                        <include name="DiscArt">
+                        <include content="DiscArt">
                             <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                             <param name="x" value="10"/>
                             <param name="y" value="10"/>
@@ -347,7 +347,7 @@
                             <param name="widthShadow" value="260"/>
                             <param name="flipyShadow" value="false"/>
                         </include>
-                        <include name="ThumbsImages">
+                        <include content="ThumbsImages">
                             <param name="visible" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="130"/>
@@ -367,7 +367,7 @@
                             <texture border="1,50,1,50">common/frame_focus.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
-                        <include name="WatchedRecOverlay">
+                        <include content="WatchedRecOverlay">
                             <param name="x" value="0"/>
                             <param name="y" value="130"/>
                             <param name="width" value="50"/>
@@ -403,7 +403,7 @@
                 <onup>59</onup>
                 <ondown>9000</ondown>
             </control>
-            <include name="ClearArtLogo">
+            <include content="ClearArtLogo">
                 <param name="x" value="430r"/>
                 <param name="y" value="252"/>
                 <param name="width" value="380"/>
@@ -412,7 +412,7 @@
                 <param name="align" value="right"/>
                 <param name="aligny" value="bottom"/>
             </include>
-            <include name="StudioArt">
+            <include content="StudioArt">
                 <param name="x" value="50"/>
                 <param name="y" value="252"/>
                 <param name="width" value="380"/>
@@ -449,7 +449,7 @@
                 <movement>0</movement>
                 <preloaditems>4</preloaditems>
                 <itemlayout height="560" width="370">
-                    <include name="ThumbsImages">
+                    <include content="ThumbsImages">
                         <param name="visible" value="true"/>
                         <param name="x" value="0"/>
                         <param name="y" value="190"/>
@@ -468,7 +468,7 @@
                         <include>NoFocusedThumb</include>
                         <texture>common/BlackDot.png</texture>
                     </control>
-                    <include name="WatchedRecOverlay">
+                    <include content="WatchedRecOverlay">
                         <param name="x" value="0"/>
                         <param name="y" value="190"/>
                         <param name="width" value="50"/>
@@ -480,7 +480,7 @@
                     <control type="group">
                         <include>ButtonFocusAnimation</include>
                         <!-- CDART MUSIC -->
-                        <include name="DiscArt">
+                        <include content="DiscArt">
                             <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                             <param name="x" value="10"/>
                             <param name="y" value="10"/>
@@ -493,7 +493,7 @@
                             <param name="widthShadow" value="370"/>
                             <param name="flipyShadow" value="false"/>
                         </include>
-                        <include name="ThumbsImages">
+                        <include content="ThumbsImages">
                             <param name="visible" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="190"/>
@@ -513,7 +513,7 @@
                             <texture border="1,50,1,50">common/frame_focus.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
-                        <include name="WatchedRecOverlay">
+                        <include content="WatchedRecOverlay">
                             <param name="x" value="0"/>
                             <param name="y" value="190"/>
                             <param name="width" value="50"/>
@@ -549,7 +549,7 @@
                 <onup>58</onup>
                 <ondown>9000</ondown>
             </control>
-            <include name="ClearArtLogo">
+            <include content="ClearArtLogo">
                 <param name="x" value="430r"/>
                 <param name="y" value="272"/>
                 <param name="width" value="380"/>
@@ -558,7 +558,7 @@
                 <param name="align" value="right"/>
                 <param name="aligny" value="bottom"/>
             </include>
-            <include name="StudioArt">
+            <include content="StudioArt">
                 <param name="x" value="50"/>
                 <param name="y" value="272"/>
                 <param name="width" value="380"/>
@@ -595,7 +595,7 @@
                 <movement>0</movement>
                 <preloaditems>4</preloaditems>
                 <itemlayout height="280" width="500">
-                    <include name="ThumbsImages">
+                    <include content="ThumbsImages">
                         <param name="visible" value="true"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
@@ -614,7 +614,7 @@
                         <include>NoFocusedThumb</include>
                         <texture>common/BlackDot.png</texture>
                     </control>
-                    <include name="WatchedRecOverlay">
+                    <include content="WatchedRecOverlay">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="50"/>
@@ -625,7 +625,7 @@
                 <focusedlayout height="280" width="500">
                     <control type="group">
                         <include>ButtonFocusAnimation</include>
-                        <include name="ThumbsImages">
+                        <include content="ThumbsImages">
                             <param name="visible" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
@@ -645,7 +645,7 @@
                             <texture border="1,50,1,50">common/frame_focus.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
-                        <include name="WatchedRecOverlay">
+                        <include content="WatchedRecOverlay">
                             <param name="x" value="0"/>
                             <param name="y" value="0"/>
                             <param name="width" value="50"/>
@@ -681,7 +681,7 @@
                 <onup>57</onup>
                 <ondown>9000</ondown>
             </control>
-            <include name="ClearArtLogo">
+            <include content="ClearArtLogo">
                 <param name="x" value="430r"/>
                 <param name="y" value="362"/>
                 <param name="width" value="380"/>
@@ -690,7 +690,7 @@
                 <param name="align" value="right"/>
                 <param name="aligny" value="bottom"/>
             </include>
-            <include name="StudioArt">
+            <include content="StudioArt">
                 <param name="x" value="50"/>
                 <param name="y" value="362"/>
                 <param name="width" value="380"/>
@@ -729,7 +729,7 @@
                 <movement>0</movement>
                 <preloaditems>4</preloaditems>
                 <itemlayout height="560" width="370">
-                    <include name="ThumbsImages">
+                    <include content="ThumbsImages">
                         <param name="visible" value="true"/>
                         <param name="x" value="0"/>
                         <param name="y" value="190"/>
@@ -748,7 +748,7 @@
                         <include>NoFocusedThumb</include>
                         <texture>common/BlackDot.png</texture>
                     </control>
-                    <include name="WatchedRecOverlay">
+                    <include content="WatchedRecOverlay">
                         <param name="x" value="0"/>
                         <param name="y" value="190"/>
                         <param name="width" value="50"/>
@@ -759,7 +759,7 @@
                 <focusedlayout height="560" width="370">
                     <control type="group">
                         <include>ButtonFocusAnimation</include>
-                        <include name="ThumbsImages">
+                        <include content="ThumbsImages">
                             <param name="visible" value="true"/>
                             <param name="x" value="0"/>
                             <param name="y" value="190"/>
@@ -779,7 +779,7 @@
                             <texture border="1,50,1,50">common/frame_focus.png</texture>
                             <aspectratio>stretch</aspectratio>
                         </control>
-                        <include name="WatchedRecOverlay">
+                        <include content="WatchedRecOverlay">
                             <param name="x" value="0"/>
                             <param name="y" value="190"/>
                             <param name="width" value="50"/>

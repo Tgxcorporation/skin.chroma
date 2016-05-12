@@ -15,7 +15,7 @@
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture border="50">common/background_menu.png</texture>
             </control>
-            <include name="WindowClosingButton">
+            <include content="WindowClosingButton">
                 <param name="id" value="99010"/>
                 <param name="x" value="1870"/>
                 <param name="y" value="140"/>
@@ -100,7 +100,7 @@
                         <onright>750</onright>
                     </control>
                 </control>
-                <include name="DialogMenuScroller">
+                <include content="DialogMenuScroller">
                     <param name="y" value="0"/>
                     <param name="height" value="800"/>
                     <param name="onright" value="150"/>
@@ -136,7 +136,7 @@
                         <include>TextColor_MidColor</include>
                         <label>21887</label>
                     </control>
-                    <include name="DummyButton">
+                    <include content="DummyButton">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>
@@ -277,7 +277,7 @@
                         <include>TextColor_MidColor</include>
                         <label>$LOCALIZE[342] - $INFO[Container(150).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include name="DummyButton">
+                    <include content="DummyButton">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>
@@ -415,7 +415,7 @@
                         <include>TextColor_MidColor</include>
                         <label>$LOCALIZE[20343] - $INFO[Container(250).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include name="DummyButton">
+                    <include content="DummyButton">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>
@@ -553,7 +553,7 @@
                         <include>TextColor_MidColor</include>
                         <label>$ADDON[script.extendedinfo 32122] - $INFO[Container(550).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include name="DummyButton">
+                    <include content="DummyButton">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>
@@ -691,7 +691,7 @@
                         <include>TextColor_MidColor</include>
                         <label>$ADDON[script.extendedinfo 32123] - $INFO[Container(650).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include name="DummyButton">
+                    <include content="DummyButton">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>
@@ -807,7 +807,7 @@
                         <include>TextColor_MidColor</include>
                         <label>$ADDON[script.extendedinfo 32118] - $INFO[Container(350).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include name="DummyButton">
+                    <include content="DummyButton">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>
@@ -905,7 +905,7 @@
                         <include>TextColor_MidColor</include>
                         <label>$LOCALIZE[1] - $INFO[Container(450).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include name="DummyButton">
+                    <include content="DummyButton">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>
@@ -1005,7 +1005,7 @@
                         <include>TextColor_MidColor</include>
                         <label>$LOCALIZE[20445] - $INFO[Container(750).NumItems] $LOCALIZE[31025]</label>
                     </control>
-                    <include name="DummyButton">
+                    <include content="DummyButton">
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="860"/>

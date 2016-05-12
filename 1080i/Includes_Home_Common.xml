@@ -61,7 +61,7 @@
             </control>
             <control type="group">
                 <visible>Control.IsVisible($PARAM[id])</visible>
-                <include name="ProgressBar">
+                <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="IntegerGreaterThan(Container($PARAM[id]).ListItem.PercentPlayed,0)"/>
                     <param name="x" value="0"/>
@@ -73,7 +73,7 @@
                     <param name="border" value="1,1,1,1"/>
                     <param name="info" value="Container($PARAM[id]).ListItem.PercentPlayed"/>
                 </include>
-                <include name="ProgressBar">
+                <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="true"/>
                     <param name="x" value="0"/>
@@ -120,7 +120,7 @@
                 </control>
                 <control type="group">
                     <visible>$PARAM[visibilityLabelRight]</visible>
-                    <include name="Stars">
+                    <include content="Stars">
                         <param name="x" value="1830"/>
                         <param name="y" value="968"/>
                         <param name="color" value="alternate"/>
@@ -201,7 +201,7 @@
             </control>
             <control type="group">
                 <visible>Control.IsVisible($PARAM[id])</visible>
-                <include name="ProgressBar">
+                <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="IntegerGreaterThan(Container($PARAM[id]).ListItem.PercentPlayed,0)"/>
                     <param name="x" value="0"/>
@@ -248,7 +248,7 @@
                 </control>
                 <control type="group">
                     <visible>$PARAM[visibilityLabelRight]</visible>
-                    <include name="Stars">
+                    <include content="Stars">
                         <param name="x" value="1830"/>
                         <param name="y" value="968"/>
                         <param name="color" value="alternate"/>
@@ -297,7 +297,7 @@
         <focusposition>4</focusposition>
         <orientation>horizontal</orientation>
         <itemlayout height="590" width="260">
-            <include name="ThumbsImages">
+            <include content="ThumbsImages">
                 <param name="visible" value="true"/>
                 <param name="x" value="0"/>
                 <param name="y" value="200"/>
@@ -320,7 +320,7 @@
         <focusedlayout height="590" width="260">
             <control type="group">
                 <include>ButtonFocusAnimation</include>
-                <include name="ThumbsImages">
+                <include content="ThumbsImages">
                     <param name="visible" value="true"/>
                     <param name="x" value="0"/>
                     <param name="y" value="200"/>
@@ -355,7 +355,7 @@
         <movement>0</movement>
         <preloaditems>4</preloaditems>
         <itemlayout height="560" width="370">
-            <include name="ThumbsImages">
+            <include content="ThumbsImages">
                 <param name="visible" value="true"/>
                 <param name="x" value="0"/>
                 <param name="y" value="190"/>
@@ -378,7 +378,7 @@
         <focusedlayout height="560" width="370">
             <control type="group">
                 <include>ButtonFocusAnimation</include>
-                <include name="ThumbsImages">
+                <include content="ThumbsImages">
                     <param name="visible" value="true"/>
                     <param name="x" value="0"/>
                     <param name="y" value="190"/>
@@ -413,7 +413,7 @@
         <movement>0</movement>
         <preloaditems>4</preloaditems>
         <itemlayout height="560" width="500">
-            <include name="ThumbsImages">
+            <include content="ThumbsImages">
                 <param name="visible" value="true"/>
                 <param name="x" value="0"/>
                 <param name="y" value="280"/>
@@ -436,7 +436,7 @@
         <focusedlayout height="560" width="500">
             <control type="group">
                 <include>ButtonFocusAnimation</include>
-                <include name="ThumbsImages">
+                <include content="ThumbsImages">
                     <param name="visible" value="true"/>
                     <param name="x" value="0"/>
                     <param name="y" value="280"/>
@@ -471,7 +471,7 @@
         <movement>0</movement>
         <preloaditems>4</preloaditems>
         <itemlayout height="560" width="373">
-            <include name="ThumbsImages">
+            <include content="ThumbsImages">
                 <param name="visible" value="true"/>
                 <param name="x" value="0"/>
                 <param name="y" value="280"/>
@@ -494,7 +494,7 @@
         <focusedlayout height="560" width="373">
             <control type="group">
                 <include>ButtonFocusAnimation</include>
-                <include name="ThumbsImages">
+                <include content="ThumbsImages">
                     <param name="visible" value="true"/>
                     <param name="x" value="0"/>
                     <param name="y" value="280"/>

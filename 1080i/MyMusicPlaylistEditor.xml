@@ -72,7 +72,7 @@
                         <itemlayout height="100" width="910">
                             <control type="group">
                                 <include>NoFocusedIcon</include>
-                                <include name="ThumbsImages">
+                                <include content="ThumbsImages">
                                     <param name="visible" value="true"/>
                                     <param name="x" value="TextMargin"/>
                                     <param name="y" value="0"/>
@@ -125,7 +125,7 @@
                                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                     <texture border="1">list/bg_facade_focus_2.png</texture>
                                 </control>
-                                <include name="ThumbsImages">
+                                <include content="ThumbsImages">
                                     <param name="visible" value="true"/>
                                     <param name="x" value="TextMargin"/>
                                     <param name="y" value="0"/>
@@ -214,7 +214,7 @@
                         <itemlayout height="100" width="910">
                             <control type="group">
                                 <include>NoFocusedIcon</include>
-                                <include name="ThumbsImages">
+                                <include content="ThumbsImages">
                                     <param name="visible" value="true"/>
                                     <param name="x" value="TextMargin"/>
                                     <param name="y" value="0"/>
@@ -267,7 +267,7 @@
                                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                     <texture border="1">list/bg_facade_focus_2.png</texture>
                                 </control>
-                                <include name="ThumbsImages">
+                                <include content="ThumbsImages">
                                     <param name="visible" value="true"/>
                                     <param name="x" value="TextMargin"/>
                                     <param name="y" value="0"/>

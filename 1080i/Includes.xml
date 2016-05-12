@@ -405,7 +405,7 @@
             <height>90</height>
             <texture border="1">common/background_strip_horizontal_mini_right.png</texture>
         </control>
-        <include name="ProgressBar">
+        <include content="ProgressBar">
             <param name="id" value="0"/>
             <param name="visible" value="Player.Caching"/>
             <param name="x" value="50"/>
@@ -417,7 +417,7 @@
             <param name="border" value="1,1,1,1"/>
             <param name="info" value="Player.CacheLevel"/>
         </include>
-        <include name="ProgressBar">
+        <include content="ProgressBar">
             <param name="id" value="0"/>
             <param name="visible" value="true"/>
             <param name="x" value="50"/>
@@ -429,7 +429,7 @@
             <param name="border" value="1,1,1,1"/>
             <param name="info" value="Player.ProgressCache"/>
         </include>
-        <include name="ProgressBar">
+        <include content="ProgressBar">
             <param name="id" value="23"/>
             <param name="visible" value="true"/>
             <param name="x" value="50"/>
@@ -441,7 +441,7 @@
             <param name="border" value="1,1,1,1"/>
             <param name="info" value="Player.Progress"/>
         </include>
-        <include name="ProgressBar">
+        <include content="ProgressBar">
             <param name="id" value="0"/>
             <param name="visible" value="PVR.IsTimeshift"/>
             <param name="x" value="50"/>
@@ -1093,7 +1093,7 @@
             <include>OSDFade</include>
             <include>OpenClose</include>
 
-            <include name="WindowClosingButton">
+            <include content="WindowClosingButton">
                 <param name="id" value="9010"/>
                 <param name="x" value="1860"/>
                 <param name="y" value="360"/>
@@ -1157,7 +1157,7 @@
                     <posx>1010</posx>
                     <control type="group">
                         <visible>!VideoPlayer.Content(LiveTV)</visible>
-                        <include name="Stars">
+                        <include content="Stars">
                             <param name="x" value="-3"/>
                             <param name="y" value="3"/>
                             <param name="color" value="alternate"/>
@@ -1216,7 +1216,7 @@
                 </control>
                 <control type="group">
                     <posx>1490</posx>
-                    <include name="DiscArt">
+                    <include content="DiscArt">
                         <param name="visible" value="!IsEmpty(VideoPlayer.Cover)+!VideoPlayer.Content(LiveTV)+!VideoPlayer.Content(episodes)"/>
                         <param name="x" value="126"/>
                         <param name="y" value="63"/>
@@ -1304,7 +1304,7 @@
                     <texture background="true">$VAR[VideoPlayerClearLogo]</texture>
                 </control>
             </control>
-            <include name="StudioArt">
+            <include content="StudioArt">
                 <param name="x" value="1010"/>
                 <param name="y" value="260"/>
                 <param name="width" value="380"/>

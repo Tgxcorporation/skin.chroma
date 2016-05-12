@@ -11,7 +11,7 @@
                 <!--<height>200</height>-->
                 <!--<texture border="65">common/background_strip_horizontal_text.png</texture>-->
             <!--</control>-->
-            <!--<include name="ProgressBar">-->
+            <!--<include content="ProgressBar">-->
                 <!--<param name="id" value="10"/>-->
                 <!--<param name="visible" value="true"/>-->
                 <!--<param name="x" value="0"/>-->

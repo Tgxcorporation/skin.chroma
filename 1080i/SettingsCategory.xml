@@ -52,7 +52,7 @@
                     <control type="grouplist" id="3">
                         <height>500</height>
                         <onup>9900</onup>
-                        <onright>5</onright>
+                        <onright>9060</onright>
                         <ondown>20</ondown>
                         <onback>5</onback>
                         <include>DialogMenuButtonGroup</include>
@@ -83,7 +83,7 @@
                         <ondown>noop</ondown>
                         <onclick>SettingsLevelChange</onclick>
                     </control>
-                    <include name="DialogMenuScroller">
+                    <include content="DialogMenuScroller">
                         <param name="y" value="380"/>
                         <param name="height" value="500"/>
                         <param name="onright" value="5"/>

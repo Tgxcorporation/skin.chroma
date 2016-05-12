@@ -15,7 +15,7 @@
                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture border="50">common/background_menu.png</texture>
             </control>
-            <include name="WindowClosingButton">
+            <include content="WindowClosingButton">
                 <param name="id" value="9010"/>
                 <param name="x" value="1710"/>
                 <param name="y" value="140"/>
