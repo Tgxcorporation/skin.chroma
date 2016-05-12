@@ -1324,7 +1324,7 @@
             <!--EXCEPTIONS-->
             <control type="image">
                 <visible>[
-                    [window.IsActive(LoginScreen.xml)+String.IsEqual(ListItem.Thumb,unknown-user.png)]|
+                    [window.IsActive(LoginScreen.xml)+String.IsEqual(ListItem.Thumb,DefaultUser.png)]|
                     [window.IsActive(CustomAddons.xml)]|
                     [String.IsEqual(ListItem.thumb,special://home/addons/plugin.video.plexbmc/resources/thumb.png)]|
                     [String.IsEqual(ListItem.Icon,)+!String.IsEmpty(Window.Property(IsRadio))]|
@@ -1361,7 +1361,7 @@
             <!--MISSING THUMBS-->
             <control type="image">
                 <visible>![
-                    [window.IsActive(LoginScreen.xml)+String.IsEqual(ListItem.Thumb,unknown-user.png)]|
+                    [window.IsActive(LoginScreen.xml)+String.IsEqual(ListItem.Thumb,DefaultUser.png)]|
                     [window.IsActive(CustomAddons.xml)]|
                     [String.IsEqual(ListItem.thumb,special://home/addons/plugin.video.plexbmc/resources/thumb.png)]|
                     [String.IsEqual(ListItem.Icon,)+!String.IsEmpty(Window.Property(IsRadio))]|
