@@ -348,7 +348,7 @@
                                 <posx>910</posx>
                                 <posy>0</posy>
                                 <control type="image">
-                                    <visible>SubString(Container(221).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(221).ListItem.Icon,Default)</visible>
                                     <posx>0</posx>
                                     <posy>0</posy>
                                     <width>380</width>
@@ -403,7 +403,7 @@
                                         <label>$INFO[ListItem.Label]</label>
                                     </control>
                                     <control type="label">
-                                        <visible>!SubString(ListItem.Property(Duration),min)</visible>
+                                        <visible>!String.Contains(ListItem.Property(Duration),min)</visible>
                                         <posx>TextMargin</posx>
                                         <posy>54</posy>
                                         <height>50</height>
@@ -413,7 +413,7 @@
                                         <label>$INFO[ListItem.Property(Year),,     ]$INFO[ListItem.Property(Duration),, $LOCALIZE[12391]]$INFO[ListItem.Property(Genre),     ]</label>
                                     </control>
                                     <control type="label">
-                                        <visible>SubString(ListItem.Property(Duration),min)</visible>
+                                        <visible>String.Contains(ListItem.Property(Duration),min)</visible>
                                         <posx>TextMargin</posx>
                                         <posy>54</posy>
                                         <height>50</height>
@@ -455,7 +455,7 @@
                                             <label>$INFO[ListItem.Label]</label>
                                         </control>
                                         <control type="label">
-                                            <visible>!SubString(ListItem.Property(Duration),min)</visible>
+                                            <visible>!String.Contains(ListItem.Property(Duration),min)</visible>
                                             <posx>TextMargin</posx>
                                             <posy>54</posy>
                                             <height>50</height>
@@ -466,7 +466,7 @@
                                             <label>$INFO[ListItem.Property(Year),,     ]$INFO[ListItem.Property(Duration),, $LOCALIZE[12391]]$INFO[ListItem.Property(Genre),     ]</label>
                                         </control>
                                         <control type="label">
-                                            <visible>SubString(ListItem.Property(Duration),min)</visible>
+                                            <visible>String.Contains(ListItem.Property(Duration),min)</visible>
                                             <posx>TextMargin</posx>
                                             <posy>54</posy>
                                             <height>50</height>
@@ -501,7 +501,7 @@
                                 <posx>910</posx>
                                 <posy>0</posy>
                                 <control type="image">
-                                    <visible>SubString(Container(111).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(111).ListItem.Icon,Default)</visible>
                                     <posx>0</posx>
                                     <posy>0</posy>
                                     <width>380</width>
@@ -556,7 +556,7 @@
                                         <label>$INFO[ListItem.Label]</label>
                                     </control>
                                     <control type="label">
-                                        <visible>!SubString(ListItem.Property(Duration),min)</visible>
+                                        <visible>!String.Contains(ListItem.Property(Duration),min)</visible>
                                         <posx>TextMargin</posx>
                                         <posy>54</posy>
                                         <height>50</height>
@@ -566,7 +566,7 @@
                                         <label>$INFO[ListItem.Property(Year),,     ]$INFO[ListItem.Property(Duration),, $LOCALIZE[12391]]$INFO[ListItem.Property(Genre),     ]</label>
                                     </control>
                                     <control type="label">
-                                        <visible>SubString(ListItem.Property(Duration),min)</visible>
+                                        <visible>String.Contains(ListItem.Property(Duration),min)</visible>
                                         <posx>TextMargin</posx>
                                         <posy>54</posy>
                                         <height>50</height>
@@ -608,7 +608,7 @@
                                             <label>$INFO[ListItem.Label]</label>
                                         </control>
                                         <control type="label">
-                                            <visible>!SubString(ListItem.Property(Duration),min)</visible>
+                                            <visible>!String.Contains(ListItem.Property(Duration),min)</visible>
                                             <posx>TextMargin</posx>
                                             <posy>54</posy>
                                             <height>50</height>
@@ -619,7 +619,7 @@
                                             <label>$INFO[ListItem.Property(Year),,     ]$INFO[ListItem.Property(Duration),, $LOCALIZE[12391]]$INFO[ListItem.Property(Genre),     ]</label>
                                         </control>
                                         <control type="label">
-                                            <visible>SubString(ListItem.Property(Duration),min)</visible>
+                                            <visible>String.Contains(ListItem.Property(Duration),min)</visible>
                                             <posx>TextMargin</posx>
                                             <posy>54</posy>
                                             <height>50</height>
@@ -654,7 +654,7 @@
                                 <posx>910</posx>
                                 <posy>0</posy>
                                 <control type="image">
-                                    <visible>SubString(Container(211).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(211).ListItem.Icon,Default)</visible>
                                     <posx>0</posx>
                                     <posy>0</posy>
                                     <width>380</width>
@@ -784,7 +784,7 @@
                                 <posx>910</posx>
                                 <posy>0</posy>
                                 <control type="image">
-                                    <visible>SubString(Container(121).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(121).ListItem.Icon,Default)</visible>
                                     <posx>0</posx>
                                     <posy>0</posy>
                                     <width>380</width>
@@ -914,7 +914,7 @@
                                 <posx>910</posx>
                                 <posy>0</posy>
                                 <control type="image">
-                                    <visible>SubString(Container(131).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(131).ListItem.Icon,Default)</visible>
                                     <posx>0</posx>
                                     <posy>0</posy>
                                     <width>380</width>
@@ -1044,7 +1044,7 @@
                                 <posx>910</posx>
                                 <posy>0</posy>
                                 <control type="image">
-                                    <visible>SubString(Container(141).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(141).ListItem.Icon,Default)</visible>
                                     <posx>0</posx>
                                     <posy>0</posy>
                                     <width>380</width>
@@ -1192,7 +1192,7 @@
                                 <posx>910</posx>
                                 <posy>0</posy>
                                 <control type="image">
-                                    <visible>SubString(Container(151).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(151).ListItem.Icon,Default)</visible>
                                     <posx>0</posx>
                                     <posy>0</posy>
                                     <width>380</width>
@@ -1322,7 +1322,7 @@
                                 <posx>910</posx>
                                 <posy>0</posy>
                                 <control type="image">
-                                    <visible>SubString(Container(161).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(161).ListItem.Icon,Default)</visible>
                                     <posx>0</posx>
                                     <posy>0</posy>
                                     <width>380</width>
@@ -1452,7 +1452,7 @@
                                 <posx>910</posx>
                                 <posy>0</posy>
                                 <control type="image">
-                                    <visible>SubString(Container(171).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(171).ListItem.Icon,Default)</visible>
                                     <posx>0</posx>
                                     <posy>0</posy>
                                     <width>380</width>
@@ -1600,7 +1600,7 @@
                                 <posx>910</posx>
                                 <posy>0</posy>
                                 <control type="image">
-                                    <visible>SubString(Container(181).ListItem.Icon,Default,Left)</visible>
+                                    <visible>String.StartsWith(Container(181).ListItem.Icon,Default)</visible>
                                     <posx>0</posx>
                                     <posy>0</posy>
                                     <width>380</width>

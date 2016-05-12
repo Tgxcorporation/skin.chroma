@@ -58,7 +58,7 @@
                     <label>$INFO[Container(6).NumItems,, $LOCALIZE[31025]]</label>
                 </control>
                 <control type="image">
-                    <visible>!IsEmpty(Container(6).ListItem.Thumb)</visible>
+                    <visible>!String.IsEmpty(Container(6).ListItem.Thumb)</visible>
                     <posx>1280</posx>
                     <posy>240</posy>
                     <width>380</width>
@@ -67,7 +67,7 @@
                     <texture background="true">$INFO[Container(6).ListItem.Thumb]</texture>
                 </control>
                 <control type="image">
-                    <visible>!IsEmpty(Container(6).ListItem.Icon)</visible>
+                    <visible>!String.IsEmpty(Container(6).ListItem.Icon)</visible>
                     <posx>1280</posx>
                     <posy>240</posy>
                     <width>380</width>

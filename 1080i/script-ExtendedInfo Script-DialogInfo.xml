@@ -51,49 +51,49 @@
                         <onright>49</onright>
                     </control>
                     <control type="button" id="105">
-                        <visible>IntegerGreaterThan(Container(150).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(150).NumItems,0)</visible>
                         <description>Movie actor roles</description>
                         <include>LeftMenuButton</include>
                         <label>342</label>
                         <onright>150</onright>
                     </control>
                     <control type="button" id="205">
-                        <visible>IntegerGreaterThan(Container(250).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(250).NumItems,0)</visible>
                         <description>TV Show actor roles</description>
                         <include>LeftMenuButton</include>
                         <label>20343</label>
                         <onright>250</onright>
                     </control>
                     <control type="button" id="505">
-                        <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(550).NumItems,0)</visible>
                         <description>Movie crew member</description>
                         <include>LeftMenuButton</include>
                         <label>$ADDON[script.extendedinfo 32122]</label>
                         <onright>550</onright>
                     </control>
                     <control type="button" id="605">
-                        <visible>IntegerGreaterThan(Container(650).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(650).NumItems,0)</visible>
                         <description>TVShow crew member</description>
                         <include>LeftMenuButton</include>
                         <label>$ADDON[script.extendedinfo 32123]</label>
                         <onright>650</onright>
                     </control>
                     <control type="button" id="305">
-                        <visible>IntegerGreaterThan(Container(350).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(350).NumItems,0)</visible>
                         <description>Youtube</description>
                         <include>LeftMenuButton</include>
                         <label>$ADDON[script.extendedinfo 32118]</label>
                         <onright>350</onright>
                     </control>
                     <control type="button" id="405">
-                        <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
                         <description>Pictures</description>
                         <include>LeftMenuButton</include>
                         <label>1</label>
                         <onright>450</onright>
                     </control>
                     <control type="button" id="705">
-                        <visible>IntegerGreaterThan(Container(750).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(750).NumItems,0)</visible>
                         <description>Fanart</description>
                         <include>LeftMenuButton</include>
                         <label>20445</label>
@@ -156,37 +156,37 @@
                                 <label>$ADDON[script.extendedinfo 32011]:</label>
                                 <label2>$INFO[Window.Property(TotalMovies)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(TotalMovies))</visible>
+                                <visible>!String.IsEmpty(Window.Property(TotalMovies))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32021]:</label>
                                 <label2>$INFO[Window.Property(DBMovies)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(DBMovies))</visible>
+                                <visible>!String.IsEmpty(Window.Property(DBMovies))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32012]:</label>
                                 <label2>$INFO[Window.Property(Birthday)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(Birthday))</visible>
+                                <visible>!String.IsEmpty(Window.Property(Birthday))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32020]:</label>
                                 <label2>$INFO[Window.Property(Age)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(Age))</visible>
+                                <visible>!String.IsEmpty(Window.Property(Age))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32013]:</label>
                                 <label2>$INFO[Window.Property(Deathday)]$INFO[Window.Property(DeathageLong), (,)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(Deathday))</visible>
+                                <visible>!String.IsEmpty(Window.Property(Deathday))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32014]:</label>
                                 <label2>$INFO[Window.Property(PlaceOfBirth)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(PlaceOfBirth))</visible>
+                                <visible>!String.IsEmpty(Window.Property(PlaceOfBirth))</visible>
                             </item>
                             <!--<item>-->
                             <!--<label>$ADDON[script.extendedinfo 32015]:</label>-->
@@ -198,13 +198,13 @@
                                 <label>$ADDON[script.extendedinfo 32016]:</label>
                                 <label2>$INFO[Window.Property(AlsoKnownAs)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(AlsoKnownAs))</visible>
+                                <visible>!String.IsEmpty(Window.Property(AlsoKnownAs))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32017]:</label>
                                 <label2>$INFO[Window.Property(Homepage)]</label2>
                                 <onclick>RunScript(script.extendedinfo,homepage=$INFO[Window.Property(Homepage)])</onclick>
-                                <visible>!IsEmpty(Window.Property(Homepage))</visible>
+                                <visible>!String.IsEmpty(Window.Property(Homepage))</visible>
                             </item>
                         </content>
                     </control>
@@ -244,7 +244,7 @@
                         <posx>910</posx>
                         <posy>0</posy>
                         <control type="image">
-                            <visible>IsEmpty(Window.Property(Poster))</visible>
+                            <visible>String.IsEmpty(Window.Property(Poster))</visible>
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>380</width>
@@ -266,7 +266,7 @@
                 <!--Movie actor roles-->
                 <control type="group" id="1500">
                     <visible>control.hasfocus(105)|ControlGroup(1500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(150).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(150).NumItems,0)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -323,7 +323,7 @@
                                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                 <texture>OverlayWatched.png</texture>
                                 <aspectratio aligny="center">keep</aspectratio>
-                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                             </control>
                         </itemlayout>
                         <focusedlayout height="100" width="860">
@@ -365,7 +365,7 @@
                                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                     <texture>OverlayWatched.png</texture>
                                     <aspectratio aligny="center">keep</aspectratio>
-                                    <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                    <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                                 </control>
                             </control>
                         </focusedlayout>
@@ -382,7 +382,7 @@
                         <posx>910</posx>
                         <posy>0</posy>
                         <control type="image">
-                            <visible>IsEmpty(Container(150).ListItem.Thumb)</visible>
+                            <visible>String.IsEmpty(Container(150).ListItem.Thumb)</visible>
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>380</width>
@@ -404,7 +404,7 @@
                 <!--TV Show actor roles-->
                 <control type="group" id="2500">
                     <visible>control.hasfocus(205)|ControlGroup(2500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(250).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(250).NumItems,0)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -461,7 +461,7 @@
                                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                 <texture>OverlayWatched.png</texture>
                                 <aspectratio aligny="center">keep</aspectratio>
-                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                             </control>
                         </itemlayout>
                         <focusedlayout height="100" width="860">
@@ -503,7 +503,7 @@
                                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                     <texture>OverlayWatched.png</texture>
                                     <aspectratio aligny="center">keep</aspectratio>
-                                    <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                    <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                                 </control>
                             </control>
                         </focusedlayout>
@@ -520,7 +520,7 @@
                         <posx>910</posx>
                         <posy>0</posy>
                         <control type="image">
-                            <visible>IsEmpty(Container(250).ListItem.Thumb)</visible>
+                            <visible>String.IsEmpty(Container(250).ListItem.Thumb)</visible>
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>380</width>
@@ -542,7 +542,7 @@
                 <!--Movie crew member-->
                 <control type="group" id="5500">
                     <visible>control.hasfocus(505)|ControlGroup(5500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(550).NumItems,0)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -599,7 +599,7 @@
                                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                 <texture>OverlayWatched.png</texture>
                                 <aspectratio aligny="center">keep</aspectratio>
-                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                             </control>
                         </itemlayout>
                         <focusedlayout height="100" width="860">
@@ -641,7 +641,7 @@
                                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                     <texture>OverlayWatched.png</texture>
                                     <aspectratio aligny="center">keep</aspectratio>
-                                    <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                    <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                                 </control>
                             </control>
                         </focusedlayout>
@@ -658,7 +658,7 @@
                         <posx>910</posx>
                         <posy>0</posy>
                         <control type="image">
-                            <visible>IsEmpty(Container(550).ListItem.Thumb)</visible>
+                            <visible>String.IsEmpty(Container(550).ListItem.Thumb)</visible>
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>380</width>
@@ -680,7 +680,7 @@
                 <!--TVShow crew member-->
                 <control type="group" id="6500">
                     <visible>control.hasfocus(605)|ControlGroup(6500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(650).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(650).NumItems,0)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -737,7 +737,7 @@
                                 <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                 <texture>OverlayWatched.png</texture>
                                 <aspectratio aligny="center">keep</aspectratio>
-                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                             </control>
                         </itemlayout>
                         <focusedlayout height="100" width="860">
@@ -779,7 +779,7 @@
                                     <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                                     <texture>OverlayWatched.png</texture>
                                     <aspectratio aligny="center">keep</aspectratio>
-                                    <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                    <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
                                 </control>
                             </control>
                         </focusedlayout>
@@ -796,7 +796,7 @@
                 <!--Youtube-->
                 <control type="group" id="3500">
                     <visible>control.hasfocus(305)|ControlGroup(3500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(350).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(350).NumItems,0)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -872,7 +872,7 @@
                         <posx>910</posx>
                         <posy>0</posy>
                         <control type="image">
-                            <visible>IsEmpty(Container(350).ListItem.Thumb)</visible>
+                            <visible>String.IsEmpty(Container(350).ListItem.Thumb)</visible>
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>380</width>
@@ -894,7 +894,7 @@
                 <!--PICTURES-->
                 <control type="group" id="4500">
                     <visible>control.hasfocus(405)|ControlGroup(4500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -972,7 +972,7 @@
                         <posx>910</posx>
                         <posy>0</posy>
                         <control type="image">
-                            <visible>IsEmpty(Container(450).ListItem.Thumb)</visible>
+                            <visible>String.IsEmpty(Container(450).ListItem.Thumb)</visible>
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>380</width>
@@ -994,7 +994,7 @@
                 <!--FANART-->
                 <control type="group" id="7500">
                     <visible>control.hasfocus(705)|ControlGroup(7500).HasFocus</visible>
-                    <visible>IntegerGreaterThan(Container(750).NumItems,0)</visible>
+                    <visible>Integer.IsGreater(Container(750).NumItems,0)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="label">
                         <posx>TextMargin</posx>
@@ -1072,7 +1072,7 @@
                         <posx>910</posx>
                         <posy>0</posy>
                         <control type="image">
-                            <visible>IsEmpty(Container(750).ListItem.Thumb)</visible>
+                            <visible>String.IsEmpty(Container(750).ListItem.Thumb)</visible>
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>380</width>

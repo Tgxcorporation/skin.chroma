@@ -178,7 +178,7 @@
                     <param name="flipy" value="false"/>
                 </include>
                 <control type="textbox">
-                    <visible>IsEmpty(ListItem.Property(Addon.broken))</visible>
+                    <visible>String.IsEmpty(ListItem.Property(Addon.broken))</visible>
                     <posx>0</posx>
                     <posy>430</posy>
                     <width>380</width>
@@ -189,7 +189,7 @@
                     <pagecontrol>7060</pagecontrol>
                 </control>
                 <control type="textbox">
-                    <visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
+                    <visible>!String.IsEmpty(ListItem.Property(Addon.broken))</visible>
                     <posx>0</posx>
                     <posy>430</posy>
                     <width>380</width>

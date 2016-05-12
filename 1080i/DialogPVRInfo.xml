@@ -102,7 +102,7 @@
                     <label>$INFO[ListItem.Title]</label>
                 </control>
                 <control type="label">
-                    <visible>IsEmpty(ListItem.EpisodeName)</visible>
+                    <visible>String.IsEmpty(ListItem.EpisodeName)</visible>
                     <posx>TextMargin</posx>
                     <posy>50</posy>
                     <width>760</width>
@@ -112,7 +112,7 @@
                     <label>$LOCALIZE[207]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.EpisodeName)</visible>
+                    <visible>!String.IsEmpty(ListItem.EpisodeName)</visible>
                     <posx>TextMargin</posx>
                     <posy>50</posy>
                     <width>760</width>

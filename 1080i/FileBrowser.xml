@@ -249,7 +249,7 @@
                     <posx>910</posx>
                     <posy>0</posy>
                     <include content="ThumbsImages">
-                        <param name="visible" value="!SubString(Control.GetLabel(416),*)"/>
+                        <param name="visible" value="!String.Contains(Control.GetLabel(416),*)"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="380"/>
@@ -260,7 +260,7 @@
                         <param name="flipy" value="false"/>
                     </include>
                     <include content="ThumbsImages">
-                        <param name="visible" value="SubString(Control.GetLabel(416),*)"/>
+                        <param name="visible" value="String.Contains(Control.GetLabel(416),*)"/>
                         <param name="x" value="0"/>
                         <param name="y" value="0"/>
                         <param name="width" value="380"/>

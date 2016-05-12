@@ -12,7 +12,7 @@
             </include>
         </control>
         <control type="label">
-            <animation effect="slide" time="0" start="0,0" end="0,25" condition="IsEmpty(control.getlabel(45742))">Conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,25" condition="String.IsEmpty(control.getlabel(45742))">Conditional</animation>
             <posx>TextMargin</posx>
             <posy>905</posy>
             <width>1820</width>
@@ -24,7 +24,7 @@
             <label>$VAR[Fanart_Title]</label>
         </control>
         <control type="group" id="45741">
-            <visible>![Container.content(actors) | container.content(albums) | container.content(addons)]+!IsEmpty(ListItem.Rating)</visible>
+            <visible>![Container.content(actors) | container.content(albums) | container.content(addons)]+!String.IsEmpty(ListItem.Rating)</visible>
             <include content="Stars">
                 <param name="x" value="1830"/>
                 <param name="y" value="968"/>
@@ -95,7 +95,7 @@
                     <include>Facade_Fade</include>
                     <visible>Control.hasfocus(505050)|Control.isvisible(54)</visible>
                     <control type="group">
-                        <!--<visible>![StringCompare(ListItem.Label,..)]</visible>-->
+                        <!--<visible>![String.IsEqual(ListItem.Label,..)]</visible>-->
                         <control type="image">
                             <posx>0</posx>
                             <posy>841</posy>
@@ -117,7 +117,7 @@
                         </include>
                         <include content="ProgressBar">
                             <param name="id" value="0"/>
-                            <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
+                            <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
                             <param name="x" value="0"/>
                             <param name="y" value="891"/>
                             <param name="width" value="1920"/>
@@ -160,7 +160,7 @@
                             <texture border="56">common/background_strip_horizontal_mini.png</texture>
                         </control>
                         <control type="label">
-                            <animation effect="slide" time="0" start="0,0" end="0,25" condition="IsEmpty(control.getlabel(45742))">Conditional</animation>
+                            <animation effect="slide" time="0" start="0,0" end="0,25" condition="String.IsEmpty(control.getlabel(45742))">Conditional</animation>
                             <posx>TextMargin</posx>
                             <posy>905</posy>
                             <width>1820</width>
@@ -173,7 +173,7 @@
                         </control>
                         <control type="group" id="45741">
                             <control type="group">
-                                <visible>!IsEmpty(Container(500).ListItem.RatingAndVotes)</visible>
+                                <visible>!String.IsEmpty(Container(500).ListItem.RatingAndVotes)</visible>
                                 <include>Icon_Fade</include>
                                 <include content="Stars">
                                     <param name="x" value="1830"/>
@@ -226,7 +226,7 @@
                 <include>Facade_Fade</include>
                 <visible>Control.isvisible(59)|Control.isvisible(58)|Control.isvisible(57)</visible>
                 <control type="group">
-                    <!--<visible>![StringCompare(ListItem.Label,..)]</visible>-->
+                    <!--<visible>![String.IsEqual(ListItem.Label,..)]</visible>-->
                     <control type="image">
                         <posx>0</posx>
                         <posy>836</posy>
@@ -248,7 +248,7 @@
                     </include>
                     <include content="ProgressBar">
                         <param name="id" value="0"/>
-                        <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
+                        <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
                         <param name="x" value="0"/>
                         <param name="y" value="891"/>
                         <param name="width" value="1920"/>
@@ -335,7 +335,7 @@
                         <include>ButtonFocusAnimation</include>
                         <!-- CDART VIDEO -->
                         <include content="DiscArt">
-                            <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                            <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                             <param name="x" value="10"/>
                             <param name="y" value="10"/>
                             <param name="width" value="240"/>
@@ -481,7 +481,7 @@
                         <include>ButtonFocusAnimation</include>
                         <!-- CDART MUSIC -->
                         <include content="DiscArt">
-                            <param name="visible" value="!StringCompare(ListItem.Label,..)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
+                            <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                             <param name="x" value="10"/>
                             <param name="y" value="10"/>
                             <param name="width" value="350"/>

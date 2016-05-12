@@ -18,7 +18,7 @@
             <include>Fanart_Art</include>
         </control>
         <control type="group">
-            <visible>!IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))+!Skin.HasSetting(DisableFanart)</visible>
+            <visible>!String.IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))+!Skin.HasSetting(DisableFanart)</visible>
             <include content="TVNextAiredFanart">
                 <param name="id" value="200"/>
             </include>

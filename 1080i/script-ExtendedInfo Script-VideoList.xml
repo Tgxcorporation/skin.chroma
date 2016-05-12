@@ -106,7 +106,7 @@
                     <posx>1010</posx>
                     <posy>380</posy>
                     <control type="group">
-                        <visible>!IsEmpty(Container(500).ListItem.RatingAndVotes)</visible>
+                        <visible>!String.IsEmpty(Container(500).ListItem.RatingAndVotes)</visible>
                         <include>Icon_Fade</include>
                         <include content="Stars">
                             <param name="x" value="-3"/>

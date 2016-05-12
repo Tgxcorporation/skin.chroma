@@ -84,7 +84,7 @@
                 <posx>1490</posx>
                 <posy>380</posy>
                 <include content="DiscArt">
-                    <param name="visible" value="!IsEmpty(ListItem.Thumb)"/>
+                    <param name="visible" value="!String.IsEmpty(ListItem.Thumb)"/>
                     <param name="x" value="10"/>
                     <param name="y" value="200"/>
                     <param name="width" value="360"/>

@@ -24,7 +24,7 @@
                 <!--<param name="info" value="-"/>-->
             <!--</include>-->
             <!--<control type="label" id="1">-->
-                <!--<visible>IntegerGreaterThan(Control.GetLabel(10), 0)</visible>-->
+                <!--<visible>Integer.IsGreater(Control.GetLabel(10), 0)</visible>-->
                 <!--<posx>TextMargin</posx>-->
                 <!--<posy>50</posy>-->
                 <!--<height>90</height>-->
@@ -36,7 +36,7 @@
                 <!--<label>$LOCALIZE[31979]$INFO[Control.GetLabel(10), ,%]</label>-->
             <!--</control>-->
             <!--<control type="label">-->
-                <!--<visible>!IntegerGreaterThan(Control.GetLabel(10), 0)</visible>-->
+                <!--<visible>!Integer.IsGreater(Control.GetLabel(10), 0)</visible>-->
                 <!--<posx>TextMargin</posx>-->
                 <!--<posy>50</posy>-->
                 <!--<height>90</height>-->

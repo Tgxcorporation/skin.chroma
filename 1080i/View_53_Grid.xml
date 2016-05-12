@@ -4,7 +4,7 @@
         <control type="group">
             <visible>Control.IsVisible(53)</visible>
             <visible>!Skin.HasSetting(DisableIconViewInfos)</visible>
-            <visible>![StringCompare(ListItem.Label,..)|IsEmpty(ListItem.Label)]</visible>
+            <visible>![String.IsEqual(ListItem.Label,..)|String.IsEmpty(ListItem.Label)]</visible>
             <include>Facade_Fade</include>
             <animation type="Conditional" reversible="false" condition="Control.isvisible(495678)">
                 <effect type="slide" start="0,0" end="0,140" time="150" tween="circle" easing="out"/>
@@ -46,7 +46,7 @@
             </include>
             <include content="ProgressBar">
                 <param name="id" value="0"/>
-                <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
+                <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
                 <param name="x" value="0"/>
                 <param name="y" value="891"/>
                 <param name="width" value="1920"/>

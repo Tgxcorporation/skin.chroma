@@ -32,12 +32,12 @@
             <label>$INFO[Container.NumItems,, $LOCALIZE[31025]]$INFO[Container.CurrentPage,  -  ]$INFO[Container.NumPages,/]</label>
         </control>
         <control type="label">
-            <visible>IsEmpty(Window.Property(IsRadio))</visible>
+            <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
             <include>WindowTitle</include>
             <label>$LOCALIZE[19040]</label>
         </control>
         <control type="label">
-            <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+            <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
             <include>WindowTitle</include>
             <label>$LOCALIZE[19040]</label>
         </control>

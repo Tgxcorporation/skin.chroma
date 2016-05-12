@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="buttonmenu" id="111">
     <defaultcontrol always="true">9009</defaultcontrol>
-    <onload condition="!IntegerGreaterThan(Container(9009).NumItems,0)">close</onload>
+    <onload condition="!Integer.IsGreater(Container(9009).NumItems,0)">close</onload>
     <zorder>11</zorder>
     <controls>
         <include>DimBG</include>
         <control type="group">
             <include>DialogOpenClose</include>
             <control type="group">
-                <animation effect="slide" time="0" start="0,0" end="0,-200" condition="IntegerGreaterThan(Container(9009).NumItems,0)+!IntegerGreaterThan(Container(9009).NumItems,1)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,-250" condition="IntegerGreaterThan(Container(9009).NumItems,1)+!IntegerGreaterThan(Container(9009).NumItems,2)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,-300" condition="IntegerGreaterThan(Container(9009).NumItems,2)+!IntegerGreaterThan(Container(9009).NumItems,3)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,-350" condition="IntegerGreaterThan(Container(9009).NumItems,3)+!IntegerGreaterThan(Container(9009).NumItems,4)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,-400" condition="IntegerGreaterThan(Container(9009).NumItems,4)+!IntegerGreaterThan(Container(9009).NumItems,5)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,-450" condition="IntegerGreaterThan(Container(9009).NumItems,5)+!IntegerGreaterThan(Container(9009).NumItems,6)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,-500" condition="IntegerGreaterThan(Container(9009).NumItems,6)+!IntegerGreaterThan(Container(9009).NumItems,7)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,-550" condition="IntegerGreaterThan(Container(9009).NumItems,7)+!IntegerGreaterThan(Container(9009).NumItems,8)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,-600" condition="IntegerGreaterThan(Container(9009).NumItems,8)+!IntegerGreaterThan(Container(9009).NumItems,9)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,-650" condition="IntegerGreaterThan(Container(9009).NumItems,9)+!IntegerGreaterThan(Container(9009).NumItems,10)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,-200" condition="Integer.IsGreater(Container(9009).NumItems,0)+!Integer.IsGreater(Container(9009).NumItems,1)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,-250" condition="Integer.IsGreater(Container(9009).NumItems,1)+!Integer.IsGreater(Container(9009).NumItems,2)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,-300" condition="Integer.IsGreater(Container(9009).NumItems,2)+!Integer.IsGreater(Container(9009).NumItems,3)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,-350" condition="Integer.IsGreater(Container(9009).NumItems,3)+!Integer.IsGreater(Container(9009).NumItems,4)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,-400" condition="Integer.IsGreater(Container(9009).NumItems,4)+!Integer.IsGreater(Container(9009).NumItems,5)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,-450" condition="Integer.IsGreater(Container(9009).NumItems,5)+!Integer.IsGreater(Container(9009).NumItems,6)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,-500" condition="Integer.IsGreater(Container(9009).NumItems,6)+!Integer.IsGreater(Container(9009).NumItems,7)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,-550" condition="Integer.IsGreater(Container(9009).NumItems,7)+!Integer.IsGreater(Container(9009).NumItems,8)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,-600" condition="Integer.IsGreater(Container(9009).NumItems,8)+!Integer.IsGreater(Container(9009).NumItems,9)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,-650" condition="Integer.IsGreater(Container(9009).NumItems,9)+!Integer.IsGreater(Container(9009).NumItems,10)">conditional</animation>
                 <control type="image">
                     <posx>460</posx>
                     <posy>1080</posy>
@@ -93,7 +93,7 @@
                     </focusedlayout>
                     <content>
                         <item id="8">
-                            <visible>System.HasLoginScreen | IntegerGreaterThan(System.ProfileCount,1)</visible>
+                            <visible>System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)</visible>
                             <visible>System.Loggedon</visible>
                             <onclick>dialog.close(all,true)</onclick>
                             <onclick>System.LogOff</onclick>
