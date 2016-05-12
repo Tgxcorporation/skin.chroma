@@ -7,7 +7,7 @@
             <include>DialogOpenClose</include>
             <control type="image">
                 <posx>460</posx>
-                <posy>480</posy>
+                <posy>430</posy>
                 <width>1000</width>
                 <height>1080</height>
                 <!--<include>DialogTransparency</include>-->
@@ -17,22 +17,21 @@
             <include content="WindowClosingButton">
                 <param name="id" value="9010"/>
                 <param name="x" value="1410"/>
-                <param name="y" value="480"/>
+                <param name="y" value="430"/>
                 <param name="onleft" value="6060"/>
             </include>
             <control type="label" id="1">
                 <posx>560</posx>
-                <posy>580</posy>
+                <posy>530</posy>
                 <width>800</width>
                 <height>50</height>
                 <font>InfoTitleFont</font>
-                <scroll>true</scroll>
                 <include>TextColor_MainColor</include>
+                <scroll>true</scroll>
             </control>
             <control type="textbox" id="9">
-                <description>text</description>
                 <posx>560</posx>
-                <posy>680</posy>
+                <posy>630</posy>
                 <width>800</width>
                 <height>200</height>
                 <label>-</label>
@@ -42,18 +41,30 @@
             </control>
             <control type="scrollbar" id="6060">
                 <visible>Skin.HasSetting(ManualScroll)</visible>
-                <posx>1360</posx>
-                <posy>680</posy>
+                <posx>1410</posx>
+                <posy>630</posy>
                 <height>200</height>
                 <include>VerticalScroller</include>
                 <onleft>10</onleft>
-                <onright>9010</onright>
+                <onright>10</onright>
             </control>
+            <include content="ProgressBar">
+                <param name="id" value="20"/>
+                <param name="visible" value="true"/>
+                <param name="x" value="510"/>
+                <param name="y" value="880"/>
+                <param name="width" value="900"/>
+                <param name="height" value="50"/>
+                <param name="texturebg" value="common/osd_progress_background.png"/>
+                <param name="gfx" value="OSD/osd_progress_50.png"/>
+                <param name="border" value="1,1,1,1"/>
+                <param name="info" value="System.Progressbar"/>
+            </include>
             <control type="grouplist">
                 <posx>510</posx>
-                <posy>930</posy>
+                <posy>880</posy>
                 <width>1000</width>
-                <height>100</height>
+                <height>150</height>
                 <itemgap>0</itemgap>
                 <aligny>bottom</aligny>
                 <align>center</align>
@@ -62,15 +73,18 @@
                 <ondown>6060</ondown>
                 <onleft>6060</onleft>
                 <onright>6060</onright>
-                <control type="button" id="10">
+                <control type="button" id="11">
                     <include>ButtonFocusAnimation</include>
-                    <label>$LOCALIZE[19165]</label>
                     <width>900</width>
                     <include>LeftMenuButton</include>
                 </control>
-                <control type="button" id="11">
+                <control type="button" id="10">
                     <include>ButtonFocusAnimation</include>
-                    <label>-</label>
+                    <width>900</width>
+                    <include>LeftMenuButton</include>
+                </control>
+                <control type="button" id="12">
+                    <include>ButtonFocusAnimation</include>
                     <width>900</width>
                     <include>LeftMenuButton</include>
                 </control>
