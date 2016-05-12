@@ -24,7 +24,7 @@
             <label>$VAR[Fanart_Title]</label>
         </control>
         <control type="group" id="45741">
-            <visible>![Container.content(actors) | container.content(albums) | container.content(addons)]+[SubString(ListItem.StarRating,rating1)|SubString(ListItem.StarRating,rating2)|SubString(ListItem.StarRating,rating3)|SubString(ListItem.StarRating,rating4)|SubString(ListItem.StarRating,rating5)]</visible>
+            <visible>![Container.content(actors) | container.content(albums) | container.content(addons)]+!IsEmpty(ListItem.Rating)</visible>
             <include name="Stars">
                 <param name="x" value="1830"/>
                 <param name="y" value="968"/>
