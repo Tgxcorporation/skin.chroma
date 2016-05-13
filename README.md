@@ -1,4 +1,4 @@
-## Chroma skin for Kodi 16 ISENGARD
+## Chroma skin for Kodi 17 KRYPTON
 Full-featured modern skin designed for Full HD TV screens.
 
 ![](http://i.imgur.com/8ifMwfF.jpg)
