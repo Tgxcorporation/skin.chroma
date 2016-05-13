@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
-    <defaultcontrol always="true">10</defaultcontrol>
+    <defaultcontrol always="true">9001</defaultcontrol>
     <controls>
         <include>DimBG</include>
         <control type="group">
@@ -60,7 +60,7 @@
                 <param name="border" value="1,1,1,1"/>
                 <param name="info" value="System.Progressbar"/>
             </include>
-            <control type="grouplist">
+            <control type="grouplist" id="9001">
                 <posx>510</posx>
                 <posy>880</posy>
                 <width>1000</width>
