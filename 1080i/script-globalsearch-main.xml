@@ -45,6 +45,9 @@
         <control type="label" id="210">
             <include>HiddenButton</include>
         </control>
+        <control type="label" id="230">
+            <include>HiddenButton</include>
+        </control>
         <include>DimBG</include>
         <control type="group">
             <include>DialogOpenClose</include>
@@ -189,6 +192,12 @@
                             <onclick>Control.Setfocus(9000,0)</onclick>
                             <onclick>SendClick(198)</onclick>
                             <visible>Control.IsVisible(198)</visible>
+                        </item>
+                        <item id="12">
+                            <label>$LOCALIZE[20348]</label>
+                            <label2>$LOCALIZE[31206] $INFO[Control.GetLabel(230)] $LOCALIZE[31025]</label2>
+                            <onclick>noop</onclick>
+                            <visible>Control.IsVisible(239)</visible>
                         </item>
                     </content>
                 </control>
@@ -1620,9 +1629,161 @@
                             </control>
                         </control>
                     </control>
+                    <!--DIRECTORS-->
+                    <control type="group" id="239">
+                        <control type="group">
+                            <visible>Container(9000).HasFocus(12)</visible>
+                            <include>VisibleFadeEffect</include>
+                            <control type="label">
+                                <posx>TextMargin</posx>
+                                <posy>50</posy>
+                                <width>760</width>
+                                <height>35</height>
+                                <font>InfoTitleSubFont</font>
+                                <include>TextColor_MidColor</include>
+                                <label>$LOCALIZE[20348] - $INFO[Container(231).NumItems,, $LOCALIZE[31025]]</label>
+                            </control>
+                            <control type="panel" id="231">
+                                <posx>0</posx>
+                                <posy>100</posy>
+                                <width>860</width>
+                                <height>700</height>
+                                <onright>2316</onright>
+                                <onleft>9000</onleft>
+                                <onup>231</onup>
+                                <ondown>231</ondown>
+                                <pagecontrol>2316</pagecontrol>
+                                <itemlayout height="200" width="960">
+                                    <control type="label">
+                                        <posx>TextMargin</posx>
+                                        <posy>9</posy>
+                                        <height>50</height>
+                                        <width>760</width>
+                                        <font>FacadeListMainFont</font>
+                                        <include>TextColor_MidColor</include>
+                                        <label>$INFO[ListItem.Label]</label>
+                                    </control>
+                                    <control type="label">
+                                        <visible>!String.Contains(ListItem.Property(Duration),min)</visible>
+                                        <posx>TextMargin</posx>
+                                        <posy>54</posy>
+                                        <height>50</height>
+                                        <width>760</width>
+                                        <font>FacadeListSubFont</font>
+                                        <textcolor>NoFocusedColor</textcolor>
+                                        <label>$INFO[ListItem.Property(Year),,     ]$INFO[ListItem.Property(Duration),, $LOCALIZE[12391]]$INFO[ListItem.Property(Genre),     ]</label>
+                                    </control>
+                                    <control type="label">
+                                        <visible>String.Contains(ListItem.Property(Duration),min)</visible>
+                                        <posx>TextMargin</posx>
+                                        <posy>54</posy>
+                                        <height>50</height>
+                                        <width>760</width>
+                                        <font>FacadeListSubFont</font>
+                                        <textcolor>NoFocusedColor</textcolor>
+                                        <label>$INFO[ListItem.Property(Year),,     ]$INFO[ListItem.Property(Duration)]$INFO[ListItem.Property(Genre),     ]</label>
+                                    </control>
+                                    <control type="textbox">
+                                        <posx>TextMargin</posx>
+                                        <posy>105</posy>
+                                        <height>80</height>
+                                        <width>760</width>
+                                        <font>InfoPlotFont</font>
+                                        <textcolor>NoFocusedColor</textcolor>
+                                        <label>$INFO[ListItem.Property(Plot)]</label>
+                                        <autoscroll>false</autoscroll>
+                                    </control>
+                                </itemlayout>
+                                <focusedlayout height="200" width="960">
+                                    <control type="group">
+                                        <include>ButtonWideFocusAnimation</include>
+                                        <control type="image">
+                                            <posx>0</posx>
+                                            <posy>0</posy>
+                                            <height>200</height>
+                                            <width>860</width>
+                                            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                                            <texture border="50">list/bg_facade_focus_2.png</texture>
+                                        </control>
+                                        <control type="label">
+                                            <posx>TextMargin</posx>
+                                            <posy>9</posy>
+                                            <height>50</height>
+                                            <width>760</width>
+                                            <font>FacadeListMainFont</font>
+                                            <scroll>true</scroll>
+                                            <include>TextColor_MainColor</include>
+                                            <label>$INFO[ListItem.Label]</label>
+                                        </control>
+                                        <control type="label">
+                                            <visible>!String.Contains(ListItem.Property(Duration),min)</visible>
+                                            <posx>TextMargin</posx>
+                                            <posy>54</posy>
+                                            <height>50</height>
+                                            <width>760</width>
+                                            <font>FacadeListSubFont</font>
+                                            <scroll>true</scroll>
+                                            <textcolor>AlternateColor</textcolor>
+                                            <label>$INFO[ListItem.Property(Year),,     ]$INFO[ListItem.Property(Duration),, $LOCALIZE[12391]]$INFO[ListItem.Property(Genre),     ]</label>
+                                        </control>
+                                        <control type="label">
+                                            <visible>String.Contains(ListItem.Property(Duration),min)</visible>
+                                            <posx>TextMargin</posx>
+                                            <posy>54</posy>
+                                            <height>50</height>
+                                            <width>760</width>
+                                            <font>FacadeListSubFont</font>
+                                            <scroll>true</scroll>
+                                            <textcolor>AlternateColor</textcolor>
+                                            <label>$INFO[ListItem.Property(Year),,     ]$INFO[ListItem.Property(Duration)]</label>
+                                        </control>
+                                        <control type="textbox">
+                                            <posx>TextMargin</posx>
+                                            <posy>105</posy>
+                                            <height>80</height>
+                                            <width>760</width>
+                                            <font>InfoPlotFont</font>
+                                            <textcolor>AlternateColor</textcolor>
+                                            <label>$INFO[ListItem.Property(Plot)]</label>
+                                            <include>myautoscroll</include>
+                                        </control>
+                                    </control>
+                                </focusedlayout>
+                            </control>
+                            <control type="scrollbar" id="2316">
+                                <posx>810</posx>
+                                <posy>100</posy>
+                                <height>700</height>
+                                <include>VerticalScroller</include>
+                                <onleft>231</onleft>
+                                <onright>2316</onright>
+                            </control>
+                            <control type="group">
+                                <posx>910</posx>
+                                <posy>0</posy>
+                                <control type="image">
+                                    <visible>String.StartsWith(Container(231).ListItem.Icon,Default)</visible>
+                                    <posx>0</posx>
+                                    <posy>0</posy>
+                                    <width>380</width>
+                                    <height>570</height>
+                                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                                    <texture>defaultVideoBig.png</texture>
+                                    <aspectratio aligny="top">keep</aspectratio>
+                                </control>
+                                <control type="image">
+                                    <posx>0</posx>
+                                    <posy>0</posy>
+                                    <width>380</width>
+                                    <height>570</height>
+                                    <texture background="true">$INFO[Container(231).ListItem.Icon]</texture>
+                                    <aspectratio aligny="top">keep</aspectratio>
+                                </control>
+                            </control>
+                        </control>
+                    </control>
                 </control>
             </control>
         </control>
-
     </controls>
 </window>
