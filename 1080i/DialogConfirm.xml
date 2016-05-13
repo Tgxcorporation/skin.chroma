@@ -7,7 +7,7 @@
             <include>DialogOpenClose</include>
             <control type="image">
                 <posx>460</posx>
-                <posy>430</posy>
+                <posy>330</posy>
                 <width>1000</width>
                 <height>1080</height>
                 <!--<include>DialogTransparency</include>-->
@@ -17,12 +17,12 @@
             <include content="WindowClosingButton">
                 <param name="id" value="9010"/>
                 <param name="x" value="1410"/>
-                <param name="y" value="430"/>
+                <param name="y" value="330"/>
                 <param name="onleft" value="6060"/>
             </include>
             <control type="label" id="1">
                 <posx>560</posx>
-                <posy>530</posy>
+                <posy>430</posy>
                 <width>800</width>
                 <height>50</height>
                 <font>InfoTitleFont</font>
@@ -31,7 +31,7 @@
             </control>
             <control type="textbox" id="9">
                 <posx>560</posx>
-                <posy>630</posy>
+                <posy>530</posy>
                 <width>800</width>
                 <height>200</height>
                 <label>-</label>
@@ -42,7 +42,7 @@
             <control type="scrollbar" id="6060">
                 <visible>Skin.HasSetting(ManualScroll)</visible>
                 <posx>1410</posx>
-                <posy>630</posy>
+                <posy>530</posy>
                 <height>200</height>
                 <include>VerticalScroller</include>
                 <onleft>9001</onleft>
@@ -52,7 +52,7 @@
                 <param name="id" value="20"/>
                 <param name="visible" value="true"/>
                 <param name="x" value="510"/>
-                <param name="y" value="880"/>
+                <param name="y" value="780"/>
                 <param name="width" value="900"/>
                 <param name="height" value="50"/>
                 <param name="texturebg" value="common/osd_progress_background.png"/>
