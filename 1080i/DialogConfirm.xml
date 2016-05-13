@@ -45,8 +45,8 @@
                 <posy>630</posy>
                 <height>200</height>
                 <include>VerticalScroller</include>
-                <onleft>10</onleft>
-                <onright>10</onright>
+                <onleft>9001</onleft>
+                <onright>9001</onright>
             </control>
             <include content="ProgressBar">
                 <param name="id" value="20"/>
