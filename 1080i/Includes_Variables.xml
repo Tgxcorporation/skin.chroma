@@ -46,7 +46,7 @@
         <!--<value condition="[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)]+!String.IsEmpty(ListItem.Icon)">common/TransparentDot.png</value>-->
         <value condition="String.IsEqual(ListItem.Icon,)+!String.IsEmpty(Window.Property(IsRadio))">defaultRadioBig.png</value>
         <value condition="String.IsEqual(ListItem.Icon,)+[Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)]">defaultChannelTvBig_Wide.png</value>
-        <value condition="String.IsEqual(ListItem.Label,..)">$VAR[ThumbsFolderBack]</value>
+        <value condition="ListItem.IsParentFolder">$VAR[ThumbsFolderBack]</value>
     </variable>
     <variable name="ThumbsMissing">
         <value condition="[Window.IsActive(DialogPVRChannelManager.xml)|Window.IsActive(DialogPVRGroupManager.xml)]+String.IsEmpty(Window.Property(IsRadio))">defaultChannelTvBig.png</value>
@@ -91,7 +91,7 @@
         <value condition="Container.content(tvshows) + String.IsEqual(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20343]</value>
         <value condition="Container.content(tvshows)">$LOCALIZE[20343]$INFO[Container.FolderName, - ]</value>
         <value condition="Container.content(seasons)">$INFO[Container.FolderName,, - ]$LOCALIZE[33054]</value>
-        <value condition="Container.content(episodes)+String.IsEqual(ListItem.Label,..)">$INFO[Container.FolderName]</value>
+        <value condition="Container.content(episodes)+ListItem.IsParentFolder">$INFO[Container.FolderName]</value>
         <value condition="Container.content(episodes)">$INFO[ListItem.TVShowTitle,, - ]$LOCALIZE[20373] $INFO[ListItem.Season]</value>
         <value condition="Container.content(musicvideos) + String.IsEqual(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20389]</value>
         <value condition="Window.IsActive(MyVideoNav.xml)+String.Contains(Container.FolderPath,movies)">$LOCALIZE[20342]</value>
@@ -845,7 +845,7 @@
         <value>$INFO[ListItem.Art(poster)]</value>
     </variable>
     <variable name="MusicCdArt">
-        <value condition="!Skin.HasSetting(plexbmc)+!String.IsEqual(ListItem.Label,..)+Skin.HasSetting(EnableCdArt)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=$INFO[ListItem.Thumb]</value>
+        <value condition="!Skin.HasSetting(plexbmc)+!ListItem.IsParentFolder+Skin.HasSetting(EnableCdArt)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=$INFO[ListItem.Thumb]</value>
     </variable>
     <variable name="VideoPlayerCdArt">
         <value condition="!String.IsEmpty(Player.Art(discart))">$INFO[Player.Art(discart)]</value>

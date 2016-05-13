@@ -4,7 +4,7 @@
         <control type="group">
             <visible>Control.IsVisible(53)</visible>
             <visible>!Skin.HasSetting(DisableIconViewInfos)</visible>
-            <visible>![String.IsEqual(ListItem.Label,..)|String.IsEmpty(ListItem.Label)]</visible>
+            <visible>![ListItem.IsParentFolder|String.IsEmpty(ListItem.Label)]</visible>
             <include>Facade_Fade</include>
             <animation type="Conditional" reversible="false" condition="Control.isvisible(495678)">
                 <effect type="slide" start="0,0" end="0,140" time="150" tween="circle" easing="out"/>

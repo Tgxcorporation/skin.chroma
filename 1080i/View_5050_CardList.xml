@@ -50,7 +50,7 @@
                     <param name="info" value="ListItem.PercentPlayed"/>
                 </include>
                 <control type="group">
-                    <!--<visible>!String.IsEqual(ListItem.Label,..)</visible>-->
+                    <!--<visible>!ListItem.IsParentFolder</visible>-->
                     <posx>TextMargin</posx>
                     <posy>100</posy>
                     <include content="WatchedRecOverlay">
@@ -71,7 +71,7 @@
                         <label>$VAR[DetailsTitle]</label>
                     </control>
                     <control type="group">
-                        <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)]</visible>
                         <visible>!Container.Content(Addons)</visible>
                         <control type="image">
                             <posx>50</posx>
@@ -81,7 +81,7 @@
                             <texture>badges/star_focus_alternate.png</texture>
                         </control>
                         <control type="label">
-                            <visible>![Container.Content(songs)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                            <visible>![Container.Content(songs)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)]</visible>
                             <posx>100</posx>
                             <posy>75</posy>
                             <width>460</width>
@@ -92,7 +92,7 @@
                             <label>$INFO[ListItem.RatingAndVotes]</label>
                         </control>
                         <control type="label">
-                            <visible>[Container.Content(songs)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                            <visible>[Container.Content(songs)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)]</visible>
                             <posx>100</posx>
                             <posy>75</posy>
                             <width>460</width>
@@ -192,7 +192,7 @@
                     <posy>100</posy>
                     <!-- CDART MUSIC -->
                     <include content="DiscArt">
-                        <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
+                        <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                         <param name="x" value="10"/>
                         <param name="y" value="200"/>
                         <param name="width" value="360"/>
@@ -206,7 +206,7 @@
                     </include>
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                        <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="30"/>
                         <param name="y" value="350"/>
                         <param name="width" value="320"/>
@@ -292,7 +292,7 @@
                     <param name="info" value="ListItem.PercentPlayed"/>
                 </include>
                 <control type="group">
-                    <!--<visible>!String.IsEqual(ListItem.Label,..)</visible>-->
+                    <!--<visible>!ListItem.IsParentFolder</visible>-->
                     <posx>TextMargin</posx>
                     <posy>100</posy>
                     <include content="WatchedRecOverlay">
@@ -313,7 +313,7 @@
                         <label>$VAR[DetailsTitle]</label>
                     </control>
                     <control type="group">
-                        <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                        <visible>Integer.IsGreater(ListItem.Rating,0)|[Container.Content(songs)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)]</visible>
                         <visible>!Container.Content(Addons)</visible>
                         <control type="image">
                             <posx>50</posx>
@@ -323,7 +323,7 @@
                             <texture>badges/star_focus_alternate.png</texture>
                         </control>
                         <control type="label">
-                            <visible>![Container.Content(songs)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                            <visible>![Container.Content(songs)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)]</visible>
                             <posx>100</posx>
                             <posy>75</posy>
                             <width>460</width>
@@ -334,7 +334,7 @@
                             <label>$INFO[ListItem.RatingAndVotes]</label>
                         </control>
                         <control type="label">
-                            <visible>[Container.Content(songs)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)]</visible>
+                            <visible>[Container.Content(songs)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)]</visible>
                             <posx>100</posx>
                             <posy>75</posy>
                             <width>460</width>
@@ -434,7 +434,7 @@
                     <posy>100</posy>
                     <!-- CDART MUSIC -->
                     <include content="DiscArt">
-                        <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
+                        <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]"/>
                         <param name="x" value="10"/>
                         <param name="y" value="200"/>
                         <param name="width" value="360"/>
@@ -448,7 +448,7 @@
                     </include>
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!String.IsEqual(ListItem.Label,..)+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                        <param name="visible" value="!ListItem.IsParentFolder+!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="30"/>
                         <param name="y" value="350"/>
                         <param name="width" value="320"/>

@@ -77,25 +77,20 @@
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[1034]</label>
                 </control>
-                <control type="button" id="5">
-                    <description>addon-updates</description>
-                    <include>LeftMenuButton</include>
-                    <label>$LOCALIZE[24063]</label>
-                </control>
-                <control type="radiobutton" id="6">
-                    <description>No notifications</description>
-                    <include>LeftMenuButton</include>
-                    <label>$LOCALIZE[25000]</label>
-                </control>
                 <control type="radiobutton" id="7">
                     <description>Hide foreign</description>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[25001]</label>
                 </control>
                 <control type="radiobutton" id="8">
-                    <description>Hide broken</description>
+                    <description>Hide incompatible</description>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[24999]</label>
+                </control>
+                <control type="button" id="5">
+                    <description>Addon settings</description>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[10004]</label>
                 </control>
                 <control type="label" id="9184">
                     <include>LeftMenuTitleLabel</include>
