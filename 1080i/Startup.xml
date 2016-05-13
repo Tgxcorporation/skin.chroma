@@ -2,6 +2,7 @@
 <window>
     <defaultcontrol always="true">10</defaultcontrol>
     <onload>AlarmClock(StartupDelay,SetFocus(12),$VAR[StartupDelay],silent)</onload>
+    <!--<onunload condition="!control.hasfocus(12)">AlarmClock(StartupDelay2,ReplaceWindow($INFO[System.StartupWindow]),0,silent)</onunload>-->
     <animation type="WindowOpen" reversible="false">
         <effect type="fade" start="0" end="100" time="150" />
     </animation>

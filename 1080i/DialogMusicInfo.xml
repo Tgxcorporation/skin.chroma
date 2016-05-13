@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
     <defaultcontrol always="true">9000</defaultcontrol>
-    <onload condition="Container.Content(artists)">RunScript(script.extendedinfo,info=artistdetails,artistname='$ESCINFO[ListItem.Artist]',silent=False)</onload>
-    <onload condition="Container.Content(albums)">RunScript(script.extendedinfo,info=artistdetails,info=albuminfo,artistname='$ESCINFO[ListItem.Artist]',albumname='$ESCINFO[ListItem.Album]',silent=False)</onload>
+    <onload condition="String.IsEqual(ListItem.DBType,artist)">RunScript(script.extendedinfo,info=artistdetails,artistname='$ESCINFO[ListItem.Artist]',silent=False)</onload>
+    <onload condition="String.IsEqual(ListItem.DBType,album)">RunScript(script.extendedinfo,info=artistdetails,info=albuminfo,artistname='$ESCINFO[ListItem.Artist]',albumname='$ESCINFO[ListItem.Album]',silent=False)</onload>
+    <onload condition="String.IsEqual(ListItem.DBType,song)">RunScript(script.extendedinfo,info=trackinfo,artistname=$INFO[ListItem.Artist],trackname=$INFO[ListItem.Title])</onload>
     <controls>
         <include>DimBG</include>
         <control type="group">
@@ -84,13 +85,13 @@
                         <onright>5041</onright>
                     </control>
                     <!--<control type="button" id="509">-->
-                        <!--<visible>System.HasAddon(script.extendedinfo)</visible>-->
-                        <!--&lt;!&ndash;<visible>Integer.IsGreater(Container(5091).NumItems,0)</visible>&ndash;&gt;-->
-                        <!--<visible>container.content(artists)</visible>-->
-                        <!--<description>Twitter Shouts ExtendedInfo</description>-->
-                        <!--<include>DialogMenuButton</include>-->
-                        <!--<label>Twitter</label>-->
-                        <!--<onright>5091</onright>-->
+                    <!--<visible>System.HasAddon(script.extendedinfo)</visible>-->
+                    <!--&lt;!&ndash;<visible>Integer.IsGreater(Container(5091).NumItems,0)</visible>&ndash;&gt;-->
+                    <!--<visible>container.content(artists)</visible>-->
+                    <!--<description>Twitter Shouts ExtendedInfo</description>-->
+                    <!--<include>DialogMenuButton</include>-->
+                    <!--<label>Twitter</label>-->
+                    <!--<onright>5091</onright>-->
                     <!--</control>-->
                     <!--<control type="button" id="505">-->
                     <!--<visible>System.HasAddon(script.extendedinfo)</visible>-->
@@ -148,8 +149,27 @@
                     <control type="button" id="7">
                         <description>Set my rating</description>
                         <include>DialogMenuButton</include>
-                        <label>38023</label>
-                        <visible>Container.Content(Albums) + Control.IsEnabled(7)</visible>
+                        <label>31033</label>
+                        <visible>String.IsEqual(ListItem.DBType,album) | String.IsEqual(ListItem.DBType,song)</visible>
+                    </control>
+                    <control type="group" id="34384">
+                        <height>100</height>
+                        <visible>String.IsEqual(ListItem.DBType,album) | String.IsEqual(ListItem.DBType,song)</visible>
+                        <include content="Stars">
+                            <param name="x" value="50"/>
+                            <param name="y" value="3"/>
+                            <param name="color" value="alternate"/>
+                        </include>
+                        <control type="label">
+                            <posx>100</posx>
+                            <posy>0</posy>
+                            <width>150</width>
+                            <height>50</height>
+                            <font>InfoRatingFont</font>
+                            <include>TextColor_MainColor</include>
+                            <scroll>false</scroll>
+                            <label fallback="0">$INFO[ListItem.UserRating]</label>
+                        </control>
                     </control>
                     <control type="button" id="6">
                         <description>Refresh</description>
@@ -193,20 +213,20 @@
                 <!--BIOGRAPHY REVIEW-->
                 <control type="group" id="5000">
                     <!--<visible>![Control.HasFocus(503)|-->
-                        <!--Control.HasFocus(502)|-->
-                        <!--Control.HasFocus(504)|-->
-                        <!--Control.HasFocus(505)|-->
-                        <!--Control.HasFocus(506)|-->
-                        <!--Control.HasFocus(507)|-->
-                        <!--Control.HasFocus(508)|-->
-                        <!--Control.HasFocus(509)|-->
-                        <!--ControlGroup(5020).HasFocus|-->
-                        <!--ControlGroup(5040).HasFocus|-->
-                        <!--ControlGroup(5050).HasFocus|-->
-                        <!--ControlGroup(5060).HasFocus|-->
-                        <!--ControlGroup(5070).HasFocus|-->
-                        <!--ControlGroup(5080).HasFocus|-->
-                        <!--ControlGroup(5090).HasFocus]</visible>-->
+                    <!--Control.HasFocus(502)|-->
+                    <!--Control.HasFocus(504)|-->
+                    <!--Control.HasFocus(505)|-->
+                    <!--Control.HasFocus(506)|-->
+                    <!--Control.HasFocus(507)|-->
+                    <!--Control.HasFocus(508)|-->
+                    <!--Control.HasFocus(509)|-->
+                    <!--ControlGroup(5020).HasFocus|-->
+                    <!--ControlGroup(5040).HasFocus|-->
+                    <!--ControlGroup(5050).HasFocus|-->
+                    <!--ControlGroup(5060).HasFocus|-->
+                    <!--ControlGroup(5070).HasFocus|-->
+                    <!--ControlGroup(5080).HasFocus|-->
+                    <!--ControlGroup(5090).HasFocus]</visible>-->
                     <visible>![Control.HasFocus(503)|
                         Control.HasFocus(502)|
                         Control.HasFocus(504)|
@@ -256,6 +276,12 @@
                                     <label2>$INFO[ListItem.Genre]</label2>
                                     <onclick>noop</onclick>
                                     <visible>!String.IsEmpty(ListItem.Genre)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[38018]:</label>
+                                    <label2>$INFO[ListItem.UserRating]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!String.IsEmpty(ListItem.UserRating)</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[563]:</label>
@@ -399,9 +425,126 @@
                         </control>
                     </control>
                     <control type="group">
+                        <visible>container.content(songs)</visible>
+                        <include>VisibleFadeEffect</include>
+                        <control type="label">
+                            <posx>TextMargin</posx>
+                            <posy>50</posy>
+                            <width>760</width>
+                            <height>35</height>
+                            <font>InfoTitleSubFont</font>
+                            <include>TextColor_MidColor</include>
+                            <label>$LOCALIZE[658]</label>
+                        </control>
+                        <control type="panel" id="49">
+                            <height>300</height>
+                            <onleft>9000</onleft>
+                            <onright>60</onright>
+                            <onup>49</onup>
+                            <ondown>6060</ondown>
+                            <pagecontrol>60</pagecontrol>
+                            <include>List_9009_Commons</include>
+                            <content>
+                                <item>
+                                    <label>$LOCALIZE[557]:</label>
+                                    <label2>$INFO[ListItem.Artist]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!String.IsEmpty(ListItem.Artist)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[558]:</label>
+                                    <label2>$INFO[ListItem.Album]$INFO[listitem.discnumber, - $LOCALIZE[427] ]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!String.IsEmpty(ListItem.Album)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[515]:</label>
+                                    <label2>$INFO[ListItem.Genre]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!String.IsEmpty(ListItem.Genre)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[562]:</label>
+                                    <label2>$INFO[ListItem.Year]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!String.IsEmpty(ListItem.Year)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[554]:</label>
+                                    <label2>$INFO[ListItem.TrackNumber]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!String.IsEmpty(ListItem.TrackNumber)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[563]:</label>
+                                    <label2>$INFO[ListItem.RatingAndVotes]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!String.IsEmpty(ListItem.RatingAndVotes)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[38018]:</label>
+                                    <label2>$INFO[ListItem.UserRating]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!String.IsEmpty(ListItem.UserRating)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[427]:</label>
+                                    <label2>$INFO[ListItem.discnumber]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!String.IsEmpty(ListItem.discnumber)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[180]:</label>
+                                    <label2>$INFO[ListItem.Duration]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!String.IsEmpty(ListItem.Duration)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[21899]:</label>
+                                    <label2>$INFO[ListItem.Property(Album_Label)]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!String.IsEmpty(ListItem.Property(Album_Label))</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[567]:</label>
+                                    <label2>$INFO[ListItem.PlayCount]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!String.IsEmpty(ListItem.PlayCount)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[568]:</label>
+                                    <label2>$INFO[ListItem.LastPlayed]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!String.IsEmpty(ListItem.LastPlayed)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[573]:</label>
+                                    <label2>$INFO[ListItem.Path]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!String.IsEmpty(ListItem.Path)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[21800]:</label>
+                                    <label2>$INFO[ListItem.FileName]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!String.IsEmpty(ListItem.FileName)</visible>
+                                </item>
+                            </content>
+                        </control>
+                        <control type="scrollbar" id="60">
+                            <posx>810</posx>
+                            <posy>100</posy>
+                            <height>300</height>
+                            <include>VerticalScroller</include>
+                            <onleft>49</onleft>
+                            <onright>9000</onright>
+                            <ondown>6060</ondown>
+                        </control>
+                    </control>
+                    <control type="group">
                         <posx>0</posx>
                         <posy>450</posy>
-                        <control type="textbox" id="4">
+                        <control type="textbox">
                             <description>Description</description>
                             <posx>TextMargin</posx>
                             <posy>10</posy>
@@ -409,6 +552,7 @@
                             <height>310</height>
                             <font>InfoPlotFont</font>
                             <textcolor>AlternateColor</textcolor>
+                            <label>$VAR[MusicInfoTextboxVar]</label>
                             <pagecontrol>6060</pagecontrol>
                         </control>
                         <control type="scrollbar" id="6060">
@@ -426,7 +570,7 @@
                         <posx>910</posx>
                         <posy>0</posy>
                         <include content="DiscArt">
-                            <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+container.content(Albums)"/>
+                            <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[container.content(Albums)|container.content(Songs)]"/>
                             <param name="x" value="10"/>
                             <param name="y" value="-180"/>
                             <param name="width" value="360"/>
@@ -1266,119 +1410,119 @@
                 </control>
                 <!--TWITTER SHOUTS EXTENDEDINFO-->
                 <!--<control type="group" id="5090">-->
-                    <!--<visible>Control.HasFocus(509)|ControlGroup(5090).HasFocus</visible>-->
-                    <!--<include>VisibleFadeEffect</include>-->
-                    <!--<control type="label">-->
-                        <!--<posx>TextMargin</posx>-->
-                        <!--<posy>42</posy>-->
-                        <!--<width>760</width>-->
-                        <!--<height>35</height>-->
-                        <!--<font>InfoTitleSubFont</font>-->
-                        <!--<include>TextColor_MidColor</include>-->
-                        <!--<label>Twitter - $INFO[Container(5091).NumItems] $LOCALIZE[31025]</label>-->
-                    <!--</control>-->
-                    <!--<include content="DummyButton">-->
-                        <!--<param name="x" value="0"/>-->
-                        <!--<param name="y" value="0"/>-->
-                        <!--<param name="width" value="860"/>-->
-                        <!--<param name="height" value="800"/>-->
-                        <!--<param name="onfocus" value="noop"/>-->
-                    <!--</include>-->
-                    <!--<control type="panel" id="5091">-->
-                        <!--<posx>0</posx>-->
-                        <!--<posy>100</posy>-->
-                        <!--<width>860</width>-->
-                        <!--<height>700</height>-->
-                        <!--<onleft>9000</onleft>-->
-                        <!--<onright>5690</onright>-->
-                        <!--<onup>5091</onup>-->
-                        <!--<ondown>5091</ondown>-->
-                        <!--<viewtype label="">list</viewtype>-->
-                        <!--<pagecontrol>5690</pagecontrol>-->
-                        <!--<orientation>vertical</orientation>-->
-                        <!--<itemlayout height="100" width="860">-->
-                            <!--<control type="label">-->
-                                <!--<posx>TextMargin</posx>-->
-                                <!--<posy>6</posy>-->
-                                <!--<height>50</height>-->
-                                <!--<width>760</width>-->
-                                <!--<font>FacadeListMainFont</font>-->
-                                <!--<include>TextColor_MidColor</include>-->
-                                <!--<label>$INFO[ListItem.Property(comment)]</label>-->
-                            <!--</control>-->
-                            <!--<control type="label">-->
-                                <!--<posx>TextMargin</posx>-->
-                                <!--<posy>44</posy>-->
-                                <!--<height>50</height>-->
-                                <!--<width>760</width>-->
-                                <!--<font>FacadeListSubFont</font>-->
-                                <!--<textcolor>NoFocusedColor</textcolor>-->
-                                <!--<label>$INFO[ListItem.Label2]</label>-->
-                            <!--</control>-->
-                        <!--</itemlayout>-->
-                        <!--<focusedlayout height="100" width="860">-->
-                            <!--<control type="group">-->
-                                <!--<include>ButtonWideFocusAnimation</include>-->
-                                <!--<control type="image">-->
-                                    <!--<posx>0</posx>-->
-                                    <!--<posy>0</posy>-->
-                                    <!--<height>100</height>-->
-                                    <!--<width>860</width>-->
-                                    <!--<texture border="1">list/bg_facade_focus_2.png</texture>-->
-                                <!--</control>-->
-                                <!--<control type="label">-->
-                                    <!--<posx>TextMargin</posx>-->
-                                    <!--<posy>6</posy>-->
-                                    <!--<height>50</height>-->
-                                    <!--<width>760</width>-->
-                                    <!--<font>FacadeListMainFont</font>-->
-                                    <!--<scroll>true</scroll>-->
-                                    <!--<include>TextColor_MainColor</include>-->
-                                    <!--<label>$INFO[ListItem.Property(comment)]</label>-->
-                                <!--</control>-->
-                                <!--<control type="label">-->
-                                    <!--<posx>TextMargin</posx>-->
-                                    <!--<posy>44</posy>-->
-                                    <!--<height>50</height>-->
-                                    <!--<width>760</width>-->
-                                    <!--<font>FacadeListSubFont</font>-->
-                                    <!--<scroll>true</scroll>-->
-                                    <!--<textcolor>AlternateColor</textcolor>-->
-                                    <!--<label>$INFO[ListItem.Label2]</label>-->
-                                <!--</control>-->
-                            <!--</control>-->
-                        <!--</focusedlayout>-->
-                        <!--<content>plugin://script.extendedinfo?info=artistshouts&amp;&amp;artistname=$INFO[ListItem.Artist]</content>-->
-                    <!--</control>-->
-                    <!--<control type="scrollbar" id="5690">-->
-                        <!--<posx>810</posx>-->
-                        <!--<posy>100</posy>-->
-                        <!--<height>700</height>-->
-                        <!--<include>VerticalScroller</include>-->
-                        <!--<onleft>5091</onleft>-->
-                        <!--<onright>5690</onright>-->
-                    <!--</control>-->
-                    <!--<control type="group">-->
-                        <!--<posx>910</posx>-->
-                        <!--<posy>0</posy>-->
-                        <!--<control type="image">-->
-                            <!--<visible>String.IsEmpty(Container(5091).Listitem.Icon)</visible>-->
-                            <!--<posx>0</posx>-->
-                            <!--<posy>0</posy>-->
-                            <!--<width>380</width>-->
-                            <!--<height>380</height>-->
-                            <!--<texture>defaultArtistBig.png</texture>-->
-                            <!--<aspectratio aligny="top">keep</aspectratio>-->
-                        <!--</control>-->
-                        <!--<control type="image">-->
-                            <!--<posx>0</posx>-->
-                            <!--<posy>0</posy>-->
-                            <!--<width>380</width>-->
-                            <!--<height>380</height>-->
-                            <!--<texture background="true">$INFO[Container(5091).Listitem.Icon]</texture>-->
-                            <!--<aspectratio aligny="top">keep</aspectratio>-->
-                        <!--</control>-->
-                    <!--</control>-->
+                <!--<visible>Control.HasFocus(509)|ControlGroup(5090).HasFocus</visible>-->
+                <!--<include>VisibleFadeEffect</include>-->
+                <!--<control type="label">-->
+                <!--<posx>TextMargin</posx>-->
+                <!--<posy>42</posy>-->
+                <!--<width>760</width>-->
+                <!--<height>35</height>-->
+                <!--<font>InfoTitleSubFont</font>-->
+                <!--<include>TextColor_MidColor</include>-->
+                <!--<label>Twitter - $INFO[Container(5091).NumItems] $LOCALIZE[31025]</label>-->
+                <!--</control>-->
+                <!--<include content="DummyButton">-->
+                <!--<param name="x" value="0"/>-->
+                <!--<param name="y" value="0"/>-->
+                <!--<param name="width" value="860"/>-->
+                <!--<param name="height" value="800"/>-->
+                <!--<param name="onfocus" value="noop"/>-->
+                <!--</include>-->
+                <!--<control type="panel" id="5091">-->
+                <!--<posx>0</posx>-->
+                <!--<posy>100</posy>-->
+                <!--<width>860</width>-->
+                <!--<height>700</height>-->
+                <!--<onleft>9000</onleft>-->
+                <!--<onright>5690</onright>-->
+                <!--<onup>5091</onup>-->
+                <!--<ondown>5091</ondown>-->
+                <!--<viewtype label="">list</viewtype>-->
+                <!--<pagecontrol>5690</pagecontrol>-->
+                <!--<orientation>vertical</orientation>-->
+                <!--<itemlayout height="100" width="860">-->
+                <!--<control type="label">-->
+                <!--<posx>TextMargin</posx>-->
+                <!--<posy>6</posy>-->
+                <!--<height>50</height>-->
+                <!--<width>760</width>-->
+                <!--<font>FacadeListMainFont</font>-->
+                <!--<include>TextColor_MidColor</include>-->
+                <!--<label>$INFO[ListItem.Property(comment)]</label>-->
+                <!--</control>-->
+                <!--<control type="label">-->
+                <!--<posx>TextMargin</posx>-->
+                <!--<posy>44</posy>-->
+                <!--<height>50</height>-->
+                <!--<width>760</width>-->
+                <!--<font>FacadeListSubFont</font>-->
+                <!--<textcolor>NoFocusedColor</textcolor>-->
+                <!--<label>$INFO[ListItem.Label2]</label>-->
+                <!--</control>-->
+                <!--</itemlayout>-->
+                <!--<focusedlayout height="100" width="860">-->
+                <!--<control type="group">-->
+                <!--<include>ButtonWideFocusAnimation</include>-->
+                <!--<control type="image">-->
+                <!--<posx>0</posx>-->
+                <!--<posy>0</posy>-->
+                <!--<height>100</height>-->
+                <!--<width>860</width>-->
+                <!--<texture border="1">list/bg_facade_focus_2.png</texture>-->
+                <!--</control>-->
+                <!--<control type="label">-->
+                <!--<posx>TextMargin</posx>-->
+                <!--<posy>6</posy>-->
+                <!--<height>50</height>-->
+                <!--<width>760</width>-->
+                <!--<font>FacadeListMainFont</font>-->
+                <!--<scroll>true</scroll>-->
+                <!--<include>TextColor_MainColor</include>-->
+                <!--<label>$INFO[ListItem.Property(comment)]</label>-->
+                <!--</control>-->
+                <!--<control type="label">-->
+                <!--<posx>TextMargin</posx>-->
+                <!--<posy>44</posy>-->
+                <!--<height>50</height>-->
+                <!--<width>760</width>-->
+                <!--<font>FacadeListSubFont</font>-->
+                <!--<scroll>true</scroll>-->
+                <!--<textcolor>AlternateColor</textcolor>-->
+                <!--<label>$INFO[ListItem.Label2]</label>-->
+                <!--</control>-->
+                <!--</control>-->
+                <!--</focusedlayout>-->
+                <!--<content>plugin://script.extendedinfo?info=artistshouts&amp;&amp;artistname=$INFO[ListItem.Artist]</content>-->
+                <!--</control>-->
+                <!--<control type="scrollbar" id="5690">-->
+                <!--<posx>810</posx>-->
+                <!--<posy>100</posy>-->
+                <!--<height>700</height>-->
+                <!--<include>VerticalScroller</include>-->
+                <!--<onleft>5091</onleft>-->
+                <!--<onright>5690</onright>-->
+                <!--</control>-->
+                <!--<control type="group">-->
+                <!--<posx>910</posx>-->
+                <!--<posy>0</posy>-->
+                <!--<control type="image">-->
+                <!--<visible>String.IsEmpty(Container(5091).Listitem.Icon)</visible>-->
+                <!--<posx>0</posx>-->
+                <!--<posy>0</posy>-->
+                <!--<width>380</width>-->
+                <!--<height>380</height>-->
+                <!--<texture>defaultArtistBig.png</texture>-->
+                <!--<aspectratio aligny="top">keep</aspectratio>-->
+                <!--</control>-->
+                <!--<control type="image">-->
+                <!--<posx>0</posx>-->
+                <!--<posy>0</posy>-->
+                <!--<width>380</width>-->
+                <!--<height>380</height>-->
+                <!--<texture background="true">$INFO[Container(5091).Listitem.Icon]</texture>-->
+                <!--<aspectratio aligny="top">keep</aspectratio>-->
+                <!--</control>-->
+                <!--</control>-->
                 <!--</control>-->
             </control>
         </control>
