@@ -50,10 +50,6 @@
                         <label>$LOCALIZE[24069]</label>
                         <include>DialogMenuButton</include>
                     </control>
-                    <control type="button" id="10">
-                        <label>$LOCALIZE[24036]</label>
-                        <include>DialogMenuButton</include>
-                    </control>
                     <control type="button" id="7">
                         <label>$LOCALIZE[24021]</label>
                         <include>DialogMenuButton</include>
@@ -126,7 +122,7 @@
                     <posx>0</posx>
                     <posy>295</posy>
                     <width>760</width>
-                    <height>160</height>
+                    <height>120</height>
                     <label>$INFO[ListItem.AddonSummary,$LOCALIZE[20037]: ]</label>
                     <font>InfoDetailsFont</font>
                     <include>TextColor_MainColor</include>
@@ -136,7 +132,7 @@
                     <visible>Skin.HasSetting(ManualScroll)</visible>
                     <posx>760</posx>
                     <posy>385</posy>
-                    <height>310</height>
+                    <height>120</height>
                     <include>VerticalScroller</include>
                     <onleft>9060</onleft>
                     <onright>7060</onright>
@@ -144,9 +140,9 @@
                 </control>
                 <control type="textbox">
                     <posx>0</posx>
-                    <posy>485</posy>
+                    <posy>445</posy>
                     <width>760</width>
-                    <height>310</height>
+                    <height>155</height>
                     <font>InfoPlotFont</font>
                     <textcolor>AlternateColor</textcolor>
                     <label>$INFO[ListItem.AddonDescription]</label>
@@ -155,12 +151,34 @@
                 <control type="scrollbar" id="6060">
                     <visible>Skin.HasSetting(ManualScroll)</visible>
                     <posx>760</posx>
-                    <posy>485</posy>
-                    <height>310</height>
+                    <posy>445</posy>
+                    <height>155</height>
                     <include>VerticalScroller</include>
                     <onleft>9060</onleft>
                     <onright>7060</onright>
                     <onup>8060</onup>
+                    <ondown>6070</ondown>
+                </control>
+                <control type="textbox">
+                    <posx>0</posx>
+                    <posy>630</posy>
+                    <width>760</width>
+                    <height>155</height>
+                    <font>InfoPlotFont</font>
+                    <include>TextColor_MainColor</include>
+                    <label>$INFO[ListItem.AddonNews]</label>
+                    <pagecontrol>6060</pagecontrol>
+                </control>
+                <control type="scrollbar" id="6070">
+                    <visible>Skin.HasSetting(ManualScroll)</visible>
+                    <posx>760</posx>
+                    <posy>630</posy>
+                    <height>155</height>
+                    <include>VerticalScroller</include>
+                    <onleft>9060</onleft>
+                    <onright>7060</onright>
+                    <onup>6060</onup>
+                    <ondown>6070</ondown>
                 </control>
             </control>
             <control type="group">
