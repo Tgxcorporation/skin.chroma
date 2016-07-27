@@ -90,6 +90,15 @@
                 </control>
                 <control type="label">
                     <posx>0</posx>
+                    <posy>50</posy>
+                    <width>760</width>
+                    <height>35</height>
+                    <font>InfoTitleSubFont</font>
+                    <include>TextColor_MidColor</include>
+                    <label>$INFO[ListItem.AddonSize,$LOCALIZE[21802]: ]</label>
+                </control>
+                <control type="label">
+                    <posx>0</posx>
                     <posy>100</posy>
                     <width>760</width>
                     <height>50</height>
