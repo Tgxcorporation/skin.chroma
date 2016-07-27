@@ -288,7 +288,7 @@
                                         <width>760</width>
                                         <font>FacadeListSubFont</font>
                                         <textcolor>NoFocusedColor</textcolor>
-                                        <label>$INFO[ListItem.Property(ChannelNumber)] - $INFO[ListItem.Property(ChannelName)]$INFO[ListItem.Property(Genre),     ]</label>
+                                        <label>$INFO[ListItem.Property(ChannelName)]$INFO[ListItem.Property(Genre)]</label>
                                     </control>
                                     <control type="textbox">
                                         <posx>TextMargin</posx>
@@ -330,7 +330,7 @@
                                             <font>FacadeListSubFont</font>
                                             <scroll>true</scroll>
                                             <textcolor>AlternateColor</textcolor>
-                                            <label>$INFO[ListItem.Property(ChannelNumber)] - $INFO[ListItem.Property(ChannelName)]$INFO[ListItem.Property(Genre),     ]</label>
+                                            <label>$INFO[ListItem.Property(ChannelName)]$INFO[ListItem.Property(Genre)]</label>
                                         </control>
                                         <control type="textbox">
                                             <posx>TextMargin</posx>
