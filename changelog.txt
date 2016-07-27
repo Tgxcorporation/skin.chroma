@@ -1,3 +1,15 @@
+3.0.4
+Updated Language files from Transifex.
+
+3.0.3
+Updated Language files from Transifex.
+
+3.0.2
+Updated Language files from Transifex.
+
+3.0.1
+Updated Language files from Transifex.
+
 2.5.7
 Updated Language files from Transifex.
 
