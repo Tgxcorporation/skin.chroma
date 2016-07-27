@@ -209,6 +209,7 @@
         <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>
         <textoffsetx>20</textoffsetx>
         <pulseonselect>false</pulseonselect>
+        <orientation>horizontal</orientation>
     </default>
     <default type="sliderex">
         <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
