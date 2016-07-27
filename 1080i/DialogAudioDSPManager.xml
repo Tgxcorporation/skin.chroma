@@ -192,7 +192,7 @@
                             <width>570</width>
                             <font>FacadeListMainFont</font>
                             <include>TextColor_MidColor</include>
-                            <label>$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
+                            <label>$INFO[ListItem.Label2]: $INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
@@ -224,7 +224,7 @@
                                 <font>FacadeListMainFont</font>
                                 <scroll>true</scroll>
                                 <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
+                                <label>$INFO[ListItem.Label2]: $INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
                                 <posx>TextMargin</posx>
@@ -289,7 +289,7 @@
                             <width>570</width>
                             <font>FacadeListMainFont</font>
                             <include>TextColor_MidColor</include>
-                            <label>$INFO[ListItem.Property(Number)] - $INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
+                            <label>$INFO[ListItem.Property(Number)] - $INFO[ListItem.Label2]: $INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
                             <posx>TextMargin</posx>
@@ -321,7 +321,7 @@
                                 <font>FacadeListMainFont</font>
                                 <scroll>true</scroll>
                                 <include>TextColor_MainColor</include>
-                                <label>$INFO[ListItem.Property(Number)] - $INFO[ListItem.Property(AddonName)]: $INFO[ListItem.Property(Name)]</label>
+                                <label>$INFO[ListItem.Property(Number)] - $INFO[ListItem.Label2]: $INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
                                 <posx>TextMargin</posx>
