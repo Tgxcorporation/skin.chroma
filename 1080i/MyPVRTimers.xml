@@ -32,14 +32,14 @@
             <label>$INFO[Container.NumItems,, $LOCALIZE[31025]]$INFO[Container.CurrentPage,  -  ]$INFO[Container.NumPages,/]</label>
         </control>
         <control type="label">
-            <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
+            <visible>Window.isactive(RadioTimers) | Window.isactive(TVTimers)</visible>
             <include>WindowTitle</include>
             <label>$LOCALIZE[19040]</label>
         </control>
         <control type="label">
-            <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
+            <visible>Window.isactive(RadioTimerRules) | Window.isactive(TVTimerRules)</visible>
             <include>WindowTitle</include>
-            <label>$LOCALIZE[19040]</label>
+            <label>$LOCALIZE[19138]</label>
         </control>
         <include>Header_Logo</include>
         <include>Time</include>
