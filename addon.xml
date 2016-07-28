@@ -83,5 +83,21 @@
         <forum>http://forum.kodi.tv/forumdisplay.php?fid=241</forum>
         <website>https://github.com/Tgxcorporation/skin.chroma/wiki</website>
         <source>https://github.com/Tgxcorporation/skin.chroma</source>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>screenshots/screenshot01.jpg</screenshot>
+            <screenshot>screenshots/screenshot02.jpg</screenshot>
+            <screenshot>screenshots/screenshot03.jpg</screenshot>
+            <screenshot>screenshots/screenshot04.jpg</screenshot>
+            <screenshot>screenshots/screenshot05.jpg</screenshot>
+            <screenshot>screenshots/screenshot06.jpg</screenshot>
+            <screenshot>screenshots/screenshot07.jpg</screenshot>
+            <screenshot>screenshots/screenshot08.jpg</screenshot>
+            <screenshot>screenshots/screenshot09.jpg</screenshot>
+            <screenshot>screenshots/screenshot10.jpg</screenshot>
+            <screenshot>screenshots/screenshot11.jpg</screenshot>
+            <screenshot>screenshots/screenshot12.jpg</screenshot>
+        </assets>
     </extension>
 </addon>
