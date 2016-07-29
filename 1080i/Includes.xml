@@ -41,7 +41,7 @@
             <texture>common/BlackDot.png</texture>
         </control>
         <control type="multiimage">
-            <visible>[Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+            <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
             <include>KenBurns</include>
             <include>Dimensions_Fullscreen</include>
             <imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
@@ -53,7 +53,7 @@
             <animation effect="fade" start="100" end="0" time="150">Hidden</animation>
         </control>
         <control type="image">
-            <visible>[Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+            <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
             <include>Dimensions_Fullscreen</include>
             <include>KenBurns</include>
             <fadetime>400</fadetime>
@@ -63,7 +63,7 @@
             <animation effect="fade" start="100" end="0" time="150">Hidden</animation>
         </control>
         <control type="visualisation">
-            <visible>[Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)]</visible>
+            <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [!Skin.HasSetting(Show_Player)|window.isactive(visualisation)]</visible>
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width>
@@ -372,7 +372,7 @@
             <visible>!Control.isVisible(53)</visible>
             <control type="image" id="495678">
                 <!--DUMMY-->
-                <visible>[[Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))]|Player.HasVideo]</visible>
+                <visible>[[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]|Player.HasVideo]</visible>
                 <include>HiddenButton</include>
                 <texture>-</texture>
             </control>
@@ -497,7 +497,7 @@
             <label>$INFO[MusicPlayer.Title]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Season,$LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,, - ]$INFO[VideoPlayer.Title]</label>
         </control>
         <control type="label">
-            <visible>[Player.HasAudio + String.IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))]</visible>
+            <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]</visible>
             <posx>100</posx>
             <posy>940</posy>
             <height>90</height>

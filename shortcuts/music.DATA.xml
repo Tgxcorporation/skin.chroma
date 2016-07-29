@@ -54,7 +54,7 @@
         <label2>Music</label2>
         <icon>DefaultFolder.png</icon>
         <thumb/>
-        <action>ActivateWindow(Music,MusicLibrary,return)</action>
+        <action>ActivateWindow(Music,Music,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>1038</defaultID>
