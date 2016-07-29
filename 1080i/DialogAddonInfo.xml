@@ -229,7 +229,7 @@
                     <posy>100</posy>
                     <width>760</width>
                     <height>685</height>
-                    <label>$INFO[ListItem.AddonNews]</label>
+                    <label fallback="416">$INFO[ListItem.AddonNews]</label>
                     <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
                     <pagecontrol>8070</pagecontrol>
