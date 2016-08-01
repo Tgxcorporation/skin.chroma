@@ -95,7 +95,7 @@
         <focusposition>2</focusposition>
         <itemlayout height="151" width="268">
             <control type="image">
-                <visible>String.IsEqual(ListItem.Property(hide),True)+String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                <visible>!String.IsEqual(ListItem.Property(hide),True)+String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>268</width>
@@ -104,7 +104,7 @@
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-                <visible>String.IsEqual(ListItem.Property(hide),True)+!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                <visible>!String.IsEqual(ListItem.Property(hide),True)+!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>268</width>
@@ -113,7 +113,7 @@
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-                <visible>!String.IsEqual(ListItem.Property(hide),True)</visible>
+                <visible>String.IsEqual(ListItem.Property(hide),True)</visible>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>268</width>
@@ -125,7 +125,7 @@
         </itemlayout>
         <focusedlayout height="151" width="268">
             <control type="image">
-                <visible>String.IsEqual(ListItem.Property(hide),True)+String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                <visible>!String.IsEqual(ListItem.Property(hide),True)+String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>268</width>
@@ -134,7 +134,7 @@
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-                <visible>String.IsEqual(ListItem.Property(hide),True)+!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                <visible>!String.IsEqual(ListItem.Property(hide),True)+!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>268</width>
@@ -143,7 +143,7 @@
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-                <visible>!String.IsEqual(ListItem.Property(hide),True)</visible>
+                <visible>String.IsEqual(ListItem.Property(hide),True)</visible>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>268</width>
