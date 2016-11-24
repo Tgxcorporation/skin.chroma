@@ -95,7 +95,8 @@
         <focusposition>2</focusposition>
         <itemlayout height="151" width="268">
             <control type="image">
-                <visible>!String.IsEqual(ListItem.Property(hide),True)+String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                <visible>String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                <animation effect="fade" start="100" end="50" time="100" condition="[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>268</width>
@@ -104,7 +105,8 @@
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-                <visible>!String.IsEqual(ListItem.Property(hide),True)+!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                <visible>!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                <animation effect="fade" start="100" end="50" time="100" condition="[String.IsEqual(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>268</width>
@@ -112,20 +114,21 @@
                 <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
-            <control type="image">
-                <visible>String.IsEqual(ListItem.Property(hide),True)</visible>
+            <control type="label">
+                <visible>[String.IsEqual(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]</visible>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>268</width>
                 <height>151</height>
-                <colordiffuse>90ffffff</colordiffuse>
-                <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
-                <aspectratio>scale</aspectratio>
+                <align>center</align>
+                <include>TextColor_AlternateColor</include>
+                <label>$LOCALIZE[13106]</label>
             </control>
         </itemlayout>
         <focusedlayout height="151" width="268">
             <control type="image">
-                <visible>!String.IsEqual(ListItem.Property(hide),True)+String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                <visible>String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                <animation effect="fade" start="100" end="50" time="100" condition="[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>268</width>
@@ -134,7 +137,8 @@
                 <aspectratio>scale</aspectratio>
             </control>
             <control type="image">
-                <visible>!String.IsEqual(ListItem.Property(hide),True)+!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                <visible>!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                <animation effect="fade" start="100" end="50" time="100" condition="[String.IsEqual(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>268</width>
@@ -142,15 +146,15 @@
                 <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
                 <aspectratio>scale</aspectratio>
             </control>
-            <control type="image">
-                <visible>String.IsEqual(ListItem.Property(hide),True)</visible>
+            <control type="label">
+                <visible>[String.IsEqual(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]</visible>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>268</width>
                 <height>151</height>
-                <colordiffuse>90ffffff</colordiffuse>
-                <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
-                <aspectratio>scale</aspectratio>
+                <align>center</align>
+                <include>TextColor_AlternateColor</include>
+                <label>$LOCALIZE[13106]</label>
             </control>
             <control type="image">
                 <posx>0</posx>
