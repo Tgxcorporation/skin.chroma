@@ -1731,7 +1731,7 @@
                             <width>380</width>
                             <height>570</height>
                             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                            <texture fallback="defaultIconBig.png">resource://resource.images.studios.white/$INFO[Container(550).ListItem.Label,,.png]</texture>
+                            <texture fallback="defaultIconBig.png">$VAR[ExtendedInfoStudioArt]</texture>
                             <aspectratio aligny="top">keep</aspectratio>
                         </control>
                     </control>
@@ -1819,7 +1819,7 @@
                             <width>380</width>
                             <height>570</height>
                             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                            <texture fallback="defaultIconBig.png">resource://resource.images.studios.white/$INFO[Container(1450).ListItem.Label,,.png]</texture>
+                            <texture fallback="defaultIconBig.png">$VAR[ExtendedInfoStudioArt]</texture>
                             <aspectratio aligny="top">keep</aspectratio>
                         </control>
                     </control>
