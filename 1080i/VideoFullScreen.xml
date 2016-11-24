@@ -8,6 +8,14 @@
             <posx>0</posx>
             <posy>0</posy>
             <include>OSDOpenClose</include>
+            <control type="label" id="10">
+                <left>TextMargin</left>
+                <top>15</top>
+                <width>1820</width>
+                <height>100</height>
+                <label>-</label>
+                <font>NotificationFont</font>
+            </control>
         </control>
     </controls>
 </window>

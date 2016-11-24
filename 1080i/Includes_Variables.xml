@@ -820,8 +820,12 @@
         <value condition="player.forwarding32x | player.rewinding32x">32 X</value>
         <value condition="Player.ChapterCount + ![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]">$VAR[ChapterLabel]</value>
         <value condition="!String.IsEmpty(Player.SeekStepSize) + ![player.forwarding | player.rewinding]">$LOCALIZE[773] $INFO[Player.SeekStepSize]</value>
-    	<value condition="Player.DisplayAfterSeek + ![player.forwarding | player.rewinding]">$LOCALIZE[773] $INFO[Player.SeekOffset]</value>
-    	<value condition="!Player.DisplayAfterSeek + Player.Seeking">$LOCALIZE[773]</value>
+        <!--<value condition="Player.Caching">$INFO[Player.CacheLevel,$LOCALIZE[15107] ,%]</value>-->
+        <!--<value condition="Player.Paused">$LOCALIZE[112]</value>-->
+        <!--<value condition="Player.Forwarding | Player.Rewinding">$VAR[VideoPlayerForwardRewindVar]</value>-->
+        <value condition="Player.IsTempo">$LOCALIZE[224]: $INFO[Player.PlaySpeed]</value>
+        <!--<value condition="Player.DisplayAfterSeek + ![player.forwarding | player.rewinding]">$LOCALIZE[773] $INFO[Player.SeekOffset]</value>-->
+    	<!--<value condition="!Player.DisplayAfterSeek + Player.Seeking">$LOCALIZE[773]</value>-->
         <value condition="Player.hasvideo + VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelNumber,, - ]$INFO[VideoPlayer.ChannelName]</value>
         <value condition="Player.hasvideo + !VideoPlayer.Content(livetv)">$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Artist]</value>
         <value condition="Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))">$INFO[MusicPlayer.Artist]</value>

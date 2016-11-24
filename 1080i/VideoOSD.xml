@@ -6,7 +6,18 @@
     <controls>
         <control type="group">
             <include>TopBarOSDOpenClose</include>
-            <visible>![Window.IsVisible(DialogSelect.xml) | Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsVisible(DialogSubtitles.xml) | Window.IsVisible(DialogAddonSettings.xml) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
+            <visible>![
+                Window.IsVisible(DialogPlayerProcessInfo.xml) |
+                Window.IsVisible(DialogSelect.xml) |
+                Window.IsVisible(SliderDialog) |
+                Window.IsVisible(OSDVideoSettings) |
+                Window.IsVisible(OSDAudioSettings) |
+                Window.IsVisible(VideoBookmarks) |
+                Window.IsVisible(DialogSubtitles.xml) |
+                Window.IsVisible(DialogAddonSettings.xml) |
+                Window.IsVisible(PVROSDChannels) |
+                Window.IsVisible(PVROSDGuide)
+                ]</visible>
             <include>TopBarOSDVisibleFadeEffect</include>
             <include>TopBarVisibleFadeEffectDialog</include>
             <include>OverlayTop</include>
