@@ -726,6 +726,18 @@
                                 <onclick>Skin.ToggleSetting(EnableStudioArt)</onclick>
                                 <!--<onclick>Skin.Reset(EnableClearLogo)</onclick>-->
                             </item>
+                            <item id="26">
+                                <visible>Skin.HasSetting(EnableStudioArt)</visible>
+                                <label>$LOCALIZE[31078]</label>
+                                <label2>$INFO[Skin.String(StudioArt.name)]</label2>
+                                <onclick>RunScript(script.image.resource.select,property=StudioArt&amp;type=resource.images.studios)</onclick>
+                            </item>
+                            <item id="27">
+                                <visible>Skin.HasSetting(EnableStudioArt)</visible>
+                                <label>$LOCALIZE[31081]</label>
+                                <label2>$INFO[Skin.String(LabelArt.name)]</label2>
+                                <onclick>RunScript(script.image.resource.select,property=LabelArt&amp;type=resource.images.recordlabels)</onclick>
+                            </item>
                             <!--<item id="91">-->
                             <!--<visible>!Skin.HasSetting(TVTunes.Enabled)</visible>-->
                             <!--<label>$LOCALIZE[31984]</label>-->
@@ -752,6 +764,11 @@
                                 <label2>$LOCALIZE[305]</label2>
                                 <onclick>Skin.ToggleSetting(Use_Artist_Slideshow)</onclick>
                             </item>
+                            <item id="97">
+                                <label>$LOCALIZE[31079]</label>
+                                <label2>$INFO[Skin.String(WeatherFanartArt.name)]</label2>
+                                <onclick>RunScript(script.image.resource.select,property=WeatherFanartArt&amp;type=resource.images.weatherfanart)</onclick>
+                            </item>
                             <item id="93">
                                 <label>$LOCALIZE[31519]</label>
                                 <label2>$INFO[Skin.String(weatherArtPath)]</label2>
@@ -761,6 +778,11 @@
                                 <visible>!IsEmpty(Skin.String(weatherArtPath))</visible>
                                 <label>$LOCALIZE[10035] - $LOCALIZE[31519]</label>
                                 <onclick>Skin.Reset(weatherArtPath)</onclick>
+                            </item>
+                            <item id="98">
+                                <label>$LOCALIZE[31080]</label>
+                                <label2>$INFO[Skin.String(WeatherIconArt.name)]</label2>
+                                <onclick>RunScript(script.image.resource.select,property=WeatherIconArt&amp;type=resource.images.weathericon)</onclick>
                             </item>
                             <item id="94">
                                 <label>$LOCALIZE[31520]</label>
@@ -1763,12 +1785,12 @@
                                 <include>OverlayTransparency</include>
                                 <texture>common/overlay_bottom.png</texture>
                             </control><control type="image">
-                                <posx>960</posx>
-                                <posy>700</posy>
-                                <width>860</width>
-                                <height>170</height>
-                                <texture border="65">common/background_strip_horizontal_text.png</texture>
-                            </control>
+                            <posx>960</posx>
+                            <posy>700</posy>
+                            <width>860</width>
+                            <height>170</height>
+                            <texture border="65">common/background_strip_horizontal_text.png</texture>
+                        </control>
                             <control type="label">
                                 <posx>960</posx>
                                 <posy>700</posy>
