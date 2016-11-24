@@ -341,6 +341,18 @@ msgctxt "#31082"
 msgid "Disable Fanart Backdrops in Pictures"
 msgstr ""
 
+msgctxt "#31083"
+msgid "Video decoder"
+msgstr ""
+
+msgctxt "#31084"
+msgid "Pixel format"
+msgstr ""
+
+msgctxt "#31085"
+msgid "Memory used"
+msgstr ""
+
 #empty strings from id 31076 to 31089
 #Viewtype
 
