@@ -995,4 +995,16 @@
         <value condition="Player.Process(videohwdecoder)">HW</value>
         <value>SW</value>
     </variable>
+    <variable name="PVRTimerIcon">
+        <value condition="ListItem.IsRecording">pvr/PVR-IsRecording.png</value>
+        <value condition="ListItem.HasTimerSchedule + ListItem.TimerHasError">pvr/PVR-HasTimerScheduleError.png</value>
+        <value condition="ListItem.HasTimer + ListItem.TimerHasError">pvr/PVR-HasTimerError.png</value>
+        <value condition="ListItem.HasTimerSchedule + ListItem.TimerHasConflict">pvr/PVR-HasTimerScheduleConflict.png</value>
+        <value condition="ListItem.HasTimer + ListItem.TimerHasConflict">pvr/PVR-HasTimerConflict.png</value>
+        <value condition="ListItem.HasRecording">pvr/PVR-HasRecording.png</value>
+        <value condition="ListItem.HasTimerSchedule + !ListItem.TimerIsActive">pvr/PVR-HasTimerScheduleDisabled.png</value>
+        <value condition="ListItem.HasTimer + !ListItem.TimerIsActive">pvr/PVR-HasTimerDisabled.png</value>
+        <value condition="ListItem.HasTimerSchedule">pvr/PVR-HasTimerSchedule.png</value>
+        <value condition="ListItem.HasTimer">pvr/PVR-HasTimer.png</value>
+    </variable>
 </includes>

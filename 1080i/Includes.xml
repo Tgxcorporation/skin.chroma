@@ -1458,21 +1458,9 @@
             <posy>$PARAM[y]</posy>
             <width>$PARAM[width]</width>
             <height>$PARAM[height]</height>
-            <texture>OverlayRecording.png</texture>
+            <texture>$VAR[PVRTimerIcon]</texture>
             <aspectratio>keep</aspectratio>
             <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-            <visible>ListItem.IsRecording</visible>
-        </control>
-        <control type="image">
-            <animation effect="fade" start="$PARAM[transparency]" end="$PARAM[transparency]" time="0" reversible="false" condition="true">Conditional</animation>
-            <posx>$PARAM[x]</posx>
-            <posy>$PARAM[y]</posy>
-            <width>$PARAM[width]</width>
-            <height>$PARAM[height]</height>
-            <texture>OverlayTimer.png</texture>
-            <aspectratio>keep</aspectratio>
-            <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-            <visible>ListItem.HasTimer</visible>
         </control>
     </include>
     <include name="ClearArtLogo">
