@@ -33,7 +33,7 @@
                     <scroll>true</scroll>
                     <label>$LOCALIZE[21422]</label>
                 </control>
-                <control type="spincontrolex" id="15">
+                <control type="button" id="15">
                     <posy>100</posy>
                     <textwidth>315</textwidth>
                     <width>900</width>
@@ -41,7 +41,7 @@
                     <onup>15</onup>
                     <ondown>16</ondown>
                 </control>
-                <control type="spincontrolex" id="16">
+                <control type="button" id="16">
                     <posy>150</posy>
                     <textwidth>315</textwidth>
                     <width>900</width>
@@ -55,6 +55,7 @@
                     <width>900</width>
                     <include>LeftMenuButton</include>
                     <hinttext>21420</hinttext>
+                    <texturenofocus>common/osd_progress_background.png</texturenofocus>
                     <onup>16</onup>
                     <ondown>9002</ondown>
                 </control>

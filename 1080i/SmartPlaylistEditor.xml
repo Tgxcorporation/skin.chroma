@@ -83,7 +83,7 @@
             <control type="group">
                 <posx>530</posx>
                 <posy>240</posy>
-                <control type="spincontrolex" id="22">
+                <control type="button" id="22">
                     <posx>0</posx>
                     <posy>0</posy>
                     <textwidth>535</textwidth>
@@ -96,22 +96,14 @@
                     <onup>22</onup>
                     <ondown>12</ondown>
                 </control>
-                <control type="label">
-                    <posx>0</posx>
-                    <posy>83</posy>
-                    <width>1340</width>
-                    <font>LeftMenuTitleFont</font>
-                    <include>TextColor_MidColor</include>
-                    <include>LeftMenuButton</include>
-                    <label>21433</label>
-                </control>
-                <control type="edit" id="12">
+                <control type="button" id="12">
                     <posx>0</posx>
                     <posy>125</posy>
                     <width>1340</width>
                     <height>50</height>
                     <font>InfoDetailsFont</font>
                     <texturenofocus>common/osd_progress_background.png</texturenofocus>
+                    <label>$LOCALIZE[21433]</label>
                     <include>LeftMenuButton</include>
                     <onleft>12</onleft>
                     <onright>9000</onright>
@@ -186,34 +178,34 @@
                     <onup>10</onup>
                     <ondown>9001</ondown>
                     <itemgap>0</itemgap>
-                    <control type="spincontrolex" id="16">
+                    <control type="button" id="16">
                         <textwidth>535</textwidth>
                         <width>1340</width>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[21424]</label>
                         <reverse>yes</reverse>
                     </control>
-                    <control type="spincontrolex" id="17">
+                    <control type="button" id="17">
                         <textwidth>535</textwidth>
                         <width>1340</width>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[21427]</label>
                         <reverse>yes</reverse>
                     </control>
-                    <control type="spincontrolex" id="18">
+                    <control type="button" id="18">
                         <textwidth>535</textwidth>
                         <width>1340</width>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[21429]</label>
                         <reverse>yes</reverse>
                     </control>
-                    <control type="togglebutton" id="19">
+                    <control type="button" id="19">
                         <width>1340</width>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[21429]:  $LOCALIZE[21431]</label>
                         <altlabel>$LOCALIZE[21429]:  $LOCALIZE[21430]</altlabel>
                     </control>
-                    <control type="spincontrolex" id="23">
+                    <control type="button" id="23">
                         <textwidth>535</textwidth>
                         <width>1340</width>
                         <include>LeftMenuButton</include>
