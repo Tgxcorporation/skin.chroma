@@ -75,6 +75,12 @@
                         <label>-</label>
                         <visible>Window.IsActive(PVRGuideInfo)</visible>
                     </control>
+                    <control type="button" id="9">
+                        <description>Add Timer</description>
+                        <include>DialogMenuButton</include>
+                        <label>$LOCALIZE[19061]</label>
+                        <visible>Window.IsActive(PVRGuideInfo)</visible>
+                    </control>
                     <control type="button" id="7">
                         <description>OK</description>
                         <include>DialogMenuButton</include>
