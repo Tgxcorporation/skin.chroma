@@ -13,8 +13,36 @@
                 <width>1820</width>
                 <height>100</height>
                 <label>-</label>
+                <include>TextColor_MainColor</include>
                 <font>NotificationFont</font>
             </control>
+            <control type="label" id="11">
+                <left>TextMargin</left>
+                <top>45</top>
+                <width>1820</width>
+                <height>100</height>
+                <label>-</label>
+                <include>TextColor_MainColor</include>
+                <font>NotificationFont</font>
+            </control>
+            <control type="label" id="12">
+                <left>TextMargin</left>
+                <top>75</top>
+                <width>1820</width>
+                <height>100</height>
+                <label>-</label>
+                <include>TextColor_MainColor</include>
+                <font>NotificationFont</font>
+            </control>
+        </control>
+        <control type="label" id="1">
+            <left>0</left>
+            <top>0</top>
+            <width>1920</width>
+            <height>1080</height>
+            <label>$INFO[Player.SeekNumeric]</label>
+            <include>TextColor_MainColor</include>
+            <font>NotificationFont</font>
         </control>
     </controls>
 </window>
