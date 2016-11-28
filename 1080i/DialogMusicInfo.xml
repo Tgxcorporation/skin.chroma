@@ -612,7 +612,7 @@
                                 </control>
                             </control>
                         </focusedlayout>
-                        <itemlayout height="100" width="860" condition="String.IsEqual(ListItem.DBType,artist)">
+                        <itemlayout height="100" width="860" condition="String.IsEqual(ListItem.DBType,artist)|Container.Content(songs)">
                             <control type="label">
                                 <posx>TextMargin</posx>
                                 <posy>6</posy>
@@ -632,7 +632,7 @@
                                 <label>$INFO[ListItem.Label2]</label>
                             </control>
                         </itemlayout>
-                        <focusedlayout height="100" width="860" condition="String.IsEqual(ListItem.DBType,artist)">
+                        <focusedlayout height="100" width="860" condition="String.IsEqual(ListItem.DBType,artist)|Container.Content(songs)">
                             <control type="group">
                                 <include>ButtonWideFocusAnimation</include>
                                 <control type="image">
