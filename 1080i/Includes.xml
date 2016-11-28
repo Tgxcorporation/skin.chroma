@@ -1088,6 +1088,7 @@
                 Window.IsVisible(SliderDialog) |
                 Window.IsVisible(OSDVideoSettings) |
                 Window.IsVisible(OSDAudioSettings) |
+                Window.IsVisible(osdcmssettings) |
                 Window.IsVisible(VideoBookmarks) |
                 Window.IsVisible(DialogSubtitles.xml) |
                 Window.IsVisible(DialogAddonSettings.xml) |
@@ -1780,6 +1781,14 @@
                 <texturefocus>topbar/topbar_video_settings_focus.png</texturefocus>
                 <texturenofocus>topbar/topbar_video_settings_nofocus.png</texturenofocus>
                 <onclick>ActivateWindow(OSDVideoSettings)</onclick>
+            </control>
+            <control type="button" id="11105">
+                <label>$LOCALIZE[36560]</label>
+                <include>TopBarButton</include>
+                <texturefocus>topbar/topbar_cms_settings_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_cms_settings_nofocus.png</texturenofocus>
+                <onclick>ActivateWindow(osdcmssettings)</onclick>
+                <visible>System.HasCMS</visible>
             </control>
             <control type="button" id="252">
                 <label>$LOCALIZE[13396]</label>
