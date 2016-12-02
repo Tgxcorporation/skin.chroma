@@ -9,6 +9,7 @@
                 <!--POSTERS-->
                 <control type="image">
                     <visible>Control.HasFocus(700011)|Control.HasFocus(700021)|Control.HasFocus(700031)|Control.HasFocus(700041)|Control.HasFocus(700051)</visible>
+                    <include>VisibleFadeEffect</include>
                     <posx>0</posx>
                     <posy>352</posy>
                     <width>1920</width>
@@ -18,6 +19,7 @@
                 <!--EPISODES-->
                 <control type="image">
                     <visible>Control.HasFocus(700012)|Control.HasFocus(700022)|Control.HasFocus(700032)|Control.HasFocus(700042)|Control.HasFocus(700052)</visible>
+                    <include>VisibleFadeEffect</include>
                     <posx>0</posx>
                     <posy>462</posy>
                     <width>2130</width>
@@ -27,6 +29,7 @@
                 <!--SQUARES-->
                 <control type="image">
                     <visible>Control.HasFocus(700013)|Control.HasFocus(700023)|Control.HasFocus(700033)|Control.HasFocus(700043)|Control.HasFocus(700053)|Control.HasFocus(700015)|Control.HasFocus(700025)|Control.HasFocus(700035)|Control.HasFocus(700045)|Control.HasFocus(700055)</visible>
+                    <include>VisibleFadeEffect</include>
                     <posx>0</posx>
                     <posy>372</posy>
                     <width>1920</width>
@@ -36,6 +39,7 @@
                 <!--CHANNELS-->
                 <control type="image">
                     <visible>Control.HasFocus(700014)|Control.HasFocus(700024)|Control.HasFocus(700034)|Control.HasFocus(700044)|Control.HasFocus(700054)</visible>
+                    <include>VisibleFadeEffect</include>
                     <posx>0</posx>
                     <posy>462</posy>
                     <width>2130</width>
