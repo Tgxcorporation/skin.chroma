@@ -1583,12 +1583,19 @@
         </control>
     </include>
     <include name="TopBarVideoOSDList">
+        <control type="image">
+            <posx>0</posx>
+            <posy>-5</posy>
+            <width>1920</width>
+            <height>200</height>
+            <texture border="65">common/background_strip_horizontal_text.png</texture>
+        </control>
         <control type="grouplist" id="100">
             <posx>0</posx>
             <posy>65</posy>
             <width>1920</width>
             <onup>100</onup>
-            <ondown>87</ondown>
+            <ondown>101</ondown>
             <orientation>horizontal</orientation>
             <itemgap>0</itemgap>
             <align>center</align>
@@ -1678,6 +1685,64 @@
                 <texturenofocus>topbar/topbar_skipforward_nofocus.png</texturenofocus>
                 <onclick>PlayerControl(Next)</onclick>
             </control>
+            <control type="button" id="1616">
+                <include>TopBarButton</include>
+                <texturefocus>topbar/topbar_volume_mute_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_volume_mute_nofocus.png</texturenofocus>
+                <onclick>Mute</onclick>
+            </control>
+            <control type="button" id="1618">
+                <include>TopBarButton</include>
+                <texturefocus>topbar/topbar_volume_down_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_volume_down_nofocus.png</texturenofocus>
+                <onclick>VolumeDown</onclick>
+            </control>
+            <control type="button" id="1620">
+                <include>TopBarButton</include>
+                <texturefocus>topbar/topbar_volume_up_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
+                <onclick>VolumeUp</onclick>
+            </control>
+            <control type="button" id="1622">
+                <include>TopBarButton</include>
+                <texturefocus>topbar/topbar_smallscreen_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_smallscreen_nofocus.png</texturenofocus>
+                <onclick>Dialog.Close(VideoOSD,true)</onclick>
+                <onclick>fullscreen</onclick>
+            </control>
+            <control type="button" id="1624">
+                <include>TopBarButton</include>
+                <texturefocus>topbar/topbar_settings_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_settings_nofocus.png</texturenofocus>
+                <onclick>Dialog.Close(VideoOSD,true)</onclick>
+                <onclick>ActivateWindow(Settings,return)</onclick>
+            </control>
+            <control type="button" id="1626">
+                <include>TopBarButton</include>
+                <texturefocus>topbar/topbar_shutdown_focus.png</texturefocus>
+                <texturenofocus>topbar/topbar_shutdown_nofocus.png</texturenofocus>
+                <onclick>ActivateWindow(shutdownmenu)</onclick>
+            </control>
+        </control>
+    </include>
+    <include name="TopBarVideoOSD2ndList">
+        <control type="image">
+            <posx>0</posx>
+            <posy>100</posy>
+            <width>1920</width>
+            <height>200</height>
+            <texture border="65">common/background_strip_horizontal_text.png</texture>
+        </control>
+        <control type="grouplist" id="101">
+            <posx>0</posx>
+            <posy>170</posy>
+            <width>1920</width>
+            <onup>100</onup>
+            <ondown>87</ondown>
+            <orientation>horizontal</orientation>
+            <itemgap>0</itemgap>
+            <align>center</align>
+            <!--***-->
             <control type="button" id="306">
                 <visible>VideoPlayer.Content(LiveTV)</visible>
                 <label>$LOCALIZE[19069]</label>
@@ -1780,45 +1845,6 @@
                 <texturenofocus>topbar/topbar_bookmark_nofocus.png</texturenofocus>
                 <onclick>Close</onclick>
                 <onclick>ActivateWindow(VideoPlaylist)</onclick>
-            </control>
-            <!--****-->
-            <control type="button" id="1616">
-                <include>TopBarButton</include>
-                <texturefocus>topbar/topbar_volume_mute_focus.png</texturefocus>
-                <texturenofocus>topbar/topbar_volume_mute_nofocus.png</texturenofocus>
-                <onclick>Mute</onclick>
-            </control>
-            <control type="button" id="1618">
-                <include>TopBarButton</include>
-                <texturefocus>topbar/topbar_volume_down_focus.png</texturefocus>
-                <texturenofocus>topbar/topbar_volume_down_nofocus.png</texturenofocus>
-                <onclick>VolumeDown</onclick>
-            </control>
-            <control type="button" id="1620">
-                <include>TopBarButton</include>
-                <texturefocus>topbar/topbar_volume_up_focus.png</texturefocus>
-                <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
-                <onclick>VolumeUp</onclick>
-            </control>
-            <control type="button" id="1622">
-                <include>TopBarButton</include>
-                <texturefocus>topbar/topbar_smallscreen_focus.png</texturefocus>
-                <texturenofocus>topbar/topbar_smallscreen_nofocus.png</texturenofocus>
-                <onclick>Dialog.Close(VideoOSD,true)</onclick>
-                <onclick>fullscreen</onclick>
-            </control>
-            <control type="button" id="1624">
-                <include>TopBarButton</include>
-                <texturefocus>topbar/topbar_settings_focus.png</texturefocus>
-                <texturenofocus>topbar/topbar_settings_nofocus.png</texturenofocus>
-                <onclick>Dialog.Close(VideoOSD,true)</onclick>
-                <onclick>ActivateWindow(Settings,return)</onclick>
-            </control>
-            <control type="button" id="1626">
-                <include>TopBarButton</include>
-                <texturefocus>topbar/topbar_shutdown_focus.png</texturefocus>
-                <texturenofocus>topbar/topbar_shutdown_nofocus.png</texturenofocus>
-                <onclick>ActivateWindow(shutdownmenu)</onclick>
             </control>
             <!--****-->
             <control type="button" id="707">
