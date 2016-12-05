@@ -760,7 +760,7 @@
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
                 <param name="id" value="700014"/>
-                <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType),pvr)"/>
+                <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType),tv)|String.IsEqual(Container(300).ListItem.Property(widgetType),radio)"/>
                 <param name="labelTitle" value="$INFO[Container(700014).ListItem.Label]"/>
                 <param name="labelLeft" value=""/>
                 <param name="labelCenter" value="$INFO[Container(700014).ListItem.Label2,,       ]$INFO[Container(700014).ListItem.Duration,, $LOCALIZE[31297]       ]$INFO[Container(700014).ListItem.Genre]"/>
@@ -773,7 +773,7 @@
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
                 <param name="id" value="700015"/>
-                <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType),video)|String.IsEqual(Container(300).ListItem.Property(widgetType),picture)"/>
+                <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType),video)|String.IsEqual(Container(300).ListItem.Property(widgetType),picture)|String.IsEqual(Container(300).ListItem.Property(widgetType),addon)"/>
                 <param name="labelTitle" value="$INFO[Container(700015).ListItem.Label]"/>
                 <param name="labelLeft" value=""/>
                 <param name="labelCenter" value=""/>
@@ -839,7 +839,7 @@
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.1)]"/>
                 <param name="id" value="700025"/>
-                <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.1),video)|String.IsEqual(Container(300).ListItem.Property(widgetType.1),picture)"/>
+                <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.1),video)|String.IsEqual(Container(300).ListItem.Property(widgetType.1),picture)|String.IsEqual(Container(300).ListItem.Property(widgetType.1),addon)"/>
                 <param name="labelTitle" value="$INFO[Container(700025).ListItem.Label]"/>
                 <param name="labelLeft" value=""/>
                 <param name="labelCenter" value=""/>
@@ -892,7 +892,7 @@
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
                 <param name="id" value="700034"/>
-                <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.2),pvr)"/>
+                <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.2),tv)|String.IsEqual(Container(300).ListItem.Property(widgetType.2),radio)"/>
                 <param name="labelTitle" value="$INFO[Container(700034).ListItem.Label]"/>
                 <param name="labelLeft" value=""/>
                 <param name="labelCenter" value="$INFO[Container(700034).ListItem.Label2,,       ]$INFO[Container(700034).ListItem.Duration,, $LOCALIZE[31297]       ]$INFO[Container(700034).ListItem.Genre]"/>
@@ -905,7 +905,7 @@
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
                 <param name="id" value="700035"/>
-                <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.2),video)|String.IsEqual(Container(300).ListItem.Property(widgetType.2),picture)"/>
+                <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.2),video)|String.IsEqual(Container(300).ListItem.Property(widgetType.2),picture)|String.IsEqual(Container(300).ListItem.Property(widgetType.2),addon)"/>
                 <param name="labelTitle" value="$INFO[Container(700035).ListItem.Label]"/>
                 <param name="labelLeft" value=""/>
                 <param name="labelCenter" value=""/>
@@ -971,7 +971,7 @@
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
                 <param name="id" value="700045"/>
-                <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.3),video)|String.IsEqual(Container(300).ListItem.Property(widgetType.3),picture)"/>
+                <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.3),video)|String.IsEqual(Container(300).ListItem.Property(widgetType.3),picture)|String.IsEqual(Container(300).ListItem.Property(widgetType.3),addon)"/>
                 <param name="labelTitle" value="$INFO[Container(700045).ListItem.Label]"/>
                 <param name="labelLeft" value=""/>
                 <param name="labelCenter" value=""/>
@@ -1037,7 +1037,7 @@
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
                 <param name="id" value="700055"/>
-                <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.4),video)|String.IsEqual(Container(300).ListItem.Property(widgetType.4),picture)"/>
+                <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.4),video)|String.IsEqual(Container(300).ListItem.Property(widgetType.4),picture)|String.IsEqual(Container(300).ListItem.Property(widgetType.4),addon)"/>
                 <param name="labelTitle" value="$INFO[Container(700055).ListItem.Label]"/>
                 <param name="labelLeft" value=""/>
                 <param name="labelCenter" value=""/>
