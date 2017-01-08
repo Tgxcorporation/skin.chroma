@@ -7,6 +7,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.1.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.1.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.1.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="2">
@@ -14,6 +15,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.2.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.2.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.2.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="3">
@@ -21,6 +23,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.3.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.3.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.3.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="4">
@@ -28,6 +31,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.4.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.4.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.4.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="5">
@@ -35,6 +39,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.5.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.5.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.5.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="6">
@@ -42,6 +47,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.6.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.6.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.6.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="7">
@@ -49,6 +55,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.7.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.7.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.7.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="8">
@@ -56,6 +63,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.8.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.8.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.8.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="9">
@@ -63,6 +71,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.9.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.9.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.9.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="10">
@@ -70,6 +79,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.10.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.10.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.10.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="11">
@@ -77,6 +87,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.11.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.11.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.11.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="12">
@@ -84,6 +95,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.12.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.12.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.12.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="13">
@@ -91,6 +103,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.13.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.13.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.13.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="14">
@@ -98,6 +111,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.14.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.14.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.14.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="15">
@@ -105,6 +119,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.15.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.15.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.15.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
         </content>
@@ -2696,7 +2711,7 @@
                 <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.60.EpisodeTitle)]</label>
                 <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.60.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
-                <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.60.EpisodeSeasonNumber),$LOCALIZE[31973],.]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.60.EpisodeNumber),$LOCALIZE[20360] ]</property>
+                <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.60.EpisodeSeasonNumber),$LOCALIZE[31973],.]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.60.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.60.ShowTitle)]</property>
                 <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.60.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.60.Path)]</onclick>
