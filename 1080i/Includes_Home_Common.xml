@@ -179,7 +179,7 @@
                 </control>
                 <!--POSTERS-->
                 <control type="image">
-                    <visible>[Control.IsVisible(311)|Control.IsVisible(312)|Control.IsVisible(411)|Control.IsVisible(412)]</visible>
+                    <visible>[Control.IsVisible(311)|Control.IsVisible(312)|Control.IsVisible(411)|Control.IsVisible(412)|Control.IsVisible(413)]</visible>
                     <posx>0</posx>
                     <posy>352</posy>
                     <width>1920</width>
@@ -539,13 +539,19 @@
                 <onclick condition="control.isvisible(900)">SetFocus(900)</onclick>
                 <onclick condition="control.isvisible(901)">SetFocus(901)</onclick>
             </item>
-            <!--RECOMMENDED-->
+            <!--RECENTLY VIEWED-->
             <item id="703">
                 <visible>[control.isvisible(312)+Integer.IsGreater(Container(312).NumItems,0)]|
                     [control.isvisible(412)+Integer.IsGreater(Container(412).NumItems,0)]</visible>
-                <label>$LOCALIZE[31966]</label>
+                <label>$LOCALIZE[31011]</label>
                 <onclick condition="control.isvisible(312)">SetFocus(312)</onclick>
                 <onclick condition="control.isvisible(412)">SetFocus(412)</onclick>
+            </item>
+            <!--RECENTLY VIEWED SHOWS-->
+            <item id="704">
+                <visible>[control.isvisible(413)+Integer.IsGreater(Container(413).NumItems,0)]</visible>
+                <label>$LOCALIZE[31932]</label>
+                <onclick condition="control.isvisible(413)">SetFocus(413)</onclick>
             </item>
             <!--CUSTOM WIDGETS-->
             <item id="7001">
@@ -739,6 +745,18 @@
                 <param name="labelCenter" value="$INFO[Container(412).ListItem.Property(SeasonEpisode),,       ]$INFO[Container(412).ListItem.Label]"/>
                 <param name="labelRight" value=""/>
                 <param name="visibilityLabelRight" value="false"/>
+                <param name="animationDown" value="false"/>
+            </include>
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Widget">
+                <param name="gfxType" value="Poster"/>
+                <param name="content" value="PlexRecentlyViewedShowContent"/>
+                <param name="id" value="413"/>
+                <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.RecentlyViewedShow.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),show)"/>
+                <param name="labelTitle" value="$INFO[Container(413).ListItem.Label]"/>
+                <param name="labelLeft" value="$INFO[Container(413).ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
+                <param name="labelCenter" value="$INFO[Container(413).ListItem.Property(Year)]$INFO[Container(413).ListItem.Property(Mpaa),       ]$INFO[Container(413).ListItem.Property(Genre),       ]"/>
+                <param name="labelRight" value="$INFO[Container(413).ListItem.Property(Rating)]"/>
+                <param name="visibilityLabelRight" value="true"/>
                 <param name="animationDown" value="false"/>
             </include>
 
