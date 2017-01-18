@@ -36,6 +36,11 @@
             <size>36</size>
         </font>
         <font>
+            <name>NotificationFontAwesome</name>
+            <filename>fontawesome-webfont.ttf</filename>
+            <size>24</size>
+        </font>
+        <font>
             <name>LeftMenuButtonFont</name>
             <filename>Ubuntu-L.ttf</filename>
             <size>36</size>
