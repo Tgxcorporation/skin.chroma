@@ -514,47 +514,158 @@
             <label>$INFO[MusicPlayer.Title]</label>
         </control>
         <!--RIGHT-->
-        <control type="label">
+        <control type="grouplist">
             <visible>[Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek]</visible>
             <include>Icon_Fade</include>
-            <posx>1490</posx>
+            <posx>1440</posx>
             <posy>940</posy>
             <height>90</height>
-            <width>380</width>
+            <width>480</width>
+            <itemgap>15</itemgap>
             <align>center</align>
-            <font>NotificationFont</font>
-            <textcolor>AlternateColor</textcolor>
-            <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+            <orientation>horizontal</orientation>
+            <usecontrolcoords>true</usecontrolcoords>
+            <control type="label">
+                <top>1</top>
+                <width>auto</width>
+                <height>90</height>
+                <font>NotificationFontAwesome</font>
+                <textcolor>AlternateColor</textcolor>
+                <label></label>
+            </control>
+            <control type="label">
+                <width>auto</width>
+                <height>90</height>
+                <font>NotificationFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$INFO[Player.Time]</label>
+            </control>
+            <control type="label">
+                <width>auto</width>
+                <height>90</height>
+                <font>NotificationFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>/</label>
+            </control>
+            <control type="label">
+                <width>auto</width>
+                <height>90</height>
+                <font>NotificationFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$INFO[Player.Duration]</label>
+            </control>
+            <control type="label">
+                <top>1</top>
+                <width>auto</width>
+                <height>90</height>
+                <font>NotificationFontAwesome</font>
+                <textcolor>AlternateColor</textcolor>
+                <label></label>
+            </control>
         </control>
-        <control type="label">
+        <control type="grouplist">
             <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek]</visible>
             <include>Icon_Fade</include>
             <animation type="Conditional" pulse="true" reversible="false" condition="true">
                 <include>PulseBasicVisible</include>
             </animation>
-            <posx>1490</posx>
+            <posx>1440</posx>
             <posy>940</posy>
             <height>90</height>
-            <width>380</width>
+            <width>480</width>
+            <itemgap>15</itemgap>
             <align>center</align>
-            <font>NotificationFont</font>
-            <textcolor>AlternateColor</textcolor>
-            <label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+            <orientation>horizontal</orientation>
+            <usecontrolcoords>true</usecontrolcoords>
+            <control type="label">
+                <top>1</top>
+                <width>auto</width>
+                <height>90</height>
+                <font>NotificationFontAwesome</font>
+                <textcolor>AlternateColor</textcolor>
+                <label></label>
+            </control>
+            <control type="label">
+                <width>auto</width>
+                <height>90</height>
+                <font>NotificationFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$INFO[Player.Time]</label>
+            </control>
+            <control type="label">
+                <width>auto</width>
+                <height>90</height>
+                <font>NotificationFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>/</label>
+            </control>
+            <control type="label">
+                <width>auto</width>
+                <height>90</height>
+                <font>NotificationFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$INFO[Player.Duration]</label>
+            </control>
+            <control type="label">
+                <top>1</top>
+                <width>auto</width>
+                <height>90</height>
+                <font>NotificationFontAwesome</font>
+                <textcolor>AlternateColor</textcolor>
+                <label></label>
+            </control>
         </control>
-        <control type="label">
+        <control type="grouplist">
             <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek]</visible>
             <include>Icon_Fade</include>
             <animation type="Conditional" pulse="true" reversible="false" condition="true">
                 <include>PulseBasicHidden</include>
             </animation>
-            <posx>1490</posx>
+            <posx>1440</posx>
             <posy>940</posy>
             <height>90</height>
-            <width>380</width>
+            <width>480</width>
+            <itemgap>15</itemgap>
             <align>center</align>
-            <font>NotificationFont</font>
-            <textcolor>AlternateColor</textcolor>
-            <label>$INFO[System.Time]$INFO[Player.FinishTime, / ]</label>
+            <orientation>horizontal</orientation>
+            <usecontrolcoords>true</usecontrolcoords>
+            <control type="label">
+                <top>1</top>
+                <width>auto</width>
+                <height>90</height>
+                <font>NotificationFontAwesome</font>
+                <textcolor>AlternateColor</textcolor>
+                <label></label>
+            </control>
+            <control type="label">
+                <width>auto</width>
+                <height>90</height>
+                <font>NotificationFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$INFO[System.Time]</label>
+            </control>
+            <control type="label">
+                <width>auto</width>
+                <height>90</height>
+                <font>NotificationFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>/</label>
+            </control>
+            <control type="label">
+                <width>auto</width>
+                <height>90</height>
+                <font>NotificationFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$INFO[Player.FinishTime]</label>
+            </control>
+            <control type="label">
+                <top>1</top>
+                <width>auto</width>
+                <height>90</height>
+                <font>NotificationFontAwesome</font>
+                <textcolor>AlternateColor</textcolor>
+                <label></label>
+            </control>
         </control>
         <!--MIDDLE-->
         <control type="label">
