@@ -193,6 +193,11 @@
             <size>36</size>
         </font>
         <font>
+            <name>NotificationFontAwesome</name>
+            <filename>fontawesome-webfont.ttf</filename>
+            <size>24</size>
+        </font>
+        <font>
             <name>LeftMenuButtonFont</name>
             <filename>Ubuntu-R.ttf</filename>
             <size>36</size>
@@ -343,6 +348,11 @@
             <name>NotificationFont</name>
             <filename>Ubuntu-M.ttf</filename>
             <size>36</size>
+        </font>
+        <font>
+            <name>NotificationFontAwesome</name>
+            <filename>fontawesome-webfont.ttf</filename>
+            <size>24</size>
         </font>
         <font>
             <name>LeftMenuButtonFont</name>
@@ -500,6 +510,11 @@
             <filename>DejaVuSans.ttf</filename>
             <size>36</size>
             <aspect>0.93</aspect>
+        </font>
+        <font>
+            <name>NotificationFontAwesome</name>
+            <filename>fontawesome-webfont.ttf</filename>
+            <size>24</size>
         </font>
         <font>
             <name>LeftMenuButtonFont</name>
@@ -673,6 +688,11 @@
             <name>NotificationFont</name>
             <filename>arial.ttf</filename>
             <size>36</size>
+        </font>
+        <font>
+            <name>NotificationFontAwesome</name>
+            <filename>fontawesome-webfont.ttf</filename>
+            <size>24</size>
         </font>
         <font>
             <name>LeftMenuButtonFont</name>
