@@ -557,7 +557,7 @@
                 <height>90</height>
                 <font>NotificationFontAwesome</font>
                 <textcolor>AlternateColor</textcolor>
-                <label></label>
+                <label></label>
             </control>
         </control>
         <control type="grouplist">
@@ -609,7 +609,7 @@
                 <height>90</height>
                 <font>NotificationFontAwesome</font>
                 <textcolor>AlternateColor</textcolor>
-                <label></label>
+                <label></label>
             </control>
         </control>
         <control type="grouplist">
