@@ -1576,11 +1576,12 @@
                             <onclick>Skin.Reset(Theme.Color.green)</onclick>
                             <onclick>Skin.Reset(Theme.Color.amber)</onclick>
                             <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.lilac)</onclick>
                             <onclick>Skin.Reset(Theme.Color.indigo)</onclick>
                             <onclick>Skin.Reset(Theme.Color.titanium)</onclick>
                             <onclick>Skin.Reset(Theme.Color.custom)</onclick>
                             <onclick>Skin.ToggleSetting(Theme.Color.green)</onclick>
-                            <selected>[Skin.HasSetting(Theme.Color.green)|![Skin.HasSetting(Theme.Color.amber)|Skin.HasSetting(Theme.Color.fuchsia)|Skin.HasSetting(Theme.Color.indigo)|Skin.HasSetting(Theme.Color.titanium)|Skin.HasSetting(Theme.Color.custom)|Skin.HasSetting(Theme.Color.sweep)]]</selected>
+                            <selected>[Skin.HasSetting(Theme.Color.green)|![Skin.HasSetting(Theme.Color.amber)|Skin.HasSetting(Theme.Color.fuchsia)|Skin.HasSetting(Theme.Color.lilac)|Skin.HasSetting(Theme.Color.indigo)|Skin.HasSetting(Theme.Color.titanium)|Skin.HasSetting(Theme.Color.custom)|Skin.HasSetting(Theme.Color.sweep)]]</selected>
                             <onclick>ReloadSkin()</onclick>
                         </control>
                         <!-- amber -->
@@ -1601,6 +1602,7 @@
                             <onclick>Skin.Reset(Theme.Color.amber)</onclick>
                             <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
                             <onclick>Skin.Reset(Theme.Color.indigo)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.lilac)</onclick>
                             <onclick>Skin.Reset(Theme.Color.titanium)</onclick>
                             <onclick>Skin.Reset(Theme.Color.custom)</onclick>
                             <onclick>Skin.ToggleSetting(Theme.Color.amber)</onclick>
@@ -1618,12 +1620,13 @@
                             <include>SkinSettingsButton</include>
                             <onright>852803</onright>
                             <onleft>9000</onleft>
-                            <ondown>852804</ondown>
+                            <ondown>852808</ondown>
                             <onup>852802</onup>
                             <onclick>Skin.Reset(Theme.Color.sweep)</onclick>
                             <onclick>Skin.Reset(Theme.Color.green)</onclick>
                             <onclick>Skin.Reset(Theme.Color.amber)</onclick>
                             <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.lilac)</onclick>
                             <onclick>Skin.Reset(Theme.Color.indigo)</onclick>
                             <onclick>Skin.Reset(Theme.Color.titanium)</onclick>
                             <onclick>Skin.Reset(Theme.Color.custom)</onclick>
@@ -1631,11 +1634,36 @@
                             <selected>Skin.HasSetting(Theme.Color.fuchsia)</selected>
                             <onclick>ReloadSkin()</onclick>
                         </control>
+                        <!-- lilac -->
+                        <control type="radiobutton" id="852808">
+                            <include>ButtonFocusAnimation</include>
+                            <posx>530</posx>
+                            <posy>530</posy>
+                            <width>380</width>
+                            <label>$LOCALIZE[31526]</label>
+                            <radioposx>0</radioposx>
+                            <include>SkinSettingsButton</include>
+                            <onright>852803</onright>
+                            <onleft>9000</onleft>
+                            <ondown>852804</ondown>
+                            <onup>852803</onup>
+                            <onclick>Skin.Reset(Theme.Color.sweep)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.green)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.amber)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.lilac)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.indigo)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.titanium)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.custom)</onclick>
+                            <onclick>Skin.ToggleSetting(Theme.Color.lilac)</onclick>
+                            <selected>Skin.HasSetting(Theme.Color.lilac)</selected>
+                            <onclick>ReloadSkin()</onclick>
+                        </control>
                         <!-- indigo -->
                         <control type="radiobutton" id="852804">
                             <include>ButtonFocusAnimation</include>
                             <posx>530</posx>
-                            <posy>530</posy>
+                            <posy>580</posy>
                             <width>380</width>
                             <label>$LOCALIZE[31524]</label>
                             <radioposx>0</radioposx>
@@ -1643,11 +1671,12 @@
                             <onright>852804</onright>
                             <onleft>9000</onleft>
                             <ondown>852805</ondown>
-                            <onup>852803</onup>
+                            <onup>852808</onup>
                             <onclick>Skin.Reset(Theme.Color.sweep)</onclick>
                             <onclick>Skin.Reset(Theme.Color.green)</onclick>
                             <onclick>Skin.Reset(Theme.Color.amber)</onclick>
                             <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.lilac)</onclick>
                             <onclick>Skin.Reset(Theme.Color.indigo)</onclick>
                             <onclick>Skin.Reset(Theme.Color.titanium)</onclick>
                             <onclick>Skin.Reset(Theme.Color.custom)</onclick>
@@ -1659,7 +1688,7 @@
                         <control type="radiobutton" id="852805">
                             <include>ButtonFocusAnimation</include>
                             <posx>530</posx>
-                            <posy>580</posy>
+                            <posy>630</posy>
                             <width>380</width>
                             <label>$LOCALIZE[31525]</label>
                             <radioposx>0</radioposx>
@@ -1672,6 +1701,7 @@
                             <onclick>Skin.Reset(Theme.Color.green)</onclick>
                             <onclick>Skin.Reset(Theme.Color.amber)</onclick>
                             <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.lilac)</onclick>
                             <onclick>Skin.Reset(Theme.Color.indigo)</onclick>
                             <onclick>Skin.Reset(Theme.Color.titanium)</onclick>
                             <onclick>Skin.Reset(Theme.Color.custom)</onclick>
@@ -1683,7 +1713,7 @@
                         <control type="radiobutton" id="852806">
                             <include>ButtonFocusAnimation</include>
                             <posx>530</posx>
-                            <posy>630</posy>
+                            <posy>680</posy>
                             <width>380</width>
                             <label>$LOCALIZE[31070]</label>
                             <radioposx>0</radioposx>
@@ -1696,6 +1726,7 @@
                             <onclick>Skin.Reset(Theme.Color.green)</onclick>
                             <onclick>Skin.Reset(Theme.Color.amber)</onclick>
                             <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.lilac)</onclick>
                             <onclick>Skin.Reset(Theme.Color.indigo)</onclick>
                             <onclick>Skin.Reset(Theme.Color.titanium)</onclick>
                             <onclick>Skin.Reset(Theme.Color.custom)</onclick>
@@ -1708,7 +1739,7 @@
                         <control type="radiobutton" id="852807">
                             <include>ButtonFocusAnimation</include>
                             <posx>530</posx>
-                            <posy>680</posy>
+                            <posy>730</posy>
                             <width>380</width>
                             <label>$LOCALIZE[31047]</label>
                             <radioposx>0</radioposx>
@@ -1721,6 +1752,7 @@
                             <onclick>Skin.Reset(Theme.Color.green)</onclick>
                             <onclick>Skin.Reset(Theme.Color.amber)</onclick>
                             <onclick>Skin.Reset(Theme.Color.fuchsia)</onclick>
+                            <onclick>Skin.Reset(Theme.Color.lilac)</onclick>
                             <onclick>Skin.Reset(Theme.Color.indigo)</onclick>
                             <onclick>Skin.Reset(Theme.Color.titanium)</onclick>
                             <onclick>Skin.Reset(Theme.Color.custom)</onclick>
