@@ -729,10 +729,10 @@
                 <param name="id" value="411"/>
                 <param name="visibility" value="!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))+StringCompare(Container(300).ListItem.Property(type),show)"/>
                 <param name="labelTitle" value="$INFO[Container(411).ListItem.Property(TVshowTitle)]"/>
-                <param name="labelLeft" value=""/>
+                <param name="labelLeft" value="$INFO[Container(411).ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
                 <param name="labelCenter" value="$INFO[Container(411).ListItem.Property(SeasonEpisode),,       ]$INFO[Container(411).ListItem.Label]"/>
-                <param name="labelRight" value=""/>
-                <param name="visibilityLabelRight" value="false"/>
+                <param name="labelRight" value="$INFO[Container(411).ListItem.Property(Rating)]"/>
+                <param name="visibilityLabelRight" value="true"/>
                 <param name="animationDown" value="false"/>
             </include>
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" name="Widget">
@@ -741,10 +741,10 @@
                 <param name="id" value="412"/>
                 <param name="visibility" value="!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.1.Path))+StringCompare(Container(300).ListItem.Property(type),show)"/>
                 <param name="labelTitle" value="$INFO[Container(412).ListItem.Property(TVshowTitle)]"/>
-                <param name="labelLeft" value=""/>
+                <param name="labelLeft" value="$INFO[Container(412).ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
                 <param name="labelCenter" value="$INFO[Container(412).ListItem.Property(SeasonEpisode),,       ]$INFO[Container(412).ListItem.Label]"/>
-                <param name="labelRight" value=""/>
-                <param name="visibilityLabelRight" value="false"/>
+                <param name="labelRight" value="$INFO[Container(412).ListItem.Property(Rating)]"/>
+                <param name="visibilityLabelRight" value="true"/>
                 <param name="animationDown" value="false"/>
             </include>
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" name="Widget">
