@@ -103,8 +103,8 @@
                     <description>Go to playlist</description>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[13350]</label>
-                    <onclick>ActivateWindow(videoplaylist)</onclick>
-                    <visible>!String.IsEqual(Playlist.Length,0)</visible>
+                    <onclick>ActivateWindow(musicplaylist)</onclick>
+                    <visible>Integer.IsGreater(Playlist.Length(music),0)</visible>
                 </control>
                 <control type="togglebutton" id="20">
                     <description>Update library</description>
