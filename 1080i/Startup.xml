@@ -63,6 +63,7 @@
                 <texture>startup.png</texture>
             </control>
             <control type="label">
+                <visible>System.HasAddon(script.skin.helper.service)</visible>
                 <posx>0</posx>
                 <posy>1010</posy>
                 <height>36</height>

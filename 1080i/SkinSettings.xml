@@ -320,10 +320,12 @@
                                 <onclick>ReloadSkin()</onclick>
                             </item>
                             <item id="127">
+                                <visible>System.HasAddon(script.skin.helper.service)</visible>
                                 <label>$ADDON[script.skin.helper.service 32028]</label>
                                 <onclick>RunScript(script.skin.helper.service,action=backup)</onclick>
                             </item>
                             <item id="128">
+                                <visible>System.HasAddon(script.skin.helper.service)</visible>
                                 <label>$ADDON[script.skin.helper.service 32032]</label>
                                 <onclick>RunScript(script.skin.helper.service,action=restore)</onclick>
                             </item>
@@ -1323,6 +1325,7 @@
                             <onclick condition="Container(9004).HasFocus(14)">Skin.SetPath(Concerts.Background)</onclick>
                         </control>
                         <control type="radiobutton" id="307">
+                            <visible>System.HasAddon(script.skin.helper.service)</visible>
                             <visible>Container(9004).HasFocus(0)+!Skin.HasSetting(plexbmc)</visible>
                             <include>ButtonFocusAnimation</include>
                             <selected>Skin.HasSetting(Default.Background.EnableRandomFanart)</selected>
@@ -1331,6 +1334,7 @@
                             <onclick>Skin.ToggleSetting(Default.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="303">
+                            <visible>System.HasAddon(script.skin.helper.service)</visible>
                             <visible>Container(9004).HasFocus(1)+!Skin.HasSetting(plexbmc)</visible>
                             <include>ButtonFocusAnimation</include>
                             <selected>Skin.HasSetting(Videos.Background.EnableRandomFanart)</selected>
@@ -1339,6 +1343,7 @@
                             <onclick>Skin.ToggleSetting(Videos.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="304">
+                            <visible>System.HasAddon(script.skin.helper.service)</visible>
                             <visible>Container(9004).HasFocus(2)+!Skin.HasSetting(plexbmc)</visible>
                             <include>ButtonFocusAnimation</include>
                             <selected>Skin.HasSetting(Movies.Background.EnableRandomFanart)</selected>
@@ -1347,6 +1352,7 @@
                             <onclick>Skin.ToggleSetting(Movies.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="305">
+                            <visible>System.HasAddon(script.skin.helper.service)</visible>
                             <visible>Container(9004).HasFocus(3)+!Skin.HasSetting(plexbmc)</visible>
                             <include>ButtonFocusAnimation</include>
                             <selected>Skin.HasSetting(TVShows.Background.EnableRandomFanart)</selected>
@@ -1355,6 +1361,7 @@
                             <onclick>Skin.ToggleSetting(TVShows.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="306">
+                            <visible>System.HasAddon(script.skin.helper.service)</visible>
                             <visible>Container(9004).HasFocus(4)+!Skin.HasSetting(plexbmc)</visible>
                             <include>ButtonFocusAnimation</include>
                             <selected>Skin.HasSetting(Music.Background.EnableRandomFanart)</selected>
@@ -1363,6 +1370,7 @@
                             <onclick>Skin.ToggleSetting(Music.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="308">
+                            <visible>System.HasAddon(script.skin.helper.service)</visible>
                             <visible>Container(9004).HasFocus(5)+!Skin.HasSetting(plexbmc)</visible>
                             <include>ButtonFocusAnimation</include>
                             <selected>Skin.HasSetting(Pictures.Background.EnableRandomFanart)</selected>
@@ -1371,6 +1379,7 @@
                             <onclick>Skin.ToggleSetting(Pictures.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="309">
+                            <visible>System.HasAddon(script.skin.helper.service)</visible>
                             <visible>Container(9004).HasFocus(13)+!Skin.HasSetting(plexbmc)</visible>
                             <include>ButtonFocusAnimation</include>
                             <selected>Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)</selected>
@@ -1379,6 +1388,7 @@
                             <onclick>Skin.ToggleSetting(MusicVideos.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="310">
+                            <visible>System.HasAddon(script.skin.helper.service)</visible>
                             <visible>Container(9004).HasFocus(14)+!Skin.HasSetting(plexbmc)</visible>
                             <include>ButtonFocusAnimation</include>
                             <selected>Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)</selected>
@@ -1711,6 +1721,7 @@
                         </control>
                         <!--custom-->
                         <control type="radiobutton" id="852806">
+                            <visible>System.HasAddon(script.skin.helper.service)</visible>
                             <include>ButtonFocusAnimation</include>
                             <posx>530</posx>
                             <posy>680</posy>

@@ -82,6 +82,7 @@
                     <label>Chroma</label>
                 </control>
                 <control type="label">
+                    <visible>System.HasAddon(script.skin.helper.service)</visible>
                     <posx>630</posx>
                     <posy>890</posy>
                     <height>36</height>
