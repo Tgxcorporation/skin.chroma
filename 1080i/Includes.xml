@@ -515,7 +515,7 @@
         </control>
         <!--RIGHT-->
         <control type="grouplist">
-            <visible>[Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek]</visible>
+            <visible>[Player.Caching | Player.Seeking | player.forwarding | player.rewinding]</visible>
             <include>Icon_Fade</include>
             <posx>1440</posx>
             <posy>940</posy>
@@ -564,7 +564,7 @@
             </control>
         </control>
         <control type="grouplist">
-            <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek]</visible>
+            <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding]</visible>
             <include>Icon_Fade</include>
             <animation type="Conditional" pulse="true" reversible="false" condition="true">
                 <include>PulseBasicVisible</include>
@@ -616,7 +616,7 @@
             </control>
         </control>
         <control type="grouplist">
-            <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek]</visible>
+            <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding]</visible>
             <include>Icon_Fade</include>
             <animation type="Conditional" pulse="true" reversible="false" condition="true">
                 <include>PulseBasicHidden</include>
