@@ -1878,6 +1878,53 @@
                             </control>
                         </control>
                         <control type="group">
+                            <visible>control.hasfocus(852808)</visible>
+                            <include>Icon_Fade</include>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>380</posy>
+                                <width>860</width>
+                                <height>484</height>
+                                <aspectratio>scale</aspectratio>
+                                <texture>special://skin/backgrounds/default/background.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>380</posy>
+                                <width>860</width>
+                                <height>242</height>
+                                <colordiffuse>LilacColor</colordiffuse>
+                                <include>OverlayTransparency</include>
+                                <texture>common/overlay_top.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>622</posy>
+                                <width>860</width>
+                                <height>242</height>
+                                <colordiffuse>LilacColor</colordiffuse>
+                                <include>OverlayTransparency</include>
+                                <texture>common/overlay_bottom.png</texture>
+                            </control>
+                            <control type="image">
+                                <posx>960</posx>
+                                <posy>700</posy>
+                                <width>860</width>
+                                <height>170</height>
+                                <texture border="65">common/background_strip_horizontal_text.png</texture>
+                            </control>
+                            <control type="label">
+                                <posx>960</posx>
+                                <posy>700</posy>
+                                <width>860</width>
+                                <height>170</height>
+                                <align>center</align>
+                                <font>InfoDetailsFont</font>
+                                <textcolor>FocusedColor</textcolor>
+                                <label>$LOCALIZE[31526]</label>
+                            </control>
+                        </control>
+                        <control type="group">
                             <visible>control.hasfocus(852804)</visible>
                             <include>Icon_Fade</include>
                             <control type="image">
@@ -2065,6 +2112,7 @@
                                 <label>$LOCALIZE[31047]</label>
                             </control>
                         </control>
+
                     </control>
                 </control>
             </control>
