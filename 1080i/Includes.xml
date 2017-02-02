@@ -1112,7 +1112,7 @@
             </control>
             <control type="label">
                 <posx>445r</posx>
-                <visible>!StringCompare(ListItem.Label,) + [!StringCompare(ListItem.Label2,$LOCALIZE[106])+!StringCompare(ListItem.Label2,$LOCALIZE[107])]</visible>
+                <visible>!StringCompare(ListItem.Label,)</visible>
                 <height>50</height>
                 <width>395</width>
                 <align>right</align>
@@ -1136,26 +1136,6 @@
                 <font>LeftMenuTitleFont</font>
                 <include>TextColor_MidColor</include>
                 <label>$INFO[ListItem.Label2]</label>
-            </control>
-            <control type="image">
-                <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[106])</visible>
-                <posx>1240</posx>
-                <posy>0</posy>
-                <height>50</height>
-                <width>50</width>
-                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                <aspectratio align="right" aligny="center">keep</aspectratio>
-                <texture>buttons/RadioOffNF.png</texture>
-            </control>
-            <control type="image">
-                <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[107])</visible>
-                <posx>1240</posx>
-                <posy>0</posy>
-                <height>50</height>
-                <width>50</width>
-                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                <aspectratio align="right" aligny="center">keep</aspectratio>
-                <texture>buttons/RadioOnNF.png</texture>
             </control>
         </itemlayout>
         <focusedlayout width="1340" height="50">
@@ -1181,7 +1161,7 @@
                 </control>
                 <control type="label">
                     <posx>445r</posx>
-                    <visible>!StringCompare(ListItem.Label,) + [!StringCompare(ListItem.Label2,$LOCALIZE[106])+!StringCompare(ListItem.Label2,$LOCALIZE[107])]</visible>
+                    <visible>!StringCompare(ListItem.Label,)</visible>
                     <height>50</height>
                     <width>395</width>
                     <scroll>true</scroll>
@@ -1207,26 +1187,6 @@
                     <font>LeftMenuTitleFont</font>
                     <include>TextColor_MainColor</include>
                     <label>$INFO[ListItem.Label2]</label>
-                </control>
-                <control type="image">
-                    <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[106])</visible>
-                    <posx>1240</posx>
-                    <posy>0</posy>
-                    <height>50</height>
-                    <width>50</width>
-                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                    <aspectratio align="right" aligny="center">keep</aspectratio>
-                    <texture>buttons/RadioOffFO.png</texture>
-                </control>
-                <control type="image">
-                    <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[107])</visible>
-                    <posx>1240</posx>
-                    <posy>0</posy>
-                    <height>50</height>
-                    <width>50</width>
-                    <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
-                    <aspectratio align="right" aligny="center">keep</aspectratio>
-                    <texture>buttons/RadioOnFO.png</texture>
                 </control>
             </control>
         </focusedlayout>

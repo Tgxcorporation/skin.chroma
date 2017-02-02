@@ -1,6 +1,5 @@
 2.10.0
 Added donation message.
-Added toggles to skin settings.
 Enhanced seek bar.
 Added Lilac Theme.
 Added support Recently added shows widget + Ratings and Runtime for PleXBMC widgets (only for Tgxcorporation's pleXBMC plugin).
