@@ -66,14 +66,14 @@
                 </control>
                 <control type="image">
                     <posx>630</posx>
-                    <posy>780</posy>
+                    <posy>720</posy>
                     <width>1140</width>
-                    <height>210</height>
+                    <height>270</height>
                     <texture border="65">common/background_strip_horizontal_text.png</texture>
                 </control>
                 <control type="label">
                     <posx>630</posx>
-                    <posy>847</posy>
+                    <posy>787</posy>
                     <height>36</height>
                     <width>1140</width>
                     <align>center</align>
@@ -83,13 +83,23 @@
                 </control>
                 <control type="label">
                     <posx>630</posx>
-                    <posy>890</posy>
+                    <posy>833</posy>
                     <height>36</height>
                     <width>1140</width>
                     <align>center</align>
                     <font>WindowTitleSubFont</font>
                     <include>TextColor_MainColor</include>
                     <label>$INFO[Window(Home).Property(SkinHelper.skinVersion)] by Tgx</label>
+                </control>
+                <control type="label">
+                    <posx>630</posx>
+                    <posy>880</posy>
+                    <height>36</height>
+                    <width>1140</width>
+                    <align>center</align>
+                    <font>DonationFont</font>
+                    <textcolor>AlternateColor</textcolor>
+                    <label>$LOCALIZE[31086]</label>
                 </control>
             </control>
             <control type="list" id="9000">
