@@ -133,6 +133,11 @@
             <filename>Ubuntu-L.ttf</filename>
             <size>25</size>
         </font>
+        <font>
+            <name>DonationFont</name>
+            <filename>Ubuntu-L.ttf</filename>
+            <size>23</size>
+        </font>
         <!--ADDON COMPATIBILITY-->
         <font>
             <name>font13</name>
@@ -290,6 +295,11 @@
             <filename>Ubuntu-R.ttf</filename>
             <size>25</size>
         </font>
+        <font>
+            <name>DonationFont</name>
+            <filename>Ubuntu-R.ttf</filename>
+            <size>23</size>
+        </font>
         <!--ADDON COMPATIBILITY-->
         <font>
             <name>font13</name>
@@ -446,6 +456,11 @@
             <name>rss</name>
             <filename>Ubuntu-M.ttf</filename>
             <size>25</size>
+        </font>
+        <font>
+            <name>DonationFont</name>
+            <filename>Ubuntu-M.ttf</filename>
+            <size>23</size>
         </font>
         <!--ADDON COMPATIBILITY-->
         <font>
@@ -626,6 +641,12 @@
             <size>25</size>
             <aspect>0.93</aspect>
         </font>
+        <font>
+            <name>DonationFont</name>
+            <filename>DejaVuSans.ttf</filename>
+            <size>23</size>
+            <aspect>0.93</aspect>
+        </font>
         <!--ADDON COMPATIBILITY-->
         <font>
             <name>font13</name>
@@ -786,6 +807,11 @@
             <name>rss</name>
             <filename>arial.ttf</filename>
             <size>25</size>
+        </font>
+        <font>
+            <name>DonationFont</name>
+            <filename>arial.ttf</filename>
+            <size>23</size>
         </font>
         <!--ADDON COMPATIBILITY-->
         <font>
