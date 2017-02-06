@@ -129,6 +129,16 @@
                 <onleft>9000</onleft>
                 <onright>9110</onright>
             </control>
+            <control type="textbox">
+                <posx>100</posx>
+                <posy>830</posy>
+                <height>160</height>
+                <width>380</width>
+                <align>left</align>
+                <font>DonationFont</font>
+                <textcolor>NoFocusedColor</textcolor>
+                <label>$LOCALIZE[31086] [B]massimo@pagani.no.it[/B]</label>
+            </control>
             <control type="group">
                 <control type="group" id="9110">
                     <!-- SKIN SETTINGS-->
