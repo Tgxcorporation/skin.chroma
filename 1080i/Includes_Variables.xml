@@ -217,7 +217,7 @@
         <value condition="Window.IsActive(MyPVRSearch.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
         <value condition="Window.IsActive(MyPVRRecordings.xml)">$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</value>
         <value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Born)]$INFO[ListItem.Property(Artist_Formed)]</value>
-        <value condition="Container.Content(Albums)">$INFO[ListItem.Artist]</value>
+        <!--<value condition="Container.Content(Albums)">$INFO[ListItem.Artist]</value>-->
         <value condition="Container.Content(TVShows)+skin.hassetting(plexbmc)">$INFO[ListItem.Studio]</value>
         <value condition="Container.Content(Songs)+skin.hassetting(plexbmc)">$INFO[ListItem.Artist]</value>
         <value condition="Container.Content(Addons)">$INFO[ListItem.AddonVersion,$LOCALIZE[19114]: ]</value>

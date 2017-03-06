@@ -35,7 +35,7 @@
                         <font>InfoRatingFont</font>
                         <include>TextColor_MainColor</include>
                         <scroll>false</scroll>
-                        <label fallback="0.0">$INFO[ListItem.Rating,,.0]</label>
+                        <label fallback="0.0">$INFO[ListItem.UserRating,,.0]</label>
                     </control>
                 </control>
                 <control type="label">
