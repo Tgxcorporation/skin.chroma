@@ -1729,7 +1729,6 @@
                         </control>
                         <!--custom-->
                         <control type="radiobutton" id="852806">
-                            <visible>System.HasAddon(script.skin.helper.service)</visible>
                             <include>ButtonFocusAnimation</include>
                             <posx>530</posx>
                             <posy>680</posy>
@@ -1751,7 +1750,7 @@
                             <onclick>Skin.Reset(Theme.Color.custom)</onclick>
                             <onclick>Skin.ToggleSetting(Theme.Color.custom)</onclick>
                             <selected>Skin.HasSetting(Theme.Color.custom)</selected>
-                            <onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=PickedColor)</onclick>
+                            <onclick>RunScript(script.skin.helper.colorpicker,skinstring=PickedColor)</onclick>
                             <onclick>ReloadSkin()</onclick>
                         </control>
                         <!-- sweep -->
