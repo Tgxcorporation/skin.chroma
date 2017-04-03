@@ -15,7 +15,7 @@
         <value condition="!String.IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay]</value>
         <value condition="String.IsEqual(ListItem.Label2,$LOCALIZE[305])+Window.IsVisible(AddonBrowser.xml)">OverlayWatched.png</value>
         <value condition="!String.IsEmpty(ListItem.Label2)+Window.IsVisible(AddonBrowser.xml)">OverlayInProgress.png</value>
-        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)+!String.IsEmpty(ListItem.Property(DBID))">OverlayUnwatched.png</value>
+        <value condition="Window.IsVisible(script-script.extendedinfo-VideoList.xml)+!String.IsEmpty(ListItem.Property(DBID))">OverlayUnwatched.png</value>
     </variable>
     <variable name="Banners">
         <value condition="!String.IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
@@ -71,7 +71,7 @@
     </variable>
     <variable name="Thumbs">
         <value condition="Window.IsVisible(DialogMusicInfo.xml)+Control.hasfocus(50)+String.IsEqual(ListItem.DBType,artist)">$INFO[Container(50).ListItem.Thumb]</value>
-        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Icon]</value>
+        <value condition="Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[Container(500).ListItem.Icon]</value>
         <value condition="Skin.hassetting(plexbmc) + Container.Content(episodes) + !String.IsEmpty(ListItem.thumb) + !String.StartsWith(ListItem.thumb,Default)">$INFO[ListItem.thumb]</value>
         <value condition="!String.IsEmpty(ListItem.Art(poster))+!String.StartsWith(ListItem.Art(poster),Default)">$INFO[ListItem.Art(poster)]</value>
         <value condition="!String.IsEmpty(ListItem.Icon)+!String.StartsWith(ListItem.Icon,Default)">$INFO[ListItem.Icon]</value>
@@ -234,7 +234,7 @@
         <value condition="[Window.IsActive(MyPVRChannels.xml)] + ListItem.HasEpg">$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, / ]</value>
         <value condition="![Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)] + VideoPlayer.IsFullscreen + ![VideoPlayer.Content(LiveTV)+!VideoPlayer.HasEpg]">$INFO[VideoPlayer.Year,,     ]$INFO[VideoPlayer.Duration,, $LOCALIZE[31297]     ]</value>
         <value condition="Window.IsActive(MusicVisualisation.xml)">$INFO[MusicPlayer.TimeSpeed,, / ]$INFO[MusicPlayer.Duration]</value>
-        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Year]</value>
+        <value condition="Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[Container(500).ListItem.Year]</value>
         <value condition="Window.IsActive(MyPVRTimers.xml)">$INFO[ListItem.Date]</value>
         <value condition="Window.IsActive(MyPVRSearch.xml)">$INFO[ListItem.Date]</value>
         <value condition="Window.IsActive(MyPVRRecordings.xml)">$INFO[ListItem.Date]</value>
@@ -263,7 +263,7 @@
         <value condition="Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.Genre]</value>
         <value condition="Window.IsActive(MusicVisualisation.xml) + !Skin.HasSetting(plexbmc)">$INFO[MusicPlayer.PlaylistPosition,, / ]$INFO[MusicPlayer.PlaylistLength]</value>
         <value condition="![Window.IsActive(DialogPVRGuideOSD.xml)|Window.IsActive(DialogPVRChannelsOSD.xml)|Window.IsActive(MyPVRChannels.xml)] + VideoPlayer.IsFullscreen">$INFO[VideoPlayer.Genre]</value>
-        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Genre]</value>
+        <value condition="Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[Container(500).ListItem.Genre]</value>
         <value condition="Window.IsActive(MyPVRTimers.xml)">$INFO[ListItem.Comment]</value>
         <value condition="Window.IsActive(MyPVRRecordings.xml)">$INFO[ListItem.Duration]</value>
         <value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Mood)]</value>
@@ -298,7 +298,7 @@
     </variable>
     <variable name="Fanart_Details">
         <value condition="Window.IsVisible(MyWeather.xml)">$INFO[Container(50).ListItem.Property(Property3)]</value>
-        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Genre]</value>
+        <value condition="Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[Container(500).ListItem.Genre]</value>
         <value condition="Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.Title]$INFO[ListItem.StartTime,       ]$INFO[ListItem.EndTime, / ]</value>
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Size]$INFO[ListItem.Date,       ]</value>
         <value condition="Container.content(Albums)">$INFO[ListItem.Artist]$INFO[ListItem.Year,       ]</value>
@@ -319,7 +319,7 @@
         <value>$INFO[ListItem.Duration,, $LOCALIZE[31297]]</value>
     </variable>
     <variable name="Plots">
-        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Plot]</value>
+        <value condition="Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[Container(500).ListItem.Plot]</value>
         <value condition="Container.content(addons) + !String.IsEmpty(ListItem.AddonDescription)">$INFO[ListItem.AddonDescription]</value>
         <value condition="String.Contains(ListItem.Path,videodb://movies/sets/)">$LOCALIZE[20457]</value>
         <value condition="Container.Content(Seasons) + !String.IsEmpty(ListItem.Plot) + !String.IsEmpty(ListItem.Title)">$INFO[ListItem.Plot]</value>
@@ -428,7 +428,7 @@
         <value condition="Window.IsVisible(Home.xml)">$VAR[HomeBackgrounds]</value>
         <value condition="Window.IsVisible(script-NextAired-TVGuide.xml)|Window.IsVisible(script-NextAired-TVGuide2.xml)">$VAR[TVShows.Art]</value>
         <value condition="Window.IsVisible(MyPics.xml)">$VAR[Pictures.Art]</value>
-        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)+!String.IsEmpty(Container(500).ListItem.Art(fanart))">$INFO[Container(500).ListItem.Art(fanart)]</value>
+        <value condition="Window.IsVisible(script-script.extendedinfo-VideoList.xml)+!String.IsEmpty(Container(500).ListItem.Art(fanart))">$INFO[Container(500).ListItem.Art(fanart)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="!String.IsEmpty(Container.Art(set.fanart))">$INFO[Container.Art(set.fanart)]</value>
         <value condition="[Window.IsVisible(MyVideoNav.xml)|Window.IsVisible(MyPlaylist.xml)]+[container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)]">$VAR[TVShows.Art]</value>
@@ -878,9 +878,9 @@
         <value condition="Skin.HasSetting(EnableClearLogo)">$INFO[Player.Art(clearlogo)]</value>
     </variable>
     <variable name="VideoCdArt">
-        <value condition="Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml)+!String.IsEmpty(Window.Property(DiscArt))">$INFO[Window.Property(DiscArt)]</value>
-        <value condition="Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml)+String.IsEmpty(Window.Property(DiscArt))">common/cdart.png</value>
-        <value condition="Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml)+String.IsEmpty(Window.Property(DiscArt))">$INFO[Window.Property(Poster)]</value>
+        <value condition="Window.IsActive(script-script.extendedinfo-DialogInfo.xml)+!String.IsEmpty(Window.Property(DiscArt))">$INFO[Window.Property(DiscArt)]</value>
+        <value condition="Window.IsActive(script-script.extendedinfo-DialogInfo.xml)+String.IsEmpty(Window.Property(DiscArt))">common/cdart.png</value>
+        <value condition="Window.IsActive(script-script.extendedinfo-DialogInfo.xml)+String.IsEmpty(Window.Property(DiscArt))">$INFO[Window.Property(Poster)]</value>
         <value condition="!String.IsEmpty(ListItem.Art(discart))">$INFO[ListItem.Art(discart)]</value>
         <!--<value>$INFO[ListItem.Art(poster)]</value>-->
         <value>common/cdart.png</value>
@@ -903,7 +903,7 @@
         <value condition="Skin.HasSetting(EnableStudioArt) + !String.IsEmpty(Skin.String(LabelArt.name)) + [Window.IsActive(MusicVisualisation.xml)]">$INFO[Skin.String(LabelArt.path)]/$INFO[MusicPlayer.Property(Album_Label)].png</value>
         <value condition="Skin.HasSetting(EnableStudioArt) + !String.IsEmpty(Skin.String(LabelArt.name)) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]">$INFO[Skin.String(LabelArt.path)]/$INFO[ListItem.Property(Album_Label)].png</value>
         <value condition="Skin.HasSetting(EnableStudioArt) + !String.IsEmpty(Skin.String(StudioArt.name)) + [Window.IsActive(VideoFullScreen.xml)]">$INFO[Skin.String(StudioArt.path)]/$INFO[VideoPlayer.Studio].png</value>
-        <value condition="Skin.HasSetting(EnableStudioArt) + !String.IsEmpty(Skin.String(StudioArt.name)) + [Window.IsActive(script-ExtendedInfo Script-VideoList.xml)]">$INFO[Skin.String(StudioArt.path)]/$INFO[Container(500).ListItem.Studio].png</value>
+        <value condition="Skin.HasSetting(EnableStudioArt) + !String.IsEmpty(Skin.String(StudioArt.name)) + [Window.IsActive(script-script.extendedinfo-VideoList.xml)]">$INFO[Skin.String(StudioArt.path)]/$INFO[Container(500).ListItem.Studio].png</value>
         <value condition="Skin.HasSetting(EnableStudioArt) + !String.IsEmpty(Skin.String(StudioArt.name))">$INFO[Skin.String(StudioArt.path)]/$INFO[ListItem.Studio].png</value>
         <value condition="Skin.HasSetting(EnableStudioArt) + [Window.IsActive(MusicVisualisation.xml)]">resource://resource.images.recordlabels.white/$INFO[MusicPlayer.Property(Album_Label)].png</value>
         <value condition="Skin.HasSetting(EnableStudioArt) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]">resource://resource.images.recordlabels.white/$INFO[ListItem.Property(Album_Label)].png</value>

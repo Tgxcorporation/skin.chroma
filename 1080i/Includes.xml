@@ -966,7 +966,7 @@
             <onright condition="Window.IsActive(EventLog.xml)">570</onright>
             <onright condition="Window.IsActive(MyWeather.xml)+!Skin.String(WeatherType,Map)">50</onright>
             <onright condition="Window.IsActive(MyWeather.xml)+Skin.String(WeatherType,Map)">155</onright>
-            <onright condition="Window.IsActive(script-ExtendedInfo Script-VideoList.xml)">500</onright>
+            <onright condition="Window.IsActive(script-script.extendedinfo-VideoList.xml)">500</onright>
             <onright>50</onright>
             <onleft condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</onleft>
             <onleft condition="Window.IsActive(DialogContentSettings.xml)">4</onleft>
@@ -1501,7 +1501,7 @@
             <!--NORMAL-->
             <control type="image">
                 <visible>[
-                    [Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)]|
+                    [Window.IsVisible(script-script.extendedinfo-VideoList.xml)]|
                     [!String.IsEmpty(ListItem.Art(poster))+!String.StartsWith(ListItem.Art(poster),Default)]|
                     [!String.IsEmpty(ListItem.Icon)+!String.StartsWith(ListItem.Icon,Default)]|
                     [!String.IsEmpty(ListItem.Property(Icon))+!String.StartsWith(ListItem.Property(Icon),Default)]|
@@ -1528,7 +1528,7 @@
                     ]
                     +
                     ![
-                    [Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)]|
+                    [Window.IsVisible(script-script.extendedinfo-VideoList.xml)]|
                     [!String.IsEmpty(ListItem.Art(poster))+!String.StartsWith(ListItem.Art(poster),Default)]|
                     [!String.IsEmpty(ListItem.Icon)+!String.StartsWith(ListItem.Icon,Default)]|
                     [!String.IsEmpty(ListItem.Property(Icon))+!String.StartsWith(ListItem.Property(Icon),Default)]|
