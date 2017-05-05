@@ -424,7 +424,7 @@
         </include>
         <include content="ProgressBar">
             <param name="id" value="0"/>
-            <param name="visible" value="true"/>
+            <param name="visible" value="!Player.ChannelPreviewActive"/>
             <param name="x" value="50"/>
             <param name="y" value="940"/>
             <param name="width" value="910"/>
@@ -448,7 +448,7 @@
         </include>
         <include content="ProgressBar">
             <param name="id" value="0"/>
-            <param name="visible" value="PVR.IsTimeshift"/>
+            <param name="visible" value="PVR.IsTimeShift + !Player.ChannelPreviewActive"/>
             <param name="x" value="50"/>
             <param name="y" value="940"/>
             <param name="width" value="910"/>
