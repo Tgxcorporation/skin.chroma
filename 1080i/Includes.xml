@@ -310,8 +310,11 @@
         </control>
     </include>
     <include name="OverlayFull">
-        <include>OverlayTop</include>
-        <include>OverlayBottom</include>
+        <control type="group">
+            <visible>[Window.Isvisible(MusicVisualisation.xml)+!Skin.HasSetting(DisableOverlayMusicPlaying)]|!Window.Isvisible(MusicVisualisation.xml)</visible>
+            <include>OverlayTop</include>
+            <include>OverlayBottom</include>
+        </control>
     </include>
     <include name="OverlayTopOSDDialog">
         <control type="group">
