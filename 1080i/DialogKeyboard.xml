@@ -45,6 +45,7 @@
                 <texturenofocus>common/osd_progress_background.png</texturenofocus>
                 <textcolor>AlternateColor</textcolor>
                 <font>InfoDetailsFont</font>
+                <onup>300</onup>
                 <ondown>9091</ondown>
             </control>
             <control type="panel" id="9091">

@@ -6,10 +6,37 @@
         <control type="group" id="0">
             <control type="label" id="10">
                 <left>TextMargin</left>
-                <top>15</top>
+                <top>50</top>
                 <width>1820</width>
-                <height>100</height>
+                <height>50</height>
                 <label>-</label>
+                <include>TextColor_MainColor</include>
+                <font>NotificationFont</font>
+            </control>
+            <control type="label" id="11">
+                <left>TextMargin</left>
+                <top>100</top>
+                <width>1820</width>
+                <height>50</height>
+                <label>-</label>
+                <include>TextColor_MainColor</include>
+                <font>NotificationFont</font>
+            </control>
+            <control type="label" id="12">
+                <left>TextMargin</left>
+                <top>150</top>
+                <width>1820</width>
+                <height>50</height>
+                <label>-</label>
+                <include>TextColor_MainColor</include>
+                <font>NotificationFont</font>
+            </control>
+            <control type="label" id="1">
+                <left>TextMargin</left>
+                <top>200</top>
+                <width>1820</width>
+                <height>50</height>
+                <label>$LOCALIZE[439]: $INFO[Player.CacheLevel]%</label>
                 <include>TextColor_MainColor</include>
                 <font>NotificationFont</font>
             </control>
@@ -18,6 +45,7 @@
             <visible>Player.Caching</visible>
             <include>OSDVisibleFadeEffect</include>
             <control type="image" id="1">
+                <visible>Integer.IsGreater(Player.CacheLevel, 0)</visible>
                 <posx>810</posx>
                 <posy>390</posy>
                 <width>300</width>
@@ -29,6 +57,7 @@
                 <posy>390</posy>
                 <width>300</width>
                 <height>300</height>
+                <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
                 <texture>OSD/loading.png</texture>
                 <animation effect="rotate" center="auto" start="360" end="0" time="750" loop="true" condition="true">Conditional</animation>
             </control>

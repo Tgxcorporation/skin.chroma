@@ -1436,6 +1436,18 @@
                                 <label2>-</label2>
                                 <onclick>ActivateWindow(1115)</onclick>
                             </item>
+                            <item id="60">
+                                <visible>Skin.HasSetting(VerticalHome)</visible>
+                                <label>$LOCALIZE[31994]</label>
+                                <label2>$LOCALIZE[107]</label2>
+                                <onclick>Skin.ToggleSetting(VerticalHome)</onclick>
+                            </item>
+                            <item id="60">
+                                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                                <label>$LOCALIZE[31994]</label>
+                                <label2>$LOCALIZE[106]</label2>
+                                <onclick>Skin.ToggleSetting(VerticalHome)</onclick>
+                            </item>
                             <item id="61">
                                 <visible>Skin.HasSetting(Home_DefaultBG)</visible>
                                 <label>$LOCALIZE[31986]</label>
