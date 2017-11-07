@@ -404,7 +404,13 @@ msgctxt "#31110"
 msgid "Edit Background for Media Type"
 msgstr ""
 
-#empty strings from id 31111 to 31112
+#empty strings from id 31911 to 31916
+
+msgctxt "#31917"
+msgid "Stop playback on return to menu"
+msgstr ""
+
+#empty strings from id 31118 to 31112
 
 msgctxt "#31113"
 msgid "Single Image"
