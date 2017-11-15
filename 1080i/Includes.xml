@@ -131,6 +131,7 @@
             <onleft>9900</onleft>
             <onright>9900</onright>
             <onup>9000</onup>
+            <ondown condition="Window.IsActive(script-globalsearch-main.xml)">9000</ondown>
             <ondown condition="Window.IsActive(DialogMediaSource.xml)|Window.IsActive(FileBrowser.xml)">9001</ondown>
             <ondown condition="Window.IsActive(Home.xml)+!Skin.HasSetting(VerticalHome)">701</ondown>
             <ondown condition="Window.IsActive(Home.xml)+Skin.HasSetting(VerticalHome)">300</ondown>
