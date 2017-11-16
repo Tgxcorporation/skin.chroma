@@ -454,6 +454,7 @@
             </control>
 
         </control>
+        <include>rssTicker</include>
 
     </include>
 </includes>
