@@ -1,7 +1,7 @@
 ## Chroma skin for Kodi 17 KRYPTON
 Full-featured modern skin designed for Full HD TV screens.
 
-![](http://i.imgur.com/8ifMwfF.jpg)
+![](https://github.com/Tgxcorporation/skin.chroma/raw/master/screenshots/screenshot01.jpg)
 
 #### [Screenshots](https://github.com/Tgxcorporation/skin.chroma/wiki/Screenshots)
 
