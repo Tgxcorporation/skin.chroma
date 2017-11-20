@@ -48,7 +48,7 @@
                     <control type="label" id="7895">
                         <height>50</height>
                         <width>480</width>
-                        <label>-</label>
+                        <label></label>
                     </control>
                     <!-- color preview-->
                     <control type="image" id="7896">
@@ -63,7 +63,7 @@
                     <control type="label" id="7897">
                         <height>50</height>
                         <width>480</width>
-                        <label>-</label>
+                        <label></label>
                     </control>
                     <!-- edit manual -->
                     <control type="button" id="3010">
@@ -80,7 +80,7 @@
                     <control type="label" id="7899">
                         <height>400</height>
                         <width>480</width>
-                        <label>-</label>
+                        <label></label>
                     </control>
                     <!-- Save button -->
                     <control type="button" id="3012">

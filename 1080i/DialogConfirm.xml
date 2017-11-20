@@ -34,7 +34,7 @@
                 <posy>530</posy>
                 <width>800</width>
                 <height>200</height>
-                <label>-</label>
+                <label></label>
                 <font>InfoDetailsFont</font>
                 <textcolor>AlternateColor</textcolor>
                 <pagecontrol>6060</pagecontrol>

@@ -61,7 +61,7 @@
                         <onleft>9001</onleft>
                         <align>center</align>
                         <ondown>300</ondown>
-                        <pagecontrol>-</pagecontrol>
+                        <pagecontrol></pagecontrol>
                         <!--<preloaditems>4</preloaditems>-->
                         <orientation>vertical</orientation>
                         <itemlayout height="50" width="500">

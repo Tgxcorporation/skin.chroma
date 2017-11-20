@@ -217,7 +217,7 @@
                     <onclick>fullscreen</onclick>
                 </control>
                 <control type="button" id="599">
-                    <label>-</label>
+                    <label></label>
                     <include>TopBarButton</include>
                     <texturefocus>topbar/topbar_home_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_home_nofocus.png</texturenofocus>

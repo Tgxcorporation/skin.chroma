@@ -25,13 +25,13 @@
 
         <property name="labelLeft" tag="property" attribute="name|widgetAspect" value="31117">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
         <property name="labelLeft" tag="property" attribute="name|widgetAspect" value="31119">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelLeft" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1">-</property>
-        <property name="labelLeft" tag="property" attribute="name|widgetAspect" value="31120">-</property>
+        <property name="labelLeft" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1"></property>
+        <property name="labelLeft" tag="property" attribute="name|widgetAspect" value="31120"></property>
 
         <property name="labelRight" tag="property" attribute="name|widgetAspect" value="31117">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect" value="31119">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1">-</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect" value="31120">-</property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1"></property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect" value="31120"></property>
 
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect" value="31117">true</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect" value="31119">true</property>
@@ -229,13 +229,13 @@
 
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.1" value="31117">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.1" value="31119">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelLeft" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1">-</property>
-        <property name="labelLeft" tag="property" attribute="name|widgetAspect.1" value="31120">-</property>
+        <property name="labelLeft" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1"></property>
+        <property name="labelLeft" tag="property" attribute="name|widgetAspect.1" value="31120"></property>
 
         <property name="labelRight" tag="property" attribute="name|widgetAspect.1" value="31117">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect.1" value="31119">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1">-</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.1" value="31120">-</property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1"></property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.1" value="31120"></property>
 
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.1" value="31117">true</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.1" value="31119">true</property>
@@ -435,13 +435,13 @@
 
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.2" value="31117">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.2" value="31119">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelLeft" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1">-</property>
-        <property name="labelLeft" tag="property" attribute="name|widgetAspect.2" value="31120">-</property>
+        <property name="labelLeft" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1"></property>
+        <property name="labelLeft" tag="property" attribute="name|widgetAspect.2" value="31120"></property>
 
         <property name="labelRight" tag="property" attribute="name|widgetAspect.2" value="31117">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect.2" value="31119">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1">-</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.2" value="31120">-</property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1"></property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.2" value="31120"></property>
 
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.2" value="31117">true</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.2" value="31119">true</property>
@@ -641,13 +641,13 @@
 
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.3" value="31117">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.3" value="31119">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelLeft" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1">-</property>
-        <property name="labelLeft" tag="property" attribute="name|widgetAspect.3" value="31120">-</property>
+        <property name="labelLeft" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1"></property>
+        <property name="labelLeft" tag="property" attribute="name|widgetAspect.3" value="31120"></property>
 
         <property name="labelRight" tag="property" attribute="name|widgetAspect.3" value="31117">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect.3" value="31119">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1">-</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.3" value="31120">-</property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1"></property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.3" value="31120"></property>
 
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.3" value="31117">true</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.3" value="31119">true</property>
@@ -847,13 +847,13 @@
 
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.4" value="31117">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.4" value="31119">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelLeft" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1">-</property>
-        <property name="labelLeft" tag="property" attribute="name|widgetAspect.4" value="31120">-</property>
+        <property name="labelLeft" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1"></property>
+        <property name="labelLeft" tag="property" attribute="name|widgetAspect.4" value="31120"></property>
 
         <property name="labelRight" tag="property" attribute="name|widgetAspect.4" value="31117">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect.4" value="31119">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1">-</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.4" value="31120">-</property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1"></property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.4" value="31120"></property>
 
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.4" value="31117">true</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.4" value="31119">true</property>
@@ -1066,8 +1066,8 @@
 
         <property name="labelRight" tag="property" attribute="name|widgetAspect" value="31117">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect" value="31119">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1">-</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect" value="31120">-</property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1"></property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect" value="31120"></property>
 
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect" value="31117">true</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect" value="31119">true</property>
@@ -1262,8 +1262,8 @@
 
         <property name="labelRight" tag="property" attribute="name|widgetAspect.1" value="31117">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect.1" value="31119">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1">-</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.1" value="31120">-</property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1"></property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.1" value="31120"></property>
 
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.1" value="31117">true</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.1" value="31119">true</property>
@@ -1458,8 +1458,8 @@
 
         <property name="labelRight" tag="property" attribute="name|widgetAspect.2" value="31117">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect.2" value="31119">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1">-</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.2" value="31120">-</property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1"></property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.2" value="31120"></property>
 
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.2" value="31117">true</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.2" value="31119">true</property>
@@ -1654,8 +1654,8 @@
 
         <property name="labelRight" tag="property" attribute="name|widgetAspect.3" value="31117">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect.3" value="31119">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1">-</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.3" value="31120">-</property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1"></property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.3" value="31120"></property>
 
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.3" value="31117">true</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.3" value="31119">true</property>
@@ -1850,8 +1850,8 @@
 
         <property name="labelRight" tag="property" attribute="name|widgetAspect.4" value="31117">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect.4" value="31119">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1">-</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.4" value="31120">-</property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1"></property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.4" value="31120"></property>
 
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.4" value="31117">true</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.4" value="31119">true</property>

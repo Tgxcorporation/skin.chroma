@@ -84,9 +84,9 @@
         <posy>-30</posy>
         <width>1</width>
         <height>1</height>
-        <label>-</label>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus>-</texturefocus>
+        <label></label>
+        <texturenofocus></texturenofocus>
+        <texturefocus></texturefocus>
         <texturenofocus>common/WhiteDotT.png</texturenofocus>
         <texturefocus>common/BlackDotT.png</texturefocus>
     </include>
@@ -113,8 +113,8 @@
         <include>ButtonFocusAnimation</include>
         <width>60</width>
         <height>60</height>
-        <label>-</label>
-        <font>-</font>
+        <label></label>
+        <font></font>
         <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
     </include>
     <include name="TopBarList">
@@ -399,7 +399,7 @@
                 <!--DUMMY-->
                 <visible>[[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]|Player.HasVideo]</visible>
                 <include>HiddenButton</include>
-                <texture>-</texture>
+                <texture></texture>
             </control>
             <control type="group">
                 <visible>Player.HasMedia+!Window.IsActive(Startup.xml)</visible>
@@ -734,7 +734,7 @@
         <width>72</width>
         <height>50</height>
         <font>ButtonFont</font>
-        <alttexturenofocus>-</alttexturenofocus>
+        <alttexturenofocus></alttexturenofocus>
     </include>
     <include name="List_9009_Commons">
         <posx>0</posx>
@@ -1059,11 +1059,11 @@
         <animation type="Focus" reversible="false">
             <effect type="fade" start="10" end="100" time="100"/>
         </animation>
-        <texturesliderbackground>-</texturesliderbackground>
+        <texturesliderbackground></texturesliderbackground>
         <texturesliderbarfocus border="10">buttons/Scrollbar_Vertical_Focus.png</texturesliderbarfocus>
         <texturesliderbar border="10">buttons/Scrollbar_Vertical_NoFocus.png</texturesliderbar>
-        <textureslidernib>-</textureslidernib>
-        <textureslidernibfocus>-</textureslidernibfocus>
+        <textureslidernib></textureslidernib>
+        <textureslidernibfocus></textureslidernibfocus>
         <!-- <showonepage>true</showonepage> -->
         <orientation>vertical</orientation>
         <width>50</width>
@@ -1073,11 +1073,11 @@
         <animation type="Focus" reversible="false">
             <effect type="fade" start="10" end="100" time="100"/>
         </animation>
-        <texturesliderbackground>-</texturesliderbackground>
+        <texturesliderbackground></texturesliderbackground>
         <texturesliderbarfocus border="10">buttons/Scrollbar_Horizontal_Focus.png</texturesliderbarfocus>
         <texturesliderbar border="10">buttons/Scrollbar_Horizontal_NoFocus.png</texturesliderbar>
-        <textureslidernib>-</textureslidernib>
-        <textureslidernibfocus>-</textureslidernibfocus>
+        <textureslidernib></textureslidernib>
+        <textureslidernibfocus></textureslidernibfocus>
         <!-- <showonepage>true</showonepage> -->
         <orientation>horizontal</orientation>
         <height>50</height>
@@ -1359,7 +1359,7 @@
             <texturenofocus border="1">topbar/topbar_exit_nofocus.png</texturenofocus>
             <onclick>back</onclick>
             <onleft>$PARAM[onleft]</onleft>
-            <label>-</label>
+            <label></label>
         </control>
     </include>
     <include name="Stars">
@@ -1480,10 +1480,10 @@
             <height>$PARAM[height]</height>
             <width>$PARAM[width]</width>
             <texturebg>$PARAM[texturebg]</texturebg>
-            <lefttexture>-</lefttexture>
+            <lefttexture></lefttexture>
             <midtexture border="$PARAM[border]">$PARAM[gfx]</midtexture>
-            <righttexture>-</righttexture>
-            <overlaytexture>-</overlaytexture>
+            <righttexture></righttexture>
+            <overlaytexture></overlaytexture>
             <info>$PARAM[info]</info>
         </control>
     </include>

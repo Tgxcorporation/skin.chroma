@@ -25,7 +25,7 @@
                     <align>left</align>
                     <aligny>top</aligny>
                     <font>SmallButtonFont</font>
-                    <label>-</label>
+                    <label></label>
                     <include>TextColor_MainColor</include>
                     <wrapmultiline>false</wrapmultiline>
 					<label>$INFO[Player.Process(videodecoder),$LOCALIZE[31083]: ]$VAR[VideoHWDecoder, (,)]</label>
@@ -38,7 +38,7 @@
                     <align>left</align>
                     <aligny>top</aligny>
                     <font>SmallButtonFont</font>
-                    <label>-</label>
+                    <label></label>
                     <textcolor>AlternateColor</textcolor>
                     <wrapmultiline>false</wrapmultiline>
 					<label>$INFO[Player.Process(pixformat),$LOCALIZE[31084]: ]</label>
@@ -51,7 +51,7 @@
                     <align>left</align>
                     <aligny>top</aligny>
                     <font>SmallButtonFont</font>
-                    <label>-</label>
+                    <label></label>
                     <include>TextColor_MainColor</include>
                     <wrapmultiline>false</wrapmultiline>
 					<label>$INFO[Player.Process(deintmethod),$LOCALIZE[16038]: ]</label>
@@ -64,7 +64,7 @@
                     <align>left</align>
                     <aligny>top</aligny>
                     <font>SmallButtonFont</font>
-                    <label>-</label>
+                    <label></label>
                     <textcolor>AlternateColor</textcolor>
                     <wrapmultiline>false</wrapmultiline>
 					<label>$INFO[Player.Process(videowidth),$LOCALIZE[38031]: ,x]$INFO[Player.Process(videoheight),, px]$INFO[Player.Process(videodar),$COMMA , AR]$INFO[Player.Process(videofps),$COMMA , FPS]</label>
@@ -77,7 +77,7 @@
                     <align>left</align>
                     <aligny>top</aligny>
                     <font>SmallButtonFont</font>
-                    <label>-</label>
+                    <label></label>
                     <include>TextColor_MainColor</include>
                     <wrapmultiline>false</wrapmultiline>
 					<label>$LOCALIZE[460]: $INFO[Player.Process(audiochannels),,$COMMA ]$INFO[Player.Process(audiodecoder)]$INFO[Player.Process(audiobitspersample),$COMMA , bits]$INFO[Player.Process(audiosamplerate),$COMMA , Hz]</label>
@@ -90,7 +90,7 @@
                     <align>left</align>
                     <aligny>top</aligny>
                     <font>SmallButtonFont</font>
-                    <label>-</label>
+                    <label></label>
                     <textcolor>AlternateColor</textcolor>
                     <wrapmultiline>false</wrapmultiline>
 					<label>$INFO[System.Memory(used.percent),$LOCALIZE[31085]: ,       ]$INFO[System.CpuUsage,$LOCALIZE[13271] ]</label>

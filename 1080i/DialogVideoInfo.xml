@@ -151,7 +151,7 @@
                     <control type="label" id="7895">
                         <height>200</height>
                         <width>480</width>
-                        <label>-</label>
+                        <label></label>
                     </control>
                     <control type="togglebutton" id="9010">
                         <visible>System.HasAddon(script.extendedinfo)</visible>

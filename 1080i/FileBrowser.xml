@@ -60,7 +60,7 @@
                     <control type="label" id="7895">
                         <height>600</height>
                         <width>480</width>
-                        <label>-</label>
+                        <label></label>
                     </control>
                     <control type="button" id="413">
                         <include>ButtonFocusAnimation</include>

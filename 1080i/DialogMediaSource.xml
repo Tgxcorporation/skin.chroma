@@ -174,7 +174,7 @@
                     <texturenofocus>common/osd_progress_background.png</texturenofocus>
                     <include>TextColor_MainColor</include>
                     <font>InfoDetailsFont</font>
-                    <label>-</label>
+                    <label></label>
                     <onup>10</onup>
                     <onleft>19</onleft>
                     <onright>12</onright>
