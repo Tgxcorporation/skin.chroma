@@ -12,7 +12,7 @@
         Window.IsVisible(DialogSubtitles.xml) |
         Window.IsVisible(DialogAddonSettings.xml) |
         Window.IsVisible(PVROSDChannels) |
-        Window.IsVisible(PVROSDGuide) |
+        Window.IsVisible(pvrchannelguide) |
         Window.IsVisible(script-cu-lrclyrics-main.xml)
         ]
     </visible>

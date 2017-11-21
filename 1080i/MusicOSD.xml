@@ -17,7 +17,7 @@
                 Window.IsVisible(DialogSubtitles.xml) |
                 Window.IsVisible(DialogAddonSettings.xml)|
                 Window.IsVisible(PVROSDChannels) |
-                Window.IsVisible(PVROSDGuide)
+                Window.IsVisible(pvrchannelguide)
                 ]</visible>
             <visible>![Window.IsVisible(DialogVolumeBar.xml)+!Player.Muted]</visible>
             <include>TopBarOSDVisibleFadeEffect</include>
@@ -64,7 +64,7 @@
                     <include>TopBarButton</include>
                     <texturefocus>topbar/topbar_epg_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_epg_nofocus.png</texturenofocus>
-                    <onclick>ActivateWindow(PVROSDGuide)</onclick>
+                    <onclick>ActivateWindow(pvrchannelguide)</onclick>
                     <onclick>Dialog.Close(VideoOSD)</onclick>
                 </control>
                 <control type="group" id="699">

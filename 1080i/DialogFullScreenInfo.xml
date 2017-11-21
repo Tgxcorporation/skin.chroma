@@ -14,7 +14,7 @@
                 Window.IsVisible(DialogSubtitles.xml) |
                 Window.IsVisible(DialogAddonSettings.xml) |
                 Window.IsVisible(PVROSDChannels) |
-                Window.IsVisible(PVROSDGuide)
+                Window.IsVisible(pvrchannelguide)
                 ]</visible>
             <include>OSDFade</include>
             <include>OpenClose</include>
