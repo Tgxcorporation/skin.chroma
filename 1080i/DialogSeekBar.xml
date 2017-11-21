@@ -23,7 +23,7 @@
         Window.IsVisible(visualisation) |
         [
         Window.IsVisible(FullScreenVideo) +
-        [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]
+        [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | !String.IsEmpty(PVR.ChannelNumberInput)]
         ]
     </visible>
     <!--<zorder>2</zorder>-->
@@ -34,5 +34,6 @@
             <include>OverlayBottom</include>
         </control>
         <include>SeekBar</include>
+        <include>PVRChannelNumericInput</include>
     </controls>
 </window>
