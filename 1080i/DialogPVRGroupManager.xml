@@ -55,7 +55,7 @@
                     <height>35</height>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MidColor</include>
-                    <label>$INFO[Container(13).NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(13).NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="list" id="13">
                     <posx>50</posx>
@@ -175,7 +175,7 @@
                     <height>35</height>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MidColor</include>
-                    <label>$INFO[Container(11).NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(11).NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="list" id="11">
                     <posx>0</posx>
@@ -253,7 +253,7 @@
                     <height>35</height>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MidColor</include>
-                    <label>$INFO[Container(12).NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container(12).NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="list" id="12">
                     <posx>0</posx>

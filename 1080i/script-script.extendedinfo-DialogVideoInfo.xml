@@ -931,7 +931,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$LOCALIZE[344] - $INFO[Container(1000).NumItems] $LOCALIZE[31025]</label>
+                        <label>$LOCALIZE[344] - $INFO[Container(1000).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <include content="DummyButton">
                         <param name="x" value="0"/>
@@ -1047,7 +1047,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$ADDON[script.extendedinfo 32115] - $INFO[Container(750).NumItems] $LOCALIZE[31025]</label>
+                        <label>$ADDON[script.extendedinfo 32115] - $INFO[Container(750).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <include content="DummyButton">
                         <param name="x" value="0"/>
@@ -1163,7 +1163,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$ADDON[script.extendedinfo 32116] - $INFO[Container(150).NumItems] $LOCALIZE[31025]</label>
+                        <label>$ADDON[script.extendedinfo 32116] - $INFO[Container(150).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <include content="DummyButton">
                         <param name="x" value="0"/>
@@ -1301,7 +1301,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$INFO[Window.Property(set.label)] - $INFO[Container(250).NumItems] $LOCALIZE[31025]</label>
+                        <label>$INFO[Window.Property(set.label)] - $INFO[Container(250).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="label">
                         <visible>String.IsEmpty(Window.Property(set.label))</visible>
@@ -1311,7 +1311,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$LOCALIZE[33054] - $INFO[Container(250).NumItems] $LOCALIZE[31025]</label>
+                        <label>$LOCALIZE[33054] - $INFO[Container(250).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <include content="DummyButton">
                         <param name="x" value="0"/>
@@ -1448,7 +1448,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$ADDON[script.extendedinfo 32117] - $INFO[Container(1150).NumItems] $LOCALIZE[31025]</label>
+                        <label>$ADDON[script.extendedinfo 32117] - $INFO[Container(1150).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <include content="DummyButton">
                         <param name="x" value="0"/>
@@ -1564,7 +1564,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$ADDON[script.extendedinfo 32118] - $INFO[Container(350).NumItems] $LOCALIZE[31025]</label>
+                        <label>$ADDON[script.extendedinfo 32118] - $INFO[Container(350).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <include content="DummyButton">
                         <param name="x" value="0"/>
@@ -1661,7 +1661,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$LOCALIZE[20388] - $INFO[Container(550).NumItems] $LOCALIZE[31025]</label>
+                        <label>$LOCALIZE[20388] - $INFO[Container(550).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <include content="DummyButton">
                         <param name="x" value="0"/>
@@ -1749,7 +1749,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$ADDON[script.extendedinfo 32152] - $INFO[Container(1450).NumItems] $LOCALIZE[31025]</label>
+                        <label>$ADDON[script.extendedinfo 32152] - $INFO[Container(1450).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <include content="DummyButton">
                         <param name="x" value="0"/>
@@ -1837,7 +1837,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$LOCALIZE[172] - $INFO[Container(650).NumItems] $LOCALIZE[31025]</label>
+                        <label>$LOCALIZE[172] - $INFO[Container(650).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <include content="DummyButton">
                         <param name="x" value="0"/>
@@ -1929,7 +1929,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$LOCALIZE[135] - $INFO[Container(850).NumItems] $LOCALIZE[31025]</label>
+                        <label>$LOCALIZE[135] - $INFO[Container(850).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <include content="DummyButton">
                         <param name="x" value="0"/>
@@ -2026,7 +2026,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$ADDON[script.extendedinfo 32167] - $INFO[Container(1050).NumItems] $LOCALIZE[31025]</label>
+                        <label>$ADDON[script.extendedinfo 32167] - $INFO[Container(1050).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <include content="DummyButton">
                         <param name="x" value="0"/>
@@ -2141,7 +2141,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$LOCALIZE[21861] - $INFO[Container(950).NumItems] $LOCALIZE[31025]</label>
+                        <label>$LOCALIZE[21861] - $INFO[Container(950).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <include content="DummyButton">
                         <param name="x" value="0"/>
@@ -2216,7 +2216,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$LOCALIZE[1] - $INFO[Container(1250).NumItems] $LOCALIZE[31025]</label>
+                        <label>$LOCALIZE[1] - $INFO[Container(1250).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <include content="DummyButton">
                         <param name="x" value="0"/>
@@ -2317,7 +2317,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$LOCALIZE[20445] - $INFO[Container(1350).NumItems] $LOCALIZE[31025]</label>
+                        <label>$LOCALIZE[20445] - $INFO[Container(1350).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <include content="DummyButton">
                         <param name="x" value="0"/>
@@ -2417,7 +2417,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$ADDON[script.extendedinfo 32026] - $INFO[Container(450).NumItems] $LOCALIZE[31025]</label>
+                        <label>$ADDON[script.extendedinfo 32026] - $INFO[Container(450).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <include content="DummyButton">
                         <param name="x" value="0"/>
@@ -2554,7 +2554,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$LOCALIZE[20360] - $INFO[Container(2000).NumItems] $LOCALIZE[31025]</label>
+                        <label>$LOCALIZE[20360] - $INFO[Container(2000).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <include content="DummyButton">
                         <param name="x" value="0"/>

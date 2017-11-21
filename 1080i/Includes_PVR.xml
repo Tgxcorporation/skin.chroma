@@ -206,7 +206,7 @@
                     <height>35</height>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MidColor</include>
-                    <label>$INFO[System.Time] - $INFO[Container(11).NumItems,, $LOCALIZE[31025]]</label>
+                    <label>$INFO[System.Time] - $INFO[Container(11).NumNonFolderItems,, $LOCALIZE[31025]]</label>
                 </control>
                 <control type="list" id="11">
                     <posx>0</posx>
@@ -432,7 +432,7 @@
                     <height>35</height>
                     <font>InfoTitleSubFont</font>
                     <include>TextColor_MidColor</include>
-                    <label>$INFO[System.Time] - $INFO[Container(11).NumItems,, $LOCALIZE[31025]]</label>
+                    <label>$INFO[System.Time] - $INFO[Container(11).NumNonFolderItems,, $LOCALIZE[31025]]</label>
                 </control>
                 <control type="list" id="11">
                     <posx>0</posx>

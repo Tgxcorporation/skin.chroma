@@ -1073,7 +1073,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$LOCALIZE[344] - $INFO[Container(50).NumItems] $LOCALIZE[31025]</label>
+                        <label>$LOCALIZE[344] - $INFO[Container(50).NumNonFolderItems] $LOCALIZE[31025]</label>
                     </control>
                     <include content="DummyButton">
                         <param name="x" value="0"/>
