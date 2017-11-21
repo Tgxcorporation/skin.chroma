@@ -1,4 +1,4 @@
-## Chroma skin for Kodi 17 KRYPTON
+## Chroma skin for Kodi 18 LEIA
 Full-featured modern skin designed for Full HD TV screens.
 
 ![](https://github.com/Tgxcorporation/skin.chroma/raw/master/screenshots/screenshot01.jpg)
