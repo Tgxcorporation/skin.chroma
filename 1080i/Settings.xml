@@ -203,7 +203,7 @@
             </control>
             <control type="scrollbar" id="60">
                 <posx>480</posx>
-                <posy>330</posy>
+                <posy>380</posy>
                 <height>600</height>
                 <include>VerticalScroller</include>
                 <onleft>60</onleft>
