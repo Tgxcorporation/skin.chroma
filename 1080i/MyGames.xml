@@ -5,18 +5,6 @@
     <views>50,51,52,58,53,54,5050</views>
     <controls>
         <include>Fanart_Art</include>
-        <control type="multiimage">
-            <visible>!Skin.HasSetting(DisableFanart)+!Skin.HasSetting(DisableFanartPictures)</visible>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>1920</width>
-            <height>1080</height>
-            <timeperimage>9000</timeperimage>
-            <randomize>true</randomize>
-            <fadetime>400</fadetime>
-            <aspectratio aligny="top">scale</aspectratio>
-            <imagepath background="true">$INFO[Container.listitem.filenameandpath]</imagepath>
-        </control>
         <include>Player_Show</include>
         <include>OverlayFull</include>
         <include>FooterInfo</include>
@@ -69,49 +57,41 @@
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="togglebutton" id="4">
+                    <alttexturenofocus></alttexturenofocus>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
                     <altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
                 </control>
-                <control type="label" id="9183">
-                    <include>LeftMenuTitleLabel</include>
-                    <include>LeftMenuButton</include>
-                    <label>$LOCALIZE[1034]</label>
-                </control>
-                <control type="button" id="6">
-                    <include>LeftMenuButton</include>
-                    <label>$LOCALIZE[108]</label>
-                    <visible>!ListItem.IsFolder</visible>
-                </control>
-                <control type="button" id="7">
-                    <include>LeftMenuButton</include>
-                    <label>$LOCALIZE[13318]</label>
-                    <visible>ListItem.IsFolder</visible>
-                </control>
-                <control type="radiobutton" id="9">
-                    <include>LeftMenuButton</include>
-                    <label>$LOCALIZE[13319]</label>
-                </control>
-                <control type="edit" id="19">
+                <control type="button" id="19">
                     <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
-                    <description>Filter</description>
-                    <textwidth>600</textwidth>
                     <include>LeftMenuButton</include>
-                    <label>587</label>
+                    <onclick>right</onclick>
+                    <label>$LOCALIZE[137]</label>
                 </control>
-                <control type="radiobutton" id="20">
+                <control type="button" id="199">
                     <visible>Container.CanFilterAdvanced</visible>
-                    <description>Filter</description>
                     <include>LeftMenuButton</include>
-                    <label>587</label>
+                    <label>$LOCALIZE[587]</label>
                     <onclick>right</onclick>
                     <onclick>Filter</onclick>
                 </control>
-                <control type="button" id="699">
-                    <enable>Player.HasMedia</enable>
+                <control type="label" id="9183">
+                    <include>LeftMenuTitleLabel</include>
                     <include>LeftMenuButton</include>
-                    <label>$LOCALIZE[16003]</label>
-                    <onclick>fullscreen</onclick>
+                    <label>$LOCALIZE[31509]</label>
+                </control>
+                <control type="button" id="624">
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[10140]</label>
+                    <onclick>Addon.OpenSettings($INFO[Container.PluginName])</onclick>
+                    <visible>!String.IsEmpty(Container.PluginName)</visible>
+                </control>
+                <control type="button" id="621">
+                    <description>Get more</description>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[21452]</label>
+                    <onclick>ActivateWindow(addonbrowser,addons://more/game/,return)</onclick>
+                    <visible>Container.Content(addons)</visible>
                 </control>
             </control>
             <include>LeftMenuScroller</include>

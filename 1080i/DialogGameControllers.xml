@@ -113,7 +113,7 @@
                     <posx>50</posx>
                     <posy>100</posy>
                     <width>750</width>
-                    <height>470</height>
+                    <height>750</height>
                 </control>
             </control>
             <control type="group">

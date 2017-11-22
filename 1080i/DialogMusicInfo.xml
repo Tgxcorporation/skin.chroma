@@ -528,7 +528,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$LOCALIZE[21888] - $INFO[Container(50).NumNonFolderItems] $LOCALIZE[31025]</label>
+                        <label>$LOCALIZE[21888] - $INFO[Container(50).NumItems] $LOCALIZE[31025]</label>
                     </control>
                     <control type="label">
                         <visible>String.IsEqual(ListItem.DBType,album)</visible>
@@ -538,7 +538,7 @@
                         <height>35</height>
                         <font>InfoTitleSubFont</font>
                         <include>TextColor_MidColor</include>
-                        <label>$LOCALIZE[182] - $INFO[Container(50).NumNonFolderItems] $LOCALIZE[31025]</label>
+                        <label>$LOCALIZE[182] - $INFO[Container(50).NumItems] $LOCALIZE[31025]</label>
                     </control>
                     <include content="DummyButton">
                         <param name="x" value="0"/>

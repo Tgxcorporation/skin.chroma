@@ -26,7 +26,7 @@
         </control>
         <control type="label">
             <include>WindowTitleSub</include>
-            <label>$INFO[Container.NumNonFolderItems,, $LOCALIZE[31025]]$INFO[Container.CurrentPage,  -  ]$INFO[Container.NumPages,/]</label>
+            <label>$INFO[Container.NumItems,, $LOCALIZE[31025]]$INFO[Container.CurrentPage,  -  ]$INFO[Container.NumPages,/]</label>
         </control>
         <control type="label">
             <visible>Window.isactive(RadioTimers) | Window.isactive(TVTimers)</visible>
