@@ -88,7 +88,7 @@
                                 <height>50</height>
                                 <font>TvGuideChannelFont</font>
                                 <textcolor>NoFocusedColor</textcolor>
-                                <label>$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]</label>
+                                <label>$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</label>
                                 <scroll>false</scroll>
                             </control>
                         </channellayout>
@@ -113,7 +113,7 @@
                                     <aligny>center</aligny>
                                     <align>left</align>
                                     <scroll>true</scroll>
-                                    <label>$INFO[ListItem.ChannelNumber,, - ]$INFO[ListItem.ChannelName]</label>
+                                    <label>$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.ChannelName]</label>
                                 </control>
                             </control>
                         </focusedchannellayout>
