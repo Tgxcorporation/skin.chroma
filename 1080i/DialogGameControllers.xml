@@ -50,6 +50,7 @@
                     <height>400</height>
                     <onright>9060</onright>
                     <ondown>9001</ondown>
+                    <onleft>9001</onleft>
                     <include>DialogMenuButtonGroup</include>
                 </control>
                 <control type="button" id="10">
@@ -80,7 +81,7 @@
                     </control>
                     <control type="button" id="19">
                         <include>DialogMenuButton</include>
-                        <label>$LOCALIZE[10035]</label>
+                        <label>$LOCALIZE[13007]</label>
                     </control>
                     <control type="button" id="20">
                         <include>DialogMenuButton</include>
@@ -92,7 +93,7 @@
                     </control>
                     <control type="button" id="21">
                         <include>DialogMenuButton</include>
-                        <label>$LOCALIZE[35013]</label>
+                        <label>$LOCALIZE[35019]</label>
                     </control>
                 </control>
             </control>
