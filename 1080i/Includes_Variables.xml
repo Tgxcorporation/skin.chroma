@@ -70,6 +70,7 @@
         <value>defaultIconBig.png</value>
     </variable>
     <variable name="Thumbs">
+        <value condition="Skin.HasSetting(WidgetEpisodePoster) + Window.IsVisible(Home.xml) + !String.IsEmpty(ListItem.Art(tvshow.thumb)) + !String.StartsWith(ListItem.Art(tvshow.thumb),Default)">$INFO[ListItem.Art(tvshow.thumb)]</value>
         <value condition="Window.IsVisible(DialogMusicInfo.xml)+Control.hasfocus(50)+String.IsEqual(ListItem.DBType,artist)">$INFO[Container(50).ListItem.Thumb]</value>
         <value condition="Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[Container(500).ListItem.Icon]</value>
         <value condition="Container.Content(episodes) + !String.IsEmpty(ListItem.thumb) + !String.StartsWith(ListItem.thumb,Default)">$INFO[ListItem.thumb]</value>
