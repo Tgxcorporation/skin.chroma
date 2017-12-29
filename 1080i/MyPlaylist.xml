@@ -117,7 +117,7 @@
         </control>
         <control type="label">
             <include>WindowTitleSub</include>
-            <label>$INFO[Container.NumItems,, $LOCALIZE[31025]]$INFO[Container.CurrentPage,  -  ]$INFO[Container.NumPages,/]</label>
+            <label>$INFO[Container(50).NumItems,, $LOCALIZE[31025]]$INFO[Container(50).CurrentPage,  -  ]$INFO[Container(50).NumPages,/]</label>
         </control>
         <include>Header_Logo</include>
         <include>Time</include>
