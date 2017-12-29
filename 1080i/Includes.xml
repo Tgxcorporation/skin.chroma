@@ -980,7 +980,6 @@
             <height>700</height>
             <include>VerticalScroller</include>
             <onright condition="Window.IsActive(script-NextAired-TVGuide.xml)|Window.IsActive(script-NextAired-TVGuide2.xml)">2000</onright>
-            <onright condition="Window.IsActive(EventLog.xml)">570</onright>
             <onright condition="Window.IsActive(MyWeather.xml)+!Skin.String(WeatherType,Map)">50</onright>
             <onright condition="Window.IsActive(MyWeather.xml)+Skin.String(WeatherType,Map)">155</onright>
             <onright condition="Window.IsActive(script-script.extendedinfo-VideoList.xml)">500</onright>
