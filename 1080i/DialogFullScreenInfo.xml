@@ -193,6 +193,16 @@
                         <aspectratio aligny="top">keep</aspectratio>
                         <texture background="true">$INFO[VideoPlayer.Cover]</texture>
                     </control>
+                    <control type="image">
+                        <visible>VideoPlayer.Content(livetv)+PVR.IsRecordingPlayingChannel</visible>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>50</width>
+                        <height>50</height>
+                        <texture>pvr/PVR-IsRecording.png</texture>
+                        <aspectratio>keep</aspectratio>
+                        <colordiffuse>$VAR[Picked.Theme.Color]</colordiffuse>
+                    </control>
                 </control>
             </control>
             <control type="group">

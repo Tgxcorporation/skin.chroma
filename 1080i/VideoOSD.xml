@@ -23,8 +23,9 @@
             <include>TopBarVisibleFadeEffectDialog</include>
             <include>OverlayTop</include>
             <control type="slider" id="87">
-                <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(osdcmssettings) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks) | VideoPlayer.Content(LiveTV)]</visible>
-                <description>Seek Slider</description>
+                <visible>Player.SeekEnabled</visible>
+                <visible>!VideoPlayer.HasEpg</visible>
+                <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(osdcmssettings) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks)]</visible>
                 <posx>50</posx>
                 <posy>900</posy>
                 <width>910</width>
@@ -32,6 +33,20 @@
                 <onup>101</onup>
                 <ondown>87</ondown>
                 <action>seek</action>
+                <info>Player.Progress</info>
+                <texturesliderbar>common/osd_progress_dummy_50.png</texturesliderbar>
+            </control>
+            <control type="slider" id="87">
+                <visible>Player.SeekEnabled</visible>
+                <visible>VideoPlayer.HasEpg</visible>
+                <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(osdcmssettings) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks)]</visible>
+                <posx>50</posx>
+                <posy>900</posy>
+                <width>910</width>
+                <height>50</height>
+                <onup>101</onup>
+                <ondown>87</ondown>
+                <info>PVR.EpgEventProgress</info>
                 <texturesliderbar>common/osd_progress_dummy_50.png</texturesliderbar>
             </control>
             <control type="image">

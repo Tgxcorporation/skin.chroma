@@ -446,7 +446,7 @@
         </include>
         <include content="ProgressBar">
             <param name="id" value="0"/>
-            <param name="visible" value="!Player.ChannelPreviewActive"/>
+            <param name="visible" value="!VideoPlayer.Content(livetv)"/>
             <param name="x" value="50"/>
             <param name="y" value="940"/>
             <param name="width" value="910"/>
@@ -457,8 +457,8 @@
             <param name="info" value="Player.ProgressCache"/>
         </include>
         <include content="ProgressBar">
-            <param name="id" value="23"/>
-            <param name="visible" value="true"/>
+            <param name="id" value="0"/>
+            <param name="visible" value="!VideoPlayer.HasEpg"/>
             <param name="x" value="50"/>
             <param name="y" value="940"/>
             <param name="width" value="910"/>
@@ -470,7 +470,19 @@
         </include>
         <include content="ProgressBar">
             <param name="id" value="0"/>
-            <param name="visible" value="PVR.IsTimeShift + !Player.ChannelPreviewActive"/>
+            <param name="visible" value="VideoPlayer.HasEpg"/>
+            <param name="x" value="50"/>
+            <param name="y" value="940"/>
+            <param name="width" value="910"/>
+            <param name="height" value="90"/>
+            <param name="texturebg" value="common/osd_progress_dummy.png"/>
+            <param name="gfx" value="OSD/osd_progress.png"/>
+            <param name="border" value="1,1,1,1"/>
+            <param name="info" value="PVR.EpgEventProgress"/>
+        </include>
+        <include content="ProgressBar">
+            <param name="id" value="0"/>
+            <param name="visible" value="PVR.IsTimeShift + !Player.ChannelPreviewActive + VideoPlayer.Content(livetv)"/>
             <param name="x" value="50"/>
             <param name="y" value="940"/>
             <param name="width" value="910"/>
@@ -481,7 +493,7 @@
             <param name="info" value="PVR.TimeshiftProgress"/>
         </include>
         <control type="slider" id="401">
-            <visible>Player.Seeking</visible>
+            <visible>!VideoPlayer.HasEpg</visible>
             <include>ScrollOffsetLabelVisibleFadeEffect</include>
             <description>Seek Position</description>
             <posx>50</posx>
@@ -621,11 +633,20 @@
                 <label>/</label>
             </control>
             <control type="label">
+                <visible>!VideoPlayer.HasEpg</visible>
                 <width>auto</width>
                 <height>90</height>
                 <font>NotificationFont</font>
                 <textcolor>AlternateColor</textcolor>
                 <label>$INFO[Player.Duration]</label>
+            </control>
+            <control type="label">
+                <visible>VideoPlayer.HasEpg</visible>
+                <width>auto</width>
+                <height>90</height>
+                <font>NotificationFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$INFO[PVR.EpgEventDuration]</label>
             </control>
             <control type="label">
                 <top>1</top>
@@ -673,11 +694,21 @@
                 <label>/</label>
             </control>
             <control type="label">
+                <visible>!String.isempty(Player.Duration)</visible>
+                <visible>Player.HasVideo + ![Player.HasGame | VideoPlayer.HasEpg]</visible>
                 <width>auto</width>
                 <height>90</height>
                 <font>NotificationFont</font>
                 <textcolor>AlternateColor</textcolor>
                 <label>$INFO[Player.FinishTime]</label>
+            </control>
+            <control type="label">
+                <visible>VideoPlayer.HasEpg</visible>
+                <width>auto</width>
+                <height>90</height>
+                <font>NotificationFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$INFO[PVR.EpgEventFinishTime]</label>
             </control>
             <control type="label">
                 <top>1</top>
