@@ -23,7 +23,7 @@
         Window.IsVisible(visualisation) |
         [
         Window.IsVisible(FullScreenVideo) +
-        [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | !String.IsEmpty(PVR.ChannelNumberInput)]
+        [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused | Player.ShowInfo | !String.IsEmpty(PVR.ChannelNumberInput)]
         ]
     </visible>
     <!--<zorder>2</zorder>-->
