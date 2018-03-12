@@ -12,6 +12,7 @@
                 Window.IsVisible(SliderDialog) |
                 Window.IsVisible(OSDVideoSettings) |
                 Window.IsVisible(OSDAudioSettings) |
+                Window.IsVisible(osdsubtitlesettings) |
                 Window.IsVisible(osdcmssettings) |
                 Window.IsVisible(VideoBookmarks) |
                 Window.IsVisible(DialogSubtitles.xml) |
@@ -25,7 +26,7 @@
             <control type="slider" id="87">
                 <visible>Player.SeekEnabled</visible>
                 <visible>!VideoPlayer.HasEpg</visible>
-                <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(osdcmssettings) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks)]</visible>
+                <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(osdcmssettings) | Window.IsVisible(osdsubtitlesettings) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks)]</visible>
                 <posx>50</posx>
                 <posy>900</posy>
                 <width>910</width>
@@ -39,7 +40,7 @@
             <control type="slider" id="87">
                 <visible>Player.SeekEnabled</visible>
                 <visible>VideoPlayer.HasEpg</visible>
-                <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(osdcmssettings) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks)]</visible>
+                <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(osdcmssettings) | Window.IsVisible(osdsubtitlesettings) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks)]</visible>
                 <posx>50</posx>
                 <posy>900</posy>
                 <width>910</width>
@@ -136,9 +137,9 @@
                     <include>TopBarButton</include>
                     <texturefocus>topbar/topbar_subtitles_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_subtitles_nofocus.png</texturenofocus>
-                    <onclick>Close</onclick>
-                    <onclick>Dialog.Close(VideoOSD)</onclick>
-                    <onclick>ActivateWindow(SubtitleSearch)</onclick>
+                    <!--<onclick>Close</onclick>-->
+                    <!--<onclick>Dialog.Close(VideoOSD)</onclick>-->
+                    <onclick>ActivateWindow(osdsubtitlesettings)</onclick>
                 </control>
                 <control type="button" id="253">
                     <visible>!VideoPlayer.Content(LiveTV)</visible>
