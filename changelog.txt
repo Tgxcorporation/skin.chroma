@@ -1,4 +1,6 @@
 3.5.0
+Simplified Music and Videos OSD.
+Added option to display posters for home shelf episodes.
 Added Game Controller support.
 Added vertical home menu layout.
 New layout for the home menu and new widget management system.
