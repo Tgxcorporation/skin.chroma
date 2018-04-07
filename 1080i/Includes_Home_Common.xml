@@ -475,7 +475,7 @@
         <orientation>horizontal</orientation>
         <focusposition>3</focusposition>
         <movement>0</movement>
-        <preloaditems>4</preloaditems>
+        <!--<preloaditems>4</preloaditems>-->
         <itemlayout height="810" width="370">
             <include content="ThumbsImages">
                 <param name="visible" value="true"/>
@@ -534,7 +534,7 @@
         <orientation>horizontal</orientation>
         <focusposition>2</focusposition>
         <movement>0</movement>
-        <preloaditems>4</preloaditems>
+        <!--<preloaditems>4</preloaditems>-->
         <itemlayout height="810" width="500">
             <include content="ThumbsImages">
                 <param name="visible" value="true"/>
@@ -593,7 +593,7 @@
         <orientation>horizontal</orientation>
         <focusposition>3</focusposition>
         <movement>0</movement>
-        <preloaditems>4</preloaditems>
+        <!--<preloaditems>4</preloaditems>-->
         <itemlayout height="810" width="373">
             <include content="ThumbsImages">
                 <param name="visible" value="true"/>

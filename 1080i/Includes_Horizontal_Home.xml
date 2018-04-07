@@ -42,7 +42,7 @@
                     <pagecontrol>-</pagecontrol>
                     <focusposition>2</focusposition>
                     <movement>0</movement>
-                    <preloaditems>4</preloaditems>
+                    <!--<preloaditems>4</preloaditems>-->
                     <orientation>horizontal</orientation>
                     <itemlayout height="270" width="480">
                         <control type="image">
