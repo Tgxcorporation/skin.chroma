@@ -133,6 +133,15 @@
                         <label>$LOCALIZE[20410]</label>
                         <onright>9009</onright>
                     </control>
+                    <control type="button" id="146">
+                        <visible>System.HasAddon(plugin.video.specialfeatures)</visible>
+                        <visible>String.IsEqual(Window(home).Property(SpecialFeatures.Visible),true)</visible>
+                        <description>Special Features button</description>
+                        <include>DialogMenuButton</include>
+                        <label>$LOCALIZE[31076]</label>
+                        <onclick>Action(close)</onclick>
+                        <onclick>RunScript(plugin.video.specialfeatures,listitem)</onclick>
+                    </control>
                     <control type="togglebutton" id="9013">
                         <visible>!String.IsEmpty(ListItem.Plot)</visible>
                         <description>Plot</description>
