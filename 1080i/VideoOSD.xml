@@ -26,7 +26,7 @@
             <control type="slider" id="87">
                 <visible>Player.SeekEnabled</visible>
                 <visible>!VideoPlayer.HasEpg</visible>
-                <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(osdcmssettings) | Window.IsVisible(osdsubtitlesettings) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks)]</visible>
+                <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(osdcmssettings) | Window.IsVisible(osdsubtitlesettings) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
                 <posx>50</posx>
                 <posy>900</posy>
                 <width>910</width>
@@ -40,7 +40,7 @@
             <control type="slider" id="87">
                 <visible>Player.SeekEnabled</visible>
                 <visible>VideoPlayer.HasEpg</visible>
-                <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(osdcmssettings) | Window.IsVisible(osdsubtitlesettings) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks)]</visible>
+                <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(osdcmssettings) | Window.IsVisible(osdsubtitlesettings) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks)]</visible>
                 <posx>50</posx>
                 <posy>900</posy>
                 <width>910</width>
